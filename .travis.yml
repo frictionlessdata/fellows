@@ -1,0 +1,28 @@
+language: python
+python:
+- '2.7'
+cache:
+  directories:
+    - $HOME/.cache/pip
+install:
+- nvm install 6.1
+- nvm use 6.1
+- pip install --upgrade pip
+- pip install lektor
+- pip install boto3
+- gem install sass
+- npm install
+- npm run build
+- lektor plugins add lektor-s3
+script:
+- lektor build
+deploy:
+  on:
+    branch: master
+  provider: script
+  script: lektor deploy s3
+env:
+  global:
+  - secure: ac313d/Vgr1GMcbjMsIb5l980TtR3a1hr4HPjSY+JjMj9Hpmt+6vcEPOjprOkSBRJvbOyBwSExDSzqFiFr/0SpUR2K1pzsXy6ots1lMnkXFWRlvVQMCaGc0O2yYZ1XpEXbblS0a17G//1RG/hiF5OhulxhQQq7NGzn1tiBagqV2htI2Y11fMjyrWND9SfTxuC1AVH06c33xIgVAB4ACfmnN9pISiUZzuTp0dcAsrf1gfbFfzn4rP2pRnBrqtqjav3nfvJlhpGdhTVIs5zjCIpa7GQgjKmxKtHLWJAz9+2hWVFoU8CE0AoapKrU05i2/dUP6IEo8PV9IJvtxCgzN0xWgbiQNoYm905WtNJBCbZdPDF3gb+lpS5xZazFuS10dRSDW1y0fV4Lbw/TEjeHYwKUB+8VZrPWTItX5rXu5DSxf8SaM1ZunHvQd6+D67Tk3SXYj6cfgLLz2BI8LQGgqaL9bVsg7WPRK92iJNq7jatNiPaFJdp+1+91eBNKyUo0up95TCwGnJ3ig3V6FpCfGFDSNUTKdXPwFl6ewVrUX2DaN6YDzlBNx18Znkf1H/zkA2QaxFTwOnVtP5/uqcfqsQDi7SdSOsUYYivRsk8cDe2P4Z647XgQWpc9KBWqVE/Ry8pQCZ2ru0fot9PoBPtopdsQ5G4nDan9veapp+ZNdg+Z0=
+  - secure: q1EeVcD9HF4hbMh9/+rWlr/fe4KmQRTok6wzVQ9qM6tfWzu84ar93z+8dyOJqrOdk3/SPBt3ShOlZK+rimTCUmp5Fqn63ZPIbqZQG/e9JgiXJjVMtNO9+dZ5hgi5t2J7TIv7roKhFp2ACWl9JOGX2jyPkQh5fOciGXyboex36MVRJQP35CHoe2GHSmP/YE3PJPwwlnTIs+YZDEEcLHPqAbvyh416EC403JQqAyOfyEZsf6F1MOe1VZEtnWTYtSt2oF5aZXj8BQ8miRXPUW5wAm6L3qPUMQ1TVqj+8Nlyoqr9t2rhgityOkXhXSWBYOW95zYirB9lemwtC2hHgz6EdzUnXXGHSvlH6IIb3Bt+50qmoO/8qeS3bI1FMxTjnW46tYfkjitUkVBZHVXLdJKxa2o3PDlZ+tPHsuQVjJU/J4cPyF2SDjdvVq+kAmyXmLE1K/oiD0uJ1c0aZg85d0g5jhQk8rSdYcigUhLMI79FQEGjJu2Gf3Kqc7T5Kqxobol3w/Js3AULwN40yCwobyuWhjKFDgCMdlPEaqLT6FCjJEyoCBxh1LpzC26whVCefwj/W4po828KtlFD5/Bdp9A7qa8aiMMBUZ2k1kcJshi3803YmdjH5zfJkyGsSD74Li1moFvidDB5rV+xN00XEe9PIaBpC0l2IK90H+g5rNbrgVc=
+  - secure: ZbS+WA0if/cDJ6qvJlEb4QMJq5avKoG/o/xWtNfmzONUo2oD8zcEd7CezKhQXqWdAq00bwD+QoOrY4tbmIb7FSIW5Fzn7gWlxs2t6xLyMvqTZHSCPss5JZxSfeauTpA+NtXD2sBHZpsvBDC8AXl3ZsXBCRKUj0twK0e5uv3VRhDK6KBJh6nsBwEBYVU0Zvge7BXnhxLLZuDzt7nCMwV7jmCpsajuJqMZh7Ed5WaEO3/RJp9iG+eWq43zBUhaeKNVjD4M6Rpie0we7t/hhjFbxpu6xWFp+OqKiL+8gMXELxSZptFE13ghD8hulF266/y9SJ39WHHfXFKWh9Kdogh1E/WcHUkWYIzqkHOM0KdCrCphrZHsueJf2A/W+cJhWUtNlaKvGTgny5zHH8Bf5fcc2afMp611+g5CTFoVKCqondun3zMflexxDyQtHvVxLynsr/nTTxLRp9k1NxvYu/nT4QHlDvmzb+zUSj2mYliHde2wP+ROrTr6PVcODXd4cxBxFEX2DBkC3fpB+s/zUDjc2I4Hb/E67QB2LI/+52PYi6u5A5PP0ILG3w6CSfhCwz+Mu/YBO1pjIY66sTxi25JzQWISvhV0gFm2+mYh79W7ArT+VEjajpuNZBdiRm19pOXNbxjdrca0rQZ53oEC8GNBtvEWB4+X0Tkz/pLTpH2YN9Y=

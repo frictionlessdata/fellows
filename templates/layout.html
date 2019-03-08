@@ -1,0 +1,19 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ '/css/style.css'|url }}">
+<title>{% block title %}Welcome{% endblock %}</title>
+<body>
+  <header>
+    <a class="logo" href="http://frictionlessdata.io/">{% include 'includes/logo.svg' %}</a>
+  </header>
+  <article>
+    {% block body %}{% endblock %}
+  </article>
+  <footer>
+    <p>
+      <a href="https://okfn.org/terms-of-use/">Terms of use</a> |
+      <a href="https://okfn.org/privacy-policy/">Privacy policy</a>
+    </p>
+  </footer>
+  {% include 'includes/icons.svg' %}
+</body>

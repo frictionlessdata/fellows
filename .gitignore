@@ -1,0 +1,5 @@
+node_modules
+assets/css
+icons-demo.html
+icons.svg
+.sass-cache
