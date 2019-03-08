@@ -3,4 +3,4 @@ name = Frictionless Data Fellows
 
 [servers.ghpages]
 name = Github Pages
-target = ghpages://frictionlessdata/fellows
+target = ghpages://frictionlessdata/fellows?cname=fellows.frictionlessdata.io
