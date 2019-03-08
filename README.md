@@ -6,8 +6,14 @@ At time of writing there is no Lektor GUI client for Mac. Instead, install Lekto
 $ pip install Lektor
 ```
 
+With Lektor installed, start the development server with:
+
+```sh
+$ lektor serve
+```
+
 It has a bunch of [dependencies](package.json), so do `npm install` and then `npm run build`.
 
 `grunt` will watch for changes to your [SCSS files](assets/scss), and also [icons](assets/icons) (see [svgstore](https://github.com/FWeinb/grunt-svgstore)).
 
-This repo is configured to automatically deploy to Amazon S3 whenever a push is made to the **master** branch.
+This repo is configured to deploy to Github pages when published.
