@@ -1,10 +1,6 @@
 [project]
 name = Frictionless Data Fellows
 
-[servers.s3]
-name = S3
-enabled = yes
-target = s3://fellows.frictionlessdata.io
-
-[packages]
-lektor-s3 = 0.5.0
+[servers.ghpages]
+name = Github Pages
+target = ghpages://frictionlessdata/fellows
