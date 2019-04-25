@@ -1,65 +1,52 @@
-title: Frictionless Data Tool Fund
+title: Frictionless Data Fellows Programme
 ---
 body:
 
-## What is the Tool Fund?
+## What is the Reproducible Research Fellows Programme?
 
-The Frictionless Data Tool Fund, supported by the Sloan Foundation, is providing a number of mini-grants of $5,000 to support individuals or organisations in developing an open tool for reproducible science or research built using the Frictionless Data specifications and software. We welcome submissions of interest from 15th Feb 2019 until 30th April 2019.
+With the Frictionless Data Reproducible Research Fellows Programme, supported by the Sloan Foundation, we are recruiting and training early career researchers to become champions of the Frictionless Data tools and approaches in their field. Fellows will learn about Frictionless Data, including how to use Frictionless tools in their domains to improve reproducible research workflows, and how to advocate for open science. Working closely with the Frictionless Data team, Fellows will lead training workshops at conferences, host events at universities and in labs, and write blogs and other communications content. In addition to mentorship, we are providing successful applicants with stipends of $5,000 to support their work and time during the nine-month long Fellows Programme. We welcome applications from 8th May 2019 until 30th July 2019.
 
 ## How do I apply?
 
-Please apply using this <a href = "https://docs.google.com/forms/d/e/1FAIpQLSdRSyuwFK7uIxkiiXVbXDSww3XBD_35jRru1MVzYqpSl6XimA/viewform?usp=sf_link" target="_blank">google form</a>. If you have any questions please email the team at [frictionlessdata@okfn.org](mailto:frictionlessdata@okfn.org) or ask a question on the project’s <a href="https://gitter.im/frictionlessdata/chat" target="_blank">gitter chanel</a>. We value and encourage diversity because a range of experiences and perspectives enriches our work and strengthens our ability to address complex challenges. Applicants from communities that are under-represented in science and technology, people of colour, women, people with disabilities, and LGBTI+ individuals are encouraged to apply.
+Please apply using this <a href="https://forms.gle/ULAz4kcDxT8Hka2a9" target="_blank">form</a>. If you have any questions please email the team at frictionlessdata@okfn.org or ask a question on our <a href="https://discuss.okfn.org/c/frictionless-data" target="_blank">forum</a>. We value and encourage diversity because a range of experiences and perspectives enriches our work and strengthens our ability to address complex challenges. Applicants from communities that are under-represented in science and technology, people of colour, women, people with disabilities, and LGBTI+ individuals are encouraged to apply.
 
 ## Background
 
-The Tool Fund is part of the <a href="http://frictionlessdata.io/reproducible-research/" target="_blank">Frictionless Data for Reproducible Research</a> project at <a href="https://okfn.org" target="_blank">Open Knowledge International</a>. This project, funded by the Sloan Foundation, applies our work in Frictionless Data to data-driven research disciplines, in order to facilitate data workflows in research contexts. At its core, Frictionless Data is a set of <a href="http://frictionlessdata.io/specs/" target="_blank">specifications</a> for data and metadata interoperability, accompanied by a collection of <a href="http://frictionlessdata.io/software/" target="_blank">software libraries</a> that implement these specifications, and a range of best practices for data management. The core specification, the <a href="http://frictionlessdata.io/guides/data-package/" target="_blank">Data Package</a>, is a simple and practical “container” for data and metadata.
-
-## What else do I need to know?
-
-The Frictionless Data team has created a suite of open source software tools and specifications to shorten the path from data to insight. We want to build upon these existing tools and work with implementers to further improve the specifications in order to get us closer to our ideal of “frictionless” research data. In order to understand if this tool fund is for you, please take a close look at our existing tooling, software, and specs:
-- <a href="https://github.com/frictionlessdata" target="_blank">Github</a>
-- <a href="https://frictionlessdata.io/specs/" target="_blank">Specifications</a>
-- <a href="https://frictionlessdata.io/software/" target="_blank">Software</a>
-- <a href="http://try.goodtables.io/" target="_blank">Goodtables data validator tool</a>
-- <a href="http://create.frictionlessdata.io/" target="_blank">Data package creator tool</a>
-- <a href="https://github.com/frictionlessdata/datapackage-pipelines" target="_blank">Datapackage pipelines</a>
-- <a href="https://frictionlessdata.io/docs/" target="_blank">Documentation</a>
+The Fellows Programme is part of the <a href="http://frictionlessdata.io/reproducible-research/" target="_blank">Frictionless Data for Reproducible Research project</a> at <a href="http://okfn.org/" target="_blank">Open Knowledge Foundation</a>. This project, funded by the Sloan Foundation, applies our work in Frictionless Data to data-driven research disciplines, in order to facilitate data workflows in research contexts. At its core, Frictionless Data is a set of <a href="https://frictionlessdata.io/specs" target="_blank">specifications</a> for data and metadata interoperability, accompanied by a collection of <a href="https://frictionlessdata.io/software/" target="_blank">software libraries</a> that implement these specifications, and a range of best practices for data management. The core specification, the Data Package, is a simple and practical “container” for data and metadata.
 
 ## FAQ
 
-For more questions on the fund, speak directly to us on our <a href="https://discuss.okfn.org/c/frictionless-data" target="_blank">forum</a>, on our <a href="https://gitter.im/frictionlessdata/chat" target="_blank">Gitter chat</a>, or email us at [frictionlessdata@okfn.org](mailto:frictionlessdata@okfn.org).
+For more questions on the Fellows Programme, speak directly to us on our <a href="https://discuss.okfn.org/c/frictionless-data" target=_blank>forum</a>, or email us at frictionlessdata@okfn.org.
 
 ### Am I eligible to apply?
 
-The Fund is open to both individuals and organisations based anywhere in the world.
+The Fellows Programme is open to early career research individuals, such as graduate students and postdoctoral scholars, anywhere in the world, and in any scientific discipline.
 
-### When do I need to complete the work?
+### What is the timeframe for the Fellows Programme?
 
-All work will need to be delivered by the end of 2019.
+The Fellows Programme will begin in late August/early September 2019 and will last for 9 months. We expect the Fellows Programme will take up to 8 hours per week.
 
 ### How will we make our choice?
 
-We will base our choice on evidence of technical capabilities and also favour applicants who demonstrate an interest in practical use of the Frictionless Data Specifications. Preference will also be given to applicants who show an interest working with and maintaining these tools going forward.
+We will base our choice on evidence of community engagement, technical capabilities, and also favour applicants who demonstrate an interest in Open Science and research reproducibility. Preference will also be given to applicants who show an interest in continuing their involvement in the Frictionless Data community long term.
+
+### What kind of technical skills should I have to apply?
+
+Applicants should have some technical abilities, such as familiarity with a programming language like R or Matlab, but do not need to be technically proficient. If you are interested, but do not have all of the qualifications, we still encourage you to apply.
 
 ### When is the deadline?
 
-Expressions of interest should be received by the 30th of April 2019.
+Expressions of interest should be received by the 30th of July 2019.
 
-### Are there any examples of the types of tools that would make good projects?
+### What are the main goals and outcomes of the Fellows Programme?
 
-While the call for tools is purposefully broad, here are some examples of the types of tools our team would be interested in seeing:
-- Integrating Frictionless Data (e.g. data packages) into tools researchers currently use (like Excel, Google Sheets, Matlab)
-- Integrations with tools or other file systems that handle big(ger) data
-- Building upon the metadata in <a href = "http://create.frictionlessdata.io/" target="_blank">data package creator</a> (for example, adding ORCIDs, persistent identifiers/URIs, etc.)
-
-### What deliverables will I be responsible for creating?
-
-Besides the main tool you create, you will also produce a blog or screencast of the tool, and if you are interested, present the tool during an Open Knowledge community call.
+You will be writing blog posts, giving workshops and presentations, and helping to build up a community of open, reproducible research enthusiasts. Additionally, you will learn how to audience map, how to work with a remote team, and how to work on an Open project.
 
 ### What will the agreement look like?
 
-The mini-grant agreement will include a Memorandum of Understanding between Open Knowledge International and the Applicant, based on some agreed deliverables derived from the Implementation reference documentation.
+The Fellows agreement will include a contract between Open Knowledge Foundation and the Applicant, based on some agreed deliverables (such as blog posts and workshops given).
 
-### How will Open Knowledge International support me in the work?
+### How will Open Knowledge Foundation support me in the work?
 
-The main reason we are initiating the tool fund is to create new tools to help researchers. Our developers will be on hand to work closely with you as you complete the work. We will announce implementers as technical partners on the project website and will be happy to support you by promoting your organization's work through our blog and network channels.
+Firstly, we will support you financially with a stipend of $5000 for the nine-month Fellows Programme. Our team will be on hand to work closely with you as you complete the work, and we will provide mentorship on how to work on an Open project. We will help you learn Frictionless Data tooling and software, and provide you with resources to help you create workshops and presentations, so you won’t have to create all this content on your own. Also, we will announce Fellows on the project website and will be publishing your blogs and workshops slides within our network channels. Our main goal in starting this Fellows Programme is to train early career researchers in being champions for open, reproducible research using Frictionless Data tooling, and we aim to support you to achieve this goal.
+
