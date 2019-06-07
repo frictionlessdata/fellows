@@ -29,31 +29,21 @@ Steps:
     *   You now have the data in csv format & its json-formatted schema & metadata as a datapackage!
     *   *advanced* We can also create and use datapackages with Python (and other languages). See examples in the [readme here](https://github.com/frictionlessdata/datapackage-py), and the docs here [http://frictionlessdata.io/docs/creating-tabular-data-packages-in-python/](http://frictionlessdata.io/docs/creating-tabular-data-packages-in-python/) and here [http://frictionlessdata.io/docs/using-data-packages-in-python/](http://frictionlessdata.io/docs/using-data-packages-in-python/).
 
-        >>> from datapackage import Package
+    ```
+    >>> from datapackage import Package
+    >>> package = Package('datapackage.json')
 
+    #let’s look at the information in our datapackage
 
-        >>> package = Package('datapackage.json')
+    >>> package.descriptor['resources']
+    [{'name': 'resource1', 'profile': 'tabular-data-resource', 'path': 'elife.csv', 'schema': {'fields': [{'name': 'Genotype', 'format': 'default', 'type': 'string'}, {'name': 'Mean', 'format': 'default', 'type': 'number'}, {'name': 'Std. Error', 'format': 'default', 'type': 'number'}, {'name': 'SEM', 'format': 'default', 'type': 'number'}, {'name': 'N (animals/hemisegment)', 'format': 'default', 'type': 'string'}, {'name': 'p-value', 'format': 'default', 'type': 'string'}], 'missingValues': ['']}}]
 
+    #note this is json, so we can parse it
+    #we can also work with the data using this library, for instance, let’s see the genotypes of all the flies that have a mean less than 10 (hint, it’s all of them)
 
-        #let’s look at the information in our datapackage
-
-
-        >>> package.descriptor['resources']
-
-
-        [{'name': 'resource1', 'profile': 'tabular-data-resource', 'path': 'elife.csv', 'schema': {'fields': [{'name': 'Genotype', 'format': 'default', 'type': 'string'}, {'name': 'Mean', 'format': 'default', 'type': 'number'}, {'name': 'Std. Error', 'format': 'default', 'type': 'number'}, {'name': 'SEM', 'format': 'default', 'type': 'number'}, {'name': 'N (animals/hemisegment)', 'format': 'default', 'type': 'string'}, {'name': 'p-value', 'format': 'default', 'type': 'string'}], 'missingValues': ['']}}]
-
-
-        #note this is json, so we can parse it
-
-
-        #we can also work with the data using this library, for instance, let’s see the genotypes of all the flies that have a mean less than 10 (hint, it’s all of them)
-
-
-        >>> print([e['Genotype'] for e in package.resources[0].read(keyed=True) if int(e['Mean']) < 10])
-
-
-        ['DIP-α-GAL4/+>EGFP', 'DIP-α-GAL4>EGFP', 'DIP-α1-178', 'GAL4 control', 'DIP-α-GAL4 > DIP-α', 'DIP-α1-178,eveRN2-GAL4> DIP-α', 'UAS-DIP-α', 'Elav-GAL4>DIP-α', 'Mef2-GAL4>DIP-α', 'UAS- DIP-α-RNAi', 'Elav-GAL4 >UAS-DIP-α RNAi', 'DIP-α-GAL4 >UAS-DIPalpha-RNAi', 'Mef2-GAL4 >UAS-DIP-α-RNAi']
+    >>> print([e['Genotype'] for e in package.resources[0].read(keyed=True) if int(e['Mean']) < 10])
+    ['DIP-α-GAL4/+>EGFP', 'DIP-α-GAL4>EGFP', 'DIP-α1-178', 'GAL4 control', 'DIP-α-GAL4 > DIP-α', 'DIP-α1-178,eveRN2-GAL4> DIP-α', 'UAS-DIP-α', 'Elav-GAL4>DIP-α', 'Mef2-GAL4>DIP-α', 'UAS- DIP-α-RNAi', 'Elav-GAL4 >UAS-DIP-α RNAi', 'DIP-α-GAL4 >UAS-DIPalpha-RNAi', 'Mef2-GAL4 >UAS-DIP-α-RNAi']
+    ```
 
 *   What can we do with this?
     *   Upload it to a repository 
@@ -74,116 +64,55 @@ Steps:
     *   *advanced* Let’s validate using the command line. On terminal, navigate to the folder containing your data & then type ‘goodtables elife.csv’ (replace elife.csv with your data file name) & see pic to see output example
     *   *advanced* validate with Python goodtables library ([https://github.com/frictionlessdata/goodtables-py](https://github.com/frictionlessdata/goodtables-py); [http://frictionlessdata.io/docs/validating-data/](http://frictionlessdata.io/docs/validating-data/))
 
-        >>> from goodtables import validate
+    ```
+    >>> from goodtables import validate
 
+    #validate without a schema
 
-        #validate without a schema
+    >>> report = validate('elife.csv')
+    >>> report['valid']
+    True
 
+    #validate with a schema
 
-        >>> report = validate('elife.csv')
+    >>> report = validate('elife.csv', schema='schema.json', order_fields=True) 
+    >>> report['valid']
+    True
 
+    #what happens when we validate an invalid csv file?
 
-        >>> report['valid']
+    >>> report = validate('elife_invalid.csv')
+    >>> report['valid']
+    False
 
+    #let’s look at the number of errors
 
-        True
+    >>> report['error-count']
+    4
 
+    #now let’s look at those error messages
 
-        #validate with a schema
+    >>> report['tables'][0]['errors']
+    [{'code': 'missing-value', 'row-number': 2, 'message-data': {}, 'message': 'Row 2 has a missing value in column 6', 'column-number': 6}, {'code': 'missing-value', 'row-number': 5, 'message-data': {}, 'message': 'Row 5 has a missing value in column 6', 'column-number': 6}, {'code': 'missing-value', 'row-number': 8, 'message-data': {}, 'message': 'Row 8 has a missing value in column 6', 'column-number': 6}, {'code': 'missing-value', 'row-number': 11, 'message-data': {}, 'message': 'Row 11 has a missing value in column 6', 'column-number': 6}]
 
-
-        >>> report = validate('elife.csv', schema='schema.json', order_fields=True) 
-
-
-        >>> report['valid']
-
-
-        True
-
-
-        #what happens when we validate an invalid csv file?
-
-
-        >>> report = validate('elife_invalid.csv')
-
-
-        >>> report['valid']
-
-
-        False
-
-
-        #let’s look at the number of errors
-
-
-        >>> report['error-count']
-
-
-        4
-
-
-        #now let’s look at those error messages
-
-
-        >>> report['tables'][0]['errors']
-
-
-        [{'code': 'missing-value', 'row-number': 2, 'message-data': {}, 'message': 'Row 2 has a missing value in column 6', 'column-number': 6}, {'code': 'missing-value', 'row-number': 5, 'message-data': {}, 'message': 'Row 5 has a missing value in column 6', 'column-number': 6}, {'code': 'missing-value', 'row-number': 8, 'message-data': {}, 'message': 'Row 8 has a missing value in column 6', 'column-number': 6}, {'code': 'missing-value', 'row-number': 11, 'message-data': {}, 'message': 'Row 11 has a missing value in column 6', 'column-number': 6}]
-
-
-        #this shows us that there are 4 missing value errors
-
+    #this shows us that there are 4 missing value errors
+    ```
+    
 *   You can also write custom validators (see this example and more from our GitHub repo [readme](https://github.com/frictionlessdata/goodtables-py):
 
-            ```
-            report = validate('data.csv', checks=[
-                {'custom-constraint': {'constraint': 'salary < bonus * 4'}},
-            ])
-            ```
+    ```
+    report = validate('data.csv', checks=[
+        {'custom-constraint': {'constraint': 'salary < bonus * 4'}},
+    ])
+    ```
 
 
 *   To recap, we have created a datapackage to keep track of our raw data, our metadata, and our schema. Then, we learned how to validate that datapackage (validated our raw data using our schema). Now that we have nicely packaged, validated data, we can share it! We can share data many ways - from emailing to a colleague, to hosting on a repository, to publishing in an open access journal (like eLife where we got this data from!). Some open neuroscience repositories include [OpenNeuro](https://openneuro.org/), [G-Node](https://web.gin.g-node.org/), and [CRCNS](https://crcns.org/).
 *   In 2017, we did a collaboration with eLife where data from over 1000 eLife articles were validated with goodtables. Read the whole report [here](https://frictionlessdata.io/articles/elife/). Highlights include that many errors were found, with most being structural errors (blank rows, duplicate rows, and duplicate headers for example) and also lots of missing values. Many datasets were formatted for human readability, which often makes it really difficult to perform computation analysis of that data. This is one of the reasons why it can be hard to reproduce other people's work, so it is important to think about when sharing your own data.
 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/neuro-FD-tools-open-data-blog0.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/neuro-FD-tools-open-data-blog0.png "image_tooltip")
-
-
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/neuro-FD-tools-open-data-blog1.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/neuro-FD-tools-open-data-blog1.png "image_tooltip")
-
-
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/neuro-FD-tools-open-data-blog2.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/neuro-FD-tools-open-data-blog2.png "image_tooltip")
-
-
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/neuro-FD-tools-open-data-blog3.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/neuro-FD-tools-open-data-blog3.png "image_tooltip")
-
-
-
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/neuro-FD-tools-open-data-blog4.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/neuro-FD-tools-open-data-blog4.png "image_tooltip")
-
-
-
-<!-- Docs to Markdown version 1.0β17 -->
+![Datapackage](DP.png)
+![Datapackage2](validDP.png)
+![JSON](JSON.png)
+![GoodTables](validGT.png)
+![Command Line Validation](validCL.png)
+![Invalid GoodTables](invalidGT.png)
