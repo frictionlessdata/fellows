@@ -4,14 +4,18 @@ body:
 
 ## Reading list
 
-### Frictionless Data Tutorials and Documentation:
+### Frictionless Data (FD) Tutorials and Documentation:
 - [Field Guide](https://frictionlessdata.io/field-guide/)
 - General [docs](https://frictionlessdata.io/docs/)
+- stuff on discourse?
 
 ### Frictionless Data Workshops:
 
 #### Slides:
-- 
+- Frictionless Data [intro slides](https://docs.google.com/presentation/d/e/2PACX-1vR6W9vlSm_ha9ddzuVknk7NMEVCDJrv7FoyEvEECzKnrok8xyRrPkkgs_3N5hpuLETTbjpwdzbmubyq/pub?start=false&loop=false&delayms=3000)
+- FD for Reproducible Research [slides](https://docs.google.com/presentation/d/14dyORE_Ftvd30nEf1-rhspDSsVptGIINeRagmCm3f94/edit?usp=sharing)
+- FD in the lab [slides](https://bit.ly/2S2o09r)
+
 *Note: these slides are all openly licensed, so they can be remixed/reused*
 
 #### Videos:
@@ -23,7 +27,7 @@ body:
 - [FAIR research](https://blog.okfn.org/2018/08/14/frictionless-data-and-fair-research-principles/)
 - case studies
 
-### Contributing Best Practices
+### Contributing Best Practices:
 - [Open Knowledge coding standards](https://github.com/okfn/coding-standards)
 - github intro
 
@@ -31,9 +35,8 @@ body:
 - Data Management Plans [DMP Tools](https://dmptool.org/general_guidance)
 - [NIH data sharing guidelines](https://grants.nih.gov/grants/policy/data_sharing/)
 
+### Reproducible Research Blogs and Readings:
 
-### Reproducible Research Blogs and Readings
+### Project Management Tips:
 
-### Project Management Tips
-
-### Remote Working Best Practices
+### Remote Working Best Practices:
