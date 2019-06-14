@@ -1,0 +1,39 @@
+title: Resources
+---
+body: 
+
+## Reading list
+
+### Frictionless Data Tutorials and Documentation:
+- [Field Guide](https://frictionlessdata.io/field-guide/)
+- General [docs](https://frictionlessdata.io/docs/)
+
+### Frictionless Data Workshops:
+
+#### Slides:
+- 
+*Note: these slides are all openly licensed, so they can be remixed/reused*
+
+#### Videos:
+- Data package creator walk through [video](https://www.youtube.com/watch?v=VrdPj28-L9g&list=LLQe-pXn0XZzmRzvyOMZpfEg)
+- Goodtables browser tool walk through [video](https://www.youtube.com/watch?v=9YHwu34D_vM&list=LLQe-pXn0XZzmRzvyOMZpfEg)
+- Goodtables command line walk through [video](https://www.youtube.com/watch?v=PqtM6d696eY&list=LLQe-pXn0XZzmRzvyOMZpfEg)
+
+### Frictionless Data blogs and articles:
+- [FAIR research](https://blog.okfn.org/2018/08/14/frictionless-data-and-fair-research-principles/)
+- case studies
+
+### Contributing Best Practices
+- [Open Knowledge coding standards](https://github.com/okfn/coding-standards)
+- github intro
+
+### Data Management Best Practices:
+- Data Management Plans [DMP Tools](https://dmptool.org/general_guidance)
+- [NIH data sharing guidelines](https://grants.nih.gov/grants/policy/data_sharing/)
+
+
+### Reproducible Research Blogs and Readings
+
+### Project Management Tips
+
+### Remote Working Best Practices
