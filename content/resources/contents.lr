@@ -5,9 +5,12 @@ body:
 ## Reading list
 
 ### Frictionless Data (FD) Tutorials and Documentation:
-- [Field Guide](https://frictionlessdata.io/field-guide/)
+- The FD [Field Guide](https://frictionlessdata.io/field-guide/) has tutorials and documentation for using FD tools and software
 - General [docs](https://frictionlessdata.io/docs/)
-- stuff on discourse?
+- FD [forum](https://discuss.okfn.org/c/frictionless-data) for asking long questions
+- FD [Gitter chat](https://gitter.im/frictionlessdata/chat) for asking short questions
+- FD [Github repositories](https://github.com/frictionlessdata). 
+*Note: check out the ```README``` in each individual repository for documentation on how to use that software*
 
 ### Frictionless Data Workshops:
 
@@ -23,9 +26,14 @@ body:
 - Goodtables browser tool walk through [video](https://www.youtube.com/watch?v=9YHwu34D_vM&list=LLQe-pXn0XZzmRzvyOMZpfEg)
 - Goodtables command line walk through [video](https://www.youtube.com/watch?v=PqtM6d696eY&list=LLQe-pXn0XZzmRzvyOMZpfEg)
 
-### Frictionless Data blogs and articles:
+### Frictionless Data + Reproducible Research blogs and articles:
 - [FAIR research](https://blog.okfn.org/2018/08/14/frictionless-data-and-fair-research-principles/)
-- case studies
+- eLife + FD [case study](https://frictionlessdata.io/articles/elife/)
+- Pacific Northwest National Laboratory [case study](https://frictionlessdata.io/articles/pacific-northwest-national-laboratory-active-data-biology/)
+- Cell Migration Standardization Organization [case study](https://frictionlessdata.io/articles/cmso/)
+- University of Cambridge retinal mosaics [case study](https://frictionlessdata.io/articles/university-of-cambridge/)
+- Tesera natural resources [case study](https://frictionlessdata.io/articles/tesera/)
+- See more case studies [here](https://frictionlessdata.io/articles)
 
 ### Contributing Best Practices:
 - [Open Knowledge coding standards](https://github.com/okfn/coding-standards)
@@ -36,7 +44,22 @@ body:
 - [NIH data sharing guidelines](https://grants.nih.gov/grants/policy/data_sharing/)
 
 ### Reproducible Research Blogs and Readings:
+- eLife Innovation Community Manager [Emmy Tsang](https://twitter.com/emmy_ft)'s [talk on reproducible research](https://doi.org/10.6084/m9.figshare.8299226)
+- eLife Labs [Reproducible Document Stack blog](https://elifesciences.org/labs/b521cf4d/reproducible-document-stack-towards-a-scalable-solution-for-reproducible-articles)
+- center for open science
+- [The Turing Way](https://the-turing-way.netlify.com/introduction/introduction): a lightly opinionated guide to reproducible data science
+- Reproducible Computational Workflows with Continuous Analysis, Brett K. Beaulieu-Jones & Casey S. Greene. [bioRxiv 056473](https://www.biorxiv.org/content/10.1101/056473v2)
+- The [Center for Open Science](https://cos.io/)
 
 ### Project Management Tips:
 
 ### Remote Working Best Practices:
+
+### Coding resources
+- Markdown [tutorial & resources](http://laderast.github.io/magic-of-markdown) by [Ted Laderas](https://twitter.com/tladeras)
+- [Git-it](https://github.com/jlord/git-it-electron), an interactive Git & GitHub learning app by [Jessica Lord](https://twitter.com/jllord)
+- [Git tutorial](https://happygitwithr.com/index.html) by [Jenny Bryan](https://twitter.com/JennyBryan), focused on Git and R/Rstudio
+- [Command Line cheatsheet](https://github.com/aprilspeight/commandline_tutorials/blob/master/Cheatsheet.pdf) by [April Speight](https://twitter.com/vogueandcode), and some educational and entertaining [command line tutorial videos](https://github.com/aprilspeight/commandline_tutorials)
+- Common Python errors [flow chart & article](https://pythonforbiologists.com/29-common-beginner-errors-on-one-page) from Python For Biologists
+- [Vaidehi Joshi](https://twitter.com/vaidehijoshi)'s [BaseCS tutorials](https://medium.com/basecs) for beginner computer science concepts
+
