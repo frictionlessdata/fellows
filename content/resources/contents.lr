@@ -1,0 +1,60 @@
+title: Resources
+---
+body: 
+
+## Reading list
+
+### Frictionless Data (FD) Tutorials and Documentation:
+- The FD [Field Guide](https://frictionlessdata.io/field-guide/) has tutorials and documentation for using FD tools and software
+- General FD [documentation](https://frictionlessdata.io/docs/)
+- FD [forum](https://discuss.okfn.org/c/frictionless-data) for asking long questions
+- FD [Gitter chat](https://gitter.im/frictionlessdata/chat) for asking short questions
+- FD [Github repositories](https://github.com/frictionlessdata). 
+*Note: check out the ```README``` in each individual repository for documentation on how to use that software*
+
+### Frictionless Data Workshops:
+
+#### Slides:
+- Frictionless Data [intro slides](https://docs.google.com/presentation/d/e/2PACX-1vR6W9vlSm_ha9ddzuVknk7NMEVCDJrv7FoyEvEECzKnrok8xyRrPkkgs_3N5hpuLETTbjpwdzbmubyq/pub?start=false&loop=false&delayms=3000)
+- FD for Reproducible Research [slides](https://docs.google.com/presentation/d/14dyORE_Ftvd30nEf1-rhspDSsVptGIINeRagmCm3f94/edit?usp=sharing)
+- FD in the lab [slides](https://bit.ly/2S2o09r)
+
+*Note: these slides are all openly licensed, so they can be remixed/reused*
+
+#### Videos:
+- Data package creator walk through [video](https://www.youtube.com/watch?v=VrdPj28-L9g&list=LLQe-pXn0XZzmRzvyOMZpfEg)
+- Goodtables browser tool walk through [video](https://www.youtube.com/watch?v=9YHwu34D_vM&list=LLQe-pXn0XZzmRzvyOMZpfEg)
+- Goodtables command line walk through [video](https://www.youtube.com/watch?v=PqtM6d696eY&list=LLQe-pXn0XZzmRzvyOMZpfEg)
+
+### Frictionless Data + Reproducible Research blogs and articles:
+- [FAIR research](https://blog.okfn.org/2018/08/14/frictionless-data-and-fair-research-principles/)
+- eLife + FD [case study](https://frictionlessdata.io/articles/elife/)
+- Pacific Northwest National Laboratory [case study](https://frictionlessdata.io/articles/pacific-northwest-national-laboratory-active-data-biology/)
+- Cell Migration Standardization Organization [case study](https://frictionlessdata.io/articles/cmso/)
+- University of Cambridge retinal mosaics [case study](https://frictionlessdata.io/articles/university-of-cambridge/)
+- Tesera natural resources [case study](https://frictionlessdata.io/articles/tesera/)
+- See more case studies [here](https://frictionlessdata.io/articles)
+
+### Contributing Best Practices:
+- Open Knowledge Foundation [coding standards](https://github.com/okfn/coding-standards)
+- Open Knowledge Foundation [project participation guidelines + code of conduct](https://okfn.org/project-participation-guidelines/)
+
+### Data Management Best Practices:
+- Data Management Plans [DMP Tools](https://dmptool.org/general_guidance)
+- [NIH data sharing guidelines](https://grants.nih.gov/grants/policy/data_sharing/)
+
+### Reproducible Research Blogs and Readings:
+- [The Turing Way](https://the-turing-way.netlify.com/introduction/introduction): a lightly opinionated guide to reproducible data science
+- eLife Innovation Community Manager [Emmy Tsang](https://twitter.com/emmy_ft)'s [talk on reproducible research](https://doi.org/10.6084/m9.figshare.8299226)
+- eLife Labs [Reproducible Document Stack blog](https://elifesciences.org/labs/b521cf4d/reproducible-document-stack-towards-a-scalable-solution-for-reproducible-articles)
+- Reproducible Computational Workflows with Continuous Analysis, Brett K. Beaulieu-Jones & Casey S. Greene. [bioRxiv 056473](https://www.biorxiv.org/content/10.1101/056473v2)
+- The [Center for Open Science](https://cos.io/)
+
+### Coding Resources:
+- Markdown [tutorial & resources](http://laderast.github.io/magic-of-markdown) by [Ted Laderas](https://twitter.com/tladeras)
+- GitHub [Hello World](https://guides.github.com/activities/hello-world/) introductory tutorial
+- [Git-it](https://github.com/jlord/git-it-electron), an interactive Git & GitHub learning app by [Jessica Lord](https://twitter.com/jllord)
+- [Git tutorial](https://happygitwithr.com/index.html) by [Jenny Bryan](https://twitter.com/JennyBryan), focused on Git and R/Rstudio
+- [Command Line cheatsheet](https://github.com/aprilspeight/commandline_tutorials/blob/master/Cheatsheet.pdf) by [April Speight](https://twitter.com/vogueandcode), and some educational and entertaining [command line tutorial videos](https://github.com/aprilspeight/commandline_tutorials)
+- Common Python errors [flow chart & article](https://pythonforbiologists.com/29-common-beginner-errors-on-one-page) from Python For Biologists
+- [Vaidehi Joshi](https://twitter.com/vaidehijoshi)'s [BaseCS tutorials](https://medium.com/basecs) for beginner computer science concepts
