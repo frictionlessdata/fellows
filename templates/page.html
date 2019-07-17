@@ -2,5 +2,12 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
   <h1>{{ this.title }}</h1>
-  {{ this.body }}
+  <div>
+  {% if this.subject_img %}
+    <img style="width: 50%; display: block; margin-left: auto; margin-right: auto;" src="{{ this.subject_img }}">
+  {% endif %}
+  </div>
+  <div style="padding-top: 20px;">
+    {{ this.body }}
+  </div>
 {% endblock %}

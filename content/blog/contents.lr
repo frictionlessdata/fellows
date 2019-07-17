@@ -1,10 +1,9 @@
-title: Blog
+title: Welcome to the Fellows Programme blog homepage
 ---
 body:
-This is the Fellows Programme blog homepage.
 
-Recent Blogs:
+## Recent Blogs:
 
-### [Neuroscience blog](/blog/neuro-blog)
-
-## [Home](/)
+### [Neuroscience blog](/blog/neuro-blog): How neuroscience researchers can use Frictionless Data tooling and specs in their workflows to make their own scientific data more reproducible.
+---
+subject_img: research-banner-bg.png
