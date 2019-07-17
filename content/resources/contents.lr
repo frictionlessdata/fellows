@@ -34,6 +34,7 @@ body:
 - University of Cambridge retinal mosaics [case study](https://frictionlessdata.io/articles/university-of-cambridge/)
 - Tesera natural resources [case study](https://frictionlessdata.io/articles/tesera/)
 - See more case studies [here](https://frictionlessdata.io/articles)
+- The [Open Definition](http://opendefinition.org)
 
 ### Contributing Best Practices:
 - Open Knowledge Foundation [coding standards](https://github.com/okfn/coding-standards)
@@ -42,6 +43,9 @@ body:
 ### Data Management Best Practices:
 - Data Management Plans [DMP Tools](https://dmptool.org/general_guidance)
 - [NIH data sharing guidelines](https://grants.nih.gov/grants/policy/data_sharing/)
+- Data Curation Centre: [How to License Research Data](http://www.dcc.ac.uk/resources/how-guides/license-research-data)
+- Open Source Initiative's [guide to licenses](https://opensource.org/licenses)
+- [What is a data dictionary article](http://library.ucmerced.edu/node/10249) by UCMerced Library
 
 ### Reproducible Research Blogs and Readings:
 - [The Turing Way](https://the-turing-way.netlify.com/introduction/introduction): a lightly opinionated guide to reproducible data science
@@ -49,6 +53,8 @@ body:
 - eLife Labs [Reproducible Document Stack blog](https://elifesciences.org/labs/b521cf4d/reproducible-document-stack-towards-a-scalable-solution-for-reproducible-articles)
 - Reproducible Computational Workflows with Continuous Analysis, Brett K. Beaulieu-Jones & Casey S. Greene. [bioRxiv 056473](https://www.biorxiv.org/content/10.1101/056473v2)
 - The [Center for Open Science](https://cos.io/)
+- [Do you speak open science? Resources and tips to learn the language](https://peerj.com/preprints/2689/), Masuzzo and Martens, 2017
+- [Open Science MOOC](https://opensciencemooc.eu)
 
 ### Coding Resources:
 - Markdown [tutorial & resources](http://laderast.github.io/magic-of-markdown) by [Ted Laderas](https://twitter.com/tladeras)

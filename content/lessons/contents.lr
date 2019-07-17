@@ -1,0 +1,21 @@
+title: Lessons
+---
+body: 
+
+### Data Packages - using [Data Package Creator](http://create.frictionlessdata.io/)
+- Work through this tutorial on well-packaged datasets [https://frictionlessdata.io/field-guide/well-packaged-datasets/](https://frictionlessdata.io/field-guide/well-packaged-datasets/)
+- Watch this video on packaging data [https://www.youtube.com/watch?v=VrdPj28-L9g](https://www.youtube.com/watch?v=VrdPj28-L9g)
+- In Slack, answer these questions:
+1) What makes up a data package?
+2) What kind of metadata would you include for the data you work with?
+
+### *OPTIONAL* - Data Packages - using our Python [datapackage.py library](https://github.com/frictionlessdata/datapackage-py)
+- Use these instructions to import datapackage.py and create a new datapackage [http://frictionlessdata.io/docs/creating-tabular-data-packages-in-python/](http://frictionlessdata.io/docs/creating-tabular-data-packages-in-python/)
+- Follow these instructions to work with an existing Data Package in Python - note: stop at the 'Loading into an SQL database' step. [http://frictionlessdata.io/docs/using-data-packages-in-python/](http://frictionlessdata.io/docs/using-data-packages-in-python/)
+
+### *OPTIONAL* - Data Packages - using our R [datapackage.r library](https://github.com/frictionlessdata/datapackage-r)
+- Use these instructions to install datapackage.r and create a new datapackage [http://frictionlessdata.io/docs/creating-tabular-data-packages-in-r/](http://frictionlessdata.io/docs/creating-tabular-data-packages-in-r/)
+- Follow these instructions to work with an existing Data Package in R - note: stop at the 'Loading into an SQL database' step. [http://frictionlessdata.io/docs/using-data-packages-in-r/](http://frictionlessdata.io/docs/using-data-packages-in-r/)
+
+
+### Goodtables Data Validation
