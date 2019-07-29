@@ -23,8 +23,8 @@ body:
 
 #### Videos:
 - Data package creator walk through [video](https://www.youtube.com/watch?v=VrdPj28-L9g&list=LLQe-pXn0XZzmRzvyOMZpfEg)
-- Goodtables browser tool walk through [video](https://www.youtube.com/watch?v=9YHwu34D_vM&list=LLQe-pXn0XZzmRzvyOMZpfEg)
 - Goodtables command line walk through [video](https://www.youtube.com/watch?v=PqtM6d696eY&list=LLQe-pXn0XZzmRzvyOMZpfEg)
+- Goodtables continuous validation walk through [video](https://www.youtube.com/watch?v=9YHwu34D_vM&list=LLQe-pXn0XZzmRzvyOMZpfEg)
 
 ### Frictionless Data + Reproducible Research blogs and articles:
 - [FAIR research](https://blog.okfn.org/2018/08/14/frictionless-data-and-fair-research-principles/)
@@ -55,6 +55,7 @@ body:
 - The [Center for Open Science](https://cos.io/)
 - [Do you speak open science? Resources and tips to learn the language](https://peerj.com/preprints/2689/), Masuzzo and Martens, 2017
 - [Open Science MOOC](https://opensciencemooc.eu)
+- Minda lab's open science [best practices blog](https://jpminda.com/2018/07/12/open-science-my-list-of-best-practices/) for a computational psychology lab
 
 ### Coding Resources:
 - Markdown [tutorial & resources](http://laderast.github.io/magic-of-markdown) by [Ted Laderas](https://twitter.com/tladeras)
@@ -64,3 +65,5 @@ body:
 - [Command Line cheatsheet](https://github.com/aprilspeight/commandline_tutorials/blob/master/Cheatsheet.pdf) by [April Speight](https://twitter.com/vogueandcode), and some educational and entertaining [command line tutorial videos](https://github.com/aprilspeight/commandline_tutorials)
 - Common Python errors [flow chart & article](https://pythonforbiologists.com/29-common-beginner-errors-on-one-page) from Python For Biologists
 - [Vaidehi Joshi](https://twitter.com/vaidehijoshi)'s [BaseCS tutorials](https://medium.com/basecs) for beginner computer science concepts
+---
+subject_img: openscience.jpeg
