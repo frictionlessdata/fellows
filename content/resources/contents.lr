@@ -16,7 +16,7 @@ body:
 
 #### Slides:
 - Frictionless Data [intro slides](https://docs.google.com/presentation/d/e/2PACX-1vR6W9vlSm_ha9ddzuVknk7NMEVCDJrv7FoyEvEECzKnrok8xyRrPkkgs_3N5hpuLETTbjpwdzbmubyq/pub?start=false&loop=false&delayms=3000)
-- FD for Reproducible Research [slides](https://docs.google.com/presentation/d/14dyORE_Ftvd30nEf1-rhspDSsVptGIINeRagmCm3f94/edit?usp=sharing)
+- FD for Reproducible Research [slides](https://docs.google.com/presentation/d/14dyORE_Ftvd30nEf1-rhspDSsVptGIINeRagmCm3f94/edit?usp=sharing) - note: you don't need to do the tutorial in here
 - FD in the lab [slides](https://bit.ly/2S2o09r)
 
 *Note: these slides are all openly licensed, so they can be remixed/reused*
@@ -43,6 +43,7 @@ body:
 ### Data Management Best Practices:
 - Data Management Plans [DMP Tools](https://dmptool.org/general_guidance)
 - [NIH data sharing guidelines](https://grants.nih.gov/grants/policy/data_sharing/)
+- [Understanding JSON Schemas](https://json-schema.org/understanding-json-schema/about.html#about) by json-schema.org
 - Data Curation Centre: [How to License Research Data](http://www.dcc.ac.uk/resources/how-guides/license-research-data)
 - Open Source Initiative's [guide to licenses](https://opensource.org/licenses)
 - [What is a data dictionary article](http://library.ucmerced.edu/node/10249) by UCMerced Library

@@ -18,11 +18,18 @@ body:
 ### *OPTIONAL* - Data Packages - using our R [datapackage.r library](https://github.com/frictionlessdata/datapackage-r)
 - Use these instructions to install datapackage.r and create a new datapackage [http://frictionlessdata.io/docs/creating-tabular-data-packages-in-r/](http://frictionlessdata.io/docs/creating-tabular-data-packages-in-r/)
 - Follow these instructions to work with an existing Data Package in R - note: stop at the 'Loading into an SQL database' step. [http://frictionlessdata.io/docs/using-data-packages-in-r/](http://frictionlessdata.io/docs/using-data-packages-in-r/)
+***
+## Using Specs and Schemas
+- Read through this introduction to [JSON schemas](https://json-schema.org/understanding-json-schema/about.html#about) by json-schema.org
+- Read through the [Frictionless Data Specs](https://frictionlessdata.io/specs/)
+- Focus on the [DataPackage specs](https://frictionlessdata.io/specs/data-package/) & the [csv dialect](https://frictionlessdata.io/specs/csv-dialect/)
 
-
+***
 ## Goodtables Data Validation
 
 ### Validate your data with the Goodtables browser tool and with the command line interface
+- Read 
+- [Understanding JSON Schemas](https://json-schema.org/understanding-json-schema/about.html#about) by json-schema.org
 - Follow the first half of this tutorial to learn (1) how to validate data with the goodtables browser tool, and then continue on to the second half to learn (2) how to use the goodtables command line interface [https://frictionlessdata.io/field-guide/validated-tabular-data/](https://frictionlessdata.io/field-guide/validated-tabular-data/)
 - Follow along with this video on validating on the command line with goodtables: [https://www.youtube.com/watch?v=PqtM6d696eY&list=LLQe-pXn0XZzmRzvyOMZpfEg](https://www.youtube.com/watch?v=PqtM6d696eY&list=LLQe-pXn0XZzmRzvyOMZpfEg)
 - Read through this guide on how to continuously validate your data with goodtables [https://frictionlessdata.io/field-guide/automatically-validated-tabular-data/](https://frictionlessdata.io/field-guide/automatically-validated-tabular-data/)
@@ -31,3 +38,7 @@ body:
 - ** In Slack, answer these questions:**
   1. What is one reason why you should validate your data?
   2. What information does goodtables use to "know" the correct data type?
+***
+## Audience Mapping
+- Read through this information on [audience mapping](https://docs.google.com/document/d/1_IqVXa8yy-Qg9Xk4DOQ18TtaaeNSq40aVviyeXBKsUw/)
+- Make a copy of this [template](https://docs.google.com/document/d/1laIdjjdcdav7m1CDrZJEX3sHJiKd9IVQX0kBN6HRn7I/edit#) and fill it out yourself
