@@ -36,8 +36,8 @@ Inside your terminal, navigate to the folder containing your data, and type:
     >>> package = Package()
 
     #infer the JSON metadata + schema from our csv data & save it
-    >>> dp.infer('elife.csv')
-    >>> dp.save('datapackage.json')
+    >>> package.infer('elife.csv')
+    >>> package.save('datapackage.json')
 
     #let’s look at the information in our datapackage
     >>> package.descriptor['resources']
