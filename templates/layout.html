@@ -5,22 +5,13 @@
 
 <body>
   <header>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li{% if this._path == "/" %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Home</a></li>
-        {% for href, title in [
-          ['/blog', 'Blog'],
-          ['/resources', 'Resources'],
-          ['/lessons', 'Lessons'],
-          ['/syllabus', 'Syllabus']
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
     <a class="logo" href="/">{% include 'includes/logo.svg' %}</a>
+    <button><a href="/">Home</a></button>
+    <button><a href="/syllabus">Syllabus</a></button>
+    <button><a href="/resources">Resources</a></button>
+    <button><a href="/lessons">Lessons</a></button>
+    <button><a href="/blog">Blog</a></button>
+    <button><a href="/about">About</a></button>
   </header>
   <article>
     {% block body %}{% endblock %}
@@ -29,7 +20,8 @@
     <p>
       <a href="https://okfn.org/terms-of-use/">Terms of Use</a> |
       <a href="https://okfn.org/privacy-policy/">Privacy Policy</a> | 
-      <a href="https://frictionlessdata.io/">Frictionless Data Homepage</a>
+      <a href="https://frictionlessdata.io/">Frictionless Data Homepage</a> | 
+      <a href="https://okfn.org/">Open Knowledge Foundation Homepage</a>
     </p>
   </footer>
   {% include 'includes/icons.svg' %}
