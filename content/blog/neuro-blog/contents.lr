@@ -36,8 +36,8 @@ Inside your terminal, navigate to the folder containing your data, and type:
     >>> package = Package()
 
     #infer the JSON metadata + schema from our csv data & save it
-    >>> dp.infer('elife.csv')
-    >>> dp.save('datapackage.json')
+    >>> package.infer('elife.csv')
+    >>> package.save('datapackage.json')
 
     #let’s look at the information in our datapackage
     >>> package.descriptor['resources']
@@ -53,10 +53,10 @@ Inside your terminal, navigate to the folder containing your data, and type:
     #we can also work with the data using this library, for instance, 
     #let’s see the genotypes of all the flies that have a mean less 
     #than 10 (hint, it’s all of them)
-    >>> print([e['Genotype'] for e in package.resources[0].read(keyed=True) if int(e['Mean']) < 10])
-    ['DIP-α-GAL4/+>EGFP', 'DIP-α-GAL4>EGFP', 'DIP-α1-178', 'GAL4 control', 'DIP-α-GAL4 > DIP-α', 
-    'DIP-α1-178,eveRN2-GAL4> DIP-α', 'UAS-DIP-α', 'Elav-GAL4>DIP-α', 'Mef2-GAL4>DIP-α', 
-    'UAS- DIP-α-RNAi', 'Elav-GAL4 >UAS-DIP-α RNAi', 'DIP-α-GAL4 >UAS-DIPalpha-RNAi', 'Mef2-GAL4 >UAS-DIP-α-RNAi']
+    >>> print([e['Genotype'], float(e['Mean']) for e in package.resources[0].read(keyed=True) if float(e['Mean']) < 0.6])
+    [('DIP-α-GAL4>EGFP', 0.0), ('DIP-α1-178', 0.0), ('Elav-GAL4>DIP-α', 0.0),
+    ('Mef2-GAL4>DIP-α', 0.0), ('Elav-GAL4 >UAS-DIP-α RNAi', 0.567),
+    ('Mef2-GAL4 >UAS-DIP-α-RNAi', 0.429)]
 
 Great! Now, What can we do with our new Data Package? It is *almost* ready to be reused by someone else! First, we should validate it.
 

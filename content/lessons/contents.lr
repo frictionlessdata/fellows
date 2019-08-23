@@ -14,6 +14,7 @@ body:
 ### *OPTIONAL* - Data Packages - using our Python [datapackage.py library](https://github.com/frictionlessdata/datapackage-py)
 - Use these instructions to import datapackage.py and create a new datapackage [http://frictionlessdata.io/docs/creating-tabular-data-packages-in-python/](http://frictionlessdata.io/docs/creating-tabular-data-packages-in-python/)
 - Follow these instructions to work with an existing Data Package in Python - note: stop at the 'Loading into an SQL database' step. [http://frictionlessdata.io/docs/using-data-packages-in-python/](http://frictionlessdata.io/docs/using-data-packages-in-python/)
+- Play around with this [Jupyter notebook](https://github.com/frictionlessdata/fellows/docs/datapackage-py-notebook.ipynb)
 
 ### *OPTIONAL* - Data Packages - using our R [datapackage.r library](https://github.com/frictionlessdata/datapackage-r)
 - Use these instructions to install datapackage.r and create a new datapackage [http://frictionlessdata.io/docs/creating-tabular-data-packages-in-r/](http://frictionlessdata.io/docs/creating-tabular-data-packages-in-r/)
