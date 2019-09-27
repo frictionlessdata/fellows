@@ -1,7 +1,25 @@
 title: Lessons
 ---
-body: 
+body:
 
+## Week 2: Roadmapping + Journal Club
+
+### Roadmapping
+
+- Read over this roadmapping tutorial from Mozilla Open Leaders & check out some of the examples. We won’t be following this exactly, but it is a good overview. [https://mozilla.github.io/open-leadership-training-series/articles/opening-your-project/start-your-project-roadmap/](https://mozilla.github.io/open-leadership-training-series/articles/opening-your-project/start-your-project-roadmap/)
+- The [syllabus](http://fellows.frictionlessdata.io/syllabus/) can be thought of as the roadmap for the programme, but the point of this exercise is for each of you to map these goals to your own timeline.
+- Take the syllabus, and map out the main goals, or “milestones”.  These include things like blogs, learning goals, and workshops. (This can be taken pretty much straight from the syllabus)
+- Keep in mind dates and events for the upcoming 9 months. Will you need to change the dates for a specific milestone due to your schedule (work event, school exam, vacation)?
+- Think about your personal goals for this fellowship. What are your short term, medium term, and long term goals? Are there milestones that reflect these goals?
+- Are there additional milestones you want to add to your roadmap? For example, writing additional blogs, giving additional workshops? These can also be added later.
+- Using project management tools: I recommend using project management tools like [Trello](https://trello.com), [GitHub projects](https://github.com/features/project-management/), or simply a  pen + paper planner to write down your main milestone tasks to help you keep track of your progress. If you want to use Trello or GitHub projects and need help, Lilly can help you.
+
+### Journal club
+- We’ll be reading “Do you speak open science? Resources and tips to learn the language” by Paola Masuzzo​ and Lennart Martens [https://peerj.com/preprints/2689/](https://peerj.com/preprints/2689/)
+- You will all meet virtually to answer the discussion questions and talk about the paper
+- Discussion questions (I’ll post these by Monday):
+
+***
 ## Data Packages
 
 ### Data Packages - using [Data Package Creator](http://create.frictionlessdata.io/)
