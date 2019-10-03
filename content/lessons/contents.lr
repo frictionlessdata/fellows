@@ -106,4 +106,6 @@ oa:
     - git add content/blog/oa-week/contents.lr
     - git commit -m "adds [your name]'s blog"
     - git push origin [your-branch-name]
+    - in GitHub, open a pull request (PR) + tag @lwinfree in a comment
+    - Lilly will merge your PR
   - **ask Lilly if you need help!**
