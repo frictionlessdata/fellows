@@ -10,7 +10,7 @@ body:
 - Go through the [onboarding document](https://github.com/frictionlessdata/fellows/blob/master/docs/onboarding.md)
 - *Check in*: One-on-one meetings
 
-## Sept 30 - Oct 4: Roadmapping
+## Sept 30 - Oct 4: Roadmapping <a href="/lessons#roadmapping">lesson</a>
 - Creation of a roadmap
 - Journal club: read ["Do You Speak Open Science? Resources and Tips to Learn the Language"](https://peerj.com/preprints/2689/) 
 - *Check in*: Answer questions in Slack on Friday
@@ -20,11 +20,12 @@ body:
 - Use this [template](https://docs.google.com/document/d/1KylLIcuN35qBJFhZlIGmXdMxGYNaP1oJuu74soihuQ0/edit) to help you start your blog
 - *Check in*: One-on-one meetings
 
-## Oct 14 - 18: Programming catch up
+## Oct 14 - 18: Programming catch up + Open Access Week
 - Goal: to make sure everyone is on the same page with git, GitHub, the command line, (and optionally Python & R)
 - Use the Coding Resources [here](http://fellows.frictionlessdata.io/resources/) to watch videos and do tutorials as needed
 - Go over Contributing Best Practices in [resources](http://fellows.frictionlessdata.io/resources/)
 - Remember to ask questions in Slack if you need help!
+- Collaboratively write an Open Access week blog (see [Lessons](/lessons#oa))
 - *Check in*: Answer questions in Slack on Friday
 
 ## Oct 21 - Nov 1: Frictionless Data introduction
@@ -44,9 +45,9 @@ body:
 - By Friday 8 Nov: submit your Pull Request (PR) on GitHub + *Check in*: One-on-one meetings
 - *Check in*: Answer questions in Slack on Friday Nov 15
 
-## Nov 18 - 22: Data Package lesson
-- Go over the Data Package lesson [using Data Package Creator](http://fellows.frictionlessdata.io/lessons/)
-- *Optional* - Go over the Python or R [lessons](http://fellows.frictionlessdata.io/lessons/) as well
+## Nov 18 - 22: Data Package <a href="/lessons#datapackages">lesson</a>
+- Go over the Data Package lesson [using Data Package Creator](http://fellows.frictionlessdata.io/lessons#datapackages)
+- *Optional* - Go over the Python or R [lessons](http://fellows.frictionlessdata.io/lessons#datapackages) as well
 - *Check in*: One-on-one meetings, Friday Nov 22
 
 ## Nov 25 - 29: Break!
@@ -59,8 +60,8 @@ body:
 - *Check in*: Answer questions in Slack on Friday Dec 6
 - *Check in*: One-on-one meetings, Friday Dec 13
 
-## Dec 16 - 20: Audience mapping
-- Go over the Audience Mapping exercise in [lessons](http://fellows.frictionlessdata.io/lessons/)
+## Dec 16 - 20: Audience mapping <a href="/lessons#audience">lesson</a>
+- Go over the Audience Mapping exercise in [lessons](http://fellows.frictionlessdata.io/lessons#audience)
 - Continue working on creating your own Data Package if you are not done
 - *Check in*: Answer questions in Slack on Friday
 
@@ -78,8 +79,8 @@ body:
 - *Check in*: Answer questions in Slack on Friday Jan 17
 - *Check in*: One-on-one meetings, Friday Jan 24
 
-## Jan 27 - Jan 31: Goodtables Lesson
-- Go over the Goodtables data validation [lesson](http://fellows.frictionlessdata.io/lessons/)
+## Jan 27 - Jan 31: Goodtables  <a href="/lessons#goodtables">lesson</a>
+- Go over the Goodtables data validation [lesson](http://fellows.frictionlessdata.io/lessons#goodtables)
 - *Check in*: Answer questions in Slack on Friday
 
 ## Feb 3 - 14: Validate your own data

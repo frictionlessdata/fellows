@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+
+{% block body %}
+  <h2 id="roadmapping">{{this.roadmappingTitle}}</h2>
+  {{this.roadmapping}}
+  <h2 id="datapackages">{{this.datapackagesTitle}}</h2>
+  {{this.datapackages}}
+  <h2 id="goodtables">{{this.goodtablesTitle}}</h2>
+  {{this.goodtables}}
+  <h2 id="audience">{{this.audienceTitle}}</h2>
+  {{this.audience}}
+  <h2 id="oa">{{this.oaTitle}}</h2>
+  {{this.oa}}
+{% endblock %}
