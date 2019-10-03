@@ -4,7 +4,7 @@ title: Lessons
 ---
 roadmappingTitle:
 
-Roadmapping + Journal Club
+Roadmapping + Journal Club Lesson
 ---
 roadmapping:
 ### Roadmapping
@@ -34,7 +34,7 @@ roadmapping:
 ***
 ---
 datapackagesTitle:
-Nov 18: Data Packages
+Data Packages Lesson
 ---
 datapackages:
 ### Data Packages - using [Data Package Creator](http://create.frictionlessdata.io/)
@@ -61,7 +61,7 @@ datapackages:
 ***
 ---
 goodtablesTitle:
-Goodtables Data Validation
+Goodtables Data Validation Lesson
 ---
 goodtables:
 ### Validate your data with the Goodtables browser tool and with the command line interface
@@ -77,10 +77,33 @@ goodtables:
 ***
 ---
 audienceTitle:
-Audience Mapping
+Audience Mapping Lesson
 ---
 audience:
 ### Knowing your audience
 - Read through this information on [audience mapping](https://docs.google.com/document/d/1_IqVXa8yy-Qg9Xk4DOQ18TtaaeNSq40aVviyeXBKsUw/)
 - Make a copy of this [template](https://docs.google.com/document/d/1laIdjjdcdav7m1CDrZJEX3sHJiKd9IVQX0kBN6HRn7I/edit#) and fill it out yourself
+***
 ---
+oaTitle:
+Open Access Week Lesson
+---
+oa:
+### Blogging for Open Access Week 2019
+- [Open Access Week 2019](http://www.openaccessweek.org) has the theme of 'Open for whom?'
+- We will collaboratively write a blog reflecting on the question 'open for whom?'
+- The next week, each Fellow will be assigned a day to post their blog text to the [Fellows blog](/blog/oa-week/) by doing a pull request to the GitHub repo (Lilly will help with this). So this way, we will have new content each day of Open Access Week.
+- GitHub instructions (Lilly will help you with this):
+  - Go to [https://github.com/frictionlessdata/fellows](https://github.com/frictionlessdata/fellows)
+  - Clone the repo: click on the green button 'clone or download' and either download it locally, or copy the URL & in the terminal write 'git clone https://github.com/frictionlessdata/fellows.git'. Make sure you are paying attention to where you download this folder.
+  - The blog content can be found within the following folder: fellows -> content -> blog -> oa-week -> contents.lr
+  - Create a new branch: in the terminal, write 'git checkout -b [your-branch-name]' (replace with your name & remove the brackets)
+  - *make sure you don't edit the master branch*
+  - You will be editing the 'contents.lr' file
+  - Once you finish editing the file, in your terminal, type: 
+    - git status
+      - make sure everything looks OK
+    - git add content/blog/oa-week/contents.lr
+    - git commit -m "adds [your name]'s blog"
+    - git push origin [your-branch-name]
+  - **ask Lilly if you need help!**
