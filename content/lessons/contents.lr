@@ -1,9 +1,12 @@
+model: lessons
+---
 title: Lessons
 ---
-body:
+week3title:
 
-## Week 3: Roadmapping + Journal Club
-
+Week 3: Roadmapping + Journal Club
+---
+week3:
 ### Roadmapping
 
 - Read over this roadmapping tutorial from Mozilla Open Leaders & check out some of the examples. We won’t be following this exactly, but it is a good overview. [https://mozilla.github.io/open-leadership-training-series/articles/opening-your-project/start-your-project-roadmap/](https://mozilla.github.io/open-leadership-training-series/articles/opening-your-project/start-your-project-roadmap/)
@@ -29,8 +32,11 @@ body:
   9. What are some benefits and risks of open peer review?
 
 ***
-## Nov 18: Data Packages
-
+---
+week4title:
+Nov 18: Data Packages
+---
+week4:
 ### Data Packages - using [Data Package Creator](http://create.frictionlessdata.io/)
 - Work through this tutorial on well-packaged datasets [https://frictionlessdata.io/field-guide/well-packaged-datasets/](https://frictionlessdata.io/field-guide/well-packaged-datasets/)
 - Watch this video on packaging data [https://www.youtube.com/watch?v=VrdPj28-L9g](https://www.youtube.com/watch?v=VrdPj28-L9g)
@@ -53,8 +59,11 @@ body:
 - Focus on the [DataPackage specs](https://frictionlessdata.io/specs/data-package/) & the [csv dialect](https://frictionlessdata.io/specs/csv-dialect/)
 
 ***
-## Goodtables Data Validation
-
+---
+week5title:
+Goodtables Data Validation
+---
+week5:
 ### Validate your data with the Goodtables browser tool and with the command line interface
 - Read 
 - [Understanding JSON Schemas](https://json-schema.org/understanding-json-schema/about.html#about) by json-schema.org
@@ -67,6 +76,12 @@ body:
   1. What is one reason why you should validate your data?
   2. What information does goodtables use to "know" the correct data type?
 ***
-## Audience Mapping
+---
+week6title:
+Audience Mapping
+---
+week6:
+### Knowing your audience
 - Read through this information on [audience mapping](https://docs.google.com/document/d/1_IqVXa8yy-Qg9Xk4DOQ18TtaaeNSq40aVviyeXBKsUw/)
 - Make a copy of this [template](https://docs.google.com/document/d/1laIdjjdcdav7m1CDrZJEX3sHJiKd9IVQX0kBN6HRn7I/edit#) and fill it out yourself
+---
