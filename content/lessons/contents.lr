@@ -2,11 +2,11 @@ model: lessons
 ---
 title: Lessons
 ---
-week3title:
+roadmappingTitle:
 
-Week 3: Roadmapping + Journal Club
+Roadmapping + Journal Club
 ---
-week3:
+roadmapping:
 ### Roadmapping
 
 - Read over this roadmapping tutorial from Mozilla Open Leaders & check out some of the examples. We won’t be following this exactly, but it is a good overview. [https://mozilla.github.io/open-leadership-training-series/articles/opening-your-project/start-your-project-roadmap/](https://mozilla.github.io/open-leadership-training-series/articles/opening-your-project/start-your-project-roadmap/)
@@ -33,10 +33,10 @@ week3:
 
 ***
 ---
-week4title:
+datapackagesTitle:
 Nov 18: Data Packages
 ---
-week4:
+datapackages:
 ### Data Packages - using [Data Package Creator](http://create.frictionlessdata.io/)
 - Work through this tutorial on well-packaged datasets [https://frictionlessdata.io/field-guide/well-packaged-datasets/](https://frictionlessdata.io/field-guide/well-packaged-datasets/)
 - Watch this video on packaging data [https://www.youtube.com/watch?v=VrdPj28-L9g](https://www.youtube.com/watch?v=VrdPj28-L9g)
@@ -60,13 +60,12 @@ week4:
 
 ***
 ---
-week5title:
+goodtablesTitle:
 Goodtables Data Validation
 ---
-week5:
+goodtables:
 ### Validate your data with the Goodtables browser tool and with the command line interface
-- Read 
-- [Understanding JSON Schemas](https://json-schema.org/understanding-json-schema/about.html#about) by json-schema.org
+- Read [Understanding JSON Schemas](https://json-schema.org/understanding-json-schema/about.html#about) by json-schema.org
 - Follow the first half of this tutorial to learn (1) how to validate data with the goodtables browser tool, and then continue on to the second half to learn (2) how to use the goodtables command line interface [https://frictionlessdata.io/field-guide/validated-tabular-data/](https://frictionlessdata.io/field-guide/validated-tabular-data/)
 - Follow along with this video on validating on the command line with goodtables: [https://www.youtube.com/watch?v=PqtM6d696eY&list=LLQe-pXn0XZzmRzvyOMZpfEg](https://www.youtube.com/watch?v=PqtM6d696eY&list=LLQe-pXn0XZzmRzvyOMZpfEg)
 - Read through this guide on how to continuously validate your data with goodtables [https://frictionlessdata.io/field-guide/automatically-validated-tabular-data/](https://frictionlessdata.io/field-guide/automatically-validated-tabular-data/)
@@ -77,10 +76,10 @@ week5:
   2. What information does goodtables use to "know" the correct data type?
 ***
 ---
-week6title:
+audienceTitle:
 Audience Mapping
 ---
-week6:
+audience:
 ### Knowing your audience
 - Read through this information on [audience mapping](https://docs.google.com/document/d/1_IqVXa8yy-Qg9Xk4DOQ18TtaaeNSq40aVviyeXBKsUw/)
 - Make a copy of this [template](https://docs.google.com/document/d/1laIdjjdcdav7m1CDrZJEX3sHJiKd9IVQX0kBN6HRn7I/edit#) and fill it out yourself
