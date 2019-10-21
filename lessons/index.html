@@ -113,21 +113,24 @@
 <li>We will collaboratively write a blog reflecting on the question 'open for whom?'</li>
 <li>The next week, each Fellow will be assigned a day to post their blog text to the <a href="../blog/oa-week/">Fellows blog</a> by doing a pull request to the GitHub repo (Lilly will help with this). So this way, we will have new content each day of Open Access Week.</li>
 <li>GitHub instructions (Lilly will help you with this):<ul>
-<li>Go to <a href="https://github.com/frictionlessdata/fellows">https://github.com/frictionlessdata/fellows</a></li>
-<li>Clone the repo: click on the green button 'clone or download' and either download it locally, or copy the URL &amp; in the terminal write 'git clone <a href="https://github.com/frictionlessdata/fellows.git">https://github.com/frictionlessdata/fellows.git</a>'. Make sure you are paying attention to where you download this folder.</li>
+<li>The repository is here <a href="https://github.com/frictionlessdata/fellows">https://github.com/frictionlessdata/fellows</a></li>
 <li>The blog content can be found within the following folder: fellows -&gt; content -&gt; blog -&gt; oa-week -&gt; contents.lr</li>
-<li>Create a new branch: in the terminal, write 'git checkout -b [your-branch-name]' (replace with your name &amp; remove the brackets)</li>
-<li><em>make sure you don't edit the master branch</em></li>
-<li>You will be editing the 'contents.lr' file</li>
-<li>Once you finish editing the file, in your terminal, type: <ul>
+<li>Step 1, Pull down the master branch. Since you will all be editing the same blog file, you will need to pull any changes onto your local machine. Do this before you make your edits. Type 'git pull origin master'</li>
+<li>Step 2, Create a new branch: in the terminal, write 'git checkout -b [your-branch-name]' (replace with your name &amp; remove the brackets)</li>
+<li><em>make sure you don't edit the master branch</em> You can check with 'git status'</li>
+<li>Step 3, Add your paragraph to the blog: You will be editing the 'contents.lr' file within the oa-week folder</li>
+<li>Step 4, Add and commit your changes: Once you finish editing the file, in your terminal, type: <ul>
 <li>git status<ul>
 <li>make sure everything looks OK</li>
 </ul>
 </li>
 <li>git add content/blog/oa-week/contents.lr</li>
 <li>git commit -m "adds [your name]'s blog"</li>
+</ul>
+</li>
+<li>Step 5, Push your changes to your branch and open a Pull Request<ul>
 <li>git push origin [your-branch-name]</li>
-<li>in GitHub, open a pull request (PR) + tag @lwinfree in a comment</li>
+<li>in GitHub, open a pull request (PR) + tag @lwinfree for review</li>
 <li>Lilly will merge your PR</li>
 </ul>
 </li>
