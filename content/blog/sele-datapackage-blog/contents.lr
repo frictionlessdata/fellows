@@ -57,7 +57,7 @@ Descriptor validation error: String does not match pattern: ^([-a-z0-9._/])+$ at
 
 ### Validación desde plataformas externas
 
-Al cargar tu base de datos, se crearán diferentes casillas con cada una de tus columnas, ahí se puede cambiar el tipo de dato, el formato, añadir títulos y descripciones de los mismos. También, en caso de necesitar limpiar tu base de datos se pueden eliminar columnas. Si quisieras validar tus bases de datos, podés utilizar las [Purebas de Goodtables](http://try.goodtables.io/) en formato de prueba única de validación, y también la versión de [Goodtables](http://goodtables.io/) desde donde podés conectar tu github y validar permanentemente tus bases de datos en casos de cambios que realices en tu repositorio. 
+Al cargar tu base de datos, se crearán diferentes casillas con cada una de tus columnas, ahí se puede cambiar el tipo de dato, el formato, añadir títulos y descripciones de los mismos. También, en caso de necesitar limpiar tu base de datos se pueden eliminar columnas. Si quisieras validar tus bases de datos, podés utilizar las [Pruebas de Goodtables](http://try.goodtables.io/) en formato de prueba única de validación, y también la versión de [Goodtables](http://goodtables.io/) desde donde podés conectar tu github y validar permanentemente tus bases de datos en casos de cambios que realices en tu repositorio. 
 
 Para las personas que son técnicamente un poco más avanzadas, pueden probar las [librerías](https://frictionlessdata.io/docs/) de Python, R, y también con Clojure y Java y hacer magia con sus datapackages. 
 
