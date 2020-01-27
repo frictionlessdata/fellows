@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../css/style.css">
-<title></title>
+<title>Data package is valid!</title>
 
 <body>
   <header>
@@ -15,13 +15,26 @@
   </header>
   <article>
     
-  <h1></h1>
+  <h1>Data package is valid!</h1>
   <div>
   
   </div>
   <div>
-    <h1>note: to insert pictures, add the pictures to this folder and then add them to the text like this:</h1>
-<p><img src="../../blog/ouso-datapackage-blog/picture1.png" alt="picture1"></p>
+    <p>The last few months have been exciting, to say the least. I dug deep into seeking to understand how to minimise friction in data workflows and promote openness and reproducibility. I have been able to Know of various FD software for improving data publishing workflows through the <a href="http://fellows.frictionlessdata.io/blog/">FD Field Guide</a>. We've looked at a number of case studies where FD synergised well for reproducibility, an example is on the <a href="https://frictionlessdata.io/articles/elife/">eLife study</a>. We also looked at contributing and coding <a href="https://github.com/okfn/coding-standards">best practices</a>. Moreover, I found <a href="https://json-schema.org/understanding-json-schema/about.html#about">Understanding JSON schemas</a> (by json-schema.org) a great guide in understanding the data package schema, which is JSON-based. It all culminated in the creation of a data package, which I now want to share my experience.</p>
+<p>To quality-check the integrity of your data package creation, you must validate it before downloading it for sharing, among many things. The best you can get from that process is <strong>"Data package is valid!"</strong>. What about before then?</p>
+<h2>Data package</h2>
+<p>Simply, I would say, it is data coupled to its associated attributes in a JSON format. To marry the data to its attributes you will require an FD tool. <a href="https://github.com/ousodaniel/FrictionlessDataFellowship/blob/master/datapackage-hrma_validation.json">Here</a> is the one I created.</p>
+<h2><a href="http://create.frictionlessdata.io/">Data Package Creator (DPC)</a></h2>
+<p>A DPC gives you a data package. The good news is that it takes care of both realms of users; programmers and GUI users. I will describe the latter case. It is a web app with three main components: One, the <code>Metadata</code> pane on the left. Two, the <code>Resources</code> (a data article) pane in the middle and the third is the <code>Schema</code> on the right pane (usually hidden, but can be exposed by clicking the three-dots-in-curly-brackets icon).</p>
+<h2>The Data</h2>
+<p>I used my project data in which I was evaluating the application of a molecular technique, high-resolution melting analysis, in the identification of wildlife species illegally targeted as bushmeat. I had two files containing tabular data: one with sample information on samples analysed and sequences deposited in GenBank and the other on species identification blind validation across three mitochondrial markers. My data package thus had two resources. This data was contained in my local repository, but I shipped it into <a href="https://github.com/ousodaniel/data">GitHub</a> in the <code>CSV</code> format for easy accessibility.</p>
+<h2>Creating the Data Package</h2>
+<p>You may follow along, in details, with this <a href="https://frictionlessdata.io/specs/data-package/">data package specifications</a>. On the <code>resources</code> pane tab, from left to right, I entered a <code>name</code> for my resource and the <code>path</code>. I pasted the raw GitHub link to my data on the provided <code>path</code> field and clicked the <code>load</code> button to the right. Locally, you may click the load button that will pop your local file system. DPC automatically inferred the data structure and prompted me to load the inferred field (columns). I counter checked that the data types for each field were correctly inferred, added titles and descriptions. The data format for each field was left as default. From the gear-wheel (<code>setting</code>)in the resource tab, I gave each of the two resources titles, descriptions format and encoding. The resource profile is also automatically inferred. All the field and resource metadata data that I inputted are optional, except we want to intentionally be reproducible and open. On the other hand, there is compulsory metadata information for the general data package, in the <code>metadata</code> pane. They are <code>name</code> and <code>title</code>. Be sure to get the <code>name</code> right, it must match the pattern <code>^([-a-z0-9._/])+$</code> for the data package to be valid, it is the most probable error you might encounter.</p>
+<p>The data package provides for very rich metadata capturing, which is one of its strengths for data reusability. There are three metadata categories, which must not be confused; data package metadata, resource metadata and field (column) metadata, respectively nested. After inputting all the necessary details in the DPC you have to validate your data package before downloading it. The two click buttons for this purposes at the bottom of the <code>metadata</code> pane. Any error(s) will be captured and described at the very top of the <code>resources</code> pane. Alternatively, you will see the title of this post, upon which you can download your data package and rename it accordingly retaining the .json extension.</p>
+<h2>Conclusion</h2>
+<p>I applied DPC first-hand in my research, so can you. We created a data package starting from and ending with the most widely used data organisation formats, <code>CSV</code> and <code>JSON</code> respectively (interoperability). We gave it adequate metadata to allow a stranger to comfortably make sense of the data (reusability) and provided licence information, <a href="https://creativecommons.org/licenses/by-sa/4.0/"><code>CC-BY-SA-4.0</code></a> (accessibility). The data package is also uniquely identified and made available on a public repository in GitHub (findability).  A <code>FAIR</code> data package. Moreover, the data package is very light (portable) making it easily sharable, and open and reproducible. The package is holistic containing metadata, data and a schema (a blueprint for data structure and metadata). How do I use the data package? You may ask.</p>
+<h2>Way forward</h2>
+<p>Keep in memory the term <code>goodtables</code>, I will tell you how it is useful with the data package we just created. Until then you make keep in touch by reading periodic <a href="http://fellows.frictionlessdata.io/blog/">blogs</a> regarding the Frictionless Data fellowship, where you will also find works by my colleagues Sele, Monica and Lily. Follow <a href="https://twitter.com/ousodanos">me</a>, <a href="https://twitter.com/OKFN">OKF</a> on twitter for flash updates.</p>
 
   </div>
 
