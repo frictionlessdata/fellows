@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../css/style.css">
-<title></title>
+<title>Combating other people’s data</title>
 
 <body>
   <header>
@@ -15,13 +15,28 @@
   </header>
   <article>
     
-  <h1></h1>
+  <h1>Combating other people’s data</h1>
   <div>
   
   </div>
   <div>
-    <h1>note: to insert pictures, add the pictures to this folder and then add them to the text like this:</h1>
-<p><img src="../../blog/monica-datapackage-blog/picture1.png" alt="picture1"></p>
+    <p>Follow the #otherpeoplesdata on Twitter and in it you will find a trove of data users trying to make sense of data they did not collect. While the data may be open, having no metadata or information about what variables mean, doesn’t make it very accessible. As a staunch advocate of open science, I have made my data open and accessible by providing context and the data on Github.</p>
+<p><img src="../../blog/monica-datapackage-blog/Github.png" alt="A screengrab of my GitHub repository with data files"> Data files are seperate in GitHub.</p>
+<p>And while all the data and a ReadMe is available and the R code allows you to download the data through the R console - a perfect setting to reproduce the analysis, the reuse of the data is questionable. Without definitions and an explanation of the data, taking the data out of the context of my experiment and adding it to something like a meta-analysis is difficult. Enter Data packages.</p>
+<h2>What are Data Packages?</h2>
+<p>Data packages is a tool created by the <a href="https://okfn.org/">Open Knowledge Foundation</a> to be able to bundle your raw data and your meta-data so that it becomes more usable and shareable.</p>
+<p>For my first data package I will use data from my <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/fwb.13378">paper</a> in Freshwater Biology on variation in benthic algal growth rate in experimental mesocosms with native and non-native omnivores. I will use the <a href="http://create.frictionlessdata.io/">Data Package Creator</a> online tool for this package creation. The second package will be done in the R programming language.</p>
+<p>Presently, the data is distributed in my GitHub repo but the Data Package Creator will allow me to combine the algae, snail and tile sampling data together in one place.</p>
+<h3>Write a Table Schema</h3>
+<p>A schema is a blueprint that tells us how your data is structured, and what type of content is to be expected in it. I will start by loading the algae data. The <a href="https://github.com/Monsauce/Origin-omnivory-and-stability/blob/master/Algae.csv">data</a> is already available on GitHub so I will use the hyperlink option in the Data Package Creator. To create the schema, I have to load my data using the <strong>Raw</strong> link from GitHub. Since my data has the first row as the column headings the Data Package Creator recognizes them. Once loaded, I can add addition information about my different variables in the "Title" and "Description." For example, for the variable "Day" I added a more explicit description in the of "Experimental day" in the Title and more information about the length of the experiment in the Description.</p>
+<p>To add the snail and tile sampling datasets I will click on "Add a resource" for each and add the titles and descriptions.</p>
+<h3>Add dataset's metadata</h3>
+<p>Next I will add the data's metadata. I added a title, author and description to the metadata and I choose tabular data package since its just CSV files. I also added a CC-BY license so that anyone can use the data as well.</p>
+<p>Then I validated the data (see note below) and downloaded the package which is available <a href="https://github.com/Monsauce/frictionless_data_fellowship/blob/master/firstdatapackage.json">here</a>.</p>
+<h2>Tu data es mi data</h2>
+<p>The Golden Rule states: Do unto others as you would have them do unto you. I think we have all been subject to other people’s data, the frustration and the disappointment that follows when we determine that the data is unusable. By adopting the use of data packages, you can make your data more re-usable and accessible. Most importantly prevent another #otherpeoplesdata tweet.</p>
+<p><img src="../../blog/monica-datapackage-blog/OKFpilot.png" alt="A screen grab of the pilot project blog"> Find out more about the scientist's pilot.</p>
+<p>Are you interested in learning more about data packages and Frictionless data? The Open Knowledge Foundation is looking for pilot collaborations with scientists now. Find out more <a href="https://blog.okfn.org/2020/01/20/frictionless-data-for-reproducible-research-call-for-pilot-collaborations-with-scientists/">here</a>.</p>
 
   </div>
 
