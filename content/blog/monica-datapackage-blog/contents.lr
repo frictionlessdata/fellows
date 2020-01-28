@@ -1,7 +1,40 @@
-title:
+title: Combating other people’s data
 ---
 body:
 
-#note: to insert pictures, add the pictures to this folder and then add them to the text like this:
+Follow the #otherpeoplesdata on Twitter and in it you will find a trove of data users trying to make sense of data they did not collect. While the data may be open, having no metadata or information about what variables mean, doesn’t make it very accessible. As a staunch advocate of open science, I have made my data open and accessible by providing context and the data on Github. 
 
-![picture1](picture1.png)
+![A screengrab of my GitHub repository with data files](Github.png) Data files are seperate in GitHub.
+
+And while all the data and a ReadMe is available and the R code allows you to download the data through the R console - a perfect setting to reproduce the analysis, the reuse of the data is questionable. Without definitions and an explanation of the data, taking the data out of the context of my experiment and adding it to something like a meta-analysis is difficult. Enter Data packages. 
+
+## What are Data Packages? 
+Data packages is a tool created by the [Open Knowledge Foundation][link_OKF] to be able to bundle your raw data and your meta-data so that it becomes more usable and shareable. 
+
+For my first data package I will use data from my [paper][link_paper] in Freshwater Biology on variation in benthic algal growth rate in experimental mesocosms with native and non-native omnivores. I will use the [Data Package Creator][link_DPC] online tool for this package creation. The second package will be done in the R programming language. 
+
+Presently, the data is distributed in my GitHub repo but the Data Package Creator will allow me to combine the algae, snail and tile sampling data together in one place. 
+
+### Write a Table Schema
+A schema is a blueprint that tells us how your data is structured, and what type of content is to be expected in it. I will start by loading the algae data. The [data][link_data] is already available on GitHub so I will use the hyperlink option in the Data Package Creator. To create the schema, I have to load my data using the **Raw** link from GitHub. Since my data has the first row as the column headings the Data Package Creator recognizes them. Once loaded, I can add addition information about my different variables in the "Title" and "Description." For example, for the variable "Day" I added a more explicit description in the of "Experimental day" in the Title and more information about the length of the experiment in the Description. 
+
+To add the snail and tile sampling datasets I will click on "Add a resource" for each and add the titles and descriptions. 
+
+### Add dataset's metadata
+Next I will add the data's metadata. I added a title, author and description to the metadata and I choose tabular data package since its just CSV files. I also added a CC-BY license so that anyone can use the data as well. 
+
+Then I validated the data (see note below) and downloaded the package which is available [here][link_firstdatapackage].
+
+## Tu data es mi data 
+The Golden Rule states: Do unto others as you would have them do unto you. I think we have all been subject to other people’s data, the frustration and the disappointment that follows when we determine that the data is unusable. By adopting the use of data packages, you can make your data more re-usable and accessible. Most importantly prevent another #otherpeoplesdata tweet. 
+
+![A screen grab of the pilot project blog](OKFpilot.png) Find out more about the scientist's pilot. 
+
+Are you interested in learning more about data packages and Frictionless data? The Open Knowledge Foundation is looking for pilot collaborations with scientists now. Find out more [here][link_pilot]. 
+
+[link_OKF]: https://okfn.org/
+[link_paper]:https://onlinelibrary.wiley.com/doi/full/10.1111/fwb.13378
+[link_data]:https://github.com/Monsauce/Origin-omnivory-and-stability/blob/master/Algae.csv
+[link_DPC]:http://create.frictionlessdata.io/
+[link_firstdatapackage]:https://github.com/Monsauce/frictionless_data_fellowship/blob/master/firstdatapackage.json
+[link_pilot]: https://blog.okfn.org/2020/01/20/frictionless-data-for-reproducible-research-call-for-pilot-collaborations-with-scientists/
