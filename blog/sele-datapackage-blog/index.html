@@ -25,7 +25,7 @@ Esta es una publicación para compartirles sobre el proceso y pasos para crear d
 <p>¿Por qué queremos empaquetar estos datos? Porque desde el programa de <a href="https://fellows.frictionlessdata.io/">fellows</a>, queremos datasets que no tengan fricciones (frictionless data), es decir que puedan ser replicables, reutilizables y así aportar a mejores procesos en los cuáles se pueda aperturar y compartir conocimiento. Si revisan las <a href="https://frictionlessdata.io/field-guide/">guías de campo</a>, pueden encontrar más información sobre el programa.</p>
 <h3>Los datapackages pueden contener los datos en CSV (comma separated values), los esquemas de datos en formato de json y los metadatos de tus… datos….</h3>
 <p>Mi datapackage responde a datos geoespaciales sobre centros (clínicas) de aborto en el mundo que se encuentran mapeados en <a href="https://openstreetmap.org/">OpenStreetMap</a>. Lo que hice para conseguir estos datos fue muy sencillo, utilicé la API Overpass Turbo con esta <a href="https://overpass-turbo.eu/s/P9U">consulta</a> (gracias a la ayuda de las compañeras de <a href="https://t.me/geochicasosm">Geochicas</a>) que arrojó 101 nodos mapeados. En este punto es que empieza la validación y el empaquetado de los datos.</p>
-<p><img src="../../blog/sele-datapackage-blog/abortion_osm_overpass.png" alt="Openstreetmapmap"></p>
+<p><img src="abortion_osm_overpass.png" width=100% alt="Openstreetmapmap"></p>
 <p>Ahora, ¿por qué decidí utilizar este dataset? Porque mi investigación doctoral y el trabajo que realizamos desde el colectivo de Geochicas, busca enlazar el análisis espacial entre el tipo de objetos mapeados, el género de la persona que mapea dichos puntos y también las representaciones de género que existen en el espacio.</p>
 <p>Los datos que resultaron de la búsqueda realizada a través de Overpass Turbo, son descargables desde la misma API, en formato: GeoJson, GPX, y KML. También se pueden descargar las visualizaciones del mapa y el texto de la búsqueda.</p>
 <p>La consulta es:</p>
@@ -53,7 +53,7 @@ out skel qt;
 </code></pre>
 <p>Al descargar los datos desde Overpass Turbo en formato CSV, cargamos la base a la <a href="https://create.frictionlessdata.io/">plataforma web</a> para crear los datapackages y validar los tipos de datos que cargamos. Aquí se pueden sumar palabras clave a tus metadatos, el tipo de licenciamiento y puedes descargar tu paquete completo (muy genial, ¿no?) validado.</p>
 <h3>La plataforma para crear tus datapackages</h3>
-<p><img src="../../blog/sele-datapackage-blog/datapackagecreator_sele.png" alt="datapackageosm"></p>
+<p><img src="datapackagecreator_sele.png" width=100% alt="datapackageosm"></p>
 <p>*Una pista, cuando carguen los nombres y títulos del datapackage, no utilizar mayúsculas, tildes o caracteres especiales porque va a saltar un error de validación aunque tus datos estén correctos.</p>
 <pre><code>Data package is invalid!
 Descriptor validation error: String does not match pattern: ^([-a-z0-9._/])+$ at "/name" in descriptor and at "/properties/name/pattern" in profile
