@@ -52,7 +52,9 @@ Al descargar los datos desde Overpass Turbo en formato CSV, cargamos la base a l
 
 ```
 Data package is invalid!
-Descriptor validation error: String does not match pattern: ^([-a-z0-9._/])+$ at "/name" in descriptor and at "/properties/name/pattern" in profile
+Descriptor validation error: 
+String does not match pattern: ^([-a-z0-9._/])+$ at "/name" in descriptor 
+and at "/properties/name/pattern" in profile
 ```
 
 ### Validación desde plataformas externas
