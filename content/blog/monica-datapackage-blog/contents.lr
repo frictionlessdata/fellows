@@ -4,7 +4,8 @@ body:
 
 Follow the #otherpeoplesdata on Twitter and in it you will find a trove of data users trying to make sense of data they did not collect. While the data may be open, having no metadata or information about what variables mean, doesn’t make it very accessible. As a staunch advocate of open science, I have made my data open and accessible by providing context and the data on Github. 
 
-![A screengrab of my GitHub repository with data files](Github.png) Data files are seperate in GitHub.
+<img src="Github.png" width=100% alt="A screengrab of my GitHub repository with data files">
+<p style="text-align: center; font-style: italic">Data files are seperate in GitHub.</p>
 
 And while all the data and a ReadMe is available and the R code allows you to download the data through the R console - a perfect setting to reproduce the analysis, the reuse of the data is questionable. Without definitions and an explanation of the data, taking the data out of the context of my experiment and adding it to something like a meta-analysis is difficult. Enter Data packages. 
 
@@ -28,7 +29,8 @@ Then I validated the data (see note below) and downloaded the package which is a
 ## Tu data es mi data 
 The Golden Rule states: Do unto others as you would have them do unto you. I think we have all been subject to other people’s data, the frustration and the disappointment that follows when we determine that the data is unusable. By adopting the use of data packages, you can make your data more re-usable and accessible. Most importantly prevent another #otherpeoplesdata tweet. 
 
-![A screen grab of the pilot project blog](OKFpilot.png) Find out more about the scientist's pilot. 
+<img src="OKFpilot.png" width=100% alt="A screen grab of the pilot project blog"> 
+<p style="text-align: center; font-style: italic">Find out more about the scientist's pilot.</p>
 
 Are you interested in learning more about data packages and Frictionless data? The Open Knowledge Foundation is looking for pilot collaborations with scientists now. Find out more [here][link_pilot]. 
 
