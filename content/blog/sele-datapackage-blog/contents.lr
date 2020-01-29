@@ -10,7 +10,7 @@ Esta es una publicación para compartirles sobre el proceso y pasos para crear d
 
 Mi datapackage responde a datos geoespaciales sobre centros (clínicas) de aborto en el mundo que se encuentran mapeados en [OpenStreetMap](https://openstreetmap.org/). Lo que hice para conseguir estos datos fue muy sencillo, utilicé la API Overpass Turbo con esta [consulta](https://overpass-turbo.eu/s/P9U) (gracias a la ayuda de las compañeras de [Geochicas](https://t.me/geochicasosm)) que arrojó 101 nodos mapeados. En este punto es que empieza la validación y el empaquetado de los datos. 
 
-![Openstreetmapmap](abortion_osm_overpass.png)
+<img src="abortion_osm_overpass.png" width=100% alt="Openstreetmapmap">
 
 Ahora, ¿por qué decidí utilizar este dataset? Porque mi investigación doctoral y el trabajo que realizamos desde el colectivo de Geochicas, busca enlazar el análisis espacial entre el tipo de objetos mapeados, el género de la persona que mapea dichos puntos y también las representaciones de género que existen en el espacio.
 
@@ -46,7 +46,7 @@ Al descargar los datos desde Overpass Turbo en formato CSV, cargamos la base a l
 
 ### La plataforma para crear tus datapackages
 
-![datapackageosm](datapackagecreator_sele.png)
+<img src="datapackagecreator_sele.png" width=100% alt="datapackageosm">
 
 *Una pista, cuando carguen los nombres y títulos del datapackage, no utilizar mayúsculas, tildes o caracteres especiales porque va a saltar un error de validación aunque tus datos estén correctos.
 
