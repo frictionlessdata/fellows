@@ -56,7 +56,9 @@ out skel qt;
 <p><img src="datapackagecreator_sele.png" width=100% alt="datapackageosm"></p>
 <p>*Una pista, cuando carguen los nombres y títulos del datapackage, no utilizar mayúsculas, tildes o caracteres especiales porque va a saltar un error de validación aunque tus datos estén correctos.</p>
 <pre><code>Data package is invalid!
-Descriptor validation error: String does not match pattern: ^([-a-z0-9._/])+$ at "/name" in descriptor and at "/properties/name/pattern" in profile
+Descriptor validation error: 
+String does not match pattern: ^([-a-z0-9._/])+$ at "/name" in descriptor 
+and at "/properties/name/pattern" in profile
 </code></pre>
 <h3>Validación desde plataformas externas</h3>
 <p>Al cargar tu base de datos, se crearán diferentes casillas con cada una de tus columnas, ahí se puede cambiar el tipo de dato, el formato, añadir títulos y descripciones de los mismos. También, en caso de necesitar limpiar tu base de datos se pueden eliminar columnas. Si quisieras validar tus bases de datos, podés utilizar las <a href="http://try.goodtables.io/">Pruebas de Goodtables</a> en formato de prueba única de validación, y también la versión de <a href="http://goodtables.io/">Goodtables</a> desde donde podés conectar tu github y validar permanentemente tus bases de datos en casos de cambios que realices en tu repositorio.</p>
