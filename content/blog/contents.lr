@@ -2,16 +2,28 @@ title: Fellows Programme Blog Homepage
 ---
 body:
 
-## Recent Blogs:
+## Goodtables Blogs:
+
+### [Monica Goodtables Blog](/blog/monica-goodtables-blog/)
+### [Lily Goodtables Blog](/blog/lily-goodtables-blog/)
+### [Sele Goodtables Blog](/blog/sele-goodtables-blog/)
+### [Ouso Goodtables Blog](/blog/ouso-goodtables-blog/)
+
+## DataPackage Blogs:
 
 ### [Sele Datapackage Blog](/blog/sele-datapackage-blog/)
 ### [Monica Datapackage Blog](/blog/monica-datapackage-blog/)
 ### [Ouso Datapackage Blog](/blog/ouso-datapackage-blog/)
 ### [Lily Datapackage Blog](/blog/lily-datapackage-blog/)
+
+## Introduction Blogs:
+
 ### [Meet Sele](/blog/hello-sele/)
 ### [Meet Ouso](/blog/hello-ouso/)
 ### [Meet Monica](/blog/hello-monica/)
 ### [Meet Lily](/blog/hello-lily/)
+
+## General Blogs:
 
 ### [Neuroscience Blog](/blog/neuro-blog/): How neuroscience researchers can use Frictionless Data tooling and specs in their workflows to make their own scientific data more reproducible.
 
