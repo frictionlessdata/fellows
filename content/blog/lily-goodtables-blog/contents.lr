@@ -1,0 +1,11 @@
+title: Your Title
+---
+body:
+
+Write your blog text in the body section here.
+
+
+To add any pictures, add your picture to the folder for your blog & use the text below, replacing the TEXT in UPPERCASE with your own: 
+
+<img src="PICTURE.PNG" width=100% alt="TEXT DESCRIBING YOUR PICTURE"> 
+<p style="text-align: center; font-style: italic">YOUR PICTURE CAPTION.</p>
