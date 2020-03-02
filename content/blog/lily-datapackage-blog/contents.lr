@@ -1,8 +1,53 @@
-title:
----
-body:
+###Introduction
 
-#note: to insert pictures, add the pictures to this folder and then add them to the text like this, replacing the words in CAPITAL LETTORS with your words:
+When I started graduate school, I was shocked to learn that seafood is actually the most internationally traded food commodity in the world. In fact, the global trade in fish is worth more than the trades of tea, coffee and sugar combined (Fisheries FAO, 2006). However, for many developing countries being connected to the global seafood market can be a double-edged sword. It is true global trade has the potential to redistribute some wealth and improve the livelihoods of fishers and traders in these countries. But it can also promote illegal trade and overfishing, which can harm the future sustainability of a local food source. 
 
-<img src="IMAGE.PNG" width=100% alt="A BRIEF DESCRIPTION OF YOUR IMAGE THAT ONLY SHOWS ON THE SCREEN IF THE IMAGE CAN'T BE FOUND (EXAMPLE: 'SCREENSHOT OF MY DATA')">
-<p style="text-align: center; font-style: italic">YOUR CAPTION OF THE IMAGE.</p>
+Over the course of my master's degree, I developed a passion for studying these issues, which is why I am excited to share with you my experience turning some of the data my collaborators into a packaged dataset using the Open Knowledge Foundation’s Datapackage tool. These data provide a snapshot into the global market for octopus and how it is traded throughout and between Kenya, Tanzania and Mozambique before heading to European markets. 
+
+This research project was an international collaboration between the Stockholm Resilience Centre in Sweden, the National Institute for Medical Research, of Tanzania, Pwani University in Kilifi, Kenya and the School of Marine and Environmental Affairs at the University of Washington.
+
+These data eventually became my master's thesis and this data package will complement a forthcoming publication of our findings. Specifically, these data are the prices and quantities at which middlemen in Tanzania and Kenya reported buying and selling octopus. These data are exciting because they not only inform our understanding of who is benefiting from the trade of octopus by also could assist in improving the market price octopus in Tanzania.  
+
+This is because value chain information can help Tanzania’s octopus fishery along its path to  Marine Stewardship Council seafood certification. Seafood that gets the Marine Stewardship Council Label gains a certain amount of credibility which in turn can increase profit. For developing countries, this seafood label can provide a monetary incentive for improving fisheries management. But before Tanzania’s octopus fishery can get certified, they will need to prove they can trace the flow of their octopus supply chain, and manage it sustainably. We hope that this packaged dataset will ultimately inform this effort. 
+
+###Getting the data 
+
+To gather the data my field partner Chris and I went to 10 different fishing communities like this one. 
+
+
+![Mtwara]mtwara_market.png
+Middlemen buy and sell seafood in Mtwara, Tanzania. 
+
+
+We went on to interview all the major exporters of octopus in both Tanzania and Kenya and spoke with company agents and octopus traders who bought their octopus from 570 different fishermen. With these interviews were able to account for about 95% of East Africa’s international octopus market share. 
+
+
+![Octopus]octopus_mtwara.png
+My research partner- Chris Cheupe,  and I at an octopus collection point.
+
+###Creating the Data Package
+
+The datapackage tool was created by the Open Knowledge Foundation to compile our data and metadata in a compact unit, making it easier and more efficient for others to access. You can create the data package using the online platform or using the Python or R programming software libraries. I had some issues using the R package instead of the online tool initially, which may have been related to the fact that the original data file was not utf-8 encoded. But stay tuned! For now, I made my datapackage using the [Data Package Creator](http://create.frictionlessdata.io) online tool. The tool helped me create a schema that outlines the data’s structure including a description of each column. The tool also helps you outline the metadata for the dataset as a whole, including information like the license and author. 
+
+Our dataset has a lot of complicated columns and the tool gave me a streamlined way to describe each column via the schema. Afterwords, I added the metadata using the lefthand side of the browser tool and checked to make sure that the data package was valid! 
+
+![valid]dpcreator_correct.png
+
+
+If the information you provide for each column does not match the data within the columns the package will not validate and instead, you will get an error like this:
+
+![error]dpcreator_fail.png
+
+
+Checkout my final datapackage by visiting my [github repository](https://github.com/lilyzzhao/east-africa-octopus-trade)!
+
+
+
+
+
+###Reference:
+
+Fisheries, F. A. O. (2006). The state of world fisheries and aquaculture 2006.
+
+
+
