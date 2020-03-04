@@ -19,15 +19,18 @@ This is because value chain information can help Tanzania’s octopus fishery al
 To gather the data my field partner Chris and I went to 10 different fishing communities like this one. 
 
 
-![Mtwara]mtwara_market.png
-Middlemen buy and sell seafood in Mtwara, Tanzania. 
+<img src="mtwara_market.png" width=100% alt="mtwara"> 
+<p style="text-align: center; font-style: italic">Middlemen buy and sell seafood in Mtwara, Tanzania. 
+.</p>
+
 
 
 We went on to interview all the major exporters of octopus in both Tanzania and Kenya and spoke with company agents and octopus traders who bought their octopus from 570 different fishermen. With these interviews were able to account for about 95% of East Africa’s international octopus market share. 
 
 
-![Octopus]octopus_mtwara.png
-My research partner- Chris Cheupe,  and I at an octopus collection point.
+<img src="octopus_mtwara.png" width=100% alt="Octopus"> 
+<p style="text-align: center; font-style: italic">My research partner- Chris Cheupe,  and I at an octopus collection point.</p>
+
 
 ###Creating the Data Package
 
@@ -35,12 +38,21 @@ The datapackage tool was created by the Open Knowledge Foundation to compile our
 
 Our dataset has a lot of complicated columns and the tool gave me a streamlined way to describe each column via the schema. Afterwords, I added the metadata using the lefthand side of the browser tool and checked to make sure that the data package was valid! 
 
-![valid]dpcreator_correct.png
+
+
+<img src="dpcreator_correct.png" width=100% alt="valid"> 
+<p style="text-align: center;  font-style: italic">The green bar at the top of the screenshot indicates validity</p>
+
+
 
 
 If the information you provide for each column does not match the data within the columns the package will not validate and instead, you will get an error like this:
 
-![error]dpcreator_fail.png
+
+
+<img src="dpcreator_fail.png" width=100% alt="Terror"> 
+<p style="text-align: center;  font-style: italic">The red bar at the top of the screenshot indicates invalidity</p>
+
 
 
 Checkout my final datapackage by visiting my [github repository](https://github.com/lilyzzhao/east-africa-octopus-trade)!
