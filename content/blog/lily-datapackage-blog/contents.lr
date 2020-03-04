@@ -29,7 +29,7 @@ We went on to interview all the major exporters of octopus in both Tanzania and 
 
 
 <img src="octopus_mtwara.png" width=100% alt="Octopus"> 
-<p style="text-align: center; font-style: italic">My research partner- Chris Cheupe,  and I at an octopus collection point..</p>
+<p style="text-align: center; font-style: italic">My research partner- Chris Cheupe,  and I at an octopus collection point.</p>
 
 
 ###Creating the Data Package
@@ -41,7 +41,8 @@ Our dataset has a lot of complicated columns and the tool gave me a streamlined 
 
 
 <img src="dpcreator_correct.png" width=100% alt="valid"> 
-<p style="text-align: center.</p>
+<p style="text-align: center;  font-style: italic">The green bar at the top of the screenshot indicates validity</p>
+
 
 
 
@@ -50,7 +51,7 @@ If the information you provide for each column does not match the data within th
 
 
 <img src="dpcreator_fail.png" width=100% alt="Terror"> 
-<p style="text-align: center.</p>
+<p style="text-align: center;  font-style: italic">The red bar at the top of the screenshot indicates invalidity</p>
 
 
 
