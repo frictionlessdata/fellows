@@ -79,7 +79,7 @@ This works because the datapackage.json file includes the path to your csv file 
 
 ## Continous Data Validation
 
-While try.goodtables.io allows you to quickly check the validality of your data, it does not allow for continous validation. As some datasets are frequently updated, continous validation is a wonderful feature. While I don't need continous validation for this dataset, I tested out this feature of goodtables by linking my [GitHub repository] (https://github.com/lilyzzhao/science-to-benefit-moorea) to [goodtables] (http://goodtables.io/github/lilyzzhao/science-to-benefit-moorea/jobs/4) and selecting the repository of this project.
+While try.goodtables.io allows you to quickly check the validality of your data, it does not allow for continous validation. As some datasets are frequently updated, continous validation is a wonderful feature. While I don't need continous validation for this dataset, I tested out this feature of goodtables by linking my [GitHub repository](https://github.com/lilyzzhao/science-to-benefit-moorea) to [goodtables](http://goodtables.io/github/lilyzzhao/science-to-benefit-moorea/jobs/4) and selecting the repository of this project.
 
 <img src="goodtables_online.png" width=100% alt="continous"> 
 <p style="text-align: center; font-style: italic">Continous validation of the data for this project</p>
