@@ -34,7 +34,7 @@ First I created a datapackage using Frictionless Data's Datapackage Creator ( ht
 <p style="text-align: center; font-style: italic">Creating a valid datapackage describing our dataset.</p>
 
 
-##Checking for structural errors only
+## Checking for structural errors only
 
 try.goodtables.oi allows for a quick check to see whether your tabular dataset is valid. It will let you know where there are errors within your dataset. However, if you edit the dataset you would need to upload or relink the file if you wanted to make sure the dataset was still valid. 
 
@@ -46,7 +46,7 @@ At first, I uploaded just my csv data file to check for structural errors.
 This means that my dataset doesn't have blank or duplicate rows and meets other structural criteria related to column headers and that all rows have the same number of columns. 
 
 
-##Checking for content errors as a secondary step
+## Checking for content errors as a secondary step
 
 In order to check for content errors in my dataset I also have to upload the schema that accompanies it. The schema I created for this dataset using the datapackage creator tells you the what data type is in the columns of my dataset. However at first I made the mistake of loading my datapackage .json file directly into where you are suppose to load the schema. 
 
