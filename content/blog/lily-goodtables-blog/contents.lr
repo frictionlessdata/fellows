@@ -23,38 +23,39 @@ Amplifying local involvement and unifying the perspectives of researchers and co
 To gather our data, we asked open ended questions, such as, “how would you describe the dynamics between the research stations and Mo'orea's’ residents? We then transcribed and categorized each respondents answers. 
 
 <img src="atitia.png" width=100% alt="atitia"> 
-<p style="text-align: center; font-style: italic">*Researchers Francis Pun, Sylvie Tuahu, Terevatureiariki Atger and Tauira Pun and discuss survey alterations during the initial phase of the project
-.*</p>
+<p style="text-align: center; font-style: italic">Researchers Francis Pun, Sylvie Tuahu, Terevatureiariki Atger and Tauira Pun and discuss survey alterations during the initial phase of the project
+.</p>
 
 
-A subset of this data is ready for analysis (https://github.com/lilyzzhao/science-to-benefit-moorea)
+A subset of this data is ready for analysis and had been uploaded as a csv file to a [GitHub repository](https://github.com/lilyzzhao/science-to-benefit-moorea)
 
-First I created a datapackage using Frictionless Data's Datapackage Creator ( https://create.frictionlessdata.io/) in order to articulate the data structure clearly to anyone who may be interested in it. 
+First I created a datapackage by uploading this csv file to [Frictionless Data's Datapackage Creator]( https://create.frictionlessdata.io/). This tool helps articulate the data structure clearly to anyone who may be interested in it. 
 
 <img src="datapackage.png" width=100% alt="dp"> 
 <p style="text-align: center; font-style: italic">Creating a valid datapackage describing our dataset.</p>
 
 
+# Goodtables 
+
+I first used [Try.goodtables](try.goodtables.oi) which allows for a quick check to see whether your tabular dataset is valid. It will let you know where there are errors within your dataset. However, if you edit the dataset you would need to upload or relink the file if you wanted to make sure the dataset was still valid. 
+
 ## Checking for structural errors only
-
-try.goodtables.oi allows for a quick check to see whether your tabular dataset is valid. It will let you know where there are errors within your dataset. However, if you edit the dataset you would need to upload or relink the file if you wanted to make sure the dataset was still valid. 
-
 At first, I uploaded just my csv data file to check for structural errors. 
 
 <img src="structure_only.png" width=100% alt="structure"> 
 <p style="text-align: center; font-style: italic">With only the data file uploaded goodtables indicates that the structure is valid.</p>
 
-This means that my dataset doesn't have blank or duplicate rows and meets other structural criteria related to column headers and that all rows have the same number of columns. 
+This means that my dataset doesn't have blank or duplicate rows and meets other structural criteria related to column headers are met and that all my rows have the same number of columns. 
 
 
 ## Checking for content errors as a secondary step
 
-In order to check for content errors in my dataset I also have to upload the schema that accompanies it. The schema I created for this dataset using the datapackage creator tells you the what data type is in the columns of my dataset. However at first I made the mistake of loading my datapackage .json file directly into where you are suppose to load the schema. 
+In order to check for content errors in my dataset I also have to upload the schema that accompanies it. The schema I created for this dataset using the datapackage creator tells you what data type is in the columns of my dataset. However at first I made the mistake of loading my datapackage json file directly into where you are suppose to load the schema. 
 
 <img src="schema_error.png" width=100% alt="mistake"> 
 <p style="text-align: center; font-style: italic">Uploading my datapackage json file into the goodtables schema upload area was incorrect.</p>
 
-The above error occurs because while the datapackage json file is more than just a schema. Instead I had to upload into the schema only section (i.e. the fields section of the datapackage file) into the schema input area. 
+The above error occurs because the datapackage json file is more than just a schema. Instead I had to upload just the schema section of the json file (i.e. the fields section of the datapackage file) into the schema input area of the browser tool. 
 
 <img src="just_schema_correct.png" width=100% alt="justschema"> 
 <p style="text-align: center; font-style: italic">Correct upload of both csv data file and schema only json file.</p>
@@ -65,14 +66,14 @@ If you go this route make sure that when you are copying over just the schema se
 <p style="text-align: center; font-style: italic">The error message you will receive if you do not include outer brackets in the schema file.</p>
 
 
-###Streamlined Data Validation 
+## Streamlined Data Validation 
 
 Instead of this multistep method the most efficient way to check you data is by uploading the url of your datapackage directly into the source input area of try.goodtables.io 
 
 <img src="github_json.png" width=100% alt="githubjson"> 
 <p style="text-align: center; font-style: italic">Upload your datapackage json github url directly into goodtables for streamlined use.</p>
 
-This works because the datapackage.json file includes the path to your csv file directly in it 
+This works because the datapackage.json file includes the path to your csv file directly in it! 
 
 <img src="path.png" width=100% alt="path"> 
 <p style="text-align: center; font-style: italic">The path to my dataset appears in the raw datapackage json file allowing it to be uploaded into the source input area of try.goodtables.io.</p>
@@ -80,13 +81,13 @@ This works because the datapackage.json file includes the path to your csv file 
 
 ## Continous Data Validation
 
-While try.goodtables.io allows you to quickly check the validality of your data, it does not allow for continous validation. As some datasets are frequently updated, continous validation is a wonderful feature. While I don't need continous validation for this dataset, I tested out this feature of goodtables by linking my [GitHub repository](https://github.com/lilyzzhao/science-to-benefit-moorea) to [goodtables](http://goodtables.io/github/lilyzzhao/science-to-benefit-moorea/jobs/4) and selecting the repository of this project.
+While try.goodtables.io allows you to quickly check the validality of your data, it does not allow for continous validation. As some datasets are frequently updated, continous validation is a wonderful feature. While I don't need continous validation for this dataset, I tested out this feature of goodtables by linking my [GitHub repository](https://github.com/lilyzzhao/science-to-benefit-moorea) to [goodtables](http://goodtables.io/github/lilyzzhao/science-to-benefit-moorea/jobs/4) and selecting the repository of this project. It seems to be the most streamlined option of all!
 
 <img src="goodtables_online.png" width=100% alt="continous"> 
 <p style="text-align: center; font-style: italic">Continous validation of the data for this project</p>
 
 
-It seems to be the most streamlined option of all!
+
 
 
 
