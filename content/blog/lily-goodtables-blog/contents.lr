@@ -1,8 +1,11 @@
-title: Data Validation of my Interview Dataset using Goodtables 
+Data Validation of my Interview Dataset using Goodtables 
 ---
-body:
 
-I used gootables to validate the interview data I helped gather as part of the first chapter of my PhD. 
+I used gootables to validate the interview data I helped gather as part of the first chapter of my PhD. These data were collected in Mo'orea, French Polynesia where we interviewed both residents and scientists regarding the future of research in Mo'orea. 
+
+<img src="gump_station.png" width=100% alt="gump"> 
+<p style="text-align: center; font-style: italic">The dock of Gump Research Station in Mo'orea, French Polynesia.</p>
+
 
 As an aspiring marine scientist,  I initially wanted to help solve global environmental concerns by discovering objective truths. However, I've realized that to create lasting environmental solutions the notion of perceived truths is equally important and much less studied. Individuals’ subjective perceptions become their truths and these truths then define their actions and priorities. These, in turn, define our world. 
 
@@ -13,7 +16,7 @@ In the face of climate change, coral reef ecosystems and the 500 million people 
 Amplifying local involvement and unifying the perspectives of researchers and coastal communities is critical not only in reducing inequity in science, but also in securing lasting coral reef health. Mo’orea, French Polynesia was the idea case study location to initially address these topics due to its two foreign research stations, colonial legacy and strong cultural and nutritional ties to the reef. We partnered with collaborators from the Atitia cultural center to interview local residents and scientists regarding 11 topics, including research topic priorities and as well as cataloged suggestions for scientists. 
 
 
-To gather our data, we asked open ended questions, such as, “how would you describe the dynamics between the research stations and Moorea's’ residents? We then transcribed and categorized each respondents answers. 
+To gather our data, we asked open ended questions, such as, “how would you describe the dynamics between the research stations and Mo'orea's’ residents? We then transcribed and categorized each respondents answers. 
 
 <img src="atitia.png" width=100% alt="atitia"> 
 <p style="text-align: center; font-style: italic">Researchers Francis Pun, Sylvie Tuahu, Terevatureiariki Atger and Tauira Pun and discuss survey alterations during the initial phase of the project
@@ -72,27 +75,13 @@ This works because the datapackage.json file includes the path to your csv file 
 
 ### Continous Data Validation
 
-While try.goodtables.io allows you to quickly check the validality of your data, it does not allow for continous validation. As some datasets are frequently updated, continous validation is a wonderful feature. While I don't need it my dataset, I tested out this feature of goodtables by linking my GitHub to goodtables and selecting the repository of this project for continous validation
+While try.goodtables.io allows you to quickly check the validality of your data, it does not allow for continous validation. As some datasets are frequently updated, continous validation is a wonderful feature. While I don't need continous validation for this dataset, I tested out this feature of goodtables by linking my GitHub to goodtables and selecting the repository of this project.
 
 <img src="goodtables_online.png" width=100% alt="continous"> 
 <p style="text-align: center; font-style: italic">Continous validation of the data for this project</p>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-I am going to use this schema to check my dataset for errors. I do not have any errors but if I did have any it would tell me where 
-
-
+It seems to be the most streamlined option of all!
 
 
 
