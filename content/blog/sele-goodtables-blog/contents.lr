@@ -1,11 +1,43 @@
-title: Your Title
+title: Validando datos un paquete a la vez
 ---
 body:
 
-Write your blog text in the body section here.
+En la edición anterior de nuestros blogs, escribimos sobre [cómo empaquetar datos](http://fellows.frictionlessdata.io/blog/sele-datapackage-blog/) y el proceso que conlleva poder organizar en un sólo contenedor los metadatos, el esquema de los datos y el CSV. El siguiente paso, es que podamos validar dichos datos, y para eso contamos con una tremenda herramienta: [Try Goodtables](http://try.goodtables.io/) y más abajo les explico Goodtables en su formato expandido. 
+
+## ¿Qué es Goodtables?
+
+Goodtables es una herramienta Web gratuita, que también cuenta con [librerías](https://frictionlessdata.io/software/) para Python (para aquellas personas que no tienen miedo de adentrarse en sus terminales), que te permite validar las fuentes de datos de manera automática para encontrar errores estructurales. También, si contás con un esquema de datos (si usaste el empaquetador de datos, vas a tener un esquema en JSON que podés guardar como documento) también se puede utilizar para contrarrestar y validar tu estructura. 
+
+*Si usaste Data Package creator, y quieres crear un documento de tu esquema, deberás copiar esto, hasta donde cierra fields y guardarlo como un formato JSON.
+
+<img src="schema-json.png" width=100% alt="Selecting data for schema"> 
+<p style="text-align: center; font-style: italic">[Aquí](https://json-schema.org/understanding-json-schema/about.html#about) puedes aprender más sobre esquemas JSON.</p>
+
+Goodtables en sí mismo tiene dos formatos, uno de validación para una base de datos, que sería Try Goodtables y otra versión que puede ser configurada con tu cuenta de Github, para validaciones automáticas y periódicas dentro de tus repositorios, esa sería [Goodtables](https://goodtables.io/). Si algo llegase a cambiar en las bases de datos de tus repositorios, esta versión te daría las alertas.
+
+<img src="Gootables-sele.png" width=100% alt="Uploading data to Goodtables"> 
+<p style="text-align: center; font-style: italic">Trabajando sobre Try Goodtables.</p>
 
 
-To add any pictures, add your picture to the folder for your blog & use the text below, replacing the TEXT in UPPERCASE with your own: 
+## Pasitos para validar tus datos y demás yerbas aromáticas
 
-<img src="PICTURE.PNG" width=100% alt="TEXT DESCRIBING YOUR PICTURE"> 
-<p style="text-align: center; font-style: italic">YOUR PICTURE CAPTION.</p>
+Entrás a [try.goodtables.io](https://try.goodtables.io/) para hacer la prueba de una base de datos concreta. Tu base y tu esquema se pueden cargar como formato archivo, o también desde algún link dónde se encuentren alojados.
+Yo trabajé con la base de datos que vengo utilizando para el programa que se encuentra en mi repositorio de [Github](https://github.com/seleneyang/frictionless_data_fellowship). Es una base de datos geográficos sobre clínicas de aborto descargada desde OpenStreetMap a través de OverpassTurbo.
+
+Después es cuestión hacer clic en *Validate* para que la herramienta corra la validación de tus datos.
+
+En caso de encontrar errores, se verá así:
+
+
+<img src="schema-error.png" width=100% alt="Error con el esquema JSON"> 
+<p style="text-align: center; font-style: italic">Falta de validación por errores con el esquema JSON.</p>
+
+
+En caso que tu base sea válida según tu esquema y viceversa, se verá así
+
+<img src="validate-dataset.png" width=100% alt="Validación exitosa"> 
+<p style="text-align: center; font-style: italic">Validación existosa de la base.</p> 
+
+Si existe algún error en tus bases, siempre podés volver al Data Package Creator para revisar si existen incongruencias también entre tu esquema y tu base, y así revisar también las características y estructura de tu información.
+Goodtables es una herramienta muy poderosa, que nos permite contar contar con la posibilidad de validación constante y de forma simple para mantener nuestras bases de datos en condiciones óptimas, no sólo para nuestro trabajo, sino también para la reproducción y uso de los mismos por otras personas. 
+ 
