@@ -11,7 +11,7 @@ Goodtables es una herramienta Web gratuita, que también cuenta con [librerías]
 *Si usaste Data Package creator, y quieres crear un documento de tu esquema, deberás copiar esto, hasta donde cierra fields y guardarlo como un formato JSON.
 
 <img src="schema-json.png" width=100% alt="Selecting data for schema"> 
-<p style="text-align: center; font-style: italic">[Aquí](https://json-schema.org/understanding-json-schema/about.html#about) puedes aprender más sobre esquemas JSON.</p>
+<p style="text-align: center; font-style: italic"> <a href="https://json-schema.org/understanding-json-schema/about.html#about">Aquí</a> puedes aprender más sobre esquemas JSON.</p>
 
 Goodtables en sí mismo tiene dos formatos, uno de validación para una base de datos, que sería Try Goodtables y otra versión que puede ser configurada con tu cuenta de Github, para validaciones automáticas y periódicas dentro de tus repositorios, esa sería [Goodtables](https://goodtables.io/). Si algo llegase a cambiar en las bases de datos de tus repositorios, esta versión te daría las alertas.
 
