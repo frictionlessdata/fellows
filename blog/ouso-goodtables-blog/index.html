@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../css/style.css">
-<title>Your Title</title>
+<title>Tabular data: Before you use the data</title>
 
 <body>
   <header>
@@ -15,15 +15,38 @@
   </header>
   <article>
     
-  <h1>Your Title</h1>
+  <h1>Tabular data: Before you use the data</h1>
   <div>
   
   </div>
   <div>
-    <p>Write your blog text in the body section here.</p>
-<p>To add any pictures, add your picture to the folder for your blog &amp; use the text below, replacing the TEXT in UPPERCASE with your own:</p>
-<p><img src="PICTURE.PNG" width=100% alt="TEXT DESCRIBING YOUR PICTURE"></p>
-<p style="text-align: center; font-style: italic">YOUR PICTURE CAPTION.</p>
+    <p>In my <a href="https://blog.okfn.org/2020/02/28/data-package-is-valid/">previous blog</a>, I promised to share with you more on <code>goodtables</code>, how they synergise with the data package. It's time to pay the debt!</p>
+<p>Whether it be your own-generated data or someone else’s, the point of entry into the science-art of data analysis is one. You have heard of it. Yes, it is quality control checks. It saves you a lot of precious things: time, money, resources… The scope of my imagination within the space of time, the time of this writing, restricts me to a bimodal approach to validation, at least in the broad sense of it. These I would christen <em>Intrinsic</em> and <em>Extrinsic</em> validations. Let me expound. Data can be validated in and of itself (intrinsic) or by cross-referencing to a known standard (extrinsic). Validation is sometimes a repeating process that is performed at different stages of data handling, yet I consider the first-time-interaction validation to be most crucial. I guess a plethora of mechanisms/tools are out there for data validation, please leave a comment with your favourite tool. A common tool in the realm of bioinformatics is the <code>md5sum</code> in verifying the integrity of read files. But it is not our point of focus today, rather, I want to talk about <code>goodtables</code>, a Frictionless data (FD) tool for validating tabular data sets. As hinted by the name, you only want to work on/with tabular data in good condition; the tool highlights errors in your tabular dataset, with the precision of the exact location of your error. Again, the beautiful thing about <a href="https://frictionlessdata.io/software/">FD tools</a> is that they don’t discriminate on your preferences, it encompasses the Linux-based <a href="https://try.goodtables.io/">CLI</a>, <a href="https://github.com/frictionlessdata/goodtables-py">Python</a>, <a href="https://try.goodtables.io/">GUI</a> folks, among <a href="https://github.com/frictionlessdata">other</a> languages. However, the capabilities may vary.</p>
+<h2>Validating tabular data with <a href="../../blog/ouso-goodtables-blog/try.goodtables.io">try.goodtables.io</a></h2>
+<p>The landing page for try.goodtables will look like <strong>Fig. 1</strong> below. Note that <code>Format</code> and <code>Encoding</code> are set to automatic infer by default, but you may change them if necessary by toggling the drop-down for available options.</p>
+<p><p align="center">
+  <img width=100% height="500" src="try_goodtables.png"> <strong><i>Fig. 1:</strong> try.goodtables landing page</i>.
+</p></p>
+<h2>Intrinsic Validation: Using only the file</h2>
+<p>The web app is very welcoming, you will be good to go almost immediately. In the first validation scenario, intrinsic, we will basically be checking the file itself for any structural errors: blank headers, missing-value, duplicate-rows etcetera. You will need to paste the <code>URI</code> (Universal Resource Identifier) link to your tabular data file into the <code>source</code> slot, alternatively, you can upload a file from your local filesystem. You can guess what would be next - click the <code>Validate</code> button and shortly wait for the magic. There are a number of other possible structural errors you can encounter, you will find an exhaustive list <a href="https://github.com/frictionlessdata/goodtables-py#validation">here</a>. Be aware not to fall into the trap of <code>source error</code>; it will entangle you if you use the location link <code>URL</code> - Universal Resource Locator, rather than the <code>URI</code>.</p>
+<h2>Extrinsic Validation: Using the file and the schema</h2>
+<p>What is different about option two? In the extrinsic validation, we compare the data file to a schema we generate in the data package we earlier created. See my <a href="http://fellows.frictionlessdata.io/blog/ouso-datapackage-blog/">previous blog</a> on creating a data package, if you have no idea of what a data package is. Summarily, a data package contains three things: metadata, data (in the form of path/URI link) and schema. The schema is extracted from the data package file and separately saved as a <code>.json</code> file. In <strong>Fig. 2</strong> below, annexed from <a href="https://raw.githubusercontent.com/ousodaniel/FrictionlessDataFellowship/master/datapackage-hrma_validation.json">my datapackage</a>,  I have grey-highlighted the section of my data package that constitutes the <code>schema</code> file. The schema corresponds to <a href="https://raw.githubusercontent.com/ousodaniel/data/master/368445%202Jan2020_rev_ms.csv">this</a> data file, the second resource in the data package.</p>
+<p><p align="center">
+  <img width=100% height="500" src="schema.png"> <strong><i>Fig. 2:</strong> The schema region of the data package selected between lines 77 and 129</i>.
+</p>
+The schema validation is a double-edged sword, besides structural, it checks for content errors. Which errors are these? Examples include <em>schema-error - schema is not valid</em>, <em>extra-header - the data contains a header not defined in the schema</em>, among <a href="https://github.com/frictionlessdata/goodtables-py#validation">others</a>. The question asked in this validation is, does the data file content match the constraints and descriptions in the schema? So, like the checksum validation, schema validation also looks at the integrity of the data from the time a data package was created from it until the next encounter with it. However, beyond the checksum validation, it will pinpoint the differences highlighting the changes that occurred. This will allow you to get to the particular error and right it. To illustrate, I introduced three errors into a previous <a href="https://github.com/ousodaniel/data/blob/master/368445%202Jan2020_rev_ms.csv">file</a>, see the below validation output (<strong>Fig. 3</strong>). Can you attempt the question in the translucent red highlight?</p>
+<p><p align="center">
+  <img width=100% height="500" src="validation_err.png"> <strong><i>Fig. 3:</strong> Output showing the intrinsic validation of a <a href="https://github.com/ousodaniel/data/blob/master/368445%202Jan2020_rev_ms_err.csv"> data </a> file with errors</i>.
+</p>
+To give you a hint to the question, the errors introduced were: <em>removed the last column</em>, <em>change a digit to its string equivalent</em> and <em>added an identical row</em>. Well, you are right! The validation was intrinsic capturing the only structural error incorporated. I hope you can now appreciate why packaging your data is important in the validation process, especially in content validation. You will also notice two checkboxes, <code>Ignore-blank-rows</code> and <code>Ignore-duplicate-rows</code>, which you may toggle on or off depending on your preferences. <strong>Fig. 4</strong> below shows the output of my <em>with-schema</em> validation, notice the other errors are now captured.</p>
+<p><p align="center">
+  <img width=100% height="500" src="with-sch_val.png"> <strong><i>Fig. 4:</strong> Output showing the extrinsic validation of a <a href="https://github.com/ousodaniel/data/blob/master/368445%202Jan2020_rev_ms_err.csv"> data </a> file with errors</i>.
+</p></p>
+<h2>Other options</h2>
+<p>You may prefer to work with goodtables from the terminal or from inside a programming language, or perchance your data workflows are repetitive or long and complex, which then necessitates automation of the validation process. Fear not. The programmatic interfaces for <code>goodtables</code> exist, see earlier links for your preferred platform. For my case, the terminal and Python, the command <code>pip install goodtables</code> from the terminal will install the package. For detailed use in <code>Terminal</code> and <code>Python</code>, the Python Package Index has wonderful <a href="https://pypi.org/project/goodtables/">documentation</a>.</p>
+<h2>Conclusion</h2>
+<p>Given my data, from which I had created a data package, is openly available; I managed to check for any changes I might have merged from a pull request or committed myself, without remembrance, or by a malicious intruder. Consequently, if I were to apply an analysis previously applied to the original data to my valid data, I would expect a reproduced result. While the first validation takes only one input, the second takes two input parameters, the data file and the schema file bring to fore the more salient errors. The input data file can take varied formats: <code>CSV</code>, <code>JSON</code>, <code>XLS</code> and similar formats; the schema must be a <code>.json</code> file. Although we only touched on the one-time validation in this blog, it is possible to set up a continuous validation on a number of online <a href="https://frictionlessdata.io/field-guide/automatically-validated-tabular-data/">databases</a>. This will be quite helpful in data workflows that involve continuous updating of the data. Moreover, with help from OKF, you can set up your own integration of <code>goodtables</code> to your custom database, if you don't use the officially supported data publishing <a href="https://frictionlessdata.io/field-guide/automatically-validated-tabular-data/">plartforms</a>.</p>
+
   </div>
 
   </article>

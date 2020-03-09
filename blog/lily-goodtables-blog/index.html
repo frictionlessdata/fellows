@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../css/style.css">
-<title>Your Title</title>
+<title>Data Validation Of My Interview Dataset Using Goodtables</title>
 
 <body>
   <header>
@@ -15,15 +15,46 @@
   </header>
   <article>
     
-  <h1>Your Title</h1>
+  <h1>Data Validation Of My Interview Dataset Using Goodtables</h1>
   <div>
   
   </div>
   <div>
-    <p>Write your blog text in the body section here.</p>
-<p>To add any pictures, add your picture to the folder for your blog &amp; use the text below, replacing the TEXT in UPPERCASE with your own:</p>
-<p><img src="PICTURE.PNG" width=100% alt="TEXT DESCRIBING YOUR PICTURE"></p>
-<p style="text-align: center; font-style: italic">YOUR PICTURE CAPTION.</p>
+    <p>I used goodtables to validate the interview data we gathered as part of the first chapter of my PhD. These data were collected in Mo'orea, French Polynesia where we interviewed both residents and scientists regarding the future of research in Mo'orea.</p>
+<p><img src="gump_station.png" width=100% alt="gump"></p>
+<p style="text-align: center; font-style: italic">The dock of Gump Research Station in Mo'orea, French Polynesia.</p><p>As an aspiring marine scientist,  I initially wanted to help solve global environmental concerns by discovering objective truths. However, I've realized that to create lasting environmental solutions the notion of perceived truths is equally important and much less studied. Individuals’ subjective perceptions become their truths and these truths then define their actions and priorities. These, in turn, define our world.</p>
+<p>In the face of climate change, coral reef ecosystems and the 500 million people who depend on them are increasingly at risk. While a vast majority of coral reef research funding is allocated towards understanding the ecological mechanisms that underlie reef health, the ability of a coral reef to recover from disturbances is often determined by human actions or inactions. Factors such as pollution, fishing intensity and tourism have significant impacts on local reefs. However, laws restricting these actions are often not abided by when the communities feel ill-informed and excluded from research or management.</p>
+<p>Perceived lack of local involvement in foreign research can lead to governments creating strict legislation. For example, last year Indonesia created a law making it mandatory for foreign researchers to have local collaborators and for the work they do to benefit to Indonesia. These types of sanctions hold us- as foreign scientists, accountable to consider for whom research in the tropics is being done.</p>
+<p>Amplifying local involvement and unifying the perspectives of researchers and coastal communities is critical not only in reducing inequity in science, but also in securing lasting coral reef health. Mo’orea, French Polynesia was the idea case study location to initially address these topics due to its two foreign research stations, colonial legacy and strong cultural and nutritional ties to the reef. We partnered with collaborators from the Atitia cultural center to interview local residents and scientists regarding 11 topics, including research topic priorities and as well as cataloged suggestions for scientists.</p>
+<p><img src="moorea.png" width=100% alt="moorea"></p>
+<p style="text-align: center; font-style: italic">Interview sites in Mo'orea, French Polynesia.</p><p>To gather our data, we asked open ended questions, such as, “how would you describe the dynamics between the research stations and Mo'orea's’ residents? We then transcribed and categorized each respondents answers.</p>
+<p><img src="atitia.png" width=100% alt="atitia"></p>
+<p style="text-align: center; font-style: italic">Researchers Francis Pun, Sylvie Tuahu, Terevatureiariki Atger and Tauira Pun and discuss survey alterations during the initial phase of the project
+.</p><p>A subset of this data is ready for analysis and had been uploaded as a csv file to a <a href="https://github.com/lilyzzhao/science-to-benefit-moorea">GitHub repository</a></p>
+<p>First I created a datapackage by uploading this csv file to <a href="https://create.frictionlessdata.io/">Frictionless Data's Datapackage Creator</a>. This tool helps articulate the data structure clearly to anyone who may be interested in it.</p>
+<p><img src="datapackage.png" width=100% alt="dp"></p>
+<p style="text-align: center; font-style: italic">Creating a valid datapackage describing our dataset.</p><h1>Goodtables</h1>
+<p>I first used <a href="../../blog/lily-goodtables-blog/try.goodtables.oi">Try.goodtables</a> which allows for a quick check to see whether your tabular dataset is valid. It will let you know where there are errors within your dataset. However, if you edit the dataset you would need to upload or relink the file if you wanted to make sure the dataset was still valid.</p>
+<h2>Checking for structural errors only</h2>
+<p>At first, I uploaded just my csv data file to check for structural errors.</p>
+<p><img src="structure_only.png" width=100% alt="structure"></p>
+<p style="text-align: center; font-style: italic">With only the data file uploaded goodtables indicates that the structure is valid.</p><p>This means that my dataset doesn't have blank or duplicate rows and meets other structural criteria related to column headers are met and that all my rows have the same number of columns.</p>
+<h2>Checking for content errors as a secondary step</h2>
+<p>In order to check for content errors in my dataset I also have to upload the schema that accompanies it. The schema I created for this dataset using the datapackage creator tells you what data type is in the columns of my dataset. However at first I made the mistake of loading my datapackage json file directly into where you are suppose to load the schema.</p>
+<p><img src="schema_error.png" width=100% alt="mistake"></p>
+<p style="text-align: center; font-style: italic">Uploading my datapackage json file into the goodtables schema upload area was incorrect.</p><p>The above error occurs because the datapackage json file is more than just a schema. Instead I had to upload just the schema section of the json file (i.e. the fields section of the datapackage file) into the schema input area of the browser tool.</p>
+<p><img src="just_schema_correct.png" width=100% alt="justschema"></p>
+<p style="text-align: center; font-style: italic">Correct upload of both csv data file and schema only json file.</p><p>If you go this route make sure that when you are copying over just the schema secton from the datapackage file that you include the { } brackets around the fields or you will get the following error:</p>
+<p><img src="no_bracket.png" width=100% alt="nobracket"></p>
+<p style="text-align: center; font-style: italic">The error message you will receive if you do not include outer brackets in the schema file.</p><h2>Streamlined Data Validation</h2>
+<p>Instead of this multistep method the most efficient way to check you data is by uploading the url of your datapackage directly into the source input area of try.goodtables.io</p>
+<p><img src="github_json.png" width=100% alt="githubjson"></p>
+<p style="text-align: center; font-style: italic">Upload your datapackage json github url directly into goodtables for streamlined use.</p><p>This works because the datapackage.json file includes the path to your csv file directly in it!</p>
+<p><img src="path.png" width=100% alt="path"></p>
+<p style="text-align: center; font-style: italic">The path to my dataset appears in the raw datapackage json file allowing it to be uploaded into the source input area of try.goodtables.io.</p><h2>Continous Data Validation</h2>
+<p>While try.goodtables.io allows you to quickly check the validality of your data, it does not allow for continous validation. As some datasets are frequently updated, continous validation is a wonderful feature. While I don't need continous validation for this dataset, I tested out this feature of goodtables by linking my <a href="https://github.com/lilyzzhao/science-to-benefit-moorea">GitHub repository</a> to <a href="http://goodtables.io/github/lilyzzhao/science-to-benefit-moorea/jobs/4">goodtables</a> and selecting the repository of this project. It seems to be the most streamlined option of all!</p>
+<p><img src="goodtables_online.png" width=100% alt="continous"></p>
+<p style="text-align: center; font-style: italic">Continous validation of the data for this project</p>
   </div>
 
   </article>

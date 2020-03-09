@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../css/style.css">
-<title>Your Title</title>
+<title>Validando datos un paquete a la vez</title>
 
 <body>
   <header>
@@ -15,15 +15,29 @@
   </header>
   <article>
     
-  <h1>Your Title</h1>
+  <h1>Validando datos un paquete a la vez</h1>
   <div>
   
   </div>
   <div>
-    <p>Write your blog text in the body section here.</p>
-<p>To add any pictures, add your picture to the folder for your blog &amp; use the text below, replacing the TEXT in UPPERCASE with your own:</p>
-<p><img src="PICTURE.PNG" width=100% alt="TEXT DESCRIBING YOUR PICTURE"></p>
-<p style="text-align: center; font-style: italic">YOUR PICTURE CAPTION.</p>
+    <p>En la edición anterior de nuestros blogs, escribimos sobre <a href="http://fellows.frictionlessdata.io/blog/sele-datapackage-blog/">cómo empaquetar datos</a> y el proceso que conlleva poder organizar en un sólo contenedor los metadatos, el esquema de los datos y el CSV. El siguiente paso, es que podamos validar dichos datos, y para eso contamos con una tremenda herramienta: <a href="http://try.goodtables.io/">Try Goodtables</a> y más abajo les explico Goodtables en su formato expandido.</p>
+<h2>¿Qué es Goodtables?</h2>
+<p>Goodtables es una herramienta Web gratuita, que también cuenta con <a href="https://frictionlessdata.io/software/">librerías</a> para Python (para aquellas personas que no tienen miedo de adentrarse en sus terminales), que te permite validar las fuentes de datos de manera automática para encontrar errores estructurales. También, si contás con un esquema de datos (si usaste el empaquetador de datos, vas a tener un esquema en JSON que podés guardar como documento) también se puede utilizar para contrarrestar y validar tu estructura.</p>
+<p>*Si usaste Data Package creator, y quieres crear un documento de tu esquema, deberás copiar esto, hasta donde cierra fields y guardarlo como un formato JSON.</p>
+<p><img src="schema-json.png" width=100% alt="Selecting data for schema"></p>
+<p style="text-align: center; font-style: italic"> <a href="https://json-schema.org/understanding-json-schema/about.html#about">Aquí</a> puedes aprender más sobre esquemas JSON.</p><p>Goodtables en sí mismo tiene dos formatos, uno de validación para una base de datos, que sería Try Goodtables y otra versión que puede ser configurada con tu cuenta de Github, para validaciones automáticas y periódicas dentro de tus repositorios, esa sería <a href="https://goodtables.io/">Goodtables</a>. Si algo llegase a cambiar en las bases de datos de tus repositorios, esta versión te daría las alertas.</p>
+<p><img src="Gootables-sele.png" width=100% alt="Uploading data to Goodtables"></p>
+<p style="text-align: center; font-style: italic">Trabajando sobre Try Goodtables.</p><h2>Pasitos para validar tus datos y demás yerbas aromáticas</h2>
+<p>Entrás a <a href="https://try.goodtables.io/">try.goodtables.io</a> para hacer la prueba de una base de datos concreta. Tu base y tu esquema se pueden cargar como formato archivo, o también desde algún link dónde se encuentren alojados.
+Yo trabajé con la base de datos que vengo utilizando para el programa que se encuentra en mi repositorio de <a href="https://github.com/seleneyang/frictionless_data_fellowship">Github</a>. Es una base de datos geográficos sobre clínicas de aborto descargada desde OpenStreetMap a través de OverpassTurbo.</p>
+<p>Después es cuestión hacer clic en <em>Validate</em> para que la herramienta corra la validación de tus datos.</p>
+<p>En caso de encontrar errores, se verá así:</p>
+<p><img src="schema-error.png" width=100% alt="Error con el esquema JSON"></p>
+<p style="text-align: center; font-style: italic">Falta de validación por errores con el esquema JSON.</p><p>En caso que tu base sea válida según tu esquema y viceversa, se verá así</p>
+<p><img src="validate-dataset.png" width=100% alt="Validación exitosa"></p>
+<p style="text-align: center; font-style: italic">Validación existosa de la base.</p><p>Si existe algún error en tus bases, siempre podés volver al Data Package Creator para revisar si existen incongruencias también entre tu esquema y tu base, y así revisar también las características y estructura de tu información.
+Goodtables es una herramienta muy poderosa, que nos permite contar contar con la posibilidad de validación constante y de forma simple para mantener nuestras bases de datos en condiciones óptimas, no sólo para nuestro trabajo, sino también para la reproducción y uso de los mismos por otras personas.</p>
+
   </div>
 
   </article>
