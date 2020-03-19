@@ -8,8 +8,10 @@ This week I had the opportunity to work with my colleague's data. He created a [
 This was made possible by the fact that Ouso made his [data](https://github.com/ousodaniel/data) on GitHub. Analysis of these data are pertinent to informing conservation and illegal trade efforts as they evaluate the ability of high-resolution melting analysis to identify illegally targeted wildlife species.
 
 
-In fact, Ouso just published in *Nature Scientific Reports* his findings based on these. Congrats Ouso! You can read the article [here](https://www.nature.com/articles/s41598-020-61600-3) and learn about the implications the application of their low-cost post-PCR approach has for East African forensic science!
+In fact, Ouso just published in *Nature Scientific Reports* his findings based on these. 
 
+<img src="nature.png" width=100% alt="nature"> 
+<p style="text-align: center; font-style: italic">Congrats Ouso! You can read the article [here](https://www.nature.com/articles/s41598-020-61600-3) and learn about the implications the application of their low-cost post-PCR approach has for East African forensic science!</p>
 
 His project data consists of two tabular data files. 
 
