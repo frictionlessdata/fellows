@@ -3,17 +3,18 @@ title: Packaging Ouso's Data
 body:
 
 
-This week I had the opportunity to work with my colleague's data. He created a [Datapackage](https://github.com/ousodaniel/FrictionlessDataFellowship/blob/master/datapackage-hrma_validation.json) which I replicated. In doing so, I learned a lot about the Datapackage web interface. 
+This week I had the opportunity to work with my colleague's data. He created a [Datapackage](https://github.com/ousodaniel/FrictionlessDataFellowship/blob/master/datapackage-hrma_validation.json) which I replicated. In doing so, I learned a lot about the *Datapackage* web interface. 
 
-This was made possible by the fact that Ouso made his [data](https://github.com/ousodaniel/data) on GitHub. Analysis of these data are pertinent to informing conservation and illegal trade efforts as they evaluate the ability of high-resolution melting analysis to identify illegally targeted wildlife species.
+This was made possible by the fact that Ouso made his [data](https://github.com/ousodaniel/data) available on GitHub. Using these data Ouso and his co-authors evaluate the ability of high-resolution melting analysis to identify illegally targeted wildlife species. Analysis of these data are pertinent to informing conservation and illegal trade mitigation efforts.
 
 
-In fact, Ouso just published in *Nature Scientific Reports* his findings based on these. 
+In fact, Ouso just published in *Nature Scientific Reports* his findings based on these data!
 
 <img src="nature.png" width=100% alt="nature"> 
 <p style="text-align: center; font-style: italic">Congrats Ouso! You can read the article [here](https://www.nature.com/articles/s41598-020-61600-3) and learn about the implications the application of their low-cost post-PCR approach has for East African forensic science!</p>
 
-His project data consists of two tabular data files. 
+
+Ouso's project data consists of two tabular data files. 
 
 <img src="data1.png" width=100% alt="data1"> 
 <p style="text-align: center; font-style: italic">1) data on analyzed samples and sequences from GenBank.</p>
@@ -22,9 +23,9 @@ His project data consists of two tabular data files.
 <p style="text-align: center; font-style: italic">2) species identification via three mitochondria markers.</p>
  
 
-I uploaded these files as separate resources in the the Frictionless Data's [Datapackage Creator](http://create.frictionlessdata.io/). For each of these resources I specified a `name` for the resource and a `path`. Because Ouso's files were available online, rather than uploading the data files locally, I copied and pasted the link to his GitHub data. The Datapackage Creator platform automatically assessed the data's structure and the type of data within each column. I then added titles and descriptions to each column that matched Ouso's own JSON file (i.e. field (column) metadata). 
+I uploaded these files as separate resources in Frictionless Data's [Datapackage Creator](http://create.frictionlessdata.io/). For each of these resources I specified a `name` for the resource and a `path`. Because Ouso's files were available online, rather than uploading the data files locally, I copied and pasted the links to his GitHub data. The Datapackage Creator platform automatically assessed the data's structure and the type of data within each column. I then added titles and descriptions to each column that matched Ouso's own JSON file (i.e. field metadata). 
 
-A big thanks to Ouso! From Ouso's blog I recollected the gear-wheel (`settings`) in the resource tab allows you to edit the title of each resource and provide descriptions, format and encoding, so I followed his lead by doing this for his two data resources. That is to say I added resource metadata. As my previous Datapackage had only included one 1 resource the datapackage metadata more or less matched the resource metadata. But with more than one resource this differentiation becomes increasingly important.  
+From Ouso's blog I recalled that the gear-wheel (`settings`) in the resource tab allows you to edit the title of each resource and provide descriptions, format and encoding. I followed his lead by doing this for his two data resources. That is to say, I added *resource metadata*. As my previous Datapackages had only included one resource each the datapackage metadata more or less matched my resource metadata. With more than one resource, I see now that this differentiation between resource metadata and Datapackage metadata becomes increasingly important.  
 
 
 .
