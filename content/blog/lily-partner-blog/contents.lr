@@ -4,14 +4,23 @@ body:
 
 To add any pictures, add your picture to the folder for your blog & use the text below, replacing the TEXT in UPPERCASE with your own text: 
 
-<img src="PICTURE.PNG" width=100% alt="TEXT DESCRIBING YOUR PICTURE"> 
-<p style="text-align: center; font-style: italic">YOUR PICTURE CAPTION.</p>
 
-This week I had the opportunity to work with my colleague data. He created a [Datapackage of these data] (https://github.com/ousodaniel/FrictionlessDataFellowship/blob/master/datapackage-hrma_validation.json) and I learned a lot about the Datapackage web interface while replicating his process.  
+
+
+This week I had the opportunity to work with my colleague's data. He created a [Datapackage](https://github.com/ousodaniel/FrictionlessDataFellowship/blob/master/datapackage-hrma_validation.json) which I replicated. In doing so, I learned a lot about the Datapackage web interface. 
 
 This was made possible by the fact that Ouso made his [data](https://github.com/ousodaniel/data) on GitHub. Analysis of these data are pertinent to informing conservation and illegal trade efforts as they evaluate the ability of high-resolution melting analysis to identify illegally targeted wildlife species. For each of these resources I specified a `name` for the resource and a `path`.
 
-His project data consists of two tabular data files: 1) data on analyzed samples and sequences from GenBank. 2) species identification via three mitochondria markers. I uploaded these files as separate resources in the the Frictionless Data's [Datapackage Creator](http://create.frictionlessdata.io/). Because Ouso's files were available online, rather than uploading the data files locally, I copied and pasted the link to his GitHub data. The Datapackage Creator platform automatically assessed the data's structure and the type of data within each column. I then added titles and descriptions to each column that matched Ouso's own JSON file (i.e. field (column) metadata). 
+His project data consists of two tabular data files. 
+
+<img src="data1.PNG" width=100% alt="data1"> 
+<p style="text-align: center; font-style: italic">1) data on analyzed samples and sequences from GenBank.</p>
+
+<img src="data2.PNG" width=100% alt="data2"> 
+<p style="text-align: center; font-style: italic">2) species identification via three mitochondria markers.</p>
+ 
+
+I uploaded these files as separate resources in the the Frictionless Data's [Datapackage Creator](http://create.frictionlessdata.io/). Because Ouso's files were available online, rather than uploading the data files locally, I copied and pasted the link to his GitHub data. The Datapackage Creator platform automatically assessed the data's structure and the type of data within each column. I then added titles and descriptions to each column that matched Ouso's own JSON file (i.e. field (column) metadata). 
 
 A big thanks to Ouso! From Ouso's blog I recollected the gear-wheel (`settings`) in the resource tab allows you to edit the title of each resource and provide descriptions, format and encoding, so I followed his lead by doing this for his two data resources. That is to say I added resource metadata. As my previous Datapackage had only included one 1 resource the datapackage metadata more or less matched the resource metadata. But with more than one resource this differentiation becomes increasingly important.  
 
