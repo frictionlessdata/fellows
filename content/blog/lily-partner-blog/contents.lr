@@ -10,8 +10,7 @@ This was made possible by the fact that Ouso made his [data](https://github.com/
 
 In fact, Ouso just published in *Nature Scientific Reports* his findings based on these data!
 
-<img src="nature.png" width=100% alt="nature"> 
-<p style="text-align: center; font-style: italic">Congrats Ouso! You can read the article [here](https://www.nature.com/articles/s41598-020-61600-3) and learn about the implications the application of their low-cost post-PCR approach has for East African forensic science!</p>
+<img src="nature.png" width=100% alt="nature"> <p style="text-align: center; font-style: italic">Congrats Ouso! You can read the article <a href="https://www.nature.com/articles/s41598-020-61600-3">here</a> and learn about the implications the application of their low-cost post-PCR approach has for East African forensic science!</p>
 
 
 Ouso's project data consists of two tabular data files. 
