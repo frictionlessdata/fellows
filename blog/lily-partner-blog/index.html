@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../css/style.css">
-<title>YOUR TITLE</title>
+<title>Packaging Ouso&#39;s Data</title>
 
 <body>
   <header>
@@ -15,15 +15,22 @@
   </header>
   <article>
     
-  <h1>YOUR TITLE</h1>
+  <h1>Packaging Ouso&#39;s Data</h1>
   <div>
   
   </div>
   <div>
-    <p>YOUR BLOG TEXT</p>
-<p>To add any pictures, add your picture to the folder for your blog &amp; use the text below, replacing the TEXT in UPPERCASE with your own text:</p>
-<p><img src="PICTURE.PNG" width=100% alt="TEXT DESCRIBING YOUR PICTURE"></p>
-<p style="text-align: center; font-style: italic">YOUR PICTURE CAPTION.</p>
+    <p>This week I had the opportunity to work with my colleague's data. He created a <a href="https://github.com/ousodaniel/FrictionlessDataFellowship/blob/master/datapackage-hrma_validation.json">Datapackage</a> which I replicated. In doing so, I learned a lot about the <em>Datapackage</em> web interface.</p>
+<p>This was made possible by the fact that Ouso made his <a href="https://github.com/ousodaniel/data">data</a> available on GitHub. Using these data Ouso and his co-authors evaluate the ability of high-resolution melting analysis to identify illegally targeted wildlife species. Analysis of these data are pertinent to informing conservation and illegal trade mitigation efforts.</p>
+<p>In fact, Ouso just published in <em>Nature Scientific Reports</em> his findings based on these data!</p>
+<p><img src="nature.png" width=100% alt="nature"> <p style="text-align: center; font-style: italic">Congrats Ouso! You can read the article <a href="https://www.nature.com/articles/s41598-020-61600-3">here</a> and learn about the implications the application of their low-cost post-PCR approach has for East African forensic science!</p></p>
+<p>Ouso's project data consists of two tabular data files.</p>
+<p><img src="data1.png" width=100% alt="data1"></p>
+<p style="text-align: center; font-style: italic">1) data on analyzed samples and sequences from GenBank.</p><p><img src="data2.png" width=100% alt="data2"></p>
+<p style="text-align: center; font-style: italic">2) species identification via three mitochondria markers.</p><p>I uploaded these files as separate resources in Frictionless Data's <a href="http://create.frictionlessdata.io/">Datapackage Creator</a>. For each of these resources I specified a <code>name</code> for the resource and a <code>path</code>. Because Ouso's files were available online, rather than uploading the data files locally, I copied and pasted the links to his GitHub data. A mistake I initially made was that I forgot that you have to click the <a href="https://raw.githubusercontent.com/ousodaniel/data/master/Spacies_table.csv">raw data link</a> and copy the raw version url. The Datapackage Creator platform automatically assessed the data's structure and the type of data within each column. I then added titles and descriptions to each column that matched Ouso's own JSON file (i.e. field metadata).</p>
+<p>From Ouso's blog I recalled that the gear-wheel (<code>settings</code>) in the resource tab allows you to edit the title of each resource and provide descriptions, format and encoding. I followed his lead by doing this for his two data resources. That is to say, I added <em>resource metadata</em>. As my previous Datapackages had only included one resource each the datapackage metadata more or less matched my resource metadata. With more than one resource, I see now that this differentiation between resource metadata and Datapackage metadata becomes increasingly important.</p>
+<p>.</p>
+
   </div>
 
   </article>
