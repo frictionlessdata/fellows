@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../css/style.css">
-<title>YOUR TITLE</title>
+<title>Data Barter: Real-life data interactions</title>
 
 <body>
   <header>
@@ -15,15 +15,28 @@
   </header>
   <article>
     
-  <h1>YOUR TITLE</h1>
+  <h1>Data Barter: Real-life data interactions</h1>
   <div>
   
   </div>
   <div>
-    <p>YOUR BLOG TEXT</p>
-<p>To add any pictures, add your picture to the folder for your blog &amp; use the text below, replacing the TEXT in UPPERCASE with your own text:</p>
-<p><img src="PICTURE.PNG" width=100% alt="TEXT DESCRIBING YOUR PICTURE"></p>
-<p style="text-align: center; font-style: italic">YOUR PICTURE CAPTION.</p>
+    <p>As fellows, we've learnt a lot already and done a number of <a href="http://fellows.frictionlessdata.io/blog/">interesting things</a> with Frictionless Data (FD) <a href="https://frictionlessdata.io/field-guide/">tools and specifications</a>. This time around, the goal was to model real-life data interactions; trade each other's data and share on the experience working with them. We barter-traded data packages. Specifically, we aimed to:</p>
+<blockquote><ol>
+<li>understand each other's data, </li>
+<li>recreate a data package with the partner's raw data &amp; </li>
+<li>validate the data package with goodtables</li>
+</ol>
+</blockquote>
+<p>My focus was to reproduce Monica's <a href="http://fellows.frictionlessdata.io/blog/monica-datapackage-blog/">work</a>, starting from her <a href="https://github.com/Monsauce/frictionless_data_fellowship/blob/master/firstdatapackage.json">data pacakge</a> backwards.</p>
+<h2>Understanding the data</h2>
+<p>For any reliable attempt on foreign data, you may agree with me, the best place to begin is the metadata. I understand the structure of a data package <code>.json</code> file, thanks to FD fellowship, and so I know that the first place to look at it the area containing the overall metadata of the whole data set. This is usually found at the bottom of the file, that is, if the handler cared to include any metadata. Be like Monica, she provided metadata. The overall metadata directed to the article associated with the data and provided the license, among other things. I found the field metadata to be very informative, for instance, a field label <em>Day</em> could mean a lot of things in and of itself. However, the entries <code>"title": "Experimental day</code> and <code>"description": "Experiment ran for 63 days"</code>contextualises the heading with clarity.</p>
+<h2>Recreating the data package</h2>
+<p>To do this you, at least, need the data. This was available. Monica had the associated data in GitHub; in a public repository and under a <code>CC-BY-4.0</code> license, making it easily <code>accessible</code>. To reach the data the I copy-pasted the link, the value of the <code>path</code> key, which contains the resource identifier in a web client. The uniform resource identifier (<code>URI</code>) makes the data <code>findable</code> because it is uniquely associated with only that single item universally. The same link was used inside the <a href="http://create.frictionlessdata.io/">Data Package Creator</a>.  <a href="https://raw.githubusercontent.com/ousodaniel/FrictionlessDataFellowship/master/datapackage_MonS.json">Here</a> is the package I recreated.</p>
+<h2>Validate the data package</h2>
+<p>On validating the data package I came across two warnings regarding row limits for the <em>Algae.csv</em> and <em>Tiles.csv</em> tables. There was one <code>type format</code> error for the <code>Density</code> field in the Algae data set. The error was occasioned by having the <code>type</code> as <code>integer</code> rather than <code>number</code>, as the field contain floats. On <a href="https://raw.githubusercontent.com/ousodaniel/FrictionlessDataFellowship/master/datapackage_MonS_Ouso.json">rectifying</a> this in the data package I recreated the <code>type error</code> disappeared. I raised an <a href="https://github.com/Monsauce/frictionless_data_fellowship/issues/3">issue</a> with the solution on GitHub. The <code>CSV</code> and the <code>JSON</code> data formats allowed for <code>interoperability</code> given we, Monica and I, work on different software and hardware platforms.</p>
+<h2>Conclusion</h2>
+<p>Exchanging data packages and working backwards from them is an important test in the illustration of the overall goal of the Frictionless Data initiative. Remember, FD seeks to facilitate and promote open and reproducible research, consequently promoting collaboration. By trying to reproduce Monica's work I was able to capture an error, which I highlighted for her attention, thus improved the work. Exactly how science is supposed to work!</p>
+
   </div>
 
   </article>
