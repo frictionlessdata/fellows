@@ -1,6 +1,4 @@
-title: Data Barter: Real-life data interactions
----
-body:
+# Bartering Data
 
 As fellows, we've learnt a lot already and done a number of [interesting things](http://fellows.frictionlessdata.io/blog/) with Frictionless Data (FD) [tools and specifications](https://frictionlessdata.io/field-guide/). This time around, the goal was to model real-life data interactions; trade each other's data and share on the experience working with them. We barter-traded data packages. Specifically, we aimed to:
 >1. understand each other's data, 
@@ -20,3 +18,5 @@ On validating the data package I came across two warnings regarding row limits f
 
 ## Conclusion
 Exchanging data packages and working backwards from them is an important test in the illustration of the overall goal of the Frictionless Data initiative. Remember, FD seeks to facilitate and promote open and reproducible research, consequently promoting collaboration. By trying to reproduce Monica's work I was able to capture an error, which I highlighted for her attention, thus improved the work. Exactly how science is supposed to work!
+
+
