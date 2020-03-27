@@ -1,5 +1,6 @@
-Don’t you wish your table as a clean as mine?
+title: Don’t you wish your table as a clean as mine?
 ---
+body:
 How many times have you gotten a data frame from a colleague or downloaded data that had missing values? Or it’s missing a column name? Do you wish you were never that person? Well introducing Goodtables – your solution counteracting bad data frames! As part of the inaugural Frictionless Data Fellows, I took Goodtables out for a spin.
 
 The tool developed by the Open Knowledge Foundation as part of their Frictionless Data Tools is available as both a web tool and through a command line tool. Today we’ll test out the web tool. We’ll be working with my crayfish, algae and snail data from my paper [“Consequences of consumer origin and omnivory on stability in experimental food web modules.”][link_paper] In the previous blog I detailed how to make a data package that supplies detailed metadata information about the variables in your data frame (resource). Now in this step we are going to check whether there are any errors in the data frame itself. 
