@@ -1,11 +1,39 @@
-title: Your Title
+Don’t you wish your table as a clean as mine?
 ---
-body:
+How many times have you gotten a data frame from a colleague or downloaded data that had missing values? Or it’s missing a column name? Do you wish you were never that person? Well introducing Goodtables – your solution counteracting bad data frames! As part of the inaugural Frictionless Data Fellows, I took Goodtables out for a spin.
 
-Write your blog text in the body section here.
+The tool developed by the Open Knowledge Foundation as part of their Frictionless Data Tools is available as both a web tool and through a command line tool. Today we’ll test out the web tool. We’ll be working with my crayfish, algae and snail data from my paper [“Consequences of consumer origin and omnivory on stability in experimental food web modules.”][link_paper] In the previous blog I detailed how to make a data package that supplies detailed metadata information about the variables in your data frame (resource). Now in this step we are going to check whether there are any errors in the data frame itself. 
+
+Let’s start with the webtool and validating the data frame. Navigate to http://try.goodtables.io/. Here you can upload the raw data and check if there are any structural errors such as missing entries. 
+
+* Either upload your file from your local directory or you can insert the url where your data is stored. For example, I’ll use the raw version of my data on GitHub.
+* Hit Validate.
+* If there are no structural errors in your data frame you will get a “Valid Table.” 
+
+<img src="ValidatePicture1.PNG" width=100% alt="TEXT DESCRIBING YOUR PICTURE"> 
+<p style="text-align: center; font-style: italic">A valided tabular data frame!.</p>
+
+* Repeat this for all of your data frames or resources. 
+
+If you are using the raw data you can do this step before you create your data package or if you don’t have a schema (made with a data package) this is still a great tool to check for structural errors. What if you have a data package like the one I made in my previous blog with a schema? Well then we can use Goodtables to validate the tabular data against the scheme. We’ll have to first grab the schema from the data package. 
+
+Since my data package is on GitHub I can just go and view on the code page. The schema part is the text following the “"schema":“ Make sure to grab the curly bracket. 
+
+<img src="ValidatePicture2.PNG" width=100% alt="TEXT DESCRIBING YOUR PICTURE"> 
+<p style="text-align: center; font-style: italic">Grabing the schema.</p>
+
+Copy and paste this information into a text editor like Sublime and save it as schema.json. Then go back to the Goodtables webtool. Make sure your tabular data information is in the also input at the top, then upload your schema.json file. 
+When I hit validate. Oh noes an error! But thankfully the Goodtables caught it. I had designated a variable as an integer when it should be a number. 
+To fix this error you can either 1. Make the change in data package tool, or change it directly in the json file. I did the latter and re-uploaded the file on the Goodtables webtool and hit validate!
+
+<img src="ValidatePicture3.PNG" width=100% alt="TEXT DESCRIBING YOUR PICTURE"> 
+<p style="text-align: center; font-style: italic">Oh noes!</p>
+
+Woo-hoo! Validated! You should repeat this for each data frame/ resource you have. Having your data and schema validated give you that extra-special feeling that your data is nice and clean and ready to share. 
+
+<img src="ValidatePicture3.PNG" width=100% alt="TEXT DESCRIBING YOUR PICTURE"> 
+<p style="text-align: center; font-style: italic">Hooray validated!</p>
+
+[link_paper]: https://onlinelibrary.wiley.com/doi/abs/10.1111/fwb.13378
 
 
-To add any pictures, add your picture to the folder for your blog & use the text below, replacing the TEXT in UPPERCASE with your own: 
-
-<img src="PICTURE.PNG" width=100% alt="TEXT DESCRIBING YOUR PICTURE"> 
-<p style="text-align: center; font-style: italic">YOUR PICTURE CAPTION.</p>
