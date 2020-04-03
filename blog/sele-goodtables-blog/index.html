@@ -37,7 +37,24 @@ Yo trabajé con la base de datos que vengo utilizando para el programa que se en
 <p><img src="validate-dataset.png" width=100% alt="Validación exitosa"></p>
 <p style="text-align: center; font-style: italic">Validación existosa de la base.</p><p>Si existe algún error en tus bases, siempre podés volver al Data Package Creator para revisar si existen incongruencias también entre tu esquema y tu base, y así revisar también las características y estructura de tu información.
 Goodtables es una herramienta muy poderosa, que nos permite contar contar con la posibilidad de validación constante y de forma simple para mantener nuestras bases de datos en condiciones óptimas, no sólo para nuestro trabajo, sino también para la reproducción y uso de los mismos por otras personas.</p>
-<p><em>English bellow</em></p>
+<h2>English Version: Validating data one package at a time</h2>
+<p>In the previous edition of our blogs, we wrote about <a href="http://fellows.frictionlessdata.io/blog/sele-datapackage-blog/">how to package data</a> and the process involved in being able to organize the metadata, the data schema and the CSV into a single container. The next step is to validate this data, and for that we have a tremendous tool: <a href="http://try.goodtables.io/">Try Goodtables</a> and below I explain Goodtables in its expanded format.</p>
+<h2>What is Goodtables?</h2>
+<p>Goodtables is a free web tool, which also has <a href="https://frictionlessdata.io/software/">libraries</a> for Python (for those people who are not afraid to go into their terminals), which automatically allows you to validate your data sources to find structural errors in your dataset. Also, if you have a data schema (if you used the Data Package Creator, you will have a schema in JSON that you can save as a document) it can also be used to counteract and validate your structure.</p>
+<p><em>If you used Data Package Creator, and you want to create a document from your schema, you must copy this, to where </em>fields* closes and save it as a JSON format.</p>
+<p><img src="schema-json.png" width=100% alt="Selecting data for schema"></p>
+<p style="text-align: center; font-style: italic">You can find more <a href="https://json-schema.org/understanding-json-schema/about.html#about">here</a> about JSON schemas.</p><p>Goodtables itself has two formats, one for database validation, which would be Try Goodtables and another version that can be configured with your Github account, for automatic and periodic validations within your repositories, that would be <a href="https://goodtables.io/">Goodtables</a>. If something changes in the databases of your repository, this version will send you alerts of the changes and if they need to be revised.</p>
+<p><img src="Gootables-sele.png" width=100% alt="Uploading data to Goodtables"></p>
+<p style="text-align: center; font-style: italic">Working on Try Goodtables.</p><h2>Steps to validate your data and other herbs</h2>
+<p>You go to <a href="https://try.goodtables.io/">try.goodtables.io</a> to test a particular database. Your database and your schema can be loaded as a file format, or from a link where they are hosted.
+I worked with the database I've been using for the program in my <a href="https://github.com/seleneyang/frictionless_data_fellowship">Github</a> repository. It is a geographic database of abortion clinics downloaded from OpenStreetMap through OverpassTurbo.</p>
+<p>You can then click on <em>Validate</em> to have the tool run the validation of your data.</p>
+<p>If it finds any errors, it will look like this:</p>
+<p><img src="schema-error.png" width=100% alt="Error con el esquema JSON"></p>
+<p style="text-align: center; font-style: italic">Invalid datasets over a JSON schema error.</p><p>In case your database is valid according to your scheme and vice versa, it will look like this:</p>
+<p><img src="validate-dataset.png" width=100% alt="Validación exitosa"></p>
+<p style="text-align: center; font-style: italic">Successful validation of the dataset.</p><p>If there are any errors in your database, you can always return to the Data Package Creator to check for inconsistencies between your schema and your database, and to review the characteristics and structure of your data.
+Goodtables is a very powerful tool, which allows us to have the possibility of constant and simple validation to keep our databases in optimal conditions, not only for our work, but also for the reproduction and use of them by other people.</p>
 
   </div>
 
