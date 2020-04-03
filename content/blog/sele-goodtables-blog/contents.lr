@@ -41,7 +41,7 @@ En caso que tu base sea válida según tu esquema y viceversa, se verá así
 Si existe algún error en tus bases, siempre podés volver al Data Package Creator para revisar si existen incongruencias también entre tu esquema y tu base, y así revisar también las características y estructura de tu información.
 Goodtables es una herramienta muy poderosa, que nos permite contar contar con la posibilidad de validación constante y de forma simple para mantener nuestras bases de datos en condiciones óptimas, no sólo para nuestro trabajo, sino también para la reproducción y uso de los mismos por otras personas. 
 
-# English Version: Validating data one package at a time
+## English Version: Validating data one package at a time
 
 In the previous edition of our blogs, we wrote about [how to package data](http://fellows.frictionlessdata.io/blog/sele-datapackage-blog/) and the process involved in being able to organize the metadata, the data schema and the CSV into a single container. The next step is to validate this data, and for that we have a tremendous tool: [Try Goodtables](http://try.goodtables.io/) and below I explain Goodtables in its expanded format. 
  
