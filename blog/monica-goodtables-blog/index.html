@@ -28,19 +28,19 @@
 <li>Hit Validate.</li>
 <li>If there are no structural errors in your data frame you will get a “Valid Table.” </li>
 </ul>
-<p><img src="ValidatePicture1.PNG" width=100% alt="TEXT DESCRIBING YOUR PICTURE"></p>
+<p><img src="ValidatePicture1.png" width=100% alt="Valid table"></p>
 <p style="text-align: center; font-style: italic">A validated tabular data frame!.</p><ul>
 <li>Repeat this for all of your data frames or resources. </li>
 </ul>
 <p>If you are using the raw data you can do this step before you create your data package or if you don’t have a schema (made with a data package) this is still a great tool to check for structural errors. What if you have a data package like the one I made in my previous blog with a schema? Well then we can use Goodtables to validate the tabular data against the schema. We’ll have to first grab the schema from the data package.</p>
 <p>Since my data package is on GitHub I can just go and view on the code page. The schema part is the text following the “"schema":“ Make sure to grab the curly bracket.</p>
-<p><img src="ValidatePicture2.PNG" width=100% alt="TEXT DESCRIBING YOUR PICTURE"></p>
+<p><img src="ValidatePicture2.png" width=100% alt="schema"></p>
 <p style="text-align: center; font-style: italic">Grabing the schema.</p><p>Copy and paste this information into a text editor like Sublime and save it as schema.json. Then go back to the Goodtables webtool. Make sure your tabular data information is also input at the top, then upload your schema.json file. 
 When I hit validate. Oh noes an error! But thankfully the Goodtables caught it. I had designated a variable as an integer when it should be a number. 
 To fix this error you can either 1. Make the change in data package tool, or change it directly in the json file. I did the latter and re-uploaded the file on the Goodtables webtool and hit validate!</p>
-<p><img src="ValidatePicture3.PNG" width=100% alt="TEXT DESCRIBING YOUR PICTURE"></p>
+<p><img src="ValidatePicture3.png" width=100% alt="invalid goodtables message"></p>
 <p style="text-align: center; font-style: italic">Oh noes!</p><p>Woo-hoo! Validated! You should repeat this for each data frame/ resource you have. Having your data and schema validated give you that extra-special feeling that your data is nice and clean and ready to share.</p>
-<p><img src="ValidatePicture4.PNG" width=100% alt="TEXT DESCRIBING YOUR PICTURE"></p>
+<p><img src="ValidatePicture4.png" width=100% alt="valid goodtables message"></p>
 <p style="text-align: center; font-style: italic">Hooray validated!</p>
   </div>
 
