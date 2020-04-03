@@ -73,21 +73,17 @@ En conclusión, si vamos al supermercado, ¿qué es mejor? ¿regresar a casa car
 
 Para ver mi datapackage y toda la información, pueden acceder desde mi [Github](https://github.com/seleneyang/frictionless_data_fellowship/blob/master/datapackage_OSM_Abortion_Clinics.json).
 
-_English bellow_
+# English Version: How do we package data and why is it important to organize the grocery bag?
 
----
+This is a publication to share with you the process and steps to create datapackages. What is that? A datapackage is basically a package that streamlines the way we share and replicate data. It is like a data container ready to be transported on the highway of knowledge (geeky, right).
 
-## How do we package data and why is it important to organize the grocery bag?
-
-This is a publication to share with you about the process and steps to create datapackages. What is this? A datapackage is basically a package that streamlines the way we share and replicate data. It is like a data container ready to be transported on the highway of knowledge (geeky, right).
-
-Why do we want to package this data? Because from the [fellows](https://fellows.frictionlessdata.io/), we want datasets that are frictionless, that is to say, that can be replicated, reusable and thus contribute to better processes in which knowledge can be opened and shared. If you check the [field guides](https://frictionlessdata.io/field-guide/), you can find more information about the program. 
+Why do we want to package this data? Because with the [fellows](https://fellows.frictionlessdata.io/), we want datasets that are frictionless, that is to say, that can be replicated, reusable and thus contribute to better processes in which knowledge can be opened and shared. If you check the [field guides](https://frictionlessdata.io/field-guide/), you can find more information about the program. 
 
 ### The datapackages can contain the data in CSV (comma separated values) format, the data schemes in JSON format and the metadata of your... data...
 
 <img src="abortion_osm_overpass.png" width=100% alt="Openstreetmapmap">
 
-My datapackage responds to geospatial data about abortion centers (clinics) around the world that are mapped on [OpenStreetMap](https://openstreetmap.org/). I got this data in a very simple way, I used the Overpass Turbo API with this [query](https://overpass-turbo.eu/s/P9U) (thanks to the help of [Geochicas](https://t.me/geochicasosm)) which yielded 101 mapped nodes. Here is when the validation and packaging of the data begins. 
+My datapackage corresponds to geospatial data about abortion centers (clinics) around the world that are mapped on [OpenStreetMap](https://openstreetmap.org/). I got this data in a very simple way, I used the Overpass Turbo API with this [query](https://overpass-turbo.eu/s/P9U) (thanks to the help of [Geochicas](https://t.me/geochicasosm)) which yielded 101 mapped nodes. Here is when the validation and packaging of the data begins. 
 
 Now, why did I decide to use this dataset? Because my doctoral research and the work that we carry out from Geochicas, seeks to link spatial analysis between the type of objects mapped, the gender of the person mapping those points and also the gender representations that exist in space.
 
@@ -144,8 +140,8 @@ For people who are a bit more technically advanced, you can try the [libraries](
 
 For people who do not have great technical capabilities (like me), this option of data transfer and validation with a friendly platform and without having to go into the depths of our terminals, is a great help to improve and share data reproduction practices, results more quickly and efficiently. 
 
-This kind of data reproducibility initiatives are of great importance to improve practices within scientific communities, community practices that contribute to share and disseminate knowledge. Data packaging contributes to these practices, to eliminate the possibility of losing information, and at the same time to improve the possibility of reproducing the steps that lead to our bases. 
+This kind of data reproducibility initiatives are of great importance to improve scientific communities practices that contribute to the sharing and dissemination of knowledge. Data packaging contributes to these practices, eliminating the possibility of losing information, and at the same time improving the possibility of reproducing the steps that lead to our bases. 
 
 In conclusion, if we go to the supermarket, what is better: to return home carrying all the groceries in our hands without a bag, where they can get lost, fall, be ruined, or return with an organized bag that can also be lent to the neighbors to go shopping later?
 
-To see my datapackage with all of the data, you can access from my [Github](https://github.com/seleneyang/frictionless_data_fellowship/blob/master/datapackage_OSM_Abortion_Clinics.json).
+To see my datapackage with all of the data, you can access it from my [Github](https://github.com/seleneyang/frictionless_data_fellowship/blob/master/datapackage_OSM_Abortion_Clinics.json).
