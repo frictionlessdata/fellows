@@ -5,13 +5,13 @@
 
 <body>
   <header>
-    <a class="logo" href="/">{% include 'includes/logo.svg' %}</a>
+    <a href="/">{% include 'includes/logo.svg' %}</a>
     <button><a href="/">Home</a></button>
     <button><a href="/syllabus">Syllabus</a></button>
     <button><a href="/resources">Resources</a></button>
     <button><a href="/lessons">Lessons</a></button>
     <button><a href="/blog">Blog</a></button>
-    <button><a href="/about">About</a></button>
+    <button><a href="/apply">Apply</a></button>
   </header>
   <article>
     {% block body %}{% endblock %}
@@ -24,5 +24,4 @@
       <a href="https://okfn.org/">Open Knowledge Foundation Homepage</a>
     </p>
   </footer>
-  {% include 'includes/icons.svg' %}
 </body>
