@@ -12,7 +12,7 @@ Now that we have our data, let's take a look at it (always a good idea). We see 
 
 ##Create a Data Package
 We'll first start by creating a Data Package, which is a container of the raw data, it's associated metadata, and optionally a schema. You can read more about the specifications of the Data Package [here](https://frictionlessdata.io/specs/data-package/).
-We have two ways of creating and working with Data Packages. The first is with the browser tool [datapackage creator](http://create.frictionlessdata.io/), and the second is programmatically with the [datapackage libraries](https://frictionlessdata.io/software/). We'll start with the first. Here are the steps:
+We have two ways of creating and working with Data Packages. The first is with the browser tool [datapackage creator](http://create.frictionlessdata.io/), and the second is programmatically with the [datapackage libraries](https://github.com/frictionlessdata). We'll start with the first. Here are the steps:
 *Note: if you get lost, check out the more in-depth tutorials on our [Field Guide](https://frictionlessdata.io/field-guide/).*
 * We will load our recently saved data (in the .csv format) into the [datapackage creator](http://create.frictionlessdata.io/). 
 * Add in as much metadata as possible, like a description of what the data is

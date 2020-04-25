@@ -6,7 +6,7 @@ En la edición anterior de nuestros blogs, escribimos sobre [cómo empaquetar da
 
 ## ¿Qué es Goodtables?
 
-Goodtables es una herramienta Web gratuita, que también cuenta con [librerías](https://frictionlessdata.io/software/) para Python (para aquellas personas que no tienen miedo de adentrarse en sus terminales), que te permite validar las fuentes de datos de manera automática para encontrar errores estructurales. También, si contás con un esquema de datos (si usaste el empaquetador de datos, vas a tener un esquema en JSON que podés guardar como documento) también se puede utilizar para contrarrestar y validar tu estructura. 
+Goodtables es una herramienta Web gratuita, que también cuenta con [librerías](https://github.com/frictionlessdata) para Python (para aquellas personas que no tienen miedo de adentrarse en sus terminales), que te permite validar las fuentes de datos de manera automática para encontrar errores estructurales. También, si contás con un esquema de datos (si usaste el empaquetador de datos, vas a tener un esquema en JSON que podés guardar como documento) también se puede utilizar para contrarrestar y validar tu estructura. 
 
 *Si usaste Data Package creator, y quieres crear un documento de tu esquema, deberás copiar esto, hasta donde cierra fields y guardarlo como un formato JSON.
 
@@ -46,7 +46,7 @@ Goodtables es una herramienta muy poderosa, que nos permite contar contar con la
 In the previous edition of our blogs, we wrote about [how to package data](http://fellows.frictionlessdata.io/blog/sele-datapackage-blog/) and the process involved in being able to organize the metadata, the data schema and the CSV into a single container. The next step is to validate this data, and for that we have a tremendous tool: [Try Goodtables](http://try.goodtables.io/) and below I explain Goodtables in its expanded format. 
  
 ## What is Goodtables?
-Goodtables is a free web tool, which also has [libraries](https://frictionlessdata.io/software/) for Python (for those people who are not afraid to go into their terminals), which automatically allows you to validate your data sources to find structural errors in your dataset. Also, if you have a data schema (if you used the Data Package Creator, you will have a schema in JSON that you can save as a document) it can also be used to counteract and validate your structure. 
+Goodtables is a free web tool, which also has [libraries](https://github.com/frictionlessdata) for Python (for those people who are not afraid to go into their terminals), which automatically allows you to validate your data sources to find structural errors in your dataset. Also, if you have a data schema (if you used the Data Package Creator, you will have a schema in JSON that you can save as a document) it can also be used to counteract and validate your structure. 
  
 *If you used Data Package Creator, and you want to create a document from your schema, you must copy this, to where *fields* closes and save it as a JSON format.
 
