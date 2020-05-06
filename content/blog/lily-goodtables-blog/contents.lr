@@ -27,7 +27,7 @@ To gather our data, we asked open ended questions, such as, “how would you des
 .</p>
 
 
-A subset of this data is ready for analysis and had been uploaded as a csv file to a [GitHub repository](https://github.com/lilyzzhao/science-to-benefit-moorea)
+A subset of this data is ready for analysis and had been uploaded as a csv file to a [GitHub repository](https://github.com/lilyzzhao/resident-scientist-data)
 
 First I created a datapackage by uploading this csv file to [Frictionless Data's Datapackage Creator]( https://create.frictionlessdata.io/). This tool helps articulate the data structure clearly to anyone who may be interested in it. 
 
