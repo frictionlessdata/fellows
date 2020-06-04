@@ -1,0 +1,16 @@
+title: Gimme Dat Data (in a validated Data Package)
+---
+body: As a scientist I collect a lot of data. Especially about animals that live in the water - fish, mussels, crayfish. This data is not only useful to me but it can be used by others to improve the power in their studies, increase geographic range or phylogenetic diversity for example. 
+
+<img src="GimmeDatData.png" width=100% alt="call"> 
+<p style="text-align: center; font-style: italic">Graphic that reads Gimme Dat Data with two hands up</p>
+ 
+Prior to the Frictionless Data for Reproducible Research Fellowship, I had my data on GitHub along with a script that would use rcurl to pull the data from the repository. While the repository was accompanied by a README, the file didn’t have much information other than the manuscript which included the data. This structure facilitated reproducibility but not reusability. Conceivably if you wanted to use my data for your own experiments you could have contextualized the data by using the relevant manuscript, but it still would have been a challenge without any metadata, not to mention any potential structural errors you could have encountered that I didn’t catch when I uploaded the data. 
+
+It was through the introduction of Frictionless Tools, however that I realized that there was more I could do to make my science even more transparent, reproducible and reusable. The fellowship syllabus was structured in such a way that by learning about the tools we learned what the tools were facilitating - better data sharing. The fellows would learn how to use the tool through a self guided lesson and then answer questions on Slack which asked us to interrogate why the tool was built the way it was. These lessons were also supported by calls with the full cohort of fellows where we discussed what we had learned, problems we were encountering as we used the tools with our own data and reviewed papers on open science. The fellowship culminated with a workshop delivered by all four fellows attended by over 40 participants and a presentation at CSV Conf. 
+
+Now when I share data as a data package I know I have validated by tabular data for structural errors and the file contains metadata that contextualizes the data.
+
+Having the opportunity to be a part of the inaugural cohort has been a wonderful experience. I learned new tools and information that I will take and share for the rest of my career, but also gained new colleagues and open science friends in my fellow fellows. 
+ 
+
