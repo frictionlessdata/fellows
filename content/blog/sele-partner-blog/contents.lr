@@ -12,7 +12,7 @@ Sus dataset se encuentra disponible de forma abierta en su repositorio de [Githu
 
 Para reproducir los datos de Lily, utilicé inicialmente el [DataPackage Creator](https://create.frictionlessdata.io/) tool para cargar su [información en bruto](https://raw.githubusercontent.com/lilyzzhao/resident-scientist-data/master/resident_researcher_data.csv) y así empezar a revisar las especificaciones de su data type creados de manera automática por la herramienta. 
 
-Luego de revisar que los datos estuvieran correctos en su formato y tipo, creé un nuevo paquete de datos, y un esquema en JSON que posteriormente validé en la herramienta [Try Goodtables] (http://try.goodtables.io/), para asegurarme que el contenido y la estructura de los datos fuera la correcta. 
+Luego de revisar que los datos estuvieran correctos en su formato y tipo, creé un nuevo paquete de datos, y un esquema en JSON que posteriormente validé en la herramienta [Try Goodtables](http://try.goodtables.io/), para asegurarme que el contenido y la estructura de los datos fuera la correcta. 
 
 La potencia de estas herramientas permite maximizar el uso y reproducibilidad de los hallazgos. 
 
@@ -26,10 +26,10 @@ I was fortunate to work on this assignment with the splendid data from my partne
 
 My journey through Lily's data took me to Mo'rea, French Polynesia, from where she, through different tools, collected a total of 175 interviews among residents and also researchers in the region.
 
-Her dataset is openly available in her [Github] repository (https://github.com/lilyzzhao/resident-scientist-data), which contains geographic data and the results of her interviews. 
+Her dataset is openly available in her [Github repository](https://github.com/lilyzzhao/resident-scientist-data), which contains geographic data and the results of her interviews. 
 
 To replicate Lily's data, I initially used the [DataPackage Creator](https://create.frictionlessdata.io/) tool to load her [raw information](https://raw.githubusercontent.com/lilyzzhao/resident-scientist-data/master/resident_researcher_data.csv) and started to review the data type specifications automatically created by the tool. 
 
-After checking that the data was correct in format and type, I created a new data package, and a JSON schema which I later validated in the [Try Goodtables] tool (http://try.goodtables.io/), to ensure that the content and structure of the data was correct. 
+After checking that the data was correct in format and type, I created a new data package, and a JSON schema which I later validated in the [Try Goodtables tool](http://try.goodtables.io/), to ensure that the content and structure of the data was correct. 
 
 The power of these tools allows to leverage the use and reproducibility of the research findings and results from others. 
