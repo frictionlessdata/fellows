@@ -2,144 +2,161 @@ title: Syllabus
 ---
 body:
 
-## Sept 15 - 21: Welcome!
-- initial meetings + introductions
+## August 3 - 7: Welcome and Onboarding!
+- initial group meeting + introductions
+- Go through the [onboarding document](https://github.com/frictionlessdata/fellows/blob/master/docs/onboarding.md)
 - Friday check-in on Slack
 
-## Sept 22 - 28: Onboarding
-- Go through the [onboarding document](https://github.com/frictionlessdata/fellows/blob/master/docs/onboarding.md)
-- *Check in*: One-on-one meetings
-
-## Sept 30 - Oct 4: Roadmapping <a href="/lessons#roadmapping">lesson</a>
+## August 10 - 14: Roadmapping <a href="/lessons#roadmapping">lesson</a>
 - Creation of a roadmap
 - Journal club: read ["Do You Speak Open Science? Resources and Tips to Learn the Language"](https://peerj.com/preprints/2689/) 
-- *Check in*: Answer questions in Slack on Friday
-
-## Oct 7 - 11: First blog
-- Introductory blog about yourself and your research
-- Use this [template](https://docs.google.com/document/d/1KylLIcuN35qBJFhZlIGmXdMxGYNaP1oJuu74soihuQ0/edit) to help you start your blog
 - *Check in*: One-on-one meetings
 
-## Oct 14 - 18: Programming catch up + Open Access Week
-- Goal: to make sure everyone is on the same page with git, GitHub, the command line, (and optionally Python & R)
-- Use the Coding Resources [here](http://fellows.frictionlessdata.io/resources/) to watch videos and do tutorials as needed
-- Go over Contributing Best Practices in [resources](http://fellows.frictionlessdata.io/resources/)
-- Remember to ask questions in Slack if you need help!
-- Collaboratively write an Open Access week blog (see [Lessons](/lessons#oa))
-- *Check in*: Answer questions in Slack on Friday
+## August 17 - 21: First blog
+- Introductory blog about yourself and your research
+- Use this [template](https://docs.google.com/document/d/1KylLIcuN35qBJFhZlIGmXdMxGYNaP1oJuu74soihuQ0/edit) to help you start your blog
+- *Check in*: Group meeting
 
-## Oct 21 - Nov 1: Frictionless Data introduction
+## August 24 - September 4: Programming catch up
+- Goal: to make sure everyone feels comfortable with git, GitHub, the command line, (and optionally Python & R)
+- Week 1: discuss imposter syndrome, problem solving skills, and read the Open Knowledge Foundation's Contributing Best Practices in [resources](http://fellows.frictionlessdata.io/resources/). Together, we will also set up your programming environment.
+- Week 2: use the Coding Resources [here](http://fellows.frictionlessdata.io/resources/) to watch videos and do tutorials as needed.
+- Remember to ask questions in Slack if you need help!
+- *Check in*: Group meeting during week 1
+- *Check in*: One-on-one meetings during week 2
+
+## September 7 - 18: Frictionless Data introduction
 - Go over the 3 workshop slides in [resources](http://fellows.frictionlessdata.io/resources/)
 - Watch Serah Rono's [video on Frictionles Data and the Open Knowledge Foundation](https://www.youtube.com/watch?v=3Ranx9Jz0Ro)
 - Read through the Frictionless Data + Reproducible Research blogs and articles in [resources](http://fellows.frictionlessdata.io/resources/)
 - Go over the Schema + Specs [lesson](https://fellows.frictionlessdata.io/lessons/)
-- Open a Pull Request on GitHub to add your Open Access Week blog onto the [Fellows blog](http://fellows.frictionlessdata.io/blog/oa-week/) 
-- *Check in*: One-on-one meetings + help with your pull requests if needed, by Friday Oct 25
-- *Check in*: Answer questions in Slack on Friday Nov 1
+- *Check in*: Group meeting during week 1
+- *Check in*: One-on-one meetings during week 2
 
-## Nov 4 - 15: Open science + reproducible research introductions
-- Go over Reproducible Research Blogs & Reading in [resources](http://fellows.frictionlessdata.io/resources/)
-- Go over Data Management Best Practices in [resources](http://fellows.frictionlessdata.io/resources/)
-- Find another resource on reproducible research, open science, or data management and add it to the Fellows Resources site by opening a Pull Request on GitHub
-- *Optional* Create an [ORCID](https://orcid.org/) if you don't have one
-- By Friday 8 Nov: submit your Pull Request (PR) on GitHub + *Check in*: One-on-one meetings
-- *Check in*: Answer questions in Slack on Friday Nov 15
+## September 21 - October 2: Open science + reproducible research introductions
+- Week 1: 
+  - Go over Reproducible Research Blogs & Reading in [resources](http://fellows.frictionlessdata.io/resources/)
+  - Go over Data Management Best Practices in [resources](http://fellows.frictionlessdata.io/resources/)
+- Week 2: 
+  - Find another resource on reproducible research, open science, or data management and add it to the Fellows Resources site by opening a Pull Request on GitHub
+  - *Optional* Create an [ORCID](https://orcid.org/) if you don't have one
+- *Check in*: Group meeting during week 1
+- *Check in*: One-on-one meetings during week 2
 
-## Nov 18 - 22: Data Package <a href="/lessons#datapackages">lesson</a>
+## October 5 - 9: Data Package <a href="/lessons#datapackages">lesson</a>
 - Go over the Data Package lesson [using Data Package Creator](http://fellows.frictionlessdata.io/lessons#datapackages)
 - *Optional* - Go over the Python or R [lessons](http://fellows.frictionlessdata.io/lessons#datapackages) as well
-- *Check in*: One-on-one meetings, Friday Nov 22
+- *Check in*: Group meeting
 
-## Nov 25 - 29: Break!
-- Lilly is on vacation, so take a break and catch up if needed
-
-## Dec 2 - Dec 13: Create your own Data Pacakge
-- Using your own data, create a data pacakge
-- Remember to implement coding best practices and document what you do
-- Upload your datapackage to GitHub
-- *Check in*: Answer questions in Slack on Friday Dec 6
-- *Check in*: One-on-one meetings, Friday Dec 13
-
-## Dec 16 - 20: Audience mapping <a href="/lessons#audience">lesson</a>
-- Go over the Audience Mapping exercise in [lessons](http://fellows.frictionlessdata.io/lessons#audience)
-- Continue working on creating your own Data Package if you are not done
-- *Check in*: Answer questions in Slack on Friday
-
-## Dec 23 - Jan 3: Break!
-
-## Jan 6 - 10: New Year Check In
-- Revisit your roadmap document and write up a short status report
+## October 12 - 16: Open Access Week
+- Collaboratively write an Open Access week blog (see [Lessons](/lessons#oa))
+- Open a Pull Request on GitHub to add your Open Access Week blog onto the [Fellows blog](http://fellows.frictionlessdata.io/blog/oa-week/)
 - *Check in*: One-on-one meetings
 
-## Jan 13 - 24: Data Package Blog
+## October 19 - October 30: Create your own Data Pacakge
+- Using your own data, create a data pacakge using the Data Package Creator (create.frictionlessdata.io)
+- *advanced* Optionally, also use the [datapackage-py library](https://github.com/frictionlessdata/datapackage-py) to create a datapackage
+- Remember to implement coding best practices and document what you do
+- Upload your datapackage to GitHub
+- *Check in*: Group meeting during week 1
+- *Check in*: One-on-one meetings during week 2
+
+## November 2 - 6: Audience mapping <a href="/lessons#audience">lesson</a>
+- Go over the Audience Mapping exercise in [lessons](http://fellows.frictionlessdata.io/lessons#audience)
+- Continue working on creating your own Data Package if you are not done
+- *Check in*: Group meeting
+
+## November 9 - 20: Data Package Blog
 - Blog about your newly created data package with your own data (how did you do it, what did you learn)
 - As an example, read the blog [here](http://fellows.frictionlessdata.io/blog/neuro-blog/)
 - While writing your blog, keep in mind your audience from the mapping exercise
 - Add your blog to the [Fellows blog](http://fellows.frictionlessdata.io/blog/) by opening a pull request on GitHub
-- *Check in*: Answer questions in Slack on Friday Jan 17
-- *Check in*: One-on-one meetings, Friday Jan 24
+- *Check in*: One-on-one meetings during week 1
+- *Check in*: Group meeting during week 2
 
-## Jan 27 - Jan 31: Goodtables  <a href="/lessons#goodtables">lesson</a>
+## November 23 - 27: Break!
+- Lilly is on vacation, so take a break and catch up if needed
+
+## November 30 - December 4: Goodtables  <a href="/lessons#goodtables">lesson</a>
 - Go over the Goodtables data validation [lesson](http://fellows.frictionlessdata.io/lessons#goodtables)
-- *Check in*: Answer questions in Slack on Friday
+- *Check in*: One-on-one meetings
 
-## Feb 3 - 14: Validate your own data
-- Using the goodtables browser tool or libraries, validate the data package you made earlier
-- *Check in*: One-on-one meetings, Friday Feb 7
-- *Check in*: Answer questions in Slack on Friday Feb 14
+## December 7 - 12: Journal Club
+- Read an article (TBD) and answer questions in a group meeting
+- *Check in*: The journal club meeting will count as our group check in
 
-## Feb 17 - 28: Goodtables Blog
+## December 14 - 18: Conference abstract
+- Identify a conference you want to attend
+- Write (and submit) a proposal for a workshop or talk
+- *Check in*: One-on-one meetings
+
+## December 21 - Jan 1: Break!
+- Take a break!
+
+## January 4 - 8: New Year Check In
+- Revisit your roadmap document and write up a short status report
+- *Check in*: One-on-one meetings
+
+## January 11-22: Validate your own data
+- Using the [goodtables browser tool](http://try.goodtables.io), validate the data package you made earlier
+- *advanced* Optionally, also use the [goodtables-py library](https://github.com/frictionlessdata/goodtables-py) to validate your datapackage
+- *Check in*: Group meeting during week 1
+- *Check in*: One-on-one meetings during week 2
+
+## January 25 - 29: Goodtables Blog
 - Blog about your validated data package (how did you do it, what did you learn)
-- *Check in*: One-on-one meetings, Friday Feb 17
-- *Check in*: Answer questions in Slack on Friday Feb 28
 - Add your blog to the [Fellows blog](http://fellows.frictionlessdata.io/blog/) by opening a pull request on GitHub
+- *Check in*: Group meeting
 
-## March 2 - 13: Trade Data Packages
+## February 1 - February 12: Trade Data Packages
 - Trade data packages with each other and see if you can reproduce your partner's work
+- Do you understand their data based soley on their metadata?
 - Can you validate their data with goodtables?
-- *Check in*: One-on-one meetings, Friday March 6
-- *Check in*: Answer questions in Slack on Friday March 13
+- *Check in*: One-on-one meetings during week 1
+- *Check in*: Group meeting during week 2
 
-## March 16 - 20: Blog
+## February 15 - 19: Blog
 - Blog about the experience of reproducing your partner's data package
 - What worked? What didn't work? What was difficult or easy?
 - Add your blog to the [Fellows blog](http://fellows.frictionlessdata.io/blog/) by opening a pull request on GitHub
 - *Check in*: One-on-one meetings
 
-## March 23 - April 3: Workshop
-- Give a workshop to your network on what you have learned
+## February 22 - 26: Workshop Prep
 - Use the slides in [Resources](http://fellows.frictionlessdata.io/resources/) under the 'Frictionless Data Workshops' section to help you make your presentation
 - Tips on how to give a presentation/workshop: http://blogs.nature.com/naturejobs/2017/01/11/scientific-presentations-a-cheat-sheet/
+- *Check in*: Group meeting
+
+## March 1 - 5: Give a Workshop/Attend an Open Data Day Event
+- Give a workshop to your network on what you have learned or attend an Open Data Day event
 - Remember to post your workshop slides onto [Zenodo](https://zenodo.org/communities/fd_fellows/curate/)
 - Collect feedback - how do you think it went? What would you change for next time?
-- *Check in*: Answer questions in Slack on Friday March 27
-- *Check in*: One-on-one meetings, Friday April 3
+- *Check in*: One-on-one meetings
 
-## April 6 - 10: Break!
-- Take a break or catch up on work
+## March 8 - 12: Break!
+- Take a break or catch up if needed
 
-## April 13 - 17: Preprint Journal club
-- Read preprint article (TBD) and answer questions in Slack
+## March 15 - 19: Preprint Journal club
+- Read preprint article (TBD) and answer questions in a group meeting or in Slack
 - Discuss how and why to post preprints
-- *Check in*: Answer questions in Slack on Friday
+- *Check in*: The journal club meeting will count as our group check in
 
-## April 20 - May 1: Package and Validate again
+## March 22 - April 2: Package and Validate again
 - Using new data (your own data, or from an open repository), create a data package and then validate it
 - Document your code & upload your datapackage to GitHub
-- *Check in*: One-on-one meetings, Friday April 24
-- *Check in*: Answer questions in Slack on Friday May 1
+- *Check in*: One-on-one meetings during week 1
+- *Check in*: Group meeting during week 2
 
-## May 4 - May 15: Workshop/presentation
+## April 5 - April 16: Workshop/presentation
 - Do another workshop or presentation at your organization
+- Take the first week to prep, then give your workshop during the second week
 - Remember to post your workshop slides onto [Zenodo](https://zenodo.org/communities/fd_fellows/curate/)
-- *Check in*: One-on-one meetings, Friday May 8
-- *Check in*: Answer questions in Slack on Friday May 15
+- *Check in*: One-on-one meetings during week 1
+- *Check in*: Group meeting during week 2
 
-## May 18 - May 29: Final Blog
-- Reflect on what you have learned and accomplished
-- What are your next steps to advocate for open science + reproducible research?
-- *Check in*: One-on-one meetings, Friday May 22
-- *Check in*: Answer questions in Slack on Friday May 29
-
-## Week of June 6: Community Call
-- Present your work briefly in an Open Knowledge Foundation community call (exact date TBD)
+## April 19 - 30: Final Blog + Community Call
+- Week 1: Write your final blog
+  - Reflect on what you have learned and accomplished
+  - What are your next steps to advocate for open science + reproducible research?
+- Week 2: Present your work briefly in an Open Knowledge Foundation of Frictionless Data community call (exact date TBD)
+- *Check in*: One-on-one meetings during week 1
+- *Check in*: Group meeting during week 2
