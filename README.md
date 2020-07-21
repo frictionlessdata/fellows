@@ -1,5 +1,5 @@
 ## Contributing
-We're excited you want to contribute! The project follows the Open Knowledge Foundation [coding standards](https://github.com/okfn/coding-standards).
+We're excited you want to contribute! The project follows the Open Knowledge Foundation [coding standards](https://github.com/okfn/coding-standards) and our [code of conduct](https://frictionlessdata.io/code-of-conduct/).
 
 ### Contribute via a Pull Request (PR):
 - Clone this repository
