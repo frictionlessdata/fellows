@@ -6,8 +6,7 @@ During the [Frictionless Data Fellows Programme](https://fellows.frictionlessdat
 
 ## To Do First
 
-*   Read the Code of Conduct: [https://okfn.org/project-participation-guidelines/](https://okfn.org/project-participation-guidelines/)
-*   Take this survey on your programming background to help me understand your current skill level: [https://forms.gle/BQnybkpx7tpSPrgQ9](https://forms.gle/BQnybkpx7tpSPrgQ9) 
+*   Read the Code of Conduct: [https://okfn.org/about/code-of-conduct/](https://okfn.org/about/code-of-conduct/)
 *   Join our Slack group: [https://frictionless-fellows.slack.com/](https://frictionless-fellows.slack.com/)
 *   Bookmark the Fellows website [http://fellows.frictionlessdata.io/](http://fellows.frictionlessdata.io/)
 *   Read this whole document :-)
@@ -44,7 +43,7 @@ The Fellows Programme runs for 9 months and you should work approximately 24 hou
 
 Here is the [syllabus](http://fellows.frictionlessdata.io/syllabus/) for the main outcomes of the Programme. We will work together to make this into a roadmap for each of you. Generally, you will watch videos, do tutorials, read articles, write code, and work on writing blogs during the week on your own time. Then, we will have one-on-one meetings every other week to check in and so you can ask any questions. On the off weeks, you will all answer some check-in questions on Slack.
 
-We work openly and collaboratively, meaning we use tools that the public can access/see, like GitHub, and also collaboratively, with products like Google docs. We’ll be using Google docs and slides, in this [folder](https://drive.google.com/open?id=1M5MdORGcQLnXaONPpd-zmEC_ucqD--Qr). We’ll use Google hangouts for video calls. We’ll have most of our conversations on Slack (see more info on Slack below), but you can always email Lilly ([lilly.winfree@okfn.org](mailto:lilly.winfree@okfn.org)) as well. The main Frictionless Data GitHub Repositories are here [https://github.com/frictionlessdata](https://github.com/frictionlessdata) and the Fellows website is here [https://fellows.frictionlessdata.io/](https://fellows.frictionlessdata.io/). All the code and other products we produce are openly licensed, so others can use or reuse the content.
+We work openly and collaboratively, meaning we use tools that the public can access/see, like GitHub, and also collaboratively, with products like Google docs. We’ll be using Google docs and slides, in this [folder](https://drive.google.com/drive/u/1/folders/1ADnjiBmLJYx5wcnzi8fpEXRpDuw08til). We’ll use Google hangouts for video calls. We’ll have most of our conversations on Slack (see more info on Slack below), but you can always email Lilly ([lilly.winfree@okfn.org](mailto:lilly.winfree@okfn.org)) as well. The main Frictionless Data GitHub Repositories are here [https://github.com/frictionlessdata](https://github.com/frictionlessdata) and the Fellows website is here [https://fellows.frictionlessdata.io/](https://fellows.frictionlessdata.io/). All the code and other products we produce are openly licensed, so others can use or reuse the content.
 
 ## Helpful Tips
 
