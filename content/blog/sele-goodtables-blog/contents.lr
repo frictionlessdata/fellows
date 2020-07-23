@@ -1,5 +1,11 @@
 title: Validando datos un paquete a la vez
 ---
+author: Sele Yang
+---
+pub_date: 2020-04-03
+---
+cohort: 1
+---
 body:
 
 En la edición anterior de nuestros blogs, escribimos sobre [cómo empaquetar datos](http://fellows.frictionlessdata.io/blog/sele-datapackage-blog/) y el proceso que conlleva poder organizar en un sólo contenedor los metadatos, el esquema de los datos y el CSV. El siguiente paso, es que podamos validar dichos datos, y para eso contamos con una tremenda herramienta: [Try Goodtables](http://try.goodtables.io/) y más abajo les explico Goodtables en su formato expandido. 

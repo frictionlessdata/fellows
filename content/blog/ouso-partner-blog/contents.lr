@@ -1,5 +1,11 @@
 title: Data Barter: Real-life data interactions
 ---
+author: Daniel Ouso
+---
+pub_date: 2020-05-17
+---
+cohort: 1
+---
 body:
 
 As fellows, we've learnt a lot already and done a number of [interesting things](http://fellows.frictionlessdata.io/blog/) with Frictionless Data (FD) [tools and specifications](https://frictionlessdata.io/field-guide/). This time around, the goal was to model real-life data interactions; trade each other's data and share on the experience working with them. We barter-traded data packages. Specifically, we aimed to:

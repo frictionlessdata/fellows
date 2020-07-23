@@ -7,9 +7,9 @@ body:
 - Go through the [onboarding document](https://github.com/frictionlessdata/fellows/blob/master/docs/onboarding.md)
 - Friday check-in on Slack
 
-## August 10 - 14: Roadmapping <a href="/lessons#roadmapping">lesson</a>
-- Creation of a roadmap
-- Journal club: read ["Do You Speak Open Science? Resources and Tips to Learn the Language"](https://peerj.com/preprints/2689/) 
+## August 10 - 14: Roadmapping and Journal Club
+- Creation of a roadmap (follow this <a href="/lessons#roadmapping">lesson</a>)
+- Journal club: follow this <a href="/lessons#journalclub">lesson</a>
 - *Check in*: One-on-one meetings
 
 ## August 17 - 21: First blog
@@ -19,8 +19,13 @@ body:
 
 ## August 24 - September 4: Programming catch up
 - Goal: to make sure everyone feels comfortable with git, GitHub, the command line, (and optionally Python & R)
-- Week 1: discuss imposter syndrome, problem solving skills, and read the Open Knowledge Foundation's Contributing Best Practices in [resources](http://fellows.frictionlessdata.io/resources/). Together, we will also set up your programming environment.
-- Week 2: use the Coding Resources [here](http://fellows.frictionlessdata.io/resources/) to watch videos and do tutorials as needed.
+- Week 1: 
+  - Discuss imposter syndrome, problem solving skills, and read the Open Knowledge Foundation's Contributing Best Practices in [resources](http://fellows.frictionlessdata.io/resources/). 
+  - Together, we will also set up your programming environment.
+  - We will do a quick GitHub tutorial & you will each post your blog following these <a href="/lessons#github">GitHub instructions</a>).
+- Week 2: 
+  - use the Coding Resources [here](http://fellows.frictionlessdata.io/resources/) to watch videos and do tutorials as needed.
+  - finish posting your blog
 - Remember to ask questions in Slack if you need help!
 - *Check in*: Group meeting during week 1
 - *Check in*: One-on-one meetings during week 2
@@ -55,7 +60,7 @@ body:
 
 ## October 19 - October 30: Create your own Data Pacakge
 - Using your own data, create a data pacakge using the Data Package Creator (create.frictionlessdata.io)
-- *advanced* Optionally, also use the [datapackage-py library](https://github.com/frictionlessdata/datapackage-py) to create a datapackage
+- *Optional* also use the [datapackage-py library](https://github.com/frictionlessdata/datapackage-py) to create a datapackage
 - Remember to implement coding best practices and document what you do
 - Upload your datapackage to GitHub
 - *Check in*: Group meeting during week 1
@@ -99,7 +104,7 @@ body:
 
 ## January 11-22: Validate your own data
 - Using the [goodtables browser tool](http://try.goodtables.io), validate the data package you made earlier
-- *advanced* Optionally, also use the [goodtables-py library](https://github.com/frictionlessdata/goodtables-py) to validate your datapackage
+- *Optional* also use the [goodtables-py library](https://github.com/frictionlessdata/goodtables-py) to validate your datapackage
 - *Check in*: Group meeting during week 1
 - *Check in*: One-on-one meetings during week 2
 

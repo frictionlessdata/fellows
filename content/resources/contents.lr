@@ -2,46 +2,50 @@ title: Resources
 ---
 body: 
 
-## Reading list
+## Group meeting notes are linked [here](https://docs.google.com/document/d/1-pgZZEIOpJ1VshbRRnDq_s6p8vbZMmbRZicKUiFQHp0/edit)
+***
 
-### Frictionless Data (FD) Tutorials and Documentation:
-- The FD [Field Guide](https://frictionlessdata.io/field-guide/) has tutorials and documentation for using FD tools and software
-- General FD [documentation](https://frictionlessdata.io/docs/)
+## Frictionless Data (FD) Tutorials and Documentation:
+- The FD [Guide](https://frictionlessdata.io/guide/) has tutorials and documentation for using FD tools and software
 - FD [forum](https://discuss.okfn.org/c/frictionless-data) for asking long questions
-- FD [Gitter chat](https://gitter.im/frictionlessdata/chat) for asking short questions
+- FD [Discord chat](https://discord.com/invite/j9DNFNw) for asking short questions to the community
 - FD [Github repositories](https://github.com/frictionlessdata). 
 *Note: check out the ```README``` in each individual repository for documentation on how to use that software*
+***
 
-### Frictionless Data Workshops:
+## Frictionless Data Workshops:
 
-#### Slides:
-- [Template slides](https://docs.google.com/presentation/d/1vXqJ9G2xMEK2Z-ECqh_HdBCDzywUTPAOfMRLpC-Bcc4/edit) for Fellows to use as a starting place (if you want)
+### Slides:
+- [Template slides](https://docs.google.com/presentation/d/1e4QWPrJx_qRBciLbbpQ269k1ekj2L7tHvkbZwkah88w/edit) for Fellows to use as a starting place (if you want)
 - Frictionless Data [intro slides](https://docs.google.com/presentation/d/e/2PACX-1vR6W9vlSm_ha9ddzuVknk7NMEVCDJrv7FoyEvEECzKnrok8xyRrPkkgs_3N5hpuLETTbjpwdzbmubyq/pub?start=false&loop=false&delayms=3000)
 - FD for Reproducible Research [slides](https://docs.google.com/presentation/d/14dyORE_Ftvd30nEf1-rhspDSsVptGIINeRagmCm3f94/edit?usp=sharing) - note: you don't need to do the tutorial in here
 - FD in the lab [slides](https://bit.ly/2S2o09r)
 
 *Note: these slides are all openly licensed, so they can be remixed/reused*
 
-#### Videos:
+### Videos:
 - Data package creator walk through [video](https://www.youtube.com/watch?v=VrdPj28-L9g&list=LLQe-pXn0XZzmRzvyOMZpfEg)
 - Goodtables command line walk through [video](https://www.youtube.com/watch?v=PqtM6d696eY&list=LLQe-pXn0XZzmRzvyOMZpfEg)
 - Goodtables continuous validation walk through [video](https://www.youtube.com/watch?v=9YHwu34D_vM&list=LLQe-pXn0XZzmRzvyOMZpfEg)
+***
 
-### Frictionless Data + Reproducible Research blogs and articles:
+## Frictionless Data + Reproducible Research blogs and articles:
 - [FAIR research](https://blog.okfn.org/2018/08/14/frictionless-data-and-fair-research-principles/)
 - eLife + FD [case study](https://frictionlessdata.io/articles/elife/)
 - Pacific Northwest National Laboratory [case study](https://frictionlessdata.io/articles/pacific-northwest-national-laboratory-active-data-biology/)
 - Cell Migration Standardization Organization [case study](https://frictionlessdata.io/articles/cmso/)
 - University of Cambridge retinal mosaics [case study](https://frictionlessdata.io/articles/university-of-cambridge/)
 - Tesera natural resources [case study](https://frictionlessdata.io/articles/tesera/)
-- See more case studies [here](https://frictionlessdata.io/articles)
+- See more case studies [here](https://frictionlessdata.io/tag/case-studies/)
 - The [Open Definition](http://opendefinition.org)
+***
 
-### Contributing Best Practices:
+## Contributing Best Practices:
 - Open Knowledge Foundation [coding standards](https://github.com/okfn/coding-standards)
-- Open Knowledge Foundation [project participation guidelines + code of conduct](https://okfn.org/project-participation-guidelines/)
+- Open Knowledge Foundation [code of conduct](https://okfn.org/about/code-of-conduct)
+***
 
-### Data Management Best Practices:
+## Data Management Best Practices:
 - Data Management Plans [DMP Tools](https://dmptool.org/general_guidance)
 - [NIH data sharing guidelines](https://grants.nih.gov/grants/policy/data_sharing/)
 - [Understanding JSON Schemas](https://json-schema.org/understanding-json-schema/about.html#about) by json-schema.org
@@ -49,8 +53,9 @@ body:
 - Open Source Initiative's [guide to licenses](https://opensource.org/licenses)
 - [What is a data dictionary article](http://library.ucmerced.edu/node/10249) by UCMerced Library
 - BITSS Berkeley Initiative for Transparency in the Social Sciences [Resources](https://www.bitss.org/resource-library/)
+***
 
-### Reproducible Research Blogs and Readings:
+## Reproducible Research Blogs and Readings:
 - [The Turing Way](https://the-turing-way.netlify.com/introduction/introduction): a lightly opinionated guide to reproducible data science
 - eLife Innovation Community Manager [Emmy Tsang](https://twitter.com/emmy_ft)'s [talk on reproducible research](https://doi.org/10.6084/m9.figshare.8299226)
 - eLife Labs [Reproducible Document Stack blog](https://elifesciences.org/labs/b521cf4d/reproducible-document-stack-towards-a-scalable-solution-for-reproducible-articles)
@@ -62,8 +67,9 @@ body:
 - The Royal Society [Moving towards transparent and reproducible research](https://blogs.royalsociety.org/publishing/transparent-reproducible-research/)
 - ASAPbio [preprint info centre](https://asapbio.org/preprint-info)
 - OHBM Open Science - [Towards Global Inclusivity in Open Science Video](https://zenodo.org/record/3906784#.XvOY_C2ZNBx) 
+***
 
-### Coding Resources:
+## Coding Resources:
 - Markdown [tutorial & resources](http://laderast.github.io/magic-of-markdown) by [Ted Laderas](https://twitter.com/tladeras)
 - GitHub [Hello World](https://guides.github.com/activities/hello-world/) introductory tutorial
 - [Git-it](https://github.com/jlord/git-it-electron), an interactive Git & GitHub learning app by [Jessica Lord](https://twitter.com/jllord)

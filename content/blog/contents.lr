@@ -2,46 +2,10 @@ title: Fellows Programme Blog Homepage
 ---
 body:
 
-## Final Blogs:
 
-### [Monica: Gimme Dat Data (in a validated Data Package)](/blog/monica-final-blog/)
-### [Lily: Reflecting on My Time as a Fellow](/blog/lily-final-blog/)
-### [Ouso: Better Data: One resource at a time - My fellowship experience](/blog/ouso-final-blog/)
-### [Sele: A seguir reproduciendo conocimiento!](/blog/sele-final-blog/)
-
-## Goodtables Blogs:
-
-### [Monica's Goodtables Blog](/blog/monica-goodtables-blog/)
-### [Lily: Data Validation Of My Interview Dataset Using Goodtables](/blog/lily-goodtables-blog/)
-### [Sele: Validando datos un paquete a la vez](/blog/sele-goodtables-blog/)
-### [Ouso: Tabular data: Before you use the data](/blog/ouso-goodtables-blog/)
-
-## DataPackage Blogs:
-
-### [Sele: ¿Cómo empaquetamos datos y por qué es importante organizar la bolsa del supermercado?](/blog/sele-datapackage-blog/)
-### [Monica: Combating other people’s data](/blog/monica-datapackage-blog/)
-### [Ouso: Data package is valid!](/blog/ouso-datapackage-blog/)
-### [Lily's Datapackage Blog](/blog/lily-datapackage-blog/)
-
-## Reproducibility Blogs:
-
-### [Sele's Reproducibility Blog](/blog/sele-partner-blog/)
-### [Monica's Reproducibility Blog](/blog/monica-partner-blog/)
-### [Ouso's Reproducibility Blog](/blog/ouso-partner-blog/)
-### [Lily's Reproducibility Blog](/blog/lily-partner-blog/)
-
-## Introduction Blogs:
-
-### [Meet Sele](/blog/hello-sele/)
-### [Meet Ouso](/blog/hello-ouso/)
-### [Meet Monica](/blog/hello-monica/)
-### [Meet Lily](/blog/hello-lily/)
-
-## General Blogs:
-
-### [Neuroscience Blog](/blog/neuro-blog/): How neuroscience researchers can use Frictionless Data tooling and specs in their workflows to make their own scientific data more reproducible.
-
-### [Open Access Week 2019](/blog/oa-week/): The Fellows reflect on the theme of Open Access Week 2019: Open for Whom?
-
+---
+cohort2:
+---
+cohort1:
 ---
 subject_img: research-banner-bg.png

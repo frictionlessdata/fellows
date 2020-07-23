@@ -1,5 +1,11 @@
 title:Data package is valid!
 ---
+author: Daniel Ouso
+---
+pub_date: 2020-01-29
+---
+cohort: 1
+---
 body:The last few months have been exciting, to say the least. I dug deep into seeking to understand how to minimise friction in data workflows and promote openness and reproducibility. I have been able to Know of various FD software for improving data publishing workflows through the [FD Field Guide](http://fellows.frictionlessdata.io/blog/). We've looked at a number of case studies where FD synergised well for reproducibility, an example is on the [eLife study](https://frictionlessdata.io/articles/elife/). We also looked at contributing and coding [best practices](https://github.com/okfn/coding-standards). Moreover, I found [Understanding JSON schemas](https://json-schema.org/understanding-json-schema/about.html#about) (by json-schema.org) a great guide in understanding the data package schema, which is JSON-based. It all culminated in the creation of a data package, which I now want to share my experience.
 
 To quality-check the integrity of your data package creation, you must validate it before downloading it for sharing, among many things. The best you can get from that process is **"Data package is valid!"**. What about before then? 
