@@ -2,6 +2,8 @@
 {% block title %}{{ this.title }}{% endblock %}
 
 {% block body %}
+
+  <h1>{{ this.title }}</h1>
   <h2 id="roadmapping">{{this.roadmappingTitle}}</h2>
   {{this.roadmapping}}
   <h2 id="journalclub">{{this.journalclubTitle}}</h2>
@@ -12,6 +14,8 @@
   {{this.datapackages}}
   <h2 id="goodtables">{{this.goodtablesTitle}}</h2>
   {{this.goodtables}}
+  <h2 id="specs">{{this.specsTitle}}</h2>
+  {{this.specs}}
   <h2 id="audience">{{this.audienceTitle}}</h2>
   {{this.audience}}
   <h2 id="oa">{{this.oaTitle}}</h2>

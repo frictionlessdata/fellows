@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+
+{% block body %}
+
+  <h1>{{ this.title }}</h1>
+
+  <div>
+  {% if this.subject_img %}
+    <img style="width: 50%; display: block; margin-left: auto; margin-right: auto;" src="{{ this.subject_img }}">
+  {% endif %}
+  </div>
+  
+  <div>
+    {{ this.body }}
+  </div>
+
+  <h2 id="fdTutorials">{{this.fdTutorialsTitle}}</h2>
+  {{this.fdTutorials}}
+  <h2 id="fdWksp">{{this.fdWkspTitle}}</h2>
+  {{this.fdWksp}}
+  <h2 id="fdBlogs">{{this.fdBlogsTitle}}</h2>
+  {{this.fdBlogs}}
+  <h2 id="contributing">{{this.contributingTitle}}</h2>
+  {{this.contributing}}
+  <h2 id="dataManagement">{{this.dataManagementTitle}}</h2>
+  {{this.dataManagement}}
+  <h2 id="reproducible">{{this.reproducibleTitle}}</h2>
+  {{this.reproducible}}
+  <h2 id="coding">{{this.codingTitle}}</h2>
+  {{this.coding}}
+
+{% endblock %}

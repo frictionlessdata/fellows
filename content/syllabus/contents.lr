@@ -20,28 +20,28 @@ body:
 ## August 24 - September 4: Programming catch up
 - Goal: to make sure everyone feels comfortable with git, GitHub, the command line, (and optionally Python & R)
 - Week 1: 
-  - Discuss imposter syndrome, problem solving skills, and read the Open Knowledge Foundation's Contributing Best Practices in [resources](http://fellows.frictionlessdata.io/resources/). 
+  - Discuss imposter syndrome, problem solving skills, and read the Open Knowledge Foundation's Contributing Best Practices in [resources](/resources#contributing). 
   - Together, we will also set up your programming environment.
   - We will do a quick GitHub tutorial & you will each post your blog following these <a href="/lessons#github">GitHub instructions</a>).
 - Week 2: 
-  - use the Coding Resources [here](http://fellows.frictionlessdata.io/resources/) to watch videos and do tutorials as needed.
+  - use the Coding Resources [here](/resources#coding) to watch videos and do tutorials as needed.
   - finish posting your blog
 - Remember to ask questions in Slack if you need help!
 - *Check in*: Group meeting during week 1
 - *Check in*: One-on-one meetings during week 2
 
 ## September 7 - 18: Frictionless Data introduction
-- Go over the 3 workshop slides in [resources](http://fellows.frictionlessdata.io/resources/)
+- Go over the 3 workshop slides in [resources](/resources#fdWksp)
 - Watch Serah Rono's [video on Frictionles Data and the Open Knowledge Foundation](https://www.youtube.com/watch?v=3Ranx9Jz0Ro)
-- Read through the Frictionless Data + Reproducible Research blogs and articles in [resources](http://fellows.frictionlessdata.io/resources/)
-- Go over the Schema + Specs [lesson](https://fellows.frictionlessdata.io/lessons/)
+- Read through the Frictionless Data + Reproducible Research blogs and articles in [resources](/resources#fdBlogs)
+- Go over the Schema + Specs [lesson](/lessons#specs)
 - *Check in*: Group meeting during week 1
 - *Check in*: One-on-one meetings during week 2
 
 ## September 21 - October 2: Open science + reproducible research introductions
 - Week 1: 
-  - Go over Reproducible Research Blogs & Reading in [resources](http://fellows.frictionlessdata.io/resources/)
-  - Go over Data Management Best Practices in [resources](http://fellows.frictionlessdata.io/resources/)
+  - Go over Reproducible Research Blogs & Reading in [resources](/resources#fdBlogs)
+  - Go over Data Management Best Practices in [resources](/resources#dataManagement)
 - Week 2: 
   - Find another resource on reproducible research, open science, or data management and add it to the Fellows Resources site by opening a Pull Request on GitHub
   - *Optional* Create an [ORCID](https://orcid.org/) if you don't have one
@@ -49,13 +49,13 @@ body:
 - *Check in*: One-on-one meetings during week 2
 
 ## October 5 - 9: Data Package <a href="/lessons#datapackages">lesson</a>
-- Go over the Data Package lesson [using Data Package Creator](http://fellows.frictionlessdata.io/lessons#datapackages)
-- *Optional* - Go over the Python or R [lessons](http://fellows.frictionlessdata.io/lessons#datapackages) as well
+- Go over the Data Package lesson [using Data Package Creator](/lessons#datapackages)
+- *Optional* - Go over the Python or R [lessons](/lessons#datapackages) as well
 - *Check in*: Group meeting
 
 ## October 12 - 16: Open Access Week
 - Collaboratively write an Open Access week blog (see [Lessons](/lessons#oa))
-- Open a Pull Request on GitHub to add your Open Access Week blog onto the [Fellows blog](http://fellows.frictionlessdata.io/blog/oa-week/)
+- Open a Pull Request on GitHub to add your Open Access Week blog onto the [Fellows blog](/blog/)
 - *Check in*: One-on-one meetings
 
 ## October 19 - October 30: Create your own Data Pacakge
@@ -67,15 +67,15 @@ body:
 - *Check in*: One-on-one meetings during week 2
 
 ## November 2 - 6: Audience mapping <a href="/lessons#audience">lesson</a>
-- Go over the Audience Mapping exercise in [lessons](http://fellows.frictionlessdata.io/lessons#audience)
+- Go over the Audience Mapping exercise in [lessons](/lessons#audience)
 - Continue working on creating your own Data Package if you are not done
 - *Check in*: Group meeting
 
 ## November 9 - 20: Data Package Blog
 - Blog about your newly created data package with your own data (how did you do it, what did you learn)
-- As an example, read the blog [here](http://fellows.frictionlessdata.io/blog/neuro-blog/)
+- As an example, read the blog [here](/blog/neuro-blog/)
 - While writing your blog, keep in mind your audience from the mapping exercise
-- Add your blog to the [Fellows blog](http://fellows.frictionlessdata.io/blog/) by opening a pull request on GitHub
+- Add your blog to the [Fellows blog](/blog/) by opening a pull request on [GitHub](https://github.com/frictionlessdata/fellows#contribute-via-a-pull-request-pr)
 - *Check in*: One-on-one meetings during week 1
 - *Check in*: Group meeting during week 2
 
@@ -83,7 +83,7 @@ body:
 - Lilly is on vacation, so take a break and catch up if needed
 
 ## November 30 - December 4: Goodtables  <a href="/lessons#goodtables">lesson</a>
-- Go over the Goodtables data validation [lesson](http://fellows.frictionlessdata.io/lessons#goodtables)
+- Go over the Goodtables data validation [lesson](/lessons#goodtables)
 - *Check in*: One-on-one meetings
 
 ## December 7 - 12: Journal Club
@@ -110,7 +110,7 @@ body:
 
 ## January 25 - 29: Goodtables Blog
 - Blog about your validated data package (how did you do it, what did you learn)
-- Add your blog to the [Fellows blog](http://fellows.frictionlessdata.io/blog/) by opening a pull request on GitHub
+- Add your blog to the [Fellows blog](/blog/) by opening a pull request on GitHub
 - *Check in*: Group meeting
 
 ## February 1 - February 12: Trade Data Packages
@@ -123,11 +123,11 @@ body:
 ## February 15 - 19: Blog
 - Blog about the experience of reproducing your partner's data package
 - What worked? What didn't work? What was difficult or easy?
-- Add your blog to the [Fellows blog](http://fellows.frictionlessdata.io/blog/) by opening a pull request on GitHub
+- Add your blog to the [Fellows blog](/blog/) by opening a pull request on GitHub
 - *Check in*: One-on-one meetings
 
 ## February 22 - 26: Workshop Prep
-- Use the slides in [Resources](http://fellows.frictionlessdata.io/resources/) under the 'Frictionless Data Workshops' section to help you make your presentation
+- Use the slides in [Resources](/resources#fdWksp) under the 'Frictionless Data Workshops' section to help you make your presentation
 - Tips on how to give a presentation/workshop: http://blogs.nature.com/naturejobs/2017/01/11/scientific-presentations-a-cheat-sheet/
 - *Check in*: Group meeting
 

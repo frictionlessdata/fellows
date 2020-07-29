@@ -1,19 +1,31 @@
+model: resources
+---
 title: Resources
 ---
 body: 
 
 ## Group meeting notes are linked [here](https://docs.google.com/document/d/1-pgZZEIOpJ1VshbRRnDq_s6p8vbZMmbRZicKUiFQHp0/edit)
 ***
-
-## Frictionless Data (FD) Tutorials and Documentation:
+---
+fdTutorialsTitle:
+Frictionless Data (FD) Tutorials and Documentation
+---
+fdTutorials:
 - The FD [Guide](https://frictionlessdata.io/guide/) has tutorials and documentation for using FD tools and software
 - FD [forum](https://discuss.okfn.org/c/frictionless-data) for asking long questions
 - FD [Discord chat](https://discord.com/invite/j9DNFNw) for asking short questions to the community
 - FD [Github repositories](https://github.com/frictionlessdata). 
 *Note: check out the ```README``` in each individual repository for documentation on how to use that software*
+    - [Fellows website repository](https://github.com/frictionlessdata/fellows)
+    - [datapackage-py repository](https://github.com/frictionlessdata/datapackage-py)
+    - [datapackage-r repository](https://github.com/frictionlessdata/datapackage-r)
+    - [goodtables-py repository](https://github.com/frictionlessdata/goodtables-py)
 ***
-
-## Frictionless Data Workshops:
+---
+fdWkspTitle:
+Frictionless Data Workshops
+---
+fdWksp:
 
 ### Slides:
 - [Template slides](https://docs.google.com/presentation/d/1e4QWPrJx_qRBciLbbpQ269k1ekj2L7tHvkbZwkah88w/edit) for Fellows to use as a starting place (if you want)
@@ -28,8 +40,12 @@ body:
 - Goodtables command line walk through [video](https://www.youtube.com/watch?v=PqtM6d696eY&list=LLQe-pXn0XZzmRzvyOMZpfEg)
 - Goodtables continuous validation walk through [video](https://www.youtube.com/watch?v=9YHwu34D_vM&list=LLQe-pXn0XZzmRzvyOMZpfEg)
 ***
+---
+fdBlogsTitle:
+Frictionless Data + Reproducible Research blogs and articles
+---
+fdBlogs:
 
-## Frictionless Data + Reproducible Research blogs and articles:
 - [FAIR research](https://blog.okfn.org/2018/08/14/frictionless-data-and-fair-research-principles/)
 - eLife + FD [case study](https://frictionlessdata.io/articles/elife/)
 - Pacific Northwest National Laboratory [case study](https://frictionlessdata.io/articles/pacific-northwest-national-laboratory-active-data-biology/)
@@ -39,13 +55,21 @@ body:
 - See more case studies [here](https://frictionlessdata.io/tag/case-studies/)
 - The [Open Definition](http://opendefinition.org)
 ***
+---
+contributingTitle:
+Contributing Best Practices
+---
+contributing:
 
-## Contributing Best Practices:
 - Open Knowledge Foundation [coding standards](https://github.com/okfn/coding-standards)
 - Open Knowledge Foundation [code of conduct](https://okfn.org/about/code-of-conduct)
 ***
+---
+dataManagementTitle:
+Data Management Best Practices
+---
+dataManagement:
 
-## Data Management Best Practices:
 - Data Management Plans [DMP Tools](https://dmptool.org/general_guidance)
 - [NIH data sharing guidelines](https://grants.nih.gov/grants/policy/data_sharing/)
 - [Understanding JSON Schemas](https://json-schema.org/understanding-json-schema/about.html#about) by json-schema.org
@@ -55,8 +79,12 @@ body:
 - [What is a data dictionary article](http://library.ucmerced.edu/node/10249) by UCMerced Library
 - BITSS Berkeley Initiative for Transparency in the Social Sciences [Resources](https://www.bitss.org/resource-library/)
 ***
+---
+reproducibleTitle:
+Reproducible Research & Open Science Readings
+---
+reproducible:
 
-## Reproducible Research & Open Science Readings:
 - [The Turing Way](https://the-turing-way.netlify.com/introduction/introduction): a lightly opinionated guide to reproducible data science
 - eLife Innovation Community Manager [Emmy Tsang](https://twitter.com/emmy_ft)'s [talk on reproducible research](https://doi.org/10.6084/m9.figshare.8299226)
 - eLife Labs [Reproducible Document Stack blog](https://elifesciences.org/labs/b521cf4d/reproducible-document-stack-towards-a-scalable-solution-for-reproducible-articles)
@@ -70,8 +98,12 @@ body:
 - OHBM Open Science - [Towards Global Inclusivity in Open Science Video](https://zenodo.org/record/3906784#.XvOY_C2ZNBx) 
 - [Open Science Glossary](https://open-science-training-handbook.gitbook.io/book/glossary) by the Open Science Training Handbook
 ***
+---
+codingTitle:
+Coding Resources
+---
+coding:
 
-## Coding Resources:
 - Markdown [tutorial & resources](http://laderast.github.io/magic-of-markdown) by [Ted Laderas](https://twitter.com/tladeras)
 - GitHub [Hello World](https://guides.github.com/activities/hello-world/) introductory tutorial
 - [Git-it](https://github.com/jlord/git-it-electron), an interactive Git & GitHub learning app by [Jessica Lord](https://twitter.com/jllord)
