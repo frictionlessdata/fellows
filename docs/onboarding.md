@@ -62,7 +62,7 @@ We work openly and collaboratively, meaning we use tools that the public can acc
   *   Use emojis liberally :-)
   *   Use threads to keep a conversation in a thread
   *   You can set your notifications under ‘Preferences’
-*   We’ll use Slack to answer check-in questions every-other week. I will post questions Thursday evening, and you will have until the end of Friday to answer these questions. They won’t take too long - don’t worry!
+*   We’ll use Slack to answer fun check-in questions every Monday!
 
 ### What to do when you have a question:
 
@@ -77,8 +77,8 @@ We work openly and collaboratively, meaning we use tools that the public can acc
 *   Set working hours & don’t feel like you have to be available 24/7.
 *   You can reach out/ping me on Slack whenever, but I will only respond during my working hours (and you should too!)
 *   Turn on your video during calls if you are comfortable doing so.
-*   Take calls in a quiet place and show up on time.
-*   Use a calendar app (like Google Calendar) to keep track of our meetings.
+*   Take calls in a quiet place.
+*   Use a calendar app (like Google Calendar) to keep track of our meetings, and show up on time to our meetings.
 *   Learn each other’s time zones.
 *   Make sure your internet connection is strong. Connect via ethernet if needed.
 *   Set up a desk/working area with good lighting & a good chair.
