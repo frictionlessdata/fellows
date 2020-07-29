@@ -110,14 +110,13 @@
     <button><a href="/resources">Resources</a></button>
     <button><a href="/lessons">Lessons</a></button>
     <button><a href="/blog">Blog</a></button>
-    <button><a href="/apply">Apply</a></button>
+    <button><a href="/about">About</a></button>
   </header>
   <article>
     
-  <h2 id="roadmapping"><p>Roadmapping + Journal Club Lesson</p>
+  <h2 id="roadmapping"><p>Roadmapping</p>
 </h2>
-  <h3>Roadmapping</h3>
-<ul>
+  <ul>
 <li>Read over this roadmapping tutorial from Mozilla Open Leaders &amp; check out some of the examples. We won’t be following this exactly, but it is a good overview. <a href="https://mozilla.github.io/open-leadership-training-series/articles/opening-your-project/start-your-project-roadmap/">https://mozilla.github.io/open-leadership-training-series/articles/opening-your-project/start-your-project-roadmap/</a></li>
 <li>The <a href="http://fellows.frictionlessdata.io/syllabus/">syllabus</a> can be thought of as the roadmap for the programme, but the point of this exercise is for each of you to map these goals to your own timeline.</li>
 <li>Take the syllabus, and map out the main goals, or “milestones”.  These include things like blogs, learning goals, and workshops. (This can be taken pretty much straight from the syllabus)</li>
@@ -126,10 +125,13 @@
 <li>Are there additional milestones you want to add to your roadmap? For example, writing additional blogs, giving additional workshops? These can also be added later.</li>
 <li>Using project management tools: I recommend using project management tools like <a href="https://trello.com">Trello</a>, <a href="https://github.com/features/project-management/">GitHub projects</a>, or simply a  pen + paper planner to write down your main milestone tasks to help you keep track of your progress. If you want to use Trello or GitHub projects and need help, Lilly can help you.</li>
 </ul>
-<h3>Journal club</h3>
-<ul>
+<hr>
+
+  <h2 id="journalclub"><p>Journal Club Lesson</p>
+</h2>
+  <ul>
 <li>We’ll be reading “Do you speak open science? Resources and tips to learn the language” by Paola Masuzzo​ and Lennart Martens <a href="https://peerj.com/preprints/2689/">https://peerj.com/preprints/2689/</a></li>
-<li>You will all meet virtually to answer the discussion questions and talk about the paper</li>
+<li>You will then answer the following discussion questions in Slack (I will asign each of you to answer 2 of these questions):</li>
 <li><strong>Discussion questions:</strong><ol>
 <li>The authors identify four "pillars" of open science: data, code, papers, and review. Do you agree with these? Are there aspects of open science that you think are missing?</li>
 <li>When sharing raw data, what other information should also be released?</li>
@@ -142,6 +144,44 @@
 <li>What are some benefits and risks of open peer review?</li>
 </ol>
 </li>
+</ul>
+<hr>
+
+  <h2 id="github"><p>GitHub Instructions - Using GitHub to post your blog</p>
+</h2>
+  <ul>
+<li>GitHub instructions for the command line/terminal (Lilly can help you with this):<ul>
+<li>The repository is here <a href="https://github.com/frictionlessdata/fellows">https://github.com/frictionlessdata/fellows</a></li>
+<li>The blog content can be found within the following folder: fellows -&gt; content -&gt; blog -&gt; oa-week -&gt; contents.lr</li>
+<li>Step 1, Pull down the master branch so you have the most recent version of the website code on your local machine. Do this before you make your edits. Type 'git pull origin master'</li>
+<li>Step 2, Create a new branch: in the terminal, write 'git checkout -b your-branch-name' (replace with your branch's name, which can be anything)</li>
+<li><em>make sure you don't edit the master branch</em> You can check with 'git status'</li>
+<li>Step 3, Add your blog text to the 'contents.lr' file within the correct blog folder. Each blog has it's own folder. Add your text as Markdown, and remember to keep the <code>title</code> and <code>body</code> keywords.</li>
+<li>Step 4, Add and commit your changes: Once you finish editing the file, in your terminal, type: <ul>
+<li>git status<ul>
+<li>make sure everything looks OK</li>
+</ul>
+</li>
+<li>git add content/blog/blog-folder-name/contents.lr</li>
+<li>git commit -m "adds your-name's blog"</li>
+</ul>
+</li>
+<li>Step 5, Push your changes to your branch and open a Pull Request<ul>
+<li>git push origin your-branch-name</li>
+<li>in GitHub, open a pull request (PR) + tag @lwinfree for review</li>
+<li>Lilly will merge your PR</li>
+</ul>
+</li>
+<li><strong>ask Lilly or each other if you need help!</strong></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2>Using Specs and Schemas</h2>
+<ul>
+<li>Read through this introduction to <a href="https://json-schema.org/understanding-json-schema/about.html#about">JSON schemas</a> by json-schema.org</li>
+<li>Read through the <a href="https://frictionlessdata.io/specs/">Frictionless Data Specs</a></li>
+<li>Focus on the <a href="https://frictionlessdata.io/specs/data-package/">DataPackage specs</a> &amp; the <a href="https://frictionlessdata.io/specs/csv-dialect/">csv dialect</a></li>
 </ul>
 <hr>
 
@@ -167,13 +207,6 @@
 <ul>
 <li>Use these instructions to install datapackage.r and create a new datapackage <a href="http://frictionlessdata.io/docs/creating-tabular-data-packages-in-r/">http://frictionlessdata.io/docs/creating-tabular-data-packages-in-r/</a></li>
 <li>Follow these instructions to work with an existing Data Package in R - note: stop at the 'Loading into an SQL database' step. <a href="http://frictionlessdata.io/docs/using-data-packages-in-r/">http://frictionlessdata.io/docs/using-data-packages-in-r/</a></li>
-</ul>
-<hr>
-<h2>Using Specs and Schemas</h2>
-<ul>
-<li>Read through this introduction to <a href="https://json-schema.org/understanding-json-schema/about.html#about">JSON schemas</a> by json-schema.org</li>
-<li>Read through the <a href="https://frictionlessdata.io/specs/">Frictionless Data Specs</a></li>
-<li>Focus on the <a href="https://frictionlessdata.io/specs/data-package/">DataPackage specs</a> &amp; the <a href="https://frictionlessdata.io/specs/csv-dialect/">csv dialect</a></li>
 </ul>
 <hr>
 
@@ -213,7 +246,8 @@
 
   <h2 id="oa"><p>Open Access Week Lesson</p>
 </h2>
-  <h3>Blogging for Open Access Week 2019</h3>
+  <h3>Blogging for Open Access Week 2020</h3>
+<p><em>Note this will be updated once the theme for Open Access Week 2020 has been announced</em></p>
 <ul>
 <li><a href="http://www.openaccessweek.org">Open Access Week 2019</a> has the theme of 'Open for whom?'</li>
 <li>We will collaboratively write a blog reflecting on the question 'open for whom?'</li>
