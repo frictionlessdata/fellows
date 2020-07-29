@@ -1,5 +1,9 @@
 title: Neuroscience Blog
 ---
+author: Lilly Winfree
+---
+pub_date: 2019-06-07
+---
 body:
 
 *This blog post is the first in an upcoming series of posts showing how researchers can use Frictionless Data tooling and specs in their workflows to make their own scientific data more reproducible.*

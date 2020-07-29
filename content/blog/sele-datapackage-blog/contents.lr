@@ -1,5 +1,11 @@
 title: ¿Cómo empaquetamos datos y por qué es importante organizar la bolsa del supermercado?
 ---
+author: Sele Yang
+---
+pub_date: 2020-01-29
+---
+cohort: 1
+---
 body:
 Empaquetando datos sobre aborto desde OpenStreetMap
 Esta es una publicación para compartirles sobre el proceso y pasos para crear datapackages. ¿Qué es esto? Un datapackage es básicamente un empaquetado que agiliza la forma en que compartimos y replicamos los datos. Es como un contenedor de datos listo para ser transportado por la autopista del conocimiento (geeky, right).

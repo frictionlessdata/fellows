@@ -1,5 +1,11 @@
 title: Don't you wish your table was as clean as mine? 
 ---
+author: Monica Granados
+---
+pub_date: 2020-04-03
+---
+cohort: 1
+---
 body:
 
 How many times have you gotten a data frame from a colleague or downloaded data that had missing values? Or it’s missing a column name? Do you wish you were never that person? Well introducing Goodtables – your solution to counteracting bad data frames! As part of the inaugural Frictionless Data Fellows, I took Goodtables out for a spin.

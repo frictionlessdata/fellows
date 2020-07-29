@@ -1,5 +1,11 @@
 title: Reproduciendo un viaje a Mo'rea
 ---
+author: Sele Yang
+---
+pub_date: 2020-05-17
+---
+cohort: 1
+---
 body:
 
 En este blog vamos a hablar un poco sobre los desafíos de reproducir bases de datos de otras personas, y cuáles son los pasos que debemos seguir para llegar a los mismos resultados que llegaron nuestros compañeros. Para esta tarea usaremos las herramientas: DataPackage Creator para generar los paquetes de datos y Goodtables para validar dichos paquetes.
