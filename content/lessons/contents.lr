@@ -55,8 +55,14 @@ github:
     - in GitHub, open a pull request (PR) + tag @lwinfree for review
     - Lilly will merge your PR
   - **ask Lilly or each other if you need help!**
+
+### *[Additional helpful resources here](/resources#coding)*
 ***
-## Using Specs and Schemas
+---
+specsTitle:
+Using Specs and Schemas
+---
+specs:
 - Read through this introduction to [JSON schemas](https://json-schema.org/understanding-json-schema/about.html#about) by json-schema.org
 - Read through the [Frictionless Data Specs](https://frictionlessdata.io/specs/)
 - Focus on the [DataPackage specs](https://frictionlessdata.io/specs/data-package/) & the [csv dialect](https://frictionlessdata.io/specs/csv-dialect/)
@@ -81,6 +87,8 @@ datapackages:
 ### *OPTIONAL* - Data Packages - using our R [datapackage.r library](https://github.com/frictionlessdata/datapackage-r)
 - Use these instructions to install datapackage.r and create a new datapackage [http://frictionlessdata.io/docs/creating-tabular-data-packages-in-r/](http://frictionlessdata.io/docs/creating-tabular-data-packages-in-r/)
 - Follow these instructions to work with an existing Data Package in R - note: stop at the 'Loading into an SQL database' step. [http://frictionlessdata.io/docs/using-data-packages-in-r/](http://frictionlessdata.io/docs/using-data-packages-in-r/)
+
+### *[Additional helpful resources here](/resources#fdTutorials)*
 ***
 ---
 goodtablesTitle:
@@ -100,6 +108,8 @@ goodtables:
 - ** In Slack, answer these questions:**
   1. What is one reason why you should validate your data?
   2. What information does goodtables use to "know" the correct data type?
+
+### *[Additional helpful resources here](/resources#fdTutorials)*
 ***
 ---
 audienceTitle:
