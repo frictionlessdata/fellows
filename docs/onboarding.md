@@ -39,11 +39,11 @@ There are tutorials, blogs, and articles for each of these topics in the resourc
 
 ## How we’ll work
 
-The Fellows Programme runs for 9 months and you should work approximately 24 hours a month (so, 6 hours a week on average). If you find you need more time than this to get your work done, please let Lilly know and we will work together to help change your workload to be more reasonable while still achieving your Fellows goals. A time tracking app can help you keep track of the hours you are working (e.g. [Toggl](https://toggl.com/)).
+The Fellows Programme runs for 9 months and you should work approximately 24 - 32 hours a month (so, 6 to 8 hours a week on average). If you find you need more time than this to get your work done, please let Lilly know and we will work together to help change your workload to be more reasonable while still achieving your Fellows goals. A time tracking app can help you keep track of the hours you are working (e.g. [Toggl](https://toggl.com/)).
 
-Here is the [syllabus](http://fellows.frictionlessdata.io/syllabus/) for the main outcomes of the Programme. We will work together to make this into a roadmap for each of you. Generally, you will watch videos, do tutorials, read articles, write code, and work on writing blogs during the week on your own time. Then, we will have one-on-one meetings every other week to check in and so you can ask any questions. On the off weeks, you will all answer some check-in questions on Slack.
+Here is the [syllabus](http://fellows.frictionlessdata.io/syllabus/) for the main outcomes of the Programme. We will work together to make this into a roadmap for each of you. Generally, you will watch videos, do tutorials, read articles, write code, and work on writing blogs during the week on your own time. Then, we will have one-on-one meetings every other week to check in and so you can ask any questions. On the weeks we do not meet individually, we will all meet together as a group to work in unison.
 
-We work openly and collaboratively, meaning we use tools that the public can access/see, like GitHub, and also collaboratively, with products like Google docs. We’ll be using Google docs and slides, in this [folder](https://drive.google.com/drive/u/1/folders/1ADnjiBmLJYx5wcnzi8fpEXRpDuw08til). We’ll use Google hangouts for video calls. We’ll have most of our conversations on Slack (see more info on Slack below), but you can always email Lilly ([lilly.winfree@okfn.org](mailto:lilly.winfree@okfn.org)) as well. The main Frictionless Data GitHub Repositories are here [https://github.com/frictionlessdata](https://github.com/frictionlessdata) and the Fellows website is here [https://fellows.frictionlessdata.io/](https://fellows.frictionlessdata.io/). All the code and other products we produce are openly licensed, so others can use or reuse the content.
+We work openly and collaboratively, meaning we use tools that the public can access/see, like GitHub, and also collaboratively, with products like Google docs. We’ll be using Google docs and slides, in this [folder](https://drive.google.com/drive/u/1/folders/1ADnjiBmLJYx5wcnzi8fpEXRpDuw08til). We’ll use Google hangouts or Zoom for video calls, and we will collaboratively take notes during our meetings with this [notes document](https://docs.google.com/document/d/1-pgZZEIOpJ1VshbRRnDq_s6p8vbZMmbRZicKUiFQHp0/edit). We’ll have most of our conversations on Slack (see more info on Slack below), but you can always email Lilly ([lilly.winfree@okfn.org](mailto:lilly.winfree@okfn.org)) as well. The main Frictionless Data GitHub Repositories are here [https://github.com/frictionlessdata](https://github.com/frictionlessdata) and the Fellows website is here [https://fellows.frictionlessdata.io/](https://fellows.frictionlessdata.io/). All the code and other products we produce are openly licensed, so others can use or reuse the content.
 
 ## Helpful Tips
 
@@ -73,11 +73,15 @@ We work openly and collaboratively, meaning we use tools that the public can acc
 
 ### Remote working tips:
 
-*   Over-communicate/speak up/reach out - it is hard to know if someone is struggling when we don’t see each other
-*   Set working hours & don’t feel like you have to be available 24/7
-*   Turn on your video during calls
-*   Take calls in a quiet place
-*   Learn each other’s time zones
-*   Set up a desk/working area with good lighting & a good chair
-*   Ask for help/reach out when you need to talk to someone
-*   Good tips here: [https://www.upwork.com/blog/2018/02/complete-guide-asynchronous-communication-remote-teams/](https://www.upwork.com/blog/2018/02/complete-guide-asynchronous-communication-remote-teams/)
+*   Over-communicate/speak up/reach out - it is hard to know if someone is struggling when we don’t see each other.
+*   Set working hours & don’t feel like you have to be available 24/7.
+*   You can reach out/ping me on Slack whenever, but I will only respond during my working hours (and you should too!)
+*   Turn on your video during calls if you are comfortable doing so.
+*   Take calls in a quiet place and show up on time.
+*   Use a calendar app (like Google Calendar) to keep track of our meetings.
+*   Learn each other’s time zones.
+*   Make sure your internet connection is strong. Connect via ethernet if needed.
+*   Set up a desk/working area with good lighting & a good chair.
+*   Ask for help/reach out when you need to talk to someone.
+*   Self care is important! We are working during a pandemic - be kind to yourself and to each other. 
+*   More good tips here: [https://www.upwork.com/blog/2018/02/complete-guide-asynchronous-communication-remote-teams/](https://www.upwork.com/blog/2018/02/complete-guide-asynchronous-communication-remote-teams/)
