@@ -37,6 +37,7 @@ body:
 - Go over the Schema + Specs [lesson](/lessons#specs)
 - *Check in*: Group meeting during week 1
 - *Check in*: One-on-one meetings during week 2
+- *Optional office hours sessions this week*: 15:00 UTC on 9 September & 11 September. Join these sessions for more help if you have questions!
 
 ## September 21 - October 2: Open science + reproducible research introductions
 - Week 1: 
@@ -52,6 +53,7 @@ body:
 - Go over the Data Package lesson [using Data Package Creator](/lessons#datapackages)
 - *Optional* - Go over the Python or R [lessons](/lessons#datapackages) as well
 - *Check in*: Group meeting
+- *Optional office hours sessions this week*: 15:00 UTC on 7 October & 9 October. Join these sessions for more help if you have questions!
 
 ## October 12 - 16: Open Access Week
 - Collaboratively write an Open Access week blog (see [Lessons](/lessons#oa))
@@ -65,6 +67,7 @@ body:
 - Upload your datapackage to GitHub
 - *Check in*: Group meeting during week 1
 - *Check in*: One-on-one meetings during week 2
+- *Optional office hours sessions this week*: 15:00 UTC on 21 October & 23 October. Join these sessions for more help if you have questions!
 
 ## November 2 - 6: Audience mapping <a href="/lessons#audience">lesson</a>
 - Go over the Audience Mapping exercise in [lessons](/lessons#audience)
@@ -85,6 +88,7 @@ body:
 ## November 30 - December 4: Goodtables  <a href="/lessons#goodtables">lesson</a>
 - Go over the Goodtables data validation [lesson](/lessons#goodtables)
 - *Check in*: One-on-one meetings
+- *Optional office hours session this week*: 15:00 UTC on 2 December. Join this session for more help if you have questions!
 
 ## December 7 - 12: Journal Club
 - Read an article (TBD) and answer questions in a group meeting
@@ -107,6 +111,7 @@ body:
 - *Optional* also use the [goodtables-py library](https://github.com/frictionlessdata/goodtables-py) to validate your datapackage
 - *Check in*: Group meeting during week 1
 - *Check in*: One-on-one meetings during week 2
+- *Optional office hours sessions this week*: 15:00 UTC on 13 January & 15 January. Join these sessions for more help if you have questions!
 
 ## January 25 - 29: Goodtables Blog
 - Blog about your validated data package (how did you do it, what did you learn)
