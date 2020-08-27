@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% from "macros/pagination.html" import render_pagination %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+  <h1>{{ this.title }}</h1>
+  <div class="blog">
+    {{ this.body }}
+  </div>
+  <div>
+    <h2>
+      Cohort 2 Blogs
+    </h2>
+      <ul class="blog-index">
+      {% for post in this.pagination.items %}
+        {% if post.cohort == 2 %}
+        <li>
+          <a href="{{ post|url }}">{{ post.title }}</a> —
+          by {{ post.author }}
+          on {{ post.pub_date }}
+        </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    <h2>
+      Cohort 1 Blogs
+    </h2>
+      <ul class="blog-index">
+      {% for post in this.pagination.items %}
+        {% if post.cohort == 1 %}
+        <li>
+          <a href="{{ post|url }}">{{ post.title }}</a> —
+          by {{ post.author }}
+          on {{ post.pub_date }}
+        </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+  </div>
+  {% if this.pagination.pages > 1 %}
+    {{ render_pagination(this.pagination) }}
+  {% endif %}
+
+{% endblock %}
