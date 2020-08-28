@@ -1,13 +1,35 @@
-title: Your Title
+title: Meet Kate
 ---
-author: 
+author: Kate Bowie
 ---
-pub_date: 
+pub_date: 2020-08-27
 ---
 cohort: 2
 ---
 body:
 
-your text in Markdown
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
+## Kate Bowie 
+## she/her
+</div>
+
+***
+
+### Background
+Hello hi! I’m Kate Bowie, a 28-year-old midwesterner studying the human microbiome, or the collection of bacteria that live in and on the human body. I grew up in [Indiana](https://commons.wikimedia.org/wiki/File:Map_of_USA_IN.svg#/media/File:Map_of_USA_IN.svg) and moved to Portland, Oregon to work on a biomedical engineering PhD at Oregon Health and Science University (OHSU). Sure, I spend a lot of time in the laboratory thinking about all the microbes inhabiting the human body and their impact on disease… but I do my *best* to stay balanced with other hobbies. When I’m not in the lab and our world isn’t enduring a pandemic, I love seeing live music, playing soccer, and backpacking. In a post-covid19 world, I spend most of my free time trying to educate myself on systemic racism, playing my synthesizer, and continuing to backpack. :sparkles: Fun fact about me: I was an extra in the Netflix show [Trinkets](https://www.netflix.com/title/80230561) :sparkles:
+
+### Research
+I’m in my third-year of my PhD studying how and why certain types of bacteria find their way into the bloodstream during prostate cancer. I’m fortunate to be co-advised by Dr. Sadik Esener, the director of OHSU’s early cancer detection research center, and Dr. Lisa Karstens, a bioinformatician who focuses on analyzing samples with extremely low amounts of bacteria, like blood. My focus is studying the bacteria in men diagnosed with advanced prostate cancer who are being treated with an [immunotherapy](https://www.cancer.gov/about-cancer/treatment/types/immunotherapy). Other researchers have shown that the success of this therapy can largely depend on the bacteria present in the patient. This type of research requires me to analyze large sets of data and as I’m working with bacteria, which is everywhere, I have to be cognizant of contamination and how to incorporate that into my analyses. 
+
+
+### Why did I want to be a Frictionless Fellow?
+ As I dive deeper into the field of microbiome science, I am becoming an advocate for putting resources and time into improving research reproducibility. In the microbiome field, there is still no gold standard nor consensus on how to handle and analyze microbiome data. Different laboratories have gotten different results while using the same set of data, which is a significant problem as it can be difficult to know which results are closest to the biological truth. As a scientist in this field, one of my tasks is to not only generate reliable data (using the proper controls), but to also interpret that data in a meaningful way. These both require absolute transparency in my methodologies and analysis. 
+
+
+I wanted to become a Frictionless Fellow so that I could learn tools to help microbiome science data workflows become more reproducible and engage in the open science community. Improving research reproducibility is important to me because it means improving proper documentation of experiments and being transparent about methods used. Detailed documentation of how and why experiments are performed allows that research to not only be reproduced by others, but also allows the ability for other scientists to build upon those results. 
+
 ---
-subject_img: your-picture.jpg
+subject_img: introblog_pic.jpg
