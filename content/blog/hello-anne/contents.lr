@@ -1,13 +1,22 @@
-title: Your Title
+title: Bridging the (Disciplinary) Gap through Reproducible Research
 ---
-author: 
+author: Anne Lee Steele
 ---
-pub_date: 
+pub_date: 2020-08-28
 ---
 cohort: 2
 ---
-body:
+body: Hey everyone, I'm Anne! I’m a graduate student based in Geneva, Switzerland that was born and bred in a few places across the United States (including New York, Chicago, Houston, and Washington DC!). This makes answering the question “Where are you from?” a little hard to answer. Either way, I’d say that I’m most at home on a mountain top, or with a steaming bowl of _kimchi chigae_, a staple for every Korean household.
 
-your text in Markdown
+Here in Switzerland, I study international institutions with the eye of an anthropologist or sociologist, through long-term ethnographic research. In many ways, I essentially try to understand how people’s words match up with their actions through observation and extended interviews, not unlike an investigative journalist. For example, observing how representatives socialize at the United Nations Human Rights Council may allow both researchers and the public to better understand the political dynamics of these groups outside of their written reports or press coverage. Or alternatively, shadowing the UN High Commissioner for Refugees Innovation Lab may allow for a more holistic investigation into how humanitarian organizations are employing technology, an industry that is more commonly associated with Silicon Valley. Equipped with these observations, I hope that they might inform creative approaches and mindful solutions for both practitioners and academics, without being limited by their fields.
+
+To this end, I’m so excited to work with the Open Knowledge Foundation as a Reproducible Research Fellow! As a big advocate for mixed methods and interdisciplinary work, I’ve often found that social scientists (anthropologists and sociologists in particular), tend to have an allergic reaction to all things data-related. While ethnographic methods remain near and dear to my heart, I’ve always wondered if they could be complemented by other forms of analysis. For example, what would a social network analysis of power and influence at the [Universal Periodic Review](https://www.ohchr.org/en/hrbodies/upr/pages/basicfacts.aspx) look like when coupled with in-depth interviews? What would a long-form research publication look like if it employed the interactive graphics used by data journalists? Would it improve public engagement with their work? Lend a more pointed critique? In many ways, I hope that the next 9 months will help me to arrive closer to the answers of these questions,
+
+For me, I believe that these approaches can work in tandem, and can even compliment each other in important ways. Big data analysis and the data visualization that might come out of it allows for at-scale approaches to big problems, while ethnography enables researchers to pay attention to the details and specifics of each case. It is important to note that while both are accompanied by some well-deserved critiques, with [data-driven work being accompanied by fears of confirming bias](https://blogs.lse.ac.uk/impactofsocialsciences/2017/07/05/big-data-risks-becoming-sophisticated-paradigm-for-coercion/), and with [qualitative "field work" being steeped in the history of colonialism itself](https://socialhistoryportal.org/news/articles/109328), I believe that there is a middle ground that can take the best of both types.
+
+I’m excited to learn how to apply the Frictionless Data tools in my work throughout these nine months, and to experiment with new forms of conveying social science research in the process. This will be an exciting year, full of experimentation, open source social science, and maybe even some data journalism. Hopefully my journey (and however I blog about it) will help to lower the barrier to entry for other social scientists to mix their methods in all the more exciting ways.
+
+P.S. Check out [personal website](http://www.aleesteele.com) and [instagram account(https://www.instagram.com/mmntsbyanne/) to learn more about my ongoing work!
+
 ---
-subject_img: your-picture.jpg
+subject_img: anne-photo.jpg
