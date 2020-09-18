@@ -80,14 +80,8 @@ week8and9Title:
 September 21 - October 2: Open science + reproducible research introductions
 ---
 week8and9:
-
-- Week 1: 
-  - Read 2 different use cases in the [resources](/resources#fdBlogs)
-  - Read the [Open Definition](http://opendefinition.org)
-  - Go over Data Management Best Practices in [resources](/resources#dataManagement)
-- Week 2: 
-  - Find another resource on reproducible research, open science, or data management and add it to the Fellows Resources site by opening a Pull Request on GitHub
-  - *Optional* Create an [ORCID](https://orcid.org/) if you don't have one
+- Go over the resources in the [Open Science Lesson](/lessons/#openSci)
+- Add a new resource via a Pull Request (PR)
 - *Check in*: Group meeting during week 1
 - *Check in*: One-on-one meetings during week 2
 
