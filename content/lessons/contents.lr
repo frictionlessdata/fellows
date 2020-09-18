@@ -68,6 +68,24 @@ specs:
 - Focus on the [DataPackage specs](https://frictionlessdata.io/specs/data-package/) & the [csv dialect](https://frictionlessdata.io/specs/csv-dialect/)
 ***
 ---
+openSciTitle:
+Open Science Lesson
+---
+openSci:
+### Go over these resources:
+- In the [Turing Way Guide for Reproducible Research](https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html), read these sections:
+  - Overview, Open Research, Research Data Management, Reproducible Environments
+- Read through the [Data Management Plan Tool guidance](https://dmptool.org/general_guidance)
+- Read this eLife Lab article about the [Reproducible Document Stack](https://elifesciences.org/labs/b521cf4d/reproducible-document-stack-towards-a-scalable-solution-for-reproducible-articles)
+- Read this eLife Lab article about their [Execuatable Research Articles](https://elifesciences.org/labs/dc5acbde/welcome-to-a-new-era-of-reproducible-publishing)
+- Watch this video about [Global Inclusivity in Open Science](https://zenodo.org/record/3906784#.X2PMfJNKgWq) from the Organization of Human Brain Mapping (OHBM). Note: you will need to download this to watch it.
+- By the end of Week 2, find another resource on reproducible research, open science, or data management and add it to the Fellows Resources site by opening a Pull Request on GitHub [https://github.com/frictionlessdata/fellows/blob/master/content/resources/contents.lr](https://github.com/frictionlessdata/fellows/blob/master/content/resources/contents.lr)
+- *Optional* Create an [ORCID](https://orcid.org/) if you don't have one
+- *Optional* Extra resources (if you are interested in more material):
+  - [Data Management Best Practices](/resources#dataManagement)
+  - [Reproducible Research & Open Science Readings](/resources#reproducible)
+***
+---
 datapackagesTitle:
 Data Packages Lesson
 ---
