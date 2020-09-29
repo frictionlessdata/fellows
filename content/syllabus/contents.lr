@@ -88,51 +88,60 @@ week8and9:
 ***
 ---
 week10Title: 
-October 5 - 9: Data Package <a href="/lessons#datapackages">lesson</a>
+October 5 - 9: Data Package Intro <a href="/lessons#datapackages">lesson</a>
 ---
 week10:
 
 - Go over the Data Package lesson [using Data Package Creator](/lessons#datapackages)
 - *Optional* - Go over the Python or R [lessons](/lessons#datapackages) as well
 - *Check in*: Group meeting
-- *Optional office hours sessions this week*: 15:00 UTC on 7 October & 9 October. Join these sessions for more help if you have questions!
+- *Optional office hours sessions this week*: 15:00 UTC on Wednesday 7 October. Join this session for more help if you have questions!
 
 ***
 ---
 week11Title: 
-October 12 - 16: Open Access Week
+October 12 - 16: Create your own Data Package 
 ---
 week11:
-
-- Collaboratively write an Open Access week blog (see [Lessons](/lessons#oa))
-- Open a Pull Request on GitHub to add your Open Access Week blog onto the [Fellows blog](/blog/)
-- *Check in*: One-on-one meetings
-
-***
----
-week12and13Title: 
-October 19 - October 30: Create your own Data Pacakge
----
-week12and13:
 
 - Using your own data, create a data pacakge using the Data Package Creator (create.frictionlessdata.io)
 - *Optional* also use the [datapackage-py library](https://github.com/frictionlessdata/datapackage-py) to create a datapackage
 - Remember to implement coding best practices and document what you do
 - Upload your datapackage to GitHub
-- *Check in*: Group meeting during week 1
-- *Check in*: One-on-one meetings during week 2
+- *Check in*: One-on-one meetings
+
+***
+---
+week12Title: 
+October 19 - October 23: [Open Access Week](http://www.openaccessweek.org/)
+---
+week12:
+
+- Collaboratively write an Open Access week blog (see [Lessons](/lessons#oa))
+- Open a Pull Request on GitHub to add your Open Access Week blog onto the [Fellows blog](/blog/)
+- *Check in*: Group meeting
 - *Optional office hours sessions this week*: 15:00 UTC on 21 October & 23 October. Join these sessions for more help if you have questions!
 
 ***
 ---
-week14Title: 
-November 2 - 6: Audience mapping <a href="/lessons#audience">lesson</a>
+week13Title: 
+October 26 - 30:  Audience mapping <a href="/lessons#audience">lesson</a>
 ---
-week14:
+week13:
 
 - Go over the Audience Mapping exercise in [lessons](/lessons#audience)
 - Continue working on creating your own Data Package if you are not done
-- *Check in*: Group meeting
+- *Check in*: One-on-one meetings
+
+***
+---
+week14Title: 
+November 2 - 6: Optional personal website lesson (or break)
+---
+week14:
+- Optional group meeting/lesson
+- Continue working on your datapackage if you haven't finished it
+- Otherwise, take a break!
 
 ***
 ---
@@ -155,7 +164,7 @@ November 23 - 27: Break!
 ---
 week17:
 
-- Lilly is on vacation, so take a break and catch up if needed
+- Lilly is on vacation, so take a break and catch up if needed :-)
 
 ***
 ---
