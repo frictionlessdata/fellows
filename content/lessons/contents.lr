@@ -144,21 +144,21 @@ Open Access Week Lesson
 ---
 oa:
 ### Blogging for Open Access Week 2020
-*Note this will be updated once the theme for Open Access Week 2020 has been announced*
-- [Open Access Week 2019](http://www.openaccessweek.org) has the theme of 'Open for whom?'
-- We will collaboratively write a blog reflecting on the question 'open for whom?'
-- The next week, each Fellow will be assigned a day to post their blog text to the [Fellows blog](/blog/oa-week/) by doing a pull request to the GitHub repo (Lilly will help with this). So this way, we will have new content each day of Open Access Week.
+- [Open Access Week 2020](http://www.openaccessweek.org) has the theme of 'Open with Purpose: Taking Action to Build Structural Equity and Inclusion'
+- We will collaboratively write a blog reflecting on the theme of 'Open with Purpose: Taking Action to Build Structural Equity and Inclusion'
+- Each Fellow writes a paragraph
+- By Friday (Oct 23), add your paragraph to the Open Access Week Blog by a PR.
 - GitHub instructions (Lilly will help you with this):
   - The repository is here [https://github.com/frictionlessdata/fellows](https://github.com/frictionlessdata/fellows)
-  - The blog content can be found within the following folder: fellows -> content -> blog -> oa-week -> contents.lr
+  - The blog content can be found within the following folder: fellows -> content -> blog -> oa-week-2020 -> contents.lr
   - Step 1, Pull down the master branch. Since you will all be editing the same blog file, you will need to pull any changes onto your local machine. Do this before you make your edits. Type 'git pull origin master'
   - Step 2, Create a new branch: in the terminal, write 'git checkout -b [your-branch-name]' (replace with your name & remove the brackets)
   - *make sure you don't edit the master branch* You can check with 'git status'
-  - Step 3, Add your paragraph to the blog: You will be editing the 'contents.lr' file within the oa-week folder
+  - Step 3, Add your paragraph to the blog: You will be editing the 'contents.lr' file within the oa-week-2020 folder
   - Step 4, Add and commit your changes: Once you finish editing the file, in your terminal, type: 
     - git status
       - make sure everything looks OK
-    - git add content/blog/oa-week/contents.lr
+    - git add content/blog/oa-week-2020/contents.lr
     - git commit -m "adds [your name]'s blog"
   - Step 5, Push your changes to your branch and open a Pull Request
     - git push origin [your-branch-name]
