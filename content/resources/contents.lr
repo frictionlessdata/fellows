@@ -2,7 +2,7 @@ _model: resources
 ---
 title: Resources
 ---
-body: 
+body:
 
 ## Group meeting notes are linked [here](https://docs.google.com/document/d/1-pgZZEIOpJ1VshbRRnDq_s6p8vbZMmbRZicKUiFQHp0/edit)
 ***
@@ -14,7 +14,7 @@ fdTutorials:
 - The FD [Guide](https://frictionlessdata.io/guide/) has tutorials and documentation for using FD tools and software
 - FD [forum](https://discuss.okfn.org/c/frictionless-data) for asking long questions
 - FD [Discord chat](https://discord.com/invite/j9DNFNw) for asking short questions to the community
-- FD [Github repositories](https://github.com/frictionlessdata). 
+- FD [Github repositories](https://github.com/frictionlessdata).
 *Note: check out the ```README``` in each individual repository for documentation on how to use that software*
     - [Fellows website repository](https://github.com/frictionlessdata/fellows)
     - [datapackage-py repository](https://github.com/frictionlessdata/datapackage-py)
@@ -79,6 +79,7 @@ dataManagement:
 - [What is a data dictionary article](http://library.ucmerced.edu/node/10249) by UCMerced Library
 - BITSS Berkeley Initiative for Transparency in the Social Sciences [Resources](https://www.bitss.org/resource-library/)
 ***
+
 ---
 reproducibleTitle:
 Reproducible Research & Open Science Readings
@@ -95,17 +96,18 @@ reproducible:
 - Minda lab's open science [best practices blog](https://jpminda.com/2018/07/12/open-science-my-list-of-best-practices/) for a computational psychology lab
 - The Royal Society [Moving towards transparent and reproducible research](https://blogs.royalsociety.org/publishing/transparent-reproducible-research/)
 - ASAPbio [preprint info centre](https://asapbio.org/preprint-info)
-- OHBM Open Science - [Towards Global Inclusivity in Open Science Video](https://zenodo.org/record/3906784#.XvOY_C2ZNBx) 
+- OHBM Open Science - [Towards Global Inclusivity in Open Science Video](https://zenodo.org/record/3906784#.XvOY_C2ZNBx)
 - [Open Science Glossary](https://open-science-training-handbook.gitbook.io/book/glossary) by the Open Science Training Handbook
 - [Open science, communal culture, and women's participation in the movement to improve science](https://www.pnas.org/content/117/39/24154.long) by the Murphy Et al., 2020 in [PNAS](https://www.pnas.org/)
 - PLOS [What is Open Peer Review?](https://plos.org/resource/open-peer-review/)
-- [#bropenscience is broken science](https://thepsychologist.bps.org.uk/volume-33/november-2020/bropenscience-broken-science), Whitaker and Guest 2020 
+- [#bropenscience is broken science](https://thepsychologist.bps.org.uk/volume-33/november-2020/bropenscience-broken-science), Whitaker and Guest 2020
 - [10 Things to Know About
 Reproducibility and Replicability](https://www.nap.edu/resource/25303/Ten%20Things%20to%20Know%20about%20Reproducibility%20and%20Replicability.pdf)
 - [Challenges in irreproducible research, Nature](https://www.nature.com/collections/prbfkwmwvz/)
 - [Is Reproducible Research Accurate? | John Ioannidis | Talks at Google](https://www.youtube.com/watch?v=GPYzY9I78CI&t=163s&ab_channel=TalksatGoogle)
 - [Data Science - 5.1.2 - What is Reproducible Research About, BobTrenwith](https://www.youtube.com/watch?v=xgWobbmsWpg&ab_channel=BobTrenwith)
 - [What does research reproducibility mean? (Goodman et al, 2016, Science Translational Medicine)](https://stm.sciencemag.org/content/8/341/341ps12/tab-pdf)
+- Special Issue on Transparency, from the (Political and Legal Anthropology Review)[https://anthrosource.onlinelibrary.wiley.com/doi/toc/10.1002/(ISSN)1555-2934(CAT)VirtualIssues(VI)Transparency]
 ***
 ---
 codingTitle:
@@ -121,5 +123,6 @@ coding:
 - Common Python errors [flow chart & article](https://pythonforbiologists.com/29-common-beginner-errors-on-one-page) from Python For Biologists
 - [Vaidehi Joshi](https://twitter.com/vaidehijoshi)'s [BaseCS tutorials](https://medium.com/basecs) for beginner computer science concepts
 - Coding resources for environmental scientists from [Openscapes](https://www.openscapes.org/resources/)
+- The [A11y Project](https://www.a11yproject.com/), an open resource resource for accessible design and web development
 ---
 subject_img: openscience.jpeg
