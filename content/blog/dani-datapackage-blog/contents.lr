@@ -8,6 +8,7 @@ cohort: 2
 ---
 body:
 
+
 What better way to start working with open data than by sharing a [Data Package](https://specs.frictionlessdata.io//data-package/) from one of my own publications? In this tutorial, I will explain how to use the Frictionless Data tools to share tabular data from a scientific publication openly. This will make easier for anyone to reuse this data.
 
 The data we are going to use comes from a free-to-view scientific article:
