@@ -25,7 +25,8 @@ First thing we need to do is fetch the tabular data. We can do that by copy-past
 
 Now that we have our data in a simple tabular format, we want to save it as a comma-separated values (CSV) file. This will make our data more accessible, as most tools can work with this file format. To make sure everyone can find the data, we're going to upload it to a public repository in GitHub. If you're not familiar with the git version-control system or the GitHub website, I recommend you take a look at this guide from *The Turing Way*: [Version Control](https://the-turing-way.netlify.app/reproducible-research/vcs.html).
 
-<img src="snapshot1_githubRepo.png" alt="First step to share your data: Creating a GitHub repository">
+<img src="snapshot1_githubRepo.png" width=100% alt="First step to share your data: Create a GitHub repository">
+<p style="text-align: center; font-style: italic">Create an empty repository to host your data.</p>
 
 CSV files are very versatile, but cannot handle the metadata with all the necessary context. We need to make sure that people can find our data *and* the information they need to understand our data. That's where the Data Package comes in!
 
@@ -44,7 +45,8 @@ One of the benefits of a Data Package is that you can put together different dat
  - We will add now an often disregarded, yet fundamental, aspect of open data: a **license**. Without a license, people cannot know whether they are allowed to use your data. Here you will find a list of possible licenses that you can use, but also you can add any other license. If you want to read more about each license, selecting one will generate a link to the Creative Commons website where you can read about the details of that license. Very handy if you are not sure what kind of license to use!
  - Finally, we will add as many relevant **keywords** as we can, as this will make out data more findable;
 
-<img src="snapshot2_DataPackageCreator_Metadata.png" alt="Second step to share your data: Creating a Data Package and include your metadata!">
+<img src="snapshot2_DataPackageCreator_Metadata.png" width=100% alt="Second step to share your data: Create a Data Package and include your metadata!">
+<p style="text-align: center; font-style: italic">First things first: Add as much metadata as you can to the Data Package.</p>
 
 Now we're ready to add some data!
 
@@ -56,13 +58,15 @@ After we load the path to the data from *Table 1*, the Data Package Creator will
 
 Once everything is fine, we will add a second resource with the data from *Table 2*. Again, we will let the Data Package Creator infer the metadata and we will simply check and correct any mistake:
 
-<img src="snapshot3_DataPackageCreator_Data.png" alt="Second step to share your data: Creating a Data Package and include your metadata!">
+<img src="snapshot3_DataPackageCreator_Data.png" width=100% alt="Third step to share your data: Add different data sources to the Data Package">
+<p style="text-align: center; font-style: italic">You can add as many data resources as you need to one Data Package.</p>
 
 Almost done! We're ready to hit the *Validate* button and see whether everything looks good. If the Data Package Creator finds any problem with your data or metadata, it will tell you what is it so you can easily fix it.
 
 Once we're done, we hit the *Download* button, which will give us a JSON file. This file has all the metadata that we introduced in a machine-readable format. This will allow anyone to read out our metadata using any tool they want. So now we only need to upload this JSON file to our GitHub repository, and seee how it looks:
 
-<img src="snapshot4_JSONfile.png" alt="Second step to share your data: Creating a Data Package and include your metadata!">
+<img src="snapshot4_JSONfile.png" width=100% alt="Final step to share your data: Pack together your data with the metadata"> 
+<p style="text-align: center; font-style: italic">Your Data Package now includes both the data and the relevant metadata.</p>
 
 
 ## Conclusions
