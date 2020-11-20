@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Sharing data from your own scientific publication</title>
 
 <body>
   <header>
@@ -114,138 +114,51 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Sharing data from your own scientific publication</h1>
   <div>
-    <h2>
-      Cohort 2 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="../blog/dani-datapackage-blog/">Sharing data from your own scientific publication</a> —
-          by Daniel Alcalá López
-          on 2020-11-20
-        </li>
-        
-      
-        
-        <li>
-          <a href="../blog/jacqueline-datapackage-blog/">Constructing a basic data package in Python</a> —
-          by Jacqueline Maasch
-          on 2020-11-19
-        </li>
-        
-      
-        
-        <li>
-          <a href="../blog/katerina-datapackage-blog/">So you want to get your data package validated?</a> —
-          by Katerina Drakoulaki
-          on 2020-11-16
-        </li>
-        
-      
-        
-        <li>
-          <a href="../blog/oa-week-2020/">Open Access Week 2020</a> —
-          by Katerina, Dani, Sam, Anne, Ritwik, Evelyn, Kate, Jacqueline
-          on 2020-10-23
-        </li>
-        
-      
-        
-        <li>
-          <a href="../blog/hello-dani/">Meet Dani</a> —
-          by Daniel Alcalá López
-          on 2020-09-01
-        </li>
-        
-      
-        
-        <li>
-          <a href="../blog/hello-ritwik/">Meet Ritwik</a> —
-          by Ritwik Agarwal
-          on 2020-08-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../blog/hello-anne/">Bridging the (Disciplinary) Gap through Reproducible Research</a> —
-          by Anne Lee Steele
-          on 2020-08-28
-        </li>
-        
-      
-        
-        <li>
-          <a href="../blog/hello-evelyn/">Meet Evelyn</a> —
-          by Evelyn Night
-          on 2020-08-28
-        </li>
-        
-      
-        
-        <li>
-          <a href="../blog/hello-katerina/">Meet Katerina</a> —
-          by Katerina Drakoulaki
-          on 2020-08-28
-        </li>
-        
-      
-        
-        <li>
-          <a href="../blog/hello-sam/">Meet Sam</a> —
-          by Sam Wilairat
-          on 2020-08-28
-        </li>
-        
-      
-      </ul>
-    <h2>
-      Cohort 1 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <span class="disabled">&laquo; Previous</span>
-    
-    | <strong>1</strong> |
-    
-      <a href="../blog/page/2/">Next &raquo;</a>
-    
   </div>
+  <div class="blog">
+    <p>What better way to start working with open data than by sharing a <a href="https://specs.frictionlessdata.io//data-package/">Data Package</a> from one of my own publications? In this tutorial, I will explain how to use the Frictionless Data tools to share tabular data from a scientific publication openly. This will make easier for anyone to reuse this data.</p>
+<p>The data we are going to use comes from a free-to-view scientific article:</p>
+<blockquote><p>Daniel Alcalá-López, Jonathan Smallwood, Elizabeth Jefferies, Frank Van Overwalle, Kai Vogeley, Rogier B Mars, Bruce I Turetsky, Angela R Laird, Peter T Fox, Simon B Eickhoff, Danilo Bzdok, Computing the Social Brain Connectome Across Systems and States, Cerebral Cortex, Volume 28, Issue 7, July 2018, Pages 2207–2232, <a href="https://doi.org/10.1093/cercor/bhx121">https://doi.org/10.1093/cercor/bhx121</a>.</p>
+</blockquote>
+<p>One of the reasons I chose this paper is because it is a meta-analysis I conducted a few years ago. The first task I had to carry out at the beginning of this project was to collect all the relevant bibilography (in this case, on neuroimaging studies on social cognition), then select previous coordinate-based meta-analyses (a subtype of neuroimaging meta-analysis), and finally extract the standard coordinates reported in the results of these studies. This involved many hours of visually scanning articles and manually transcribing tables of results into a spreadsheet. Obviously, this is not the best use of a researcher's time, and that is why I think it is convenient to facilitate this work to anybody who might be interested in reusing the data from my own publication.</p>
+<p>One of the main products of this study is the set of brain regions that we call the <em>Social Brain</em>. This is a set of 36 brain regions identified as relevant for the processing of social information –that is, information about other individuals. In the paper, we use these regions as seeds for different brain connectivity analyses, but they can still be used for much more!</p>
+<p>The neuroimaging files in compressed NIfTI format (.nii.gz) with the 36 volumes are available in the <a href="https://anima.inm7.de/studies/AlcalaLopez_Social_Connectome_2017">ANIMA open database</a>. But the paper also includes a couple of tables with relevant information that we can share in a Data Package.</p>
+<h2>Step 1: getting the data</h2>
+<p>First thing we need to do is fetch the tabular data. We can do that by copy-pasting from the web version or the PDF file of the paper into a spreadsheet. In both cases, we will need to do some cleaning, since the styling of the table introduces elements designed to make the information more human-readable but makes it harder to work with when using a different programming language or analysis software than the original.</p>
+<p>Now that we have our data in a simple tabular format, we want to save it as a comma-separated values (CSV) file. This will make our data more accessible, as most tools can work with this file format. To make sure everyone can find the data, we're going to upload it to a public repository in GitHub. If you're not familiar with the git version-control system or the GitHub website, I recommend you take a look at this guide from <em>The Turing Way</em>: <a href="https://the-turing-way.netlify.app/reproducible-research/vcs.html">Version Control</a>.</p>
+<p><img src="snapshot1_githubRepo.png" width=100% alt="First step to share your data: Create a GitHub repository"></p>
+<p style="text-align: center; font-style: italic">Create an empty repository to host your data.</p><p>CSV files are very versatile, but cannot handle the metadata with all the necessary context. We need to make sure that people can find our data <em>and</em> the information they need to understand our data. That's where the Data Package comes in!</p>
+<h2>Step 2: creating a Data Package</h2>
+<p>We are going to build a kind of <em>container</em> in which we can throw both our data file and all that important information that people will need to work with our data (e.g., information about our variables and measurement units, data types, use license, etc.). If you want to read more about the Data Package, you will find the specifications <a href="https://specs.frictionlessdata.io//data-package/">here</a>.</p>
+<p>To do this, we will be using the <a href="https://create.frictionlessdata.io">Data Package Creator</a>. Although we can create a Data Package through the command-line tools, we will use the browser tool for simplicity. But have a look at the different <a href="https://github.com/frictionlessdata">Frictionless Data libraries</a> once you finish!</p>
+<p>One of the benefits of a Data Package is that you can put together different data resources that are related to one another. This is our case, since we want to create a Data Package with the information from tables 1 &amp; 2 in the paper. Thus, I like to start filling up the metadata of the Data Package on the left panel, before I move on to adding data resources:</p>
+<ul>
+<li>We are going to give a (machine readable) <strong>name</strong> and a (human readable) <strong>title</strong> to our Data Package; </li>
+<li>Then we will add a <strong>description</strong>, so people know this data comes from a our paper;</li>
+<li>You can also add the DOI in the <strong>home page</strong> field. Since a DOI is like a persistent URL, we know that it won't change in the future, and people will always be able to find the corresponding paper from the metadata in our Data Package;</li>
+<li>We can also add a <strong>version</strong> number to the Data Package. This is particularly interesting if you assume you will be updating the data resources in the future, for example during data collection.</li>
+<li>We will add now an often disregarded, yet fundamental, aspect of open data: a <strong>license</strong>. Without a license, people cannot know whether they are allowed to use your data. Here you will find a list of possible licenses that you can use, but also you can add any other license. If you want to read more about each license, selecting one will generate a link to the Creative Commons website where you can read about the details of that license. Very handy if you are not sure what kind of license to use!</li>
+<li>Finally, we will add as many relevant <strong>keywords</strong> as we can, as this will make out data more findable;</li>
+</ul>
+<p><img src="snapshot2_DataPackageCreator_Metadata.png" width=100% alt="Second step to share your data: Create a Data Package and include your metadata!"></p>
+<p style="text-align: center; font-style: italic">First things first: Add as much metadata as you can to the Data Package.</p><p>Now we're ready to add some data!</p>
+<h2>Step 3: adding data resources</h2>
+<p>At the top of the central panel, we will see that we can add the name and path to a data resource. The best option for us is to use the link to the data we have just uploaded to GitHub, rather than uploading the data again from our computer. This way, other people will be able to find our data through that link as long as they have access to the Data Package metadata.</p>
+<p>After we load the path to the data from <em>Table 1</em>, the Data Package Creator will automatically infer some of the characteristics of our data. First, it will show us how many columns it found, so that we can choose whether we want to import them all or just a subset. The you will notice that it also inferred the header and data type of each column. Make sure the latter is correct, since this will be important for the validation of our data.</p>
+<p>Once everything is fine, we will add a second resource with the data from <em>Table 2</em>. Again, we will let the Data Package Creator infer the metadata and we will simply check and correct any mistake:</p>
+<p><img src="snapshot3_DataPackageCreator_Data.png" width=100% alt="Third step to share your data: Add different data sources to the Data Package"></p>
+<p style="text-align: center; font-style: italic">You can add as many data resources as you need to one Data Package.</p><p>Almost done! We're ready to hit the <em>Validate</em> button and see whether everything looks good. If the Data Package Creator finds any problem with your data or metadata, it will tell you what is it so you can easily fix it.</p>
+<p>Once we're done, we hit the <em>Download</em> button, which will give us a JSON file. This file has all the metadata that we introduced in a machine-readable format. This will allow anyone to read out our metadata using any tool they want. So now we only need to upload this JSON file to our GitHub repository, and seee how it looks:</p>
+<p><img src="snapshot4_JSONfile.png" width=100% alt="Final step to share your data: Pack together your data with the metadata"></p>
+<p style="text-align: center; font-style: italic">Your Data Package now includes both the data and the relevant metadata.</p><h2>Conclusions</h2>
+<p>If we want to share our data with the rest of the scientific community and with society in general, we must first think about what they might need to understand and make good use of the data.</p>
+<p>In this tutorial we have seen how we can package our data with all the meta-information that a person who wants to use our data might need. Now, my publication is accompanied by a <a href="https://github.com/danalclop/Alcala-Lopez18CerebCortex">GitHub repository</a> where any researcher or layperson can find, visualize, and download the data with the results of my study.</p>
+<p>Want to know more about the Frictionless Data tools? Go check out the <a href="https://frictionlessdata.io/guide/#what-is-frictionless-data">Field Guide</a> for more examples and tutorials.</p>
 
-  
-
+  </div>
 
   </article>
   <footer>

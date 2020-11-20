@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Constructing a basic data package in Python</title>
 
 <body>
   <header>
@@ -114,138 +114,99 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Constructing a basic data package in Python</h1>
   <div>
-    <h2>
-      Cohort 2 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="../blog/dani-datapackage-blog/">Sharing data from your own scientific publication</a> —
-          by Daniel Alcalá López
-          on 2020-11-20
-        </li>
-        
-      
-        
-        <li>
-          <a href="../blog/jacqueline-datapackage-blog/">Constructing a basic data package in Python</a> —
-          by Jacqueline Maasch
-          on 2020-11-19
-        </li>
-        
-      
-        
-        <li>
-          <a href="../blog/katerina-datapackage-blog/">So you want to get your data package validated?</a> —
-          by Katerina Drakoulaki
-          on 2020-11-16
-        </li>
-        
-      
-        
-        <li>
-          <a href="../blog/oa-week-2020/">Open Access Week 2020</a> —
-          by Katerina, Dani, Sam, Anne, Ritwik, Evelyn, Kate, Jacqueline
-          on 2020-10-23
-        </li>
-        
-      
-        
-        <li>
-          <a href="../blog/hello-dani/">Meet Dani</a> —
-          by Daniel Alcalá López
-          on 2020-09-01
-        </li>
-        
-      
-        
-        <li>
-          <a href="../blog/hello-ritwik/">Meet Ritwik</a> —
-          by Ritwik Agarwal
-          on 2020-08-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../blog/hello-anne/">Bridging the (Disciplinary) Gap through Reproducible Research</a> —
-          by Anne Lee Steele
-          on 2020-08-28
-        </li>
-        
-      
-        
-        <li>
-          <a href="../blog/hello-evelyn/">Meet Evelyn</a> —
-          by Evelyn Night
-          on 2020-08-28
-        </li>
-        
-      
-        
-        <li>
-          <a href="../blog/hello-katerina/">Meet Katerina</a> —
-          by Katerina Drakoulaki
-          on 2020-08-28
-        </li>
-        
-      
-        
-        <li>
-          <a href="../blog/hello-sam/">Meet Sam</a> —
-          by Sam Wilairat
-          on 2020-08-28
-        </li>
-        
-      
-      </ul>
-    <h2>
-      Cohort 1 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <span class="disabled">&laquo; Previous</span>
-    
-    | <strong>1</strong> |
-    
-      <a href="../blog/page/2/">Next &raquo;</a>
-    
   </div>
+  <div class="blog">
+    <p>As a machine learning researcher, I am constantly scraping, merging, reshaping, exploring, modeling, and generating data. Because I do most of my data management and analysis in Python, I find it convenient to <a href="https://frictionlessdata.io/tooling/data-package-tools/#tools">package my data in Python</a> as well. The screenshots below are a walk-through of basic data package construction in Python. In this case, I was programming in a Jupyter notebook and handling a small dataset that I scraped from a protein informatics database. The original Python script can be accessed <a href="https://github.com/jmaasch/reproducible-research/blob/master/data_pkg/data_pkg_example.py">on GitHub</a>.</p>
+<p>The <a href="https://github.com/jmaasch/reproducible-research/blob/master/data_pkg/merops_peptidase_families.csv">dataset</a> that I am working with describes human peptidase families, as scraped from the <a href="https://www.ebi.ac.uk/merops/index.shtml">MEROPS Peptidase Database</a> in June 2020.</p>
+<p><img width="761" alt="pkg_blog1" src="pkg_blog1.png"></p>
+<p>First, I invoked the <code>infer()</code> method to autopopulate the majority of the fields in my data package. I also tested whether my inferred package was valid.</p>
+<p><img width="762" alt="pkg_blog2" src="pkg_blog2.png"></p>
+<p>Second, I explored the data structures nested within the <code>merops_pkg.descriptor</code> object. This gave me a better sense of how to manually manipulate these data structures.</p>
+<p><img width="764" alt="pkg_blog3" src="pkg_blog3.png"></p>
+<p>Next, I manually updated the metadata to provide more ample descriptions of the columns in my CSV file. Headings are simply not enough! I want to ensure that even a stranger could easily discern the meaning of each column.</p>
+<p><img width="762" alt="pkg_blog4" src="pkg_blog4.png"></p>
+<p>I also added licensing, authorship, keyword, title, and package description metadata to make my data package more useful and informative.</p>
+<p><img width="774" alt="pkg_blog5" src="pkg_blog5.png"></p>
+<p>Finally, I committed my changes and saved the data package as a zip file. This zip file contains both the original CSV file and the metadata as a JSON data package file, neatly bundled together.</p>
+<p><img width="771" alt="pkg_blog6" src="pkg_blog6.png"></p>
+<p>In the end, my JSON file looks like this:</p>
+<pre><code>{
+    "profile": "tabular-data-package",
+    "resources": [
+        {
+            "path": "data/merops_peptidase_families.csv",
+            "profile": "tabular-data-resource",
+            "name": "merops_peptidase_families",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "Family",
+                        "type": "string",
+                        "format": "default",
+                        "description": "Human peptidase family (e.g. 'A1')."
+                    },
+                    {
+                        "name": "Subfamily",
+                        "type": "string",
+                        "format": "default",
+                        "description": "Human peptidase subfamily (e.g. 'A1B')."
+                    },
+                    {
+                        "name": "Type enzyme",
+                        "type": "string",
+                        "format": "default",
+                        "description": "Type enzyme for peptidase subfamily (e.g. 'pepsin A (Homo sapiens)')."
+                    },
+                    {
+                        "name": "Group",
+                        "type": "string",
+                        "format": "default",
+                        "description": "Peptidase group (e.g. 'Aspartic (A) Peptidase')."
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        }
+    ],
+    "keywords": [
+        "peptide",
+        "protein",
+        "peptidase",
+        "proteinase",
+        "protease",
+        "bioinformatics",
+        "protein informatics",
+        "MEROPS",
+        "cleavage",
+        "proteolysis"
+    ],
+    "title": "Human peptidase families",
+    "contributors": {
+        "title": "JRMA Maasch",
+        "role": "author"
+    },
+    "licenses": [
+        {
+            "name": "CC0-1.0",
+            "title": "CC0 1.0",
+            "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+    ],
+    "description": "A dataset of human peptidase families as scraped from the MEROPS Peptidase 
+                    Database in June 2020 (https://www.ebi.ac.uk/merops/index.shtml)."
+}
+</code></pre>
+<p>This semi-automated process keeps the jungle of data that I obtain, analyze, and produce as orderly and well-documented as possible. Not only does that keep me organized, but it also makes sharing my data frictionless, responsible, and easy.</p>
 
-  
-
+  </div>
 
   </article>
   <footer>
