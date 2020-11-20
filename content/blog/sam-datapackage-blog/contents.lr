@@ -1,9 +1,30 @@
-title:
+title: Sam Datapackage Blog
 ---
-author:
+author: Sam Wilairat
 ---
-pub_date: YYYY-MM-DD
+pub_date: 2020-11-20
 ---
 cohort: 2
 ---
 body:
+## Introduction
+
+As a library science student with an interest in pursuing data librarianship, learning how to create, manage, and share frictionless data is important. These past few months I've been learning about Frictionless Data and how to use Frictionless Data Tools to support reproducible research.  
+
+## The Data
+
+Throughout my career, I hope to be helping others manage their research throughout the course of the [data life cycle](https://old.dataone.org/data-life-cycle). To learn how to use the Frictionless Data Tools, I decided to pursue an independent project and am working on creating a comprehensive dataset of OER (open educational resources) health science materials that can be filtered by material type, media format, topic, and more. OER can be difficult to find, so it is my hope that by publishing this dataset, health science educators will have an easier time finding free materials. 
+
+## Data Package Creation
+
+Why create a data package? Data packages allow you to keep important metadata such as copyright licenses together with your dataset. This helps the creator of the data to comply with FAIR principles.  To see examples of well-packaged datasets, please visit this [blog post](https://frictionlessdata.io/blog/2018/03/07/well-packaged-datasets/). To create my data package, I chose to use the [Frictionless Data Package Creator](https://create.frictionlessdata.io/) created by the Open Knolwedge Foundation. 
+
+The data package creator is relatively intuitive. To begin, I clicked on the load button. I then uploaded my dataset in .csv format. The software infers fields based on the column headers in the spreadsheet. You can then add metadata to each field and verify that the correct data type is listed. 
+
+Once I loaded my dataset and filled out the field information, I then filled out the metadata for the package on the lefthand side of the screen below the orange buttons. Note that the difference between "name" and "title" is that one is computer-friendly, while the other is intended to be read by human. 
+
+![Sam_Screenshot](Sam_Screenshot.png)
+
+After filling out all the metadata, I clicked "validate" and a green banner popped up on the top of the screen indicating that yes, the data package is valid! This was a green light to go ahead and download the datapackage. The name of the file you download from the creator is always called "datapackage.json" so keep an eye out for it in your downloads folder! 
+
+If you work with data or work with people who work with data in any capacity, I would encourage you to become familiar with creating data packages. Try out the [data package creator](https://create.frictionlessdata.io/)yourself and you'll realize how easy it is to create one! 
