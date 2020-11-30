@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../css/style.css">
-<title>Syllabus</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>**Let’s Talk Data Packaging**</title>
 
 <body>
   <header>
@@ -114,315 +114,32 @@
   </header>
   <article>
     
-
-  <h1>Syllabus</h1>
-
+  <h1>**Let’s Talk Data Packaging**</h1>
   <div>
   
   </div>
-  
-  <div>
-    <hr>
+  <div class="blog">
+    <p>Packaging of data is the practice of using data packaging tools to containerize data with all its required metadata in the most convenient format that is both human- and machine readable. Packaging removes kinks and ambiguity that comes up when dealing with multivariate data. It additionally ensures that the data does not suffer mishandling and misinterpretation in the hands of others. A few weeks ago I met data packages for the first time and I was intrigued since I had spent too much time in the past wrangling missing and inconsistent values. Packaging data therefore taught me that arranging and preserving data does not have to be tedious anymore. Here, I show how I packaged a bit of my data (unpublished) into a neat json document using the <a href="https://create.frictionlessdata.io/">Data Package creator</a> . I am excited to show you just how much I have come from knowing nothing to being able to package and extract the json output.</p>
+<h3><em>Here we go!</em></h3>
+<p><strong>The Data Package Creator</strong>
+<img src="dp1.png" width=100% alt="dp1"></p>
+<p style="text-align: center; font-style: italic">The Data Package Creator user interface.</p><p>This is a friendly user interface that was created by the open knowledge foundation to enable a quick and easy route to creating and accessing a datapackage. It therefore allows coders and non-coders alike to be able to do this without breaking a sweat. First, the data needs to be loaded into the system and the <strong>Path </strong>(A) section comes handy in this. You can either paste a github url or use the <strong>Load </strong>(B) section to access the csv file from your remote machine.
+I loaded data from my PC and the system automatically inferred 15 fields for me.</p>
+<p><img src="dp2.png" width=100% alt="dp2"></p>
+<p style="text-align: center; font-style: italic">Part C reveals inferred fields from your read data.</p><p>I then defined my fields using the <strong>settings </strong>wheel that enabled me to input the name and the schema. My work is in a tabulated format so the tabular data package was fitting. In the metadata section I also inferred the name and title, a short description of the data package, the versions and licences and finally the keywords.</p>
+<p><img src="dp3.png" width=100% alt="dp3"></p>
+<p style="text-align: center; font-style: italic">all the inferred fields, you can now do the specific edits on the data and metadata.</p><p>I then checked if all the fields that were inferred from my dataset were okay and pressed <strong>validate.</strong>
+Pretty straightforward, right? Yes.</p>
+<p><img src="dp4.png" width=100% alt="dp4"></p>
+<p style="text-align: center; font-style: italic">Valid!.</p><p>After validating, I wanted to see how my json file looked and to also download it for storage in my PC and also share on github. Clicking on the <strong>{...}</strong> symbol (D) allowed me to sneak a peek at my new json file while the Download button just...downloaded it.</p>
+<p>This process took me like 10 minutes to complete and it had everything I needed!.</p>
+<p>You can also learn to create your packages in R and Python from the Frictionless fellows <a href="https://fellows.frictionlessdata.io/lessons/#datapackages">website</a> .</p>
+<p><strong><em>Setbacks</em></strong></p>
+<p>Before I pulled this amazing stunt, my data had been invalid at least twice and I want to point this out because it really sucks if you get an invalid without knowing the cause. After a few tweaks I found out that the name I wrote in the resource and metadata section needed to be separated by an underscore <strong>(_)</strong>. By doing that I was in the clear so fear not if your data package is deemed invalid since the solution could just be a click away</p>
+<p><strong><em>In a nutshell…</em></strong></p>
+<p>Using the data package creator is the simplest method I have found to create data packages and this is after practising the same in R and python. It is therefore high time we packaged our research into the invaluable data packages to enhance data reuse and to also reduce the amount of time spent wrangling inconsistent data. Best.</p>
 
   </div>
-
-  <h2 id="week1"><p>August 3 - 7: Welcome and Onboarding!</p>
-</h2>
-  <ul>
-<li>initial group meeting + introductions</li>
-<li>Go through the <a href="https://github.com/frictionlessdata/fellows/blob/master/docs/onboarding.md">onboarding document</a></li>
-<li>Friday check-in on Slack</li>
-</ul>
-<hr>
-
-  <h2 id="week2"><p>August 10 - 14: Roadmapping and Journal Club</p>
-</h2>
-  <ul>
-<li>Creation of a roadmap (follow this <a href="/lessons#roadmapping">lesson</a>)</li>
-<li>Journal club: follow this <a href="/lessons#journalclub">lesson</a></li>
-<li><em>Check in</em>: One-on-one meetings</li>
-</ul>
-<hr>
-
-  <h2 id="week3"><p>August 17 - 21: First blog</p>
-</h2>
-  <ul>
-<li>Introductory blog about yourself and your research</li>
-<li>Use this <a href="https://docs.google.com/document/d/1KylLIcuN35qBJFhZlIGmXdMxGYNaP1oJuu74soihuQ0/edit">template</a> to help you start your blog</li>
-<li><em>Check in</em>: Group meeting</li>
-</ul>
-<hr>
-
-  <h2 id="week4and5"><p>August 24 - September 4: Programming catch up</p>
-</h2>
-  <ul>
-<li>Goal: to make sure everyone feels comfortable with git, GitHub, the command line, (and optionally Python &amp; R)</li>
-<li>Week 1: <ul>
-<li>Discuss imposter syndrome, problem solving skills, and read the Open Knowledge Foundation's Contributing Best Practices in <a href="../resources#contributing">resources</a>. </li>
-<li>Together, we will also set up your programming environment.</li>
-<li>We will do a quick GitHub tutorial &amp; you will each post your blog following these <a href="/lessons#github">GitHub instructions</a>).</li>
-</ul>
-</li>
-<li>Week 2: <ul>
-<li>use the Coding Resources <a href="../resources#coding">here</a> to watch videos and do tutorials as needed.</li>
-<li>finish posting your blog</li>
-</ul>
-</li>
-<li>Remember to ask questions in Slack if you need help!</li>
-<li><em>Check in</em>: Group meeting during week 1</li>
-<li><em>Check in</em>: One-on-one meetings during week 2</li>
-</ul>
-<hr>
-
-  <h2 id="week6and7"><p>September 7 - 18: Frictionless Data introduction</p>
-</h2>
-  <p><em>You have two weeks to go through the following resources:</em></p>
-<ul>
-<li>Watch Serah Rono's <a href="https://www.youtube.com/watch?v=3Ranx9Jz0Ro">video on Frictionles Data and the Open Knowledge Foundation</a></li>
-<li>Look through the Frictionless Data <a href="https://docs.google.com/presentation/d/e/2PACX-1vR6W9vlSm_ha9ddzuVknk7NMEVCDJrv7FoyEvEECzKnrok8xyRrPkkgs_3N5hpuLETTbjpwdzbmubyq/pub?start=false&amp;loop=false&amp;delayms=3000">intro slides</a></li>
-<li>Watch Lilly's <a href="https://www.youtube.com/watch?v=lFgZTfCZu5U">talk at FOSDEM 2020</a> about Frictionless Data for Researchers</li>
-<li>Read the Frictionless + FAIR data <a href="https://blog.okfn.org/2018/08/14/frictionless-data-and-fair-research-principles/">blog</a></li>
-<li>Read through 2 case studies of your choice in the Frictionless Data + Reproducible Research blogs and articles in <a href="../resources#fdBlogs">resources</a></li>
-<li>Go over the Schema + Specs <a href="../lessons#specs">lesson</a></li>
-<li><em>Check in</em>: Group meeting during week 1</li>
-<li><em>Check in</em>: One-on-one meetings during week 2</li>
-<li><em>Optional office hours sessions this week</em>: 15:00 UTC on 9 September &amp; 11 September. Join these sessions for more help if you have questions!</li>
-</ul>
-<hr>
-
-  <h2 id="week8and9"><p>September 21 - October 2: Open science + reproducible research introductions</p>
-</h2>
-  <ul>
-<li>Go over the resources in the <a href="../lessons/#openSci">Open Science Lesson</a></li>
-<li>Add a new resource via a Pull Request (PR)</li>
-<li><em>Check in</em>: Group meeting during week 1</li>
-<li><em>Check in</em>: One-on-one meetings during week 2</li>
-</ul>
-<hr>
-
-  <h2 id="week10"><p>October 5 - 9: Data Package Intro <a href="/lessons#datapackages">lesson</a></p>
-</h2>
-  <ul>
-<li>Go over the Data Package lesson <a href="../lessons#datapackages">using Data Package Creator</a></li>
-<li><em>Optional</em> - Go over the Python or R <a href="../lessons#datapackages">lessons</a> as well</li>
-<li><em>Check in</em>: Group meeting</li>
-<li><em>Optional office hours sessions this week</em>: 15:00 UTC on Wednesday 7 October. Join this session for more help if you have questions!</li>
-</ul>
-<hr>
-
-  <h2 id="week11"><p>October 12 - 16: Create your own Data Package</p>
-</h2>
-  <ul>
-<li>Using your own data, create a data pacakge using the Data Package Creator (create.frictionlessdata.io)</li>
-<li><em>Optional</em> also use the <a href="https://github.com/frictionlessdata/datapackage-py">datapackage-py library</a> to create a datapackage</li>
-<li>Remember to implement coding best practices and document what you do</li>
-<li>Upload your datapackage to GitHub</li>
-<li><em>Check in</em>: One-on-one meetings</li>
-</ul>
-<hr>
-
-  <h2 id="week12"><p>October 19 - October 23: <a href="http://www.openaccessweek.org/">Open Access Week</a></p>
-</h2>
-  <ul>
-<li>Collaboratively write an Open Access week blog (see <a href="../lessons#oa">Lessons</a>)</li>
-<li>Open a Pull Request on GitHub to add your Open Access Week blog onto the <a href="../blog/">Fellows blog</a></li>
-<li><em>Check in</em>: Group meeting</li>
-<li><em>Optional office hours sessions this week</em>: 15:00 UTC on 21 October &amp; 23 October. Join these sessions for more help if you have questions!</li>
-</ul>
-<hr>
-
-  <h2 id="week13"><p>October 26 - 30:  Audience mapping <a href="/lessons#audience">lesson</a></p>
-</h2>
-  <ul>
-<li>Go over the Audience Mapping exercise in <a href="../lessons#audience">lessons</a></li>
-<li>Continue working on creating your own Data Package if you are not done</li>
-<li><em>Check in</em>: One-on-one meetings</li>
-</ul>
-<hr>
-
-  <h2 id="week14"><p>November 2 - 6: Optional personal website lesson (or break)</p>
-</h2>
-  <ul>
-<li>Optional group meeting/lesson</li>
-<li>Continue working on your datapackage if you haven't finished it</li>
-<li>Otherwise, take a break!</li>
-</ul>
-<hr>
-
-  <h2 id="week15and16"><p>November 9 - 20: Data Package Blog</p>
-</h2>
-  <ul>
-<li>Blog about your newly created data package with your own data (how did you do it, what did you learn)</li>
-<li>As an example, read the blog <a href="../blog/neuro-blog/">here</a></li>
-<li>While writing your blog, keep in mind your audience from the mapping exercise</li>
-<li>Add your blog to the <a href="../blog/">Fellows blog</a> by opening a pull request on <a href="https://github.com/frictionlessdata/fellows#contribute-via-a-pull-request-pr">GitHub</a></li>
-<li><em>Check in</em>: One-on-one meetings during week 1</li>
-<li><em>Check in</em>: Group meeting during week 2</li>
-</ul>
-<hr>
-
-  <h2 id="week17"><p>November 23 - 27: Break!</p>
-</h2>
-  <ul>
-<li>Lilly is on vacation, so take a break and catch up if needed :-)</li>
-</ul>
-<hr>
-
-  <h2 id="week18"><p>November 30 - December 4: Goodtables  <a href="/lessons#goodtables">lesson</a></p>
-</h2>
-  <ul>
-<li>Go over the Goodtables data validation <a href="../lessons#goodtables">lesson</a></li>
-<li><em>Check in</em>: Group meeting</li>
-<li><em>Optional office hours session this week</em>: 15:00 UTC on 2 December. Join this session for more help if you have questions!</li>
-</ul>
-<hr>
-
-  <h2 id="week19"><p>December 7 - 12: Journal Club</p>
-</h2>
-  <ul>
-<li>Read an article (TBD) and answer questions in a group meeting next week</li>
-<li><em>Check in</em>: One-on-one meetings</li>
-</ul>
-<hr>
-
-  <h2 id="week20"><p>December 14 - 18: Conference abstract</p>
-</h2>
-  <ul>
-<li>Identify a conference you want to attend</li>
-<li>Write (and submit) a proposal for a workshop or talk</li>
-<li><em>Check in</em>: The journal club meeting will count as our group check in</li>
-</ul>
-<hr>
-
-  <h2 id="week21and22"><p>December 21 - Jan 1: Break!</p>
-</h2>
-  <h2> </h2>
-<ul>
-<li>Take a break!</li>
-</ul>
-<hr>
-
-  <h2 id="week23"><p>January 4 - 8: New Year Check In</p>
-</h2>
-  <ul>
-<li>Revisit your roadmap document and write up a short status report</li>
-<li><em>Check in</em>: One-on-one meetings</li>
-</ul>
-<hr>
-
-  <h2 id="week24and25"><p>January 11-22: Validate your own data</p>
-</h2>
-  <h2> </h2>
-<ul>
-<li>Using the <a href="http://try.goodtables.io">goodtables browser tool</a>, validate the data package you made earlier</li>
-<li><em>Optional</em> also use the <a href="https://github.com/frictionlessdata/goodtables-py">goodtables-py library</a> to validate your datapackage</li>
-<li><em>Check in</em>: Group meeting during week 1</li>
-<li><em>Check in</em>: One-on-one meetings during week 2</li>
-<li><em>Optional office hours sessions this week</em>: 15:00 UTC on 13 January &amp; 15 January. Join these sessions for more help if you have questions!</li>
-</ul>
-<hr>
-
-  <h2 id="week26"><p>January 25 - 29: Goodtables Blog</p>
-</h2>
-  <ul>
-<li>Blog about your validated data package (how did you do it, what did you learn)</li>
-<li>Add your blog to the <a href="../blog/">Fellows blog</a> by opening a pull request on GitHub</li>
-<li><em>Check in</em>: Group meeting</li>
-</ul>
-<hr>
-
-  <h2 id="week27and28"><p>February 1 - February 12: Trade Data Packages</p>
-</h2>
-  <ul>
-<li>Trade data packages with each other and see if you can reproduce your partner's work</li>
-<li>Do you understand their data based soley on their metadata?</li>
-<li>Can you validate their data with goodtables?</li>
-<li><em>Check in</em>: One-on-one meetings during week 1</li>
-<li><em>Check in</em>: Group meeting during week 2</li>
-</ul>
-<hr>
-
-  <h2 id="week29"><p>February 15 - 19: Blog</p>
-</h2>
-  <ul>
-<li>Blog about the experience of reproducing your partner's data package</li>
-<li>What worked? What didn't work? What was difficult or easy?</li>
-<li>Add your blog to the <a href="../blog/">Fellows blog</a> by opening a pull request on GitHub</li>
-<li><em>Check in</em>: One-on-one meetings</li>
-</ul>
-<hr>
-
-  <h2 id="week30"><p>February 22 - 26: Workshop Prep</p>
-</h2>
-  <ul>
-<li>Use the slides in <a href="../resources#fdWksp">Resources</a> under the 'Frictionless Data Workshops' section to help you make your presentation</li>
-<li>Tips on how to give a presentation/workshop: <a href="http://blogs.nature.com/naturejobs/2017/01/11/scientific-presentations-a-cheat-sheet/">http://blogs.nature.com/naturejobs/2017/01/11/scientific-presentations-a-cheat-sheet/</a></li>
-<li><em>Check in</em>: Group meeting</li>
-</ul>
-<hr>
-
-  <h2 id="week31"><p>March 1 - 5: Give a Workshop/Attend an Open Data Day Event</p>
-</h2>
-  <ul>
-<li>Give a workshop to your network on what you have learned or attend an Open Data Day event</li>
-<li>Remember to post your workshop slides onto <a href="https://zenodo.org/communities/fd_fellows/curate/">Zenodo</a></li>
-<li>Collect feedback - how do you think it went? What would you change for next time?</li>
-<li><em>Check in</em>: One-on-one meetings</li>
-</ul>
-<hr>
-
-  <h2 id="week32"><p>March 8 - 12: Break!</p>
-</h2>
-  <h2> </h2>
-<ul>
-<li>Take a break or catch up if needed</li>
-</ul>
-<hr>
-
-  <h2 id="week33"><p>March 15 - 19: Preprint Journal club</p>
-</h2>
-  <ul>
-<li>Read preprint article (TBD) and answer questions in a group meeting or in Slack</li>
-<li>Discuss how and why to post preprints</li>
-<li><em>Check in</em>: The journal club meeting will count as our group check in</li>
-</ul>
-<hr>
-
-  <h2 id="week34and35"><p>March 22 - April 2: Package and Validate again</p>
-</h2>
-  <ul>
-<li>Using new data (your own data, or from an open repository), create a data package and then validate it</li>
-<li>Document your code &amp; upload your datapackage to GitHub</li>
-<li><em>Check in</em>: One-on-one meetings during week 1</li>
-<li><em>Check in</em>: Group meeting during week 2</li>
-</ul>
-<hr>
-
-  <h2 id="week36and37"><p>April 5 - April 16: Workshop/presentation</p>
-</h2>
-  <ul>
-<li>Do another workshop or presentation at your organization</li>
-<li>Take the first week to prep, then give your workshop during the second week</li>
-<li>Remember to post your workshop slides onto <a href="https://zenodo.org/communities/fd_fellows/curate/">Zenodo</a></li>
-<li><em>Check in</em>: One-on-one meetings during week 1</li>
-<li><em>Check in</em>: Group meeting during week 2</li>
-</ul>
-<hr>
-
-  <h2 id="week38and39"><p>April 19 - 30: Final Blog + Community Call</p>
-</h2>
-  <ul>
-<li>Week 1: Write your final blog<ul>
-<li>Reflect on what you have learned and accomplished</li>
-<li>What are your next steps to advocate for open science + reproducible research?</li>
-</ul>
-</li>
-<li>Week 2: Present your work briefly in an Open Knowledge Foundation of Frictionless Data community call (exact date TBD)</li>
-<li><em>Check in</em>: One-on-one meetings during week 1</li>
-<li><em>Check in</em>: Group meeting during week 2</li>
-</ul>
-
-
 
   </article>
   <footer>
