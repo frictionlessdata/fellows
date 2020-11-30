@@ -114,18 +114,13 @@ Goodtables Data Validation Lesson
 ---
 goodtables:
 ### Validate your data with the Goodtables browser tool and with the command line interface
-- Start by reading [Understanding JSON Schemas](https://json-schema.org/understanding-json-schema/about.html#about), by json-schema.org
 - Next, learn about how to validate data with Goodtables by going through the following tutorial and video (I recommend starting by first reading the tutorial, then watching the video, then actually trying to do the tutorial):
-  - Follow the first half of this tutorial to learn (1) how to validate data with the goodtables browser tool, and then continue on to the second half to learn (2) how to use the goodtables command line interface [https://frictionlessdata.io/field-guide/validated-tabular-data/](https://frictionlessdata.io/field-guide/validated-tabular-data/)
+  - Follow the first half of this tutorial to learn (1) how to validate data with the goodtables browser tool, and then continue on to the second half to learn (2) how to use the goodtables command line interface [https://frictionlessdata.io/blog/2018/07/16/validated-tabular-data/](https://frictionlessdata.io/blog/2018/07/16/validated-tabular-data/)
   - Follow along with this video on validating on the command line with goodtables: [https://www.youtube.com/watch?v=PqtM6d696eY&list=LLQe-pXn0XZzmRzvyOMZpfEg](https://www.youtube.com/watch?v=PqtM6d696eY&list=LLQe-pXn0XZzmRzvyOMZpfEg) **Note**: this video has some Python installation tips, so if you are stuck on the Python part, watch the video (and ask in Slack if you are stuck!).
-  - **note**: We can have a session on 27 January to make sure everyone has the correct Python environment and make sure that everyone's code is working.
 - Once you are comfortable with the idea of validating your data with Goodtables, learn about *continuous* validation by:
-  - Reading through this guide on how to *continuously* validate your data with goodtables [https://frictionlessdata.io/field-guide/automatically-validated-tabular-data/](https://frictionlessdata.io/field-guide/automatically-validated-tabular-data/)
+  - Reading through this guide on how to *continuously* validate your data with goodtables [https://frictionlessdata.io/blog/2018/03/12/automatically-validated-tabular-data/](https://frictionlessdata.io/blog/2018/03/12/automatically-validated-tabular-data/)
   - Watching this video to see *continuous* validation in action: [https://www.youtube.com/watch?v=9YHwu34D_vM&list=LLQe-pXn0XZzmRzvyOMZpfEg](https://www.youtube.com/watch?v=9YHwu34D_vM&list=LLQe-pXn0XZzmRzvyOMZpfEg)
-- For an recap, read through this documentation about goodtables [https://frictionlessdata.io/docs/validating-data/](https://frictionlessdata.io/docs/validating-data/)
-- ** In Slack, answer these questions:**
-  1. What is one reason why you should validate your data?
-  2. What information does goodtables use to "know" the correct data type?
+- For an recap, read through this documentation about goodtables [https://github.com/frictionlessdata/frictionless-py/tree/goodtables](https://github.com/frictionlessdata/frictionless-py/tree/goodtables)
 
 ### *[Additional helpful resources here](/resources#fdTutorials)*
 ***
