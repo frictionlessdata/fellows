@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Creating a datapackage for microbial community data (and a phyloseq object)</title>
 
 <body>
   <header>
@@ -114,138 +114,35 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Creating a datapackage for microbial community data (and a phyloseq object)</h1>
   <div>
-    <h2>
-      Cohort 2 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-    <h2>
-      Cohort 1 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="../../../blog/sele-partner-blog/">Reproduciendo un viaje a Mo&#39;rea</a> —
-          by Sele Yang
-          on 2020-05-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../../blog/lily-goodtables-blog/">Data Validation Of My Interview Dataset Using Goodtables</a> —
-          by Lily Zhao
-          on 2020-04-03
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../../blog/monica-goodtables-blog/">Don&#39;t you wish your table was as clean as mine?</a> —
-          by Monica Granados
-          on 2020-04-03
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../../blog/ouso-goodtables-blog/">Tabular data: Before you use the data</a> —
-          by Daniel Ouso
-          on 2020-04-03
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../../blog/sele-goodtables-blog/">Validando datos un paquete a la vez</a> —
-          by Sele Yang
-          on 2020-04-03
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../../blog/monica-datapackage-blog/">Combating other people’s data</a> —
-          by Monica Granados
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../../blog/ouso-datapackage-blog/">Data package is valid!</a> —
-          by Daniel Ouso
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../../blog/lily-datapackage-blog/">Lily Datapackage Blog</a> —
-          by Lily Zhao
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../../blog/sele-datapackage-blog/">¿Cómo empaquetamos datos y por qué es importante organizar la bolsa del supermercado?</a> —
-          by Sele Yang
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../../blog/oa-week/">Open Access Week 2019</a> —
-          by Monica Granados, Lily Zhao, Daniel Ouso, and Sele Yang
-          on 2019-10-25
-        </li>
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <a href="../../../blog/page/2/">&laquo; Previous</a>
-    
-    | <strong>3</strong> |
-    
-      <a href="../../../blog/page/4/">Next &raquo;</a>
-    
   </div>
+  <div class="blog">
+    <h1>Introduction</h1>
+<p>I study bacteria, and lucky for me, <strong>bacteria are everywhere</strong>. Regardless of society’s best efforts to sanitize, microbes find a way to thrive in even the most unlikely places.</p>
+<p><img src="../../blog/kate-datapackage-blog/dpkg_meme.png" alt="meme of person labeled “society”  spraying a child labeled “literally everything” with antibacterial gel. Caption says “Bacteria EVERYWHERE”"></p>
+<p>For instance, scientists believed the bladder was sterile<sup>1</sup> for decades, however recent research has proved otherwise. It turns out the number of bacteria in the bladder is so low, previous methods were not sensitive enough to detect the small number of bacteria present there. Current technology allows researchers, like me, a way to see what bacteria are in a urine sample by looking for bacterial DNA. Unfortunately – since bacteria are everywhere – there’s also contaminating microbes in the air and on the materials used to collect and process the sample. We’re working with such low amounts of microbial DNA, that the bacteria of interest cannot <em>easily</em> be distinguished from contaminants in the sample.</p>
+<p>One of the ways my lab tries to tackle this problem, is to analyze samples that consist of a known microbial community – referred to as a “mock” community. We take this mock community and analyze it at varying dilutions, so any bacteria present in those samples that is NOT part of the known community is therefore a contaminant. This type of approach has been described in a recent <a href="https://msystems.asm.org/content/4/4/e00290-19">publication</a> from our lab. Here the sequences in color are from bacteria that are expected to be in the mock community, while at higher dilutions, there is higher number of contaminating sequences.</p>
+<p><img src="../../blog/kate-datapackage-blog/mc_dpckg.png" alt="Mock community dilution series"></p>
+<p>The information we gain from establishing contaminants using the mock community data informs how we process and analyze our urine samples. My lab often tries many different ways to handle the mock community, so it’s important that the analysis be documented and reproducible. To address this, I decided to generate a data package using a <a href="https://create.frictionlessdata.io">tool</a> created by the Open Knowledge Foundation. Here is my experience creating a data package of our data, the metadata, and associated software.</p>
+<p><sup>1</sup>unless actively infected, like a urinary tract infection.</p>
+<h1>The data and data package</h1>
+<p>I took the mock community commercially available from Zymo and diluted it 10 times. I sent the samples off to be sequenced at another lab, and received hundreds of files with each sample’s DNA sequences in return. As it stands, there is not a good way for me to create a data package using the raw sequencing files, so I decided to continue on with my data processing before generating the data package.</p>
+<p>I gathered all of the information from the sequencing files and put them into R to pre-process the data with <a href="https://benjjneb.github.io/dada2/index.html">DADA2</a>. Using DADA2, I assessed the quality of the data as well as got rid of any DNA sequences that were not associated with bacteria. DADA2 also uses a reference database of microbial DNA sequences to assign which bacteria is present in what sample.</p>
+<p>The output of DADA2 is a special object in R called a <em>phyloseq object</em>, shown below. This object is essentially a collection of data frames, or tables, that can work together using the program <a href="https://joey711.github.io/phyloseq/">Phyloseq</a>. Phyloseq is very convenient because it has many built-in functions to explore sequencing data from communities of bacteria, like this mock community.</p>
+<p><img src="../../blog/kate-datapackage-blog/ps_object_dpg.png" alt="phyloseq object"></p>
+<p>The phyloseq object for the mock community has 3 main parts: otu_table, tax_table, and sam_data.</p>
+<ul>
+<li>otu_table – table of the DNA sequences for each sample</li>
+<li>tax_table – table of the taxonomy of the bacteria in each sample</li>
+<li>sam_data – table of metadata for all of the samples</li>
+</ul>
+<p>Unfortunately, the data package creator cannot take extract information from phyloseq objects yet. I could manually input all of the information from the phyloseq object into the creator, however that is very time consuming. Instead, I decided to export each part of the phyloseq object (otu_table, tax_table, sam_data) as a .csv file. This way, I could use the .csv files to fill in the categories for the data package creator but still upload the phyloseq object with my datapackage. Below is an example of using the data package creator tool with the otu_table:</p>
+<p><img src="../../blog/kate-datapackage-blog/otu_table.png" alt="otu_table data package"></p>
+<p>Since I have already started processing this data, I have also uploaded the scripts I used. You can find the finished data package on my <a href="https://github.com/katebowie/fellows/tree/master/MiSeqRun_719_MC_datapackage">github</a>.</p>
 
-  
-
+  </div>
 
   </article>
   <footer>
