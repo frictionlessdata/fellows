@@ -2,7 +2,7 @@ title: Creating a datapackage for microbial community data (and a phyloseq objec
 ---
 author: Kate Bowie
 ---
-pub_date: 2020-11-29
+pub_date: 2020-12-05
 ---
 cohort: 2
 ---
@@ -12,19 +12,23 @@ body:
 
 I study bacteria, and lucky for me, **bacteria are everywhere**. Regardless of society’s best efforts to sanitize, microbes find a way to thrive in even the most unlikely places. 
 
-![meme of person labeled “society”  spraying a child labeled “literally everything” with antibacterial gel. Caption says “Bacteria EVERYWHERE”](dpkg_meme.png)
 
-For instance, scientists believed the bladder was sterile* for decades, however recent research has proved otherwise. It turns out the number of bacteria in the bladder is so low, previous methods were not sensitive enough to detect the small number of bacteria present there. Current technology allows researchers, like me, a way to see what bacteria are in a urine sample by looking for bacterial DNA. Unfortunately – since bacteria are everywhere – there’s also contaminating microbes in the air and on the materials used to collect and process the sample. We’re working with such low amounts of microbial DNA, that the bacteria of interest cannot *easily* be distinguished from contaminants in the sample. 
+<img src="dpkg_meme.png" width=100% alt="meme of person labeled “society”  spraying a child labeled “literally everything” with antibacterial gel. Caption says “Bacteria EVERYWHERE”">
+
+
+For instance, scientists believed the bladder was sterile<sup>1</sup> for decades, however recent research has proved otherwise. It turns out the number of bacteria in the bladder is so low, previous methods were not sensitive enough to detect the small number of bacteria present there. Current technology allows researchers, like me, a way to see what bacteria are in a urine sample by looking for bacterial DNA. Unfortunately – since bacteria are everywhere – there’s also contaminating microbes in the air and on the materials used to collect and process the sample. We’re working with such low amounts of microbial DNA, that the bacteria of interest cannot *easily* be distinguished from contaminants in the sample. 
 
 One of the ways my lab tries to tackle this problem, is to analyze samples that consist of a known microbial community – referred to as a “mock” community. We take this mock community and analyze it at varying dilutions, so any bacteria present in those samples that is NOT part of the known community is therefore a contaminant. This type of approach has been described in a recent [publication]( https://msystems.asm.org/content/4/4/e00290-19) from our lab. Here the sequences in color are from bacteria that are expected to be in the mock community, while at higher dilutions, there is higher number of contaminating sequences.
 
-![Mock community dilution series](mc_dpckg.png)
+
+<img src="mc_dpckg.png" width=100% alt="stacked barplot of a mock community dilution series">
+<p style="text-align: center; font-style: italic">Mock community dilution series. Expected bacteria are shown in color, while contaminants are shown in greyscale.</p>
 
 
 The information we gain from establishing contaminants using the mock community data informs how we process and analyze our urine samples. My lab often tries many different ways to handle the mock community, so it’s important that the analysis be documented and reproducible. To address this, I decided to generate a data package using a [tool]( https://create.frictionlessdata.io) created by the Open Knowledge Foundation. Here is my experience creating a data package of our data, the metadata, and associated software. 
 
- 
-<font size="10"> *unless actively infected, like a urinary tract infection </font>
+<sup>1</sup>unless actively infected, like a urinary tract infection.
+
 
 # The data and data package
 I took the mock community commercially available from Zymo and diluted it 10 times. I sent the samples off to be sequenced at another lab, and received hundreds of files with each sample’s DNA sequences in return. As it stands, there is not a good way for me to create a data package using the raw sequencing files, so I decided to continue on with my data processing before generating the data package. 
@@ -33,7 +37,9 @@ I gathered all of the information from the sequencing files and put them into R 
 
 The output of DADA2 is a special object in R called a *phyloseq object*, shown below. This object is essentially a collection of data frames, or tables, that can work together using the program [Phyloseq]( https://joey711.github.io/phyloseq/). Phyloseq is very convenient because it has many built-in functions to explore sequencing data from communities of bacteria, like this mock community. 
 
-![phyloseq object](ps_object_dpg.png)
+
+<img src="ps_object_dpg.png" width=100% alt="Rstudio screenshot showing the types of dataframes within a phyloseq object">
+<p style="text-align: center; font-style: italic">Phyloseq object with the other dataframes inside of it.</p>
 
 The phyloseq object for the mock community has 3 main parts: otu_table, tax_table, and sam_data. 
 *  otu_table – table of the DNA sequences for each sample
@@ -42,6 +48,8 @@ The phyloseq object for the mock community has 3 main parts: otu_table, tax_tabl
 
 Unfortunately, the data package creator cannot take extract information from phyloseq objects yet. I could manually input all of the information from the phyloseq object into the creator, however that is very time consuming. Instead, I decided to export each part of the phyloseq object (otu_table, tax_table, sam_data) as a .csv file. This way, I could use the .csv files to fill in the categories for the data package creator but still upload the phyloseq object with my datapackage. Below is an example of using the data package creator tool with the otu_table:
 
-![otu_table data package](otu_table.png)
+
+<img src="otu_table.png" width=100% alt="Screenshot of data package creator after filling it with the content from a OTU dataframe">
+
 
 Since I have already started processing this data, I have also uploaded the scripts I used. You can find the finished data package on my [github]( https://github.com/katebowie/fellows/tree/master/MiSeqRun_719_MC_datapackage). 
