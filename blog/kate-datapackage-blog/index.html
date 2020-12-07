@@ -119,7 +119,7 @@
   
   </div>
   <div class="blog">
-    <h1>Introduction</h1>
+    <h2>Introduction</h2>
 <p>I study bacteria, and lucky for me, <strong>bacteria are everywhere</strong>. Regardless of society’s best efforts to sanitize, microbes find a way to thrive in even the most unlikely places.</p>
 <p><img src="dpkg_meme.png" width=100% alt="meme of person labeled “society”  spraying a child labeled “literally everything” with antibacterial gel. Caption says “Bacteria EVERYWHERE”"></p>
 <p>For instance, scientists believed the bladder was sterile<sup>1</sup> for decades, however recent research has proved otherwise. It turns out the number of bacteria in the bladder is so low, previous methods were not sensitive enough to detect the small number of bacteria present there. Current technology allows researchers, like me, a way to see what bacteria are in a urine sample by looking for bacterial DNA. Unfortunately – since bacteria are everywhere – there’s also contaminating microbes in the air and on the materials used to collect and process the sample. We’re working with such low amounts of microbial DNA, that the bacteria of interest cannot <em>easily</em> be distinguished from contaminants in the sample.</p>
@@ -127,7 +127,7 @@
 <p><img src="mc_dpckg.png" width=100% alt="stacked barplot of a mock community dilution series"></p>
 <p style="text-align: center; font-style: italic">Mock community dilution series. Expected bacteria are shown in color, while contaminants are shown in greyscale.</p><p>The information we gain from establishing contaminants using the mock community data informs how we process and analyze our urine samples. My lab often tries many different ways to handle the mock community, so it’s important that the analysis be documented and reproducible. To address this, I decided to generate a data package using a <a href="https://create.frictionlessdata.io">tool</a> created by the Open Knowledge Foundation. Here is my experience creating a data package of our data, the metadata, and associated software.</p>
 <p><sup>1</sup>unless actively infected, like a urinary tract infection.</p>
-<h1>The data and data package</h1>
+<h2>The data and data package</h2>
 <p>I took the mock community commercially available from Zymo and diluted it 10 times. I sent the samples off to be sequenced at another lab, and received hundreds of files with each sample’s DNA sequences in return. As it stands, there is not a good way for me to create a data package using the raw sequencing files, so I decided to continue on with my data processing before generating the data package.</p>
 <p>I gathered all of the information from the sequencing files and put them into R to pre-process the data with <a href="https://benjjneb.github.io/dada2/index.html">DADA2</a>. Using DADA2, I assessed the quality of the data as well as got rid of any DNA sequences that were not associated with bacteria. DADA2 also uses a reference database of microbial DNA sequences to assign which bacteria is present in what sample.</p>
 <p>The output of DADA2 is a special object in R called a <em>phyloseq object</em>, shown below. This object is essentially a collection of data frames, or tables, that can work together using the program <a href="https://joey711.github.io/phyloseq/">Phyloseq</a>. Phyloseq is very convenient because it has many built-in functions to explore sequencing data from communities of bacteria, like this mock community.</p>
