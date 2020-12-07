@@ -8,7 +8,7 @@ cohort: 2
 ---
 body:
 
-# Introduction
+## Introduction
 
 I study bacteria, and lucky for me, **bacteria are everywhere**. Regardless of society’s best efforts to sanitize, microbes find a way to thrive in even the most unlikely places. 
 
@@ -30,7 +30,7 @@ The information we gain from establishing contaminants using the mock community 
 <sup>1</sup>unless actively infected, like a urinary tract infection.
 
 
-# The data and data package
+## The data and data package
 I took the mock community commercially available from Zymo and diluted it 10 times. I sent the samples off to be sequenced at another lab, and received hundreds of files with each sample’s DNA sequences in return. As it stands, there is not a good way for me to create a data package using the raw sequencing files, so I decided to continue on with my data processing before generating the data package. 
 
 I gathered all of the information from the sequencing files and put them into R to pre-process the data with [DADA2]( https://benjjneb.github.io/dada2/index.html). Using DADA2, I assessed the quality of the data as well as got rid of any DNA sequences that were not associated with bacteria. DADA2 also uses a reference database of microbial DNA sequences to assign which bacteria is present in what sample. 
