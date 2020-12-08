@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../css/style.css">
-<title>**Let’s Talk Data Packaging**</title>
+<title>Let&#39;s Talk Data Packaging</title>
 
 <body>
   <header>
@@ -114,30 +114,29 @@
   </header>
   <article>
     
-  <h1>**Let’s Talk Data Packaging**</h1>
+  <h1>Let&#39;s Talk Data Packaging</h1>
   <div>
   
   </div>
   <div class="blog">
     <p>Packaging of data is the practice of using data packaging tools to containerize data with all its required metadata in the most convenient format that is both human- and machine readable. Packaging removes kinks and ambiguity that comes up when dealing with multivariate data. It additionally ensures that the data does not suffer mishandling and misinterpretation in the hands of others. A few weeks ago I met data packages for the first time and I was intrigued since I had spent too much time in the past wrangling missing and inconsistent values. Packaging data therefore taught me that arranging and preserving data does not have to be tedious anymore. Here, I show how I packaged a bit of my data (unpublished) into a neat json document using the <a href="https://create.frictionlessdata.io/">Data Package creator</a> . I am excited to show you just how much I have come from knowing nothing to being able to package and extract the json output.</p>
 <h3><em>Here we go!</em></h3>
-<p><strong>The Data Package Creator</strong>
-<img src="dp1.png" width=100% alt="dp1"></p>
-<p style="text-align: center; font-style: italic">The Data Package Creator user interface.</p><p>This is a friendly user interface that was created by the open knowledge foundation to enable a quick and easy route to creating and accessing a datapackage. It therefore allows coders and non-coders alike to be able to do this without breaking a sweat. First, the data needs to be loaded into the system and the <strong>Path </strong>(A) section comes handy in this. You can either paste a github url or use the <strong>Load </strong>(B) section to access the csv file from your remote machine.
-I loaded data from my PC and the system automatically inferred 15 fields for me.</p>
+<p><strong>The Data Package Creator</strong></p>
+<p><img src="dp1.png" width=100% alt="dp1"></p>
+<p style="text-align: center; font-style: italic">The Data Package Creator user interface.</p><p>This is a friendly user interface that was created by the open knowledge foundation to enable a quick and easy route to creating and accessing a datapackage. It therefore allows coders and non-coders alike to be able to do this without breaking a sweat. First, the data needs to be loaded into the system and the <strong>Path </strong>(A) section comes handy in this. You can either paste a github url or use the <strong>Load </strong>(B) section to access the csv file from your remote machine.</p>
 <p><img src="dp2.png" width=100% alt="dp2"></p>
-<p style="text-align: center; font-style: italic">Part C reveals inferred fields from your read data.</p><p>I then defined my fields using the <strong>settings </strong>wheel that enabled me to input the name and the schema. My work is in a tabulated format so the tabular data package was fitting. In the metadata section I also inferred the name and title, a short description of the data package, the versions and licences and finally the keywords.</p>
+<p style="text-align: center; font-style: italic">Automatically inferred data fields.</p><p>I loaded data from my PC and the system automatically inferred 15 fields for me. I then defined my fields using the <strong>settings </strong>wheel that enabled me to input the name and the schema. My work is in a tabulated format so the tabular data package was fitting.</p>
 <p><img src="dp3.png" width=100% alt="dp3"></p>
-<p style="text-align: center; font-style: italic">all the inferred fields, you can now do the specific edits on the data and metadata.</p><p>I then checked if all the fields that were inferred from my dataset were okay and pressed <strong>validate.</strong>
-Pretty straightforward, right? Yes.</p>
+<p style="text-align: center; font-style: italic">The data fields section that supports editing by user.</p><p>In the metadata section I also inferred the name and title, a short description of the data package, the versions and licences and finally the keywords. I then checked if all the fields that were inferred from my dataset were okay and pressed <strong>validate.</strong></p>
 <p><img src="dp4.png" width=100% alt="dp4"></p>
-<p style="text-align: center; font-style: italic">Valid!.</p><p>After validating, I wanted to see how my json file looked and to also download it for storage in my PC and also share on github. Clicking on the <strong>{...}</strong> symbol (D) allowed me to sneak a peek at my new json file while the Download button just...downloaded it.</p>
-<p>This process took me like 10 minutes to complete and it had everything I needed!.</p>
-<p>You can also learn to create your packages in R and Python from the Frictionless fellows <a href="https://fellows.frictionlessdata.io/lessons/#datapackages">website</a> .</p>
+<p style="text-align: center; font-style: italic">Data Package is valid!.</p><p>Pretty straightforward, right? Yes.</p>
+<p>After validating, I wanted to see how my json file looked and also download it for storage in my PC or share on github. Clicking on the <strong>{...}</strong> symbol allowed me to sneak a peek at my new json file while the Download button just...downloaded it.</p>
+<p>This process took me like 10 minutes to complete and it had everything I needed!</p>
+<p>You can also learn to create your packages in R and Python from the Frictionless fellows <a href="https://fellows.frictionlessdata.io/lessons/#datapackages">website</a></p>
 <p><strong><em>Setbacks</em></strong></p>
-<p>Before I pulled this amazing stunt, my data had been invalid at least twice and I want to point this out because it really sucks if you get an invalid without knowing the cause. After a few tweaks I found out that the name I wrote in the resource and metadata section needed to be separated by an underscore <strong>(_)</strong>. By doing that I was in the clear so fear not if your data package is deemed invalid since the solution could just be a click away</p>
+<p>You got to get the names right; as in the<strong> Resources</strong> and <strong>Name</strong> section. Underscores <strong>(_)</strong> and dashes <strong>(-)</strong> really got me wound up on this one. Either way a warning will be displayed at the interface so fixing this won’t take much of your time.</p>
 <p><strong><em>In a nutshell…</em></strong></p>
-<p>Using the data package creator is the simplest method I have found to create data packages and this is after practising the same in R and python. It is therefore high time we packaged our research into the invaluable data packages to enhance data reuse and to also reduce the amount of time spent wrangling inconsistent data. Best.</p>
+<p>Good data needs to be well packaged for posterity, let’s all adopt this important practice for better research.</p>
 
   </div>
 
