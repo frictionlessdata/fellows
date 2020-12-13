@@ -15,23 +15,37 @@ Packaging of data is the practice of using data packaging tools to containerize 
 ### _Here we go!_
 
 **The Data Package Creator**
+datapackage_blog
+<img src="dp1.png" width=100% alt="dp1">
 
 <img src="dp1.PNG" width=100% alt="dp1">
+master
 <p style="text-align: center; font-style: italic">The Data Package Creator user interface.</p>
 
 This is a friendly user interface that was created by the open knowledge foundation to enable a quick and easy route to creating and accessing a datapackage. It therefore allows coders and non-coders alike to be able to do this without breaking a sweat. First, the data needs to be loaded into the system and the **Path **(A) section comes handy in this. You can either paste a github url or use the **Load **(B) section to access the csv file from your remote machine.
 
+datapackage_blog
+<img src="dp2.png" width=100% alt="dp2">
+
 <img src="dp2.PNG" width=100% alt="dp2">
+master
 <p style="text-align: center; font-style: italic">Automatically inferred data fields.</p>
 
  I loaded data from my PC and the system automatically inferred 15 fields for me. I then defined my fields using the **settings **wheel that enabled me to input the name and the schema. My work is in a tabulated format so the tabular data package was fitting. 
 
+ datapackage_blog
+<img src="dp3.png" width=100% alt="dp3">
+
 <img src="dp3.PNG" width=100% alt="dp3">
+master
 <p style="text-align: center; font-style: italic">The data fields section that supports editing by user.</p>
 
  In the metadata section I also inferred the name and title, a short description of the data package, the versions and licences and finally the keywords. I then checked if all the fields that were inferred from my dataset were okay and pressed **validate.**
+ datapackage_blog
+ <img src="dp4.png" width=100% alt="dp4">
 
- <img src="dp4.PNG" width=100% alt="dp4">
+<img src="dp4.PNG" width=100% alt="dp4">
+ master
 <p style="text-align: center; font-style: italic">Data Package is valid!.</p>
 
 Pretty straightforward, right? Yes. 
