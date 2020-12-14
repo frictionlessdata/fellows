@@ -9,30 +9,35 @@ pub_date: 2020-11-22
 cohort: 2
 ---
 body:
-Packaging of data is the practice of using data packaging tools to containerize data with all its required metadata in the most convenient format that is both human- and machine readable. Packaging removes kinks and ambiguity that comes up when dealing with multivariate data. It additionally ensures that the data does not suffer mishandling and misinterpretation in the hands of others. A few weeks ago I met data packages for the first time and I was intrigued since I had spent too much time in the past wrangling missing and inconsistent values. Packaging data therefore taught me that arranging and preserving data does not have to be tedious anymore. Here, I show how I packaged a bit of my data (unpublished) into a neat json document using the [Data Package creator](https://create.frictionlessdata.io/) . I am excited to show you just how much I have come from knowing nothing to being able to package and extract the json output. 
+Packaging of data is the practice of using data packaging tools to containerize data with all its required metadata in the most convenient format that is both human- and machine readable. Packaging removes kinks and ambiguity that comes up when dealing with multivariate data. It additionally ensures that the data does not suffer mishandling and misinterpretation in the hands of others.
+
+<img src="dp5.jpeg" width=100% alt="dp1">
+<p style="text-align: center; font-style: italic"> Messy data? No problem!</p>
+
+ A few weeks ago I met data packages for the first time and I was intrigued since I had spent too much time in the past wrangling missing and inconsistent values. Packaging data therefore taught me that arranging and preserving data does not have to be tedious anymore. Here, I show how I packaged a bit of my data (unpublished) into a neat json document using the [Data Package creator](https://create.frictionlessdata.io/) . I am excited to show you just how much I have come from knowing nothing to being able to package and extract the json output. 
 
 
 ### _Here we go!_
 
 **The Data Package Creator**
 
-<img src="dp1.PNG" width=100% alt="dp1">
+<img src="dp1.jpg" width=100% alt="dp1">
 <p style="text-align: center; font-style: italic">The Data Package Creator user interface.</p>
 
 This is a friendly user interface that was created by the open knowledge foundation to enable a quick and easy route to creating and accessing a datapackage. It therefore allows coders and non-coders alike to be able to do this without breaking a sweat. First, the data needs to be loaded into the system and the **Path **(A) section comes handy in this. You can either paste a github url or use the **Load **(B) section to access the csv file from your remote machine.
 
-<img src="dp2.PNG" width=100% alt="dp2">
+<img src="dp2.jpg" width=100% alt="dp2">
 <p style="text-align: center; font-style: italic">Automatically inferred data fields.</p>
 
- I loaded data from my PC and the system automatically inferred 15 fields for me. I then defined my fields using the **settings **wheel that enabled me to input the name and the schema. My work is in a tabulated format so the tabular data package was fitting. 
+I loaded data from my PC and the system automatically inferred 15 fields for me. I then defined my fields using the **settings **wheel that enabled me to input the name and the schema. My work is in a tabulated format so the tabular data package was fitting. 
 
-<img src="dp3.PNG" width=100% alt="dp3">
+<img src="dp3.jpg" width=100% alt="dp3">
 <p style="text-align: center; font-style: italic">The data fields section that supports editing by user.</p>
 
- In the metadata section I also inferred the name and title, a short description of the data package, the versions and licences and finally the keywords. I then checked if all the fields that were inferred from my dataset were okay and pressed **validate.**
-
- <img src="dp4.PNG" width=100% alt="dp4">
-<p style="text-align: center; font-style: italic">Data Package is valid!.</p>
+In the metadata section I also inferred the name and title, a short description of the data package, the versions and licences and finally the keywords. I then checked if all the fields that were inferred from my dataset were okay and pressed **validate.**
+ 
+<img src="dp4.jpg" width=100% alt="dp4">
+<p style="text-align: center; font-style: italic">Data Package is valid!</p>
 
 Pretty straightforward, right? Yes. 
 
