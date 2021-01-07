@@ -14,17 +14,15 @@ The data that I am using today is sourced from monthly weather data website and 
 
 [https://data.telangana.gov.in/search/type/dataset?query=weather&sort_by=title&sort_order=ASC](https://data.telangana.gov.in/search/type/dataset?query=weather&sort_by=title&sort_order=ASC)
 
-![Image of Source]
-(https://github.com/frictionlessdata/fellows/blob/ritwikagarwal-patch-2/content/blog/ritwik-datapackage-blog/Screenshot%202021-01-06%20at%206.23.56%20PM.png)
+![](Screenshot 2021-01-06 at 6.23.56 PM.png)
 You can basically categorise the data and filter it based on different names and titles and after getting results you can either download the csv file or can see the preprint of the data on the website itself for you to see.CSV files are very versatile, but cannot handle the metadata with all the necessary context. We need to make sure that people can find our data _and_ the information they need to understand our data. That's where the Data Package comes in!
-![Image of Data]
-(https://github.com/frictionlessdata/fellows/blob/ritwikagarwal-patch-2/content/blog/ritwik-datapackage-blog/Screenshot%202021-01-06%20at%206.24.17%20PM.png)
+![](Screenshot%202021-01-06%20at%206.24.17%20PM.png)
 
 **Creating and Using a Data Package **
 
 To do this, we will be using the [Data Package Creator](https://create.frictionlessdata.io/). Although we can create a Data Package through the command-line tools, we will use the browser tool for simplicity.
 
-(https://github.com/frictionlessdata/fellows/blob/ritwikagarwal-patch-2/content/blog/ritwik-datapackage-blog/Screenshot%202021-01-06%20at%206.28.50%20PM.png)
+![](Screenshot%202021-01-06%20at%206.28.50%20PM.png)
 
 *   We are going to give a (machine read) name and a (human read) title to our Data Package;
 *   Then we will add a description, so people know this data comes from a open source website and they can use it later on
@@ -39,10 +37,10 @@ At the top of the panel, we will see that we can add the name and path to a data
 After we load the path to the data from _the resource_, the Data Package Creator will automatically infer some of the characteristics of our data. First, it will show us how many columns it found, so that we can choose whether we want to import them all or just a subset. Then you will notice that it also inferred the header and data type of each column. Make sure the latter is correct, since this will be important for the validation of our data.
 
  Adding more data we will let the Data Package Creator infer the metadata and we will simply check and correct any mistake:
- (https://github.com/frictionlessdata/fellows/blob/ritwikagarwal-patch-2/content/blog/ritwik-datapackage-blog/Screenshot%202021-01-06%20at%206.30.57%20PM.png)
+![](Screenshot%202021-01-06%20at%206.30.57%20PM.png)
 
 **The final Output**
 
 We're ready to hit the Validate button and see whether everything looks good. If the Data Package Creator finds any problem with your data or metadata, it will tell you what it is so you can easily fix it.Once we're done, we hit the Download button, which will give us a JSON file. This file has all the metadata that we introduced in a machine-readable format. This will allow anyone to read out our metadata using any tool they want. So now we have our JSON file ready for us to see :) .
 
-(https://github.com/frictionlessdata/fellows/blob/ritwikagarwal-patch-2/content/blog/ritwik-datapackage-blog/Screenshot%202021-01-06%20at%206.34.09%20PM.png)
+![](Screenshot%202021-01-06%20at%206.34.09%20PM.png)
