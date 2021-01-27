@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Walking through the `frictionless` framework</title>
 
 <body>
   <header>
@@ -114,138 +114,40 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Walking through the `frictionless` framework</h1>
   <div>
-    <h2>
-      Cohort 2 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-    <h2>
-      Cohort 1 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="../../../blog/lily-final-blog/">Reflecting on My Time as a Fellow</a> —
-          by Lily Zhao
-          on 2020-06-04
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../../blog/ouso-partner-blog/">Data Barter: Real-life data interactions</a> —
-          by Daniel Ouso
-          on 2020-05-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../../blog/lily-partner-blog/">Packaging Ouso&#39;s Data</a> —
-          by Lily Zhao
-          on 2020-05-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../../blog/sele-partner-blog/">Reproduciendo un viaje a Mo&#39;rea</a> —
-          by Sele Yang
-          on 2020-05-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../../blog/lily-goodtables-blog/">Data Validation Of My Interview Dataset Using Goodtables</a> —
-          by Lily Zhao
-          on 2020-04-03
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../../blog/monica-goodtables-blog/">Don&#39;t you wish your table was as clean as mine?</a> —
-          by Monica Granados
-          on 2020-04-03
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../../blog/ouso-goodtables-blog/">Tabular data: Before you use the data</a> —
-          by Daniel Ouso
-          on 2020-04-03
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../../blog/sele-goodtables-blog/">Validando datos un paquete a la vez</a> —
-          by Sele Yang
-          on 2020-04-03
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../../blog/monica-datapackage-blog/">Combating other people’s data</a> —
-          by Monica Granados
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../../blog/ouso-datapackage-blog/">Data package is valid!</a> —
-          by Daniel Ouso
-          on 2020-01-29
-        </li>
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <a href="../../../blog/page/2/">&laquo; Previous</a>
-    
-    | <strong>3</strong> |
-    
-      <a href="../../../blog/page/4/">Next &raquo;</a>
-    
   </div>
+  <div class="blog">
+    <p>While the <a href="http://goodtables.io/dashboard">GoodTables</a> web server is a convenient tool for automated data validation, the <a href="https://frictionlessdata.io/tooling/python/#purpose"><code>frictionless</code></a> framework allows for validation right within your Python scripts. We'll demonstrate some key <code>frictionless</code> functionality, both in Python and command line syntax. As an illustrative point, we will use a CSV file that contains an invalid element – a remnant of careless file creation.</p>
+<p>View the original <a href="https://github.com/jmaasch/reproducible-research/blob/master/frictionless_demo/frictionless_demo.ipynb">Jupyter notebook</a>, <a href="https://github.com/jmaasch/reproducible-research/blob/master/frictionless_demo/frictionless_demo.py">Python script</a>, and <a href="https://github.com/jmaasch/reproducible-research/blob/master/frictionless_demo/merops_peptidase_families.csv">dataset</a> on GitHub.</p>
+<p><strong>Note:</strong> This demo uses <code>frictionless</code> version 3.48.0, <code>pandas</code> version 1.0.1, and Python 3.8.3.</p>
+<h2>Overview</h2>
+<p>This simple <a href="https://github.com/jmaasch/reproducible-research/blob/master/frictionless_demo/frictionless_demo.py">Python script</a> shows the command line syntax and equivalent Python syntax that we will review in this demo.</p>
+<p><img width="100%" alt="script" src="script.png"></p>
+<h2>Command line syntax</h2>
+<h3>View data</h3>
+<p>First, we will import the <code>frictionless</code> package. We will also use <code>pandas</code> for some light dataframe manipulation. Starting with our command line syntax, we can get a sense of what we are working with by printing out the first several lines of our CSV file.</p>
+<p>If you look closely, you will see that the first column contains no header: the first element of the first row is empty, as conveyed by the lonely <code>,</code> preceeded by... nothing at all. In fact, this column is quite useless: it is an artifact of forgetting to pass the argument <code>index = False</code> to the <code>pandas</code> function <code>to_csv()</code> during file creation. This useless indexing column would ideally be removed entirely. Let's see how this oversight plays out during file validation...</p>
+<p><img width="100%" alt="demo1" src="demo1.png"></p>
+<h3>Describe data</h3>
+<p>Next, we can describe our data file. This is a convenient way to view inferred header names and column data types, for example.</p>
+<p><img width="100%" alt="demo2" src="demo2.png"></p>
+<h3>Validate data</h3>
+<p>When we finally validate our data file, that missing column name that we noted above will come back to haunt us... indeed, this is the cause of our failed validation. To make this CSV file valid, we would need either to 1) remove the offending column, which contains no pertinent data anyways, or 2) give the offending column a proper header.</p>
+<p><img width="1000" alt="demo3" src="demo3.png"></p>
+<h2>Python syntax</h2>
+<p>Below, we walk through the Python syntax that provides equivalent functionality. As you'll see, this syntax is extremely similar to its command line equivalent, just more "pythonic." However, the outputs do look a bit different!</p>
+<p>Note that the header of our headerless first column is autopopulated by <code>pandas</code> as <code>Unnamed: 0</code>. Don't be fooled: this column is still technically headerless.</p>
+<p><img width="1000" alt="demo4" src="demo4.png"></p>
+<p>Clearly, our data is invalid!</p>
+<p><img width="1000" alt="demo5" src="demo5.png"></p>
+<p>Note that the <code>message</code> and <code>description</code> values provide a useful elaboration on why our CSV file is deemed invalid.</p>
+<p><img width="1000" alt="demo6" src="demo6.png"></p>
+<h2>Bottom line</h2>
+<p>The <code>frictionless</code> framework is a convenient way to wrap your data validation needs directly into your existing Python data analysis pipeline. Choose whichever syntax works for you – Python or command line.</p>
 
-  
-
+  </div>
 
   </article>
   <footer>
