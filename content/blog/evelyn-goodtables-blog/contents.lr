@@ -71,7 +71,7 @@ Starting this exercise was a little technical for me since I forgot to establish
 
 [-,-] [scheme-error] [Errno 2] No such file or directory: 'Muranga_insects_dp.json'
 
-So, establishing your working directory is a critical step when working on the commandline! (_note to self_)
+So, establishing your working directory is a critical step when working on the commandline (_note to self_)
 
 <img src="girl_code.jpg" width=100% alt="girl_code">
 <p style="text-align: center; font-style: italic"></p>
