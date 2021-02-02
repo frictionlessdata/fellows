@@ -1,11 +1,20 @@
-title: '___'
+title: "What do you mean my data is invalid?!"
 ---
 author: Anne Lee Steele
 ---
-pub_date: 2021-01-29
+pub_date: 2021-02-01
 ---
 cohort: 2
 ---
 body:
 
-test
+I'm going to let you in on a not-so-unknown secret: I'm probably the least data-literate of the fellows. Half of the time, I'm wondering whether or not my rudimentary knowledge of python and R will be enough to complete the [ambitious visualization](https://fellows.frictionlessdata.io/blog/anne-datapackage-blog/) that I've set out to make this year. But, I guess that's been the whole point of this project (and my fellowship with OKF): to learn and improve my own skillset, while working on a project that I'd been prototyping for a while before starting here. To be sure, I've learned a lot over the past few months, and hope that I'll continue to do so long after our fellows program. As I always try to point out, anthropologists and sociologists write a lot about [quantification and its dangers](https://anthrosource.onlinelibrary.wiley.com/doi/abs/10.1111/aman.13178), but I would argue that only the latter has invested in the kind of data literacy programs that would allow them to translate between what often feel like [diametrically opposed world views](https://lareviewofbooks.org/article/quantified-life-an-interview-with-sun-ha-hong/). 
+
+Social scientists often think that they're the only ones with these critiques, but if there's anything I've learned throughout this fellowship: it's that this is definitely not the case. My cohort has enunciated a lot of the same tensions and fears that I've been exposed to throughout my (very short!) research career, but always end with how they can be rectified or mediated in real time. They immediately think about the interoperability, implicit bias, and replicability of a study, and always check its technical specs and the studies it might cite in turn. In many ways, they've made me realize that while these [fears of bias and 'datafication'](https://www.scientificamerican.com/article/the-harm-that-data-do/) are not the domain of writers and academics alone, there's not nearly enough reporting or translation being done about how people are actively to rectify critiques in real time. Make no mistake: there have been many [ongoing attempts to improve these processes](https://medium.com/datafication-of-experience/data-are-always-already-biased-the-datafication-framework-b56ab12168af), but they're usually not as interesting (or get as many views or citations) than critique. This isn't everyone though. Tthere are definitely researchers out there that think that these tools can [complement each other](https://link.springer.com/article/10.1007/s13278-010-0014-4), and that mixed methods offers binaries. And to be honest: the reality is that data and 'datafication' is here to stay.
+
+We've spent the first half of this fellowship doing prep work: from have discussions about ' writing [data tables that ]
+Therefore, I approached this blog with the goal of understanding basic concepts, and how many people (like myself!)
+Therefore, I approached this blog with the goal of understanding _. For me, this means using the goodtables.io
+
+<img src="ValidatePicture2.png" width=100% alt="schema">
+<p style="text-align: center; font-style: italic">Grabing the schema.</p>
