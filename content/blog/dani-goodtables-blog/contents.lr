@@ -10,7 +10,7 @@ body:
 
 In a previous blog post we learnt how to [create a Data Package](https://fellows.frictionlessdata.io/blog/dani-datapackage-blog/) to share the data from your scientific publications.
 
-But often times we need to update or modify our data after we cleaned and share them (e.g., after collecting new observations, or correcting for some errors). This can lead to some errors, such as entering duplicate rows by mistake or using a different format that does not match the one specidified before. To avoid these situations, we have a Frictionless tool that helps us verify and validate our dataset before sharing it: `goodtables`.
+But often times we need to update or modify our data after we cleaned and share them (e.g., after collecting new observations, or correcting for some errors). This can lead to some errors, such as entering duplicate rows by mistake or using a different format that does not match the one specified before. To avoid these situations, we have a Frictionless tool that helps us verify and validate our dataset before sharing it: `goodtables`.
 
 As with other Frictionless tools, we can use a GUI-based [web application](http://try.goodtables.io) to click our way through the validation process. But this time we will be using the command-line tools and Python library to see how they offer much more flexibility.
 
@@ -87,4 +87,4 @@ Once we have decided to share our data with the rest of the world, it is importa
 
 If you are planning to share your data and metadata in GitHub, there is a [Goodtables website](https://goodtables.io) that offers a continuous validation service for tabular data. This means you can sync your GitHub repository and rely on Goodtables to validate your data after every change. You can even add a Goodtables badge at the top of your README file so everyone can see you validated your data before sharing!
 
-<img src="snapshot4_goodtablesweb.png" width=100% alt="Goodtables badge showing that the data in this GitHub repository is valid"><p style="text-align: center; font-style: italic">Goodtables integrates well with GitHub, offering a continuous validation service for tabular data.</p>
+<img src="snapshot4_goodtablesWeb.png" width=100% alt="Goodtables badge showing that the data in this GitHub repository is valid"><p style="text-align: center; font-style: italic">Goodtables integrates well with GitHub, offering a continuous validation service for tabular data.</p>
