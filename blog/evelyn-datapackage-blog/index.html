@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../css/style.css">
-<title>Sam Goodtables Blog</title>
+<title>Let&#39;s Talk Data Packaging</title>
 
 <body>
   <header>
@@ -114,21 +114,32 @@
   </header>
   <article>
     
-  <h1>Sam Goodtables Blog</h1>
+  <h1>Let&#39;s Talk Data Packaging</h1>
   <div>
   
   </div>
   <div class="blog">
-    <h2>Introduction to Goodtables</h2>
-<p>Goodtables is a tool that can be used to quickly and easily validate your data. It's essential to validate your data both for your own peace of mind and also to make sure it is usable for others who may encounter your data in the future. You have the option of using Gootables to validate your data in one instance in time, or to continuously validate your data. When you decide to use Goodtables, you also have the option of using the browser tool, or using the Goodtables command line tool! This blog post will focus on one-time validation.</p>
-<h2>Browser Tool</h2>
-<p><a href="http://try.goodtables.io/">Goodtables.io</a> can be used to quickly and easily run a one-time validation on your data. Note that if your dataset has more than 10,000 rows, you will not be able to use the browser tool. The command line tool would be better suited for your data! I have my data stored in a .csv file, and to demonstrate how useful Goodtables can be to check for errors, I intentionally duplicated a row to see if Goodtables could catch the error.</p>
-<p>The first step in using <a href="http://try.goodtables.io/">Goodtables.io</a> is to navigate to the site. Next, upload your data using the "upload file" button, or paste your direct URL to your data using the box below "source". Next, click "validate" unless you have a schema you would like to use validate your data. After clicking "validate", you should see either a green message stating that the data is valid, or an error message such as the one I received for having a duplicate row which is pictured below.</p>
-<p><img src="SamGoodTablesBrowserImage.png" width=100% alt="SamGoodTablesBrowserImage"></p>
-<p style="text-align: center; font-style: italic">A screenshot of the Goodtables browser tool.</p><h2>Command Line Tool</h2>
-<p>Now let's try validating the same data using the Goodtables command line tool! The first step is to open up the command line on your device. Next, use the command: pip install goodtables. You should see many lines of code running through your command line interface. Once the installation is complete, type "goodtables path/to/file.csv". You will either receive a green message stating that the data is valid, or a red message, like the one I have shown below, showing that the data is not valid!</p>
-<p><img src="SamGoodTablesCommandLineScreenshot.png" width=100% alt="SamGoodTablesCommandLineScreenshot"></p>
-<p style="text-align: center; font-style: italic">A screenshot of the Goodtables command line tool error message.</p>
+    <p>Packaging of data is the practice of using data packaging tools to containerize data with all its required metadata in the most convenient format that is both human- and machine readable. Packaging removes kinks and ambiguity that comes up when dealing with multivariate data. It additionally ensures that the data does not suffer mishandling and misinterpretation in the hands of others.</p>
+<p><img src="dp5.jpeg" width=100% alt="dp1"></p>
+<p style="text-align: center; font-style: italic"> Messy data? No problem!</p><p>A few weeks ago I met data packages for the first time and I was intrigued since I had spent too much time in the past wrangling missing and inconsistent values. Packaging data therefore taught me that arranging and preserving data does not have to be tedious anymore. Here, I show how I packaged a bit of my data (unpublished) into a neat json document using the <a href="https://create.frictionlessdata.io/">Data Package creator</a> . I am excited to show you just how much I have come from knowing nothing to being able to package and extract the json output.</p>
+<h3><em>Here we go!</em></h3>
+<p><strong>The Data Package Creator</strong></p>
+<p><img src="dp1.jpg" width=100% alt="dp1"></p>
+<p style="text-align: center; font-style: italic">The Data Package Creator user interface.</p><p>This is a friendly user interface that was created by the open knowledge foundation to enable a quick and easy route to creating and accessing a datapackage. It therefore allows coders and non-coders alike to be able to do this without breaking a sweat. First, the data needs to be loaded into the system and the <strong>Path </strong>(A) section comes handy in this. You can either paste a github url or use the <strong>Load </strong>(B) section to access the csv file from your remote machine.</p>
+<p><img src="dp2.jpg" width=100% alt="dp2"></p>
+<p style="text-align: center; font-style: italic">Automatically inferred data fields.</p><p>I loaded data from my PC and the system automatically inferred 15 fields for me. I then defined my fields using the <strong>settings </strong>wheel that enabled me to input the name and the schema. My work is in a tabulated format so the tabular data package was fitting.</p>
+<p><img src="dp3.jpg" width=100% alt="dp3"></p>
+<p style="text-align: center; font-style: italic">The data fields section that supports editing by user.</p><p>In the metadata section I also inferred the name and title, a short description of the data package, the versions and licences and finally the keywords. I then checked if all the fields that were inferred from my dataset were okay and pressed <strong>validate.</strong></p>
+<p><img src="dp4.jpg" width=100% alt="dp4"></p>
+<p style="text-align: center; font-style: italic">Data Package is valid!</p><p>Pretty straightforward, right? Yes.</p>
+<p>After validating, I wanted to see how my json file looked and also download it for storage in my PC or share on github. Clicking on the <strong>{...}</strong> symbol allowed me to sneak a peek at my new json file while the Download button just...downloaded it.</p>
+<p>This process took me like 10 minutes to complete and it had everything I needed!</p>
+<p>You can also learn to create your packages in R and Python from the Frictionless fellows <a href="https://fellows.frictionlessdata.io/lessons/#datapackages">website</a></p>
+<p><strong><em>Setbacks</em></strong></p>
+<p>You got to get the names right; as in the<strong> Resources</strong> and <strong>Name</strong> section. Underscores <strong>(_)</strong> and dashes <strong>(-)</strong> really got me wound up on this one. Either way a warning will be displayed at the interface so fixing this won’t take much of your time.</p>
+<p><strong><em>In a nutshell…</em></strong></p>
+<p>Good data needs to be well packaged for posterity, let’s all adopt this important practice for better research.</p>
+
   </div>
 
   </article>
