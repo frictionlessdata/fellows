@@ -25,5 +25,5 @@ The first step in using [Goodtables.io](http://try.goodtables.io/) is to navigat
 
 Now let's try validating the same data using the Goodtables command line tool! The first step is to open up the command line on your device. Next, use the command: pip install goodtables. You should see many lines of code running through your command line interface. Once the installation is complete, type "goodtables path/to/file.csv". You will either receive a green message stating that the data is valid, or a red message, like the one I have shown below, showing that the data is not valid!
 
-<img src="SamGoodTablesCommandLineScreenshot.png" width=100% alt="SamGoodTablesCommandLineScreenshot">
+<img src="SamGoodtablesCommandLineScreenshot.png" width=100% alt="SamGoodTablesCommandLineScreenshot">
 <p style="text-align: center; font-style: italic">A screenshot of the Goodtables command line tool error message.</p>
