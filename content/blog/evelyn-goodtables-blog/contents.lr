@@ -38,7 +38,7 @@ While it was simple for me to ignore the duplicate rows, other [structural error
 Validating a data package follows the same procedures and if the program detects an error then that will be highlighted promptly and be displayed as above.
 
 
-        II)         **         Validating using the Command Line Interface (CLI)**
+**II) Validating using the Command Line Interface (CLI)**
 
 For starters, you need these installed:
 
