@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Validate it the GoodTables way!</title>
 
 <body>
   <header>
@@ -114,138 +114,47 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Validate it the GoodTables way!</h1>
   <div>
-    <h2>
-      Cohort 2 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-      
-        
-        <li>
-          <a href="../../evelyn-goodtables-blog/">Validate it the GoodTables way!</a> —
-          by Evelyn Night Okello
-          on 2020-02-02
-        </li>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-    <h2>
-      Cohort 1 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="../../sele-goodtables-blog/">Validando datos un paquete a la vez</a> —
-          by Sele Yang
-          on 2020-04-03
-        </li>
-        
-      
-        
-      
-        
-        <li>
-          <a href="../../monica-datapackage-blog/">Combating other people’s data</a> —
-          by Monica Granados
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../ouso-datapackage-blog/">Data package is valid!</a> —
-          by Daniel Ouso
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../lily-datapackage-blog/">Lily Datapackage Blog</a> —
-          by Lily Zhao
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../sele-datapackage-blog/">¿Cómo empaquetamos datos y por qué es importante organizar la bolsa del supermercado?</a> —
-          by Sele Yang
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../oa-week/">Open Access Week 2019</a> —
-          by Monica Granados, Lily Zhao, Daniel Ouso, and Sele Yang
-          on 2019-10-25
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-ouso/">Meet Daniel Ouso</a> —
-          by Daniel Ouso
-          on 2019-10-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-lily/">Meet Lily Zhao</a> —
-          by Lily Zhao
-          on 2019-10-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-monica/">Meet Monica Granados</a> —
-          by Monica Granados
-          on 2019-10-17
-        </li>
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <a href="../3/">&laquo; Previous</a>
-    
-    | <strong>4</strong> |
-    
-      <a href="../5/">Next &raquo;</a>
-    
   </div>
+  <div class="blog">
+    <p>A basic table is made up of rows and columns with respective data filling up each available cell. Errors may sometimes occur while describing data in a tabular format and these could be in the structure; such as missing headers and duplicated rows, or in the content for instance assigning the wrong character to a string. Some of these errors could be easily spotted by naked eyes and fixed during the data curation process while others may just go unnoticed and later impede some downstream analytical workflows. <a href="http://try.goodtables.io/#">GoodTables</a> are handy in flagging down common errors that come with tabular data handling as it recognises these discrepancies fast and efficiently to enable users debug their data easily. Validating data files on goodtables therefore acts as the green light for the next phase of data manipulation.There  are two ways to validate data: the one time validation in which data files are validated in a single process and the continuous data validation is automated for time to time validation.</p>
+<p><strong><span style="text-decoration:underline;">One-time data validation</span></strong></p>
+<p>This can be executed in either of two pipelines: the web-based <a href="http://try.goodtables.io/#">tool</a>  and the Command Line Interface (CLI). This blog is about how I used both pipelines to validate my data files (.json and .csv) to check for structural errors. I used <a href="https://github.com/E-night/Frictionless_Data_Fellowship/blob/master/Avocado%20insects%20of%20Muranga">this</a> csv file that contains insect counts that I documented from my field visit in smallholder avocado farms of Murang’a, Kenya and a data package that I created in my <a href="https://fellows.frictionlessdata.io/blog/evelyn-datapackage-blog/">previous</a> blog. Let's do this!</p>
+<pre><code>    I)  **                  Try.goodtables.io for Validation**
+</code></pre>
+<p><img src="gt_interface.png" width=100% alt="gt_interface"></p>
+<p style="text-align: center; font-style: italic"> The hoodtables web interface </p><p>I checked out section A and it provided me with the options for uploading data and I chose to do so from my local computer. After the file was loaded I clicked the validate (B) section and this is what I got:</p>
+<p><img src="gt_csv_invalid.png" width=100% alt="gt_csv_invalid"></p>
+<p style="text-align: center; font-style: italic"> Invalid file with multiple duplicate rows</p><p>The program found multiple duplicate rows in my data. This did not worry me though because that’s how I intended those particular fields to appear. To remove these errors, I just clicked the part C (Ignore blank rows) and hit validate again:</p>
+<p><img src="gtables_valid.png" width=100% alt="gtables_valid"></p>
+<p style="text-align: center; font-style: italic"> My table is valid!</p><p><strong>Ta-da!</strong></p>
+<p>While it was simple for me to ignore the duplicate rows, other <a href="https://frictionlessdata.io/blog/2018/07/16/validated-tabular-data/#one-time-data-validation-with-try-goodtables-io">structural errors</a> such as blank headers may need to be rechecked before repeating the process.</p>
+<p>Validating a data package follows the same procedures and if the program detects an error then that will be highlighted promptly and be displayed as above.</p>
+<pre><code>    II)         **         Validating using the Command Line Interface (CLI)**
+</code></pre>
+<p>For starters, you need these installed:</p>
+<pre><code>    i)                    Python, the programming language in which goodtables is written (latest version) and
 
-  
 
+    ii)                 _  _PIP, a package installer for python
+</code></pre>
+<p>Basic knowledge on how to use the command line is also a necessity, to refresh on this knowledge see <a href="https://tutorial.djangogirls.org/en/intro_to_command_line/">here</a></p>
+<p>First, I installed goodtables on the CLI using pip as the package manager:</p>
+<p><img src="pip_install.png" width=100% alt="pip_install"></p>
+<p style="text-align: center; font-style: italic"></p><p>Next, I navigated to my working directory using the cd function and once there I invoked the goodtables validate command with the respective file path. First I validated my data package as illustrated below:</p>
+<p><img src="cli_dp_valid.png" width=100% alt="cli_dp_valid"></p>
+<p style="text-align: center; font-style: italic"> Validated my data package </p><p>This was quite a simple process but because I wanted to see how the CLI highlights errors, I chose a csv file containing the same information as the data package and this is how it went:</p>
+<p><img src="cli_csv_invalid.png" width=100% alt="cli_csv_invalid"></p>
+<p style="text-align: center; font-style: italic"> oops!</p><p>This was interesting because both file formats contained the same information, one got validated while the other did not. When using the web interface I had the option of ignoring duplicated rows while the command line did not provide that. I am sure though that there are a set of commands for fixing this. As shown above, the CLI was able to outline the structural errors that dominated my data file in a fraction of a minute.</p>
+<p>Starting this exercise was a little technical for me since I forgot to establish my working directory and constantly got an error message that shouted:</p>
+<p>[-,-] [scheme-error] [Errno 2] No such file or directory: 'Muranga_insects_dp.json'</p>
+<p>So, establishing your working directory is a critical step when working on the commandline (<em>note to self</em>)</p>
+<p><img src="girl_code.jpg" width=100% alt="girl_code"></p>
+<p style="text-align: center; font-style: italic"></p><p>I loved this experience because not only was it new, but also I got my results instantly. I validated a lot of data files after this just to make the thrill last longer . I highly recommend goodtables to anyone who’s working with data, if not then get some <a href="https://github.com/E-night/Frictionless_Data_Fellowship/blob/master/Alleles-first%20injection.csv">dummy data</a>  and just see for yourself!.</p>
+
+  </div>
 
   </article>
   <footer>
