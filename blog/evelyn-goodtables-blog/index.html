@@ -122,31 +122,29 @@
     <p>A basic table is made up of rows and columns with respective data filling up each available cell. Errors may sometimes occur while describing data in a tabular format and these could be in the structure; such as missing headers and duplicated rows, or in the content for instance assigning the wrong character to a string. Some of these errors could be easily spotted by naked eyes and fixed during the data curation process while others may just go unnoticed and later impede some downstream analytical workflows. <a href="http://try.goodtables.io/#">GoodTables</a> are handy in flagging down common errors that come with tabular data handling as it recognises these discrepancies fast and efficiently to enable users debug their data easily. Validating data files on goodtables therefore acts as the green light for the next phase of data manipulation.There  are two ways to validate data: the one time validation in which data files are validated in a single process and the continuous data validation is automated for time to time validation.</p>
 <p><strong><span style="text-decoration:underline;">One-time data validation</span></strong></p>
 <p>This can be executed in either of two pipelines: the web-based <a href="http://try.goodtables.io/#">tool</a>  and the Command Line Interface (CLI). This blog is about how I used both pipelines to validate my data files (.json and .csv) to check for structural errors. I used <a href="https://github.com/E-night/Frictionless_Data_Fellowship/blob/master/Avocado%20insects%20of%20Muranga">this</a> csv file that contains insect counts that I documented from my field visit in smallholder avocado farms of Murang’a, Kenya and a data package that I created in my <a href="https://fellows.frictionlessdata.io/blog/evelyn-datapackage-blog/">previous</a> blog. Let's do this!</p>
-<pre><code>    I)  **                  Try.goodtables.io for Validation**
-</code></pre>
-<p><img src="gt_interface.png" width=100% alt="gt_interface"></p>
+<p><strong>Try.goodtables.io for Validation</strong></p>
+<p><img src="gt_interface.jpg" width=100% alt="gt_interface"></p>
 <p style="text-align: center; font-style: italic"> The hoodtables web interface </p><p>I checked out section A and it provided me with the options for uploading data and I chose to do so from my local computer. After the file was loaded I clicked the validate (B) section and this is what I got:</p>
-<p><img src="gt_csv_invalid.png" width=100% alt="gt_csv_invalid"></p>
+<p><img src="gt_csv_invalid.jpg" width=100% alt="gt_csv_invalid"></p>
 <p style="text-align: center; font-style: italic"> Invalid file with multiple duplicate rows</p><p>The program found multiple duplicate rows in my data. This did not worry me though because that’s how I intended those particular fields to appear. To remove these errors, I just clicked the part C (Ignore blank rows) and hit validate again:</p>
-<p><img src="gtables_valid.png" width=100% alt="gtables_valid"></p>
+<p><img src="gtables_valid.jpg" width=100% alt="gtables_valid"></p>
 <p style="text-align: center; font-style: italic"> My table is valid!</p><p><strong>Ta-da!</strong></p>
 <p>While it was simple for me to ignore the duplicate rows, other <a href="https://frictionlessdata.io/blog/2018/07/16/validated-tabular-data/#one-time-data-validation-with-try-goodtables-io">structural errors</a> such as blank headers may need to be rechecked before repeating the process.</p>
 <p>Validating a data package follows the same procedures and if the program detects an error then that will be highlighted promptly and be displayed as above.</p>
-<pre><code>    II)         **         Validating using the Command Line Interface (CLI)**
-</code></pre>
+<p><strong>Validating using the Command Line Interface (CLI)</strong></p>
 <p>For starters, you need these installed:</p>
-<pre><code>    i)                    Python, the programming language in which goodtables is written (latest version) and
+<pre><code>    Python, the programming language in which goodtables is written (latest version) and
 
 
-    ii)                 _  _PIP, a package installer for python
+    PIP, a package installer for python
 </code></pre>
 <p>Basic knowledge on how to use the command line is also a necessity, to refresh on this knowledge see <a href="https://tutorial.djangogirls.org/en/intro_to_command_line/">here</a></p>
 <p>First, I installed goodtables on the CLI using pip as the package manager:</p>
-<p><img src="pip_install.png" width=100% alt="pip_install"></p>
+<p><img src="pip_install.jpg" width=100% alt="pip_install"></p>
 <p style="text-align: center; font-style: italic"></p><p>Next, I navigated to my working directory using the cd function and once there I invoked the goodtables validate command with the respective file path. First I validated my data package as illustrated below:</p>
-<p><img src="cli_dp_valid.png" width=100% alt="cli_dp_valid"></p>
+<p><img src="cli_dp_valid.jpg" width=100% alt="cli_dp_valid"></p>
 <p style="text-align: center; font-style: italic"> Validated my data package </p><p>This was quite a simple process but because I wanted to see how the CLI highlights errors, I chose a csv file containing the same information as the data package and this is how it went:</p>
-<p><img src="cli_csv_invalid.png" width=100% alt="cli_csv_invalid"></p>
+<p><img src="cli_csv_invalid.jpg" width=100% alt="cli_csv_invalid"></p>
 <p style="text-align: center; font-style: italic"> oops!</p><p>This was interesting because both file formats contained the same information, one got validated while the other did not. When using the web interface I had the option of ignoring duplicated rows while the command line did not provide that. I am sure though that there are a set of commands for fixing this. As shown above, the CLI was able to outline the structural errors that dominated my data file in a fraction of a minute.</p>
 <p>Starting this exercise was a little technical for me since I forgot to establish my working directory and constantly got an error message that shouted:</p>
 <p>[-,-] [scheme-error] [Errno 2] No such file or directory: 'Muranga_insects_dp.json'</p>
