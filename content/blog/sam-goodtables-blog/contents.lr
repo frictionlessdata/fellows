@@ -1,0 +1,29 @@
+title: Sam Goodtables Blog
+---
+author: Sam Wilairat
+---
+pub_date: 2021-01-29
+---
+cohort: 2
+---
+body:
+## Introduction to Goodtables
+
+Goodtables is a tool that can be used to quickly and easily validate your data. It's essential to validate your data both for your own peace of mind and also to make sure it is usable for others who may encounter your data in the future. You have the option of using Gootables to validate your data in one instance in time, or to continuously validate your data. When you decide to use Goodtables, you also have the option of using the browser tool, or using the Goodtables command line tool! This blog post will focus on one-time validation.
+
+## Browser Tool
+
+[Goodtables.io](http://try.goodtables.io/) can be used to quickly and easily run a one-time validation on your data. Note that if your dataset has more than 10,000 rows, you will not be able to use the browser tool. The command line tool would be better suited for your data! I have my data stored in a .csv file, and to demonstrate how useful Goodtables can be to check for errors, I intentionally duplicated a row to see if Goodtables could catch the error. 
+
+The first step in using [Goodtables.io](http://try.goodtables.io/) is to navigate to the site. Next, upload your data using the "upload file" button, or paste your direct URL to your data using the box below "source". Next, click "validate" unless you have a schema you would like to use validate your data. After clicking "validate", you should see either a green message stating that the data is valid, or an error message such as the one I received for having a duplicate row which is pictured below. 
+
+<img src="SamGoodTablesBrowserImage.png" width=100% alt="SamGoodTablesBrowserImage">
+<p style="text-align: center; font-style: italic">A screenshot of the Goodtables browser tool.</p>
+
+
+## Command Line Tool
+
+Now let's try validating the same data using the Goodtables command line tool! The first step is to open up the command line on your device. Next, use the command: pip install goodtables. You should see many lines of code running through your command line interface. Once the installation is complete, type "goodtables path/to/file.csv". You will either receive a green message stating that the data is valid, or a red message, like the one I have shown below, showing that the data is not valid!
+
+<img src="SamGoodtablesCommandLineScreenshot.png" width=100% alt="SamGoodTablesCommandLineScreenshot">
+<p style="text-align: center; font-style: italic">A screenshot of the Goodtables command line tool error message.</p>
