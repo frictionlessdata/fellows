@@ -19,17 +19,17 @@ This can be executed in either of two pipelines: the web-based [tool](http://try
  **Try.goodtables.io for Validation**
 
 
- <img src="gt_interface.jpg" width=100% alt="gt_interface">
-<p style="text-align: center; font-style: italic"> The hoodtables web interface </p>
+ <img src="goodtables_int.jpg" width=100% alt="goodtables_int">
+<p style="text-align: center; font-style: italic"> The goodtables web interface </p>
 
 I checked out section A and it provided me with the options for uploading data and I chose to do so from my local computer. After the file was loaded I clicked the validate (B) section and this is what I got:
 
-<img src="gt_csv_invalid.jpg" width=100% alt="gt_csv_invalid">
+<img src="gt_table_invalid.jpg" width=100% alt="gt_table_invalid">
 <p style="text-align: center; font-style: italic"> Invalid file with multiple duplicate rows</p>
 
 The program found multiple duplicate rows in my data. This did not worry me though because that’s how I intended those particular fields to appear. To remove these errors, I just clicked the part C (Ignore blank rows) and hit validate again:
 
-<img src="gtables_valid.jpg" width=100% alt="gtables_valid">
+<img src="valid_gt.jpg" width=100% alt="valid_gt">
 <p style="text-align: center; font-style: italic"> My table is valid!</p>
 
 **Ta-da!**
@@ -51,12 +51,12 @@ Basic knowledge on how to use the command line is also a necessity, to refresh o
 
 First, I installed goodtables on the CLI using pip as the package manager:
 
-<img src="pip_install.jpg" width=100% alt="pip_install">
+<img src="install_pip.jpg" width=100% alt="install_pip">
 <p style="text-align: center; font-style: italic"></p>
 
 Next, I navigated to my working directory using the cd function and once there I invoked the goodtables validate command with the respective file path. First I validated my data package as illustrated below:
 
-<img src="cli_dp_valid.jpg" width=100% alt="cli_dp_valid">
+<img src="cli_dpackage_valid.jpg" width=100% alt="cli_dpackage_valid">
 <p style="text-align: center; font-style: italic"> Validated my data package </p>
 
 This was quite a simple process but because I wanted to see how the CLI highlights errors, I chose a csv file containing the same information as the data package and this is how it went:
