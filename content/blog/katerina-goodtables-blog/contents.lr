@@ -9,12 +9,12 @@ cohort: 2
 body:
 
 ## You created your first data package! 
-In the (last episode)[https://fellows.frictionlessdata.io/blog/katerina-datapackage-blog/], I described a general problem I faced during my PhD: not being given enough information about materials, data, and data analysis processes amongst others. I struggled a lot, but the Frictionless Fellows program helped me realize that 1) this is something very common in research, 2) it doesn't mean that this problem is your fault, 3) open science tries to give solutions to these problems. So I created a subset of my PhD data and then used the  data package creator to package and validate the data. 
+In the [last episode](https://fellows.frictionlessdata.io/blog/katerina-datapackage-blog/), I described a general problem I faced during my PhD: not being given enough information about materials, data, and data analysis processes amongst others. I struggled a lot, but the Frictionless Fellows program helped me realize that 1) this is something very common in research, 2) it doesn't mean that this problem is your fault, 3) open science tries to give solutions to these problems. So I created a subset of my PhD data and then used the  data package creator to package and validate the data. 
 
 ## What's next? 
 Being a fellow for 6 months, I feel like my programming skills have been boosted, and this is partly due to the things I'm being taught, but also due to my increased confidence in tackling coding problems. I definitely used to have a coding-phobia, thinking that every error message I got was my fault! 
 
-Apart from increased confidence and better programming skills, I also have more data, so this was an opportunity to enrich my package with the latest data. What was interesting was that I have been coding in R for the past few months, so the change to Python was definitely noted! I updated my last .csv file and made sure I pushed the changes in my (repository)[https://github.com/KDrakoulaki/datapackage-subset].
+Apart from increased confidence and better programming skills, I also have more data, so this was an opportunity to enrich my package with the latest data. What was interesting was that I have been coding in R for the past few months, so the change to Python was definitely noted! I updated my last .csv file and made sure I pushed the changes in my [repository)[https://github.com/KDrakoulaki/datapackage-subset].
 
 Using the goodtables.io tool, I quickly validated my newly pushed data, and got the 'data-valid' sticker. 
 
@@ -30,7 +30,7 @@ Using the goodtables.io tool, I quickly validated my newly pushed data, and got 
 
 
 ## Using the Frictionless Framework
-Having braved myself that I was going to use Python to validate my data, I turned to the frictionless framework (guide)[https://framework.frictionlessdata.io/docs/guides/introduction-guide]. I made sure I followed the installation instructions (and since I hadn't done anything similar before, I had to make sure that Python was in my PATH directory). I used Python version 3.7.3 and frictionless version 3.48.0. 
+Having braved myself that I was going to use Python to validate my data, I turned to the frictionless framework [guide](https://framework.frictionlessdata.io/docs/guides/introduction-guide). I made sure I followed the installation instructions (and since I hadn't done anything similar before, I had to make sure that Python was in my PATH directory). I used Python version 3.7.3 and frictionless version 3.48.0. 
 
 Now, having installed the frictionless framework, I made sure that the working directory was the one I had my datapackage in. There are probably more efficient ways to set this, but at this point this is what works for me. 
 
@@ -43,9 +43,9 @@ I asked frictionless to describe the data (this works either on command line or 
 And I got this:
 
 ```
----
+ ---
 metadata: 16-11-20_correlational_fordatapackage.csv
----
+ ---
 
 compression: 'no'
 compressionPath: ''
@@ -131,7 +131,7 @@ stats:
 ```
 Thus, similar to what the data package creator and goodtables.io does, frictionless detects your variables and their names, and infers the type of data. However, it detected some of my variables as strings, when they are in fact integers. Of course, goodtables did not detect this, as my data were generally -in terms of formatting- valid. Not inferring the right type of data can be a problem both for future me, but also for other people looking at my data. 
 
-The cause of the problem was four cells with non available data, that I had completed as "NA". Frictionless "saw" the strings, and inferred the whole variables as strings. I had to find a way to to tell frictionless to ignore those "NA" cells. This line of code solved the issue:
+The cause of the problem was four cells with non available data, that I had completed as "NA". Frictionless "saw" the strings, and inferred the whole variables as strings. I had to find a way to tell frictionless to ignore those "NA" cells. This line of code solved the issue:
 
 ```
 resource = describe("correlational_fordatapackage.csv", infer_missing_values=["", "NA"])
