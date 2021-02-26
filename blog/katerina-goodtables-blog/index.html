@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../css/style.css">
-<title>Validating data from Daniel Alcalá-López</title>
+<title>Using the frictionless framework for data validation</title>
 
 <body>
   <header>
@@ -114,35 +114,178 @@
   </header>
   <article>
     
-  <h1>Validating data from Daniel Alcalá-López</h1>
+  <h1>Using the frictionless framework for data validation</h1>
   <div>
   
   </div>
   <div class="blog">
-    <p>In a fast paced research world where there’s an approximate increase of 8-9% in scientific publications every year, an <a href="https://www.nature.com/articles/nj7612-457a">overload</a>  of information is usually fed to the outside world. Unfortunately for us, most of this information is often wasted due to the reproducibility <a href="https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970">crisis</a>  marred by data or code that’s often locked away. We explored the question, ‘how reproducible is your data?’ by exchanging personal data and validating them according to the instructions that are outlined in the fellows’ recent goodtables blogs.</p>
-<p><strong>Dani’s data</strong></p>
-<p>In his <a href="https://academic.oup.com/cercor/article/28/7/2207/3831104">paper</a> , <a href="https://fellows.frictionlessdata.io/blog/hello-dani/">Daniel Alcalá-López</a>  used brain-imaging techniques to construct a comprehensive neural map of the ‘social brain’.</p>
-<p><img src="dani_paper.jpg" width=100% alt="dani_paper"></p>
-<p style="text-align: center; font-style: italic"> </p><p>He used some of the data from this paper in his previous blog and I’m going to do the same and assess how much it takes to reproduce his work and if there’s any challenge along the way.
-Dani had previously <a href="https://fellows.frictionlessdata.io/blog/dani-goodtables-blog/">validated</a>  his data package and two csv files that he made available on his github account using goodtables. He used the github commandline tool and Python library for this. I replicated his work using the commandline tool by first cloning his repository into my local computer:</p>
-<p>$ git clone <a href="https://github.com/danalclop/Alcala-Lopez18CerebCortex">https://github.com/danalclop/Alcala-Lopez18CerebCortex</a></p>
-<p>With a simplified cd into the folder, I was able to instruct goodtables to validate the datapackage by:</p>
-<p>$ goodtables datapackage.json</p>
-<p><img src="dani_validgit.jpg" width=100% alt="dani_validgit"></p>
-<p style="text-align: center; font-style: italic">The data package has been validated</p><p>Next, I validated a csv file in the same folder by:</p>
-<p>$ goodtables data/ASJ+18-Table1b.csv</p>
-<p><img src="dani_validcsv.jpg" width=100% alt="dani_validcsv"></p>
-<p style="text-align: center; font-style: italic">The csv table is also valid</p><p>From his last blog, Dani went ahead to introduce some errors to the file above and saved it in a new file for the purposes of testing how goodtables would treat such an obviously invalid file. This I also replicated as shown:</p>
-<p>$ goodtables data/ASJ+18-Table1b_invalid.csv</p>
-<p><img src="dani_invalidcsv.jpg" width=100% alt="dani_invalidcsv"></p>
-<p style="text-align: center; font-style: italic">Aha! Goodtables found the errors and outlined them, the csv file therefore is invalid!</p><p>I also validated these files using the Python library and what intrigued me most was the overall simplicity of these commands and the detailed nature of error assessment. Also, I give credit to Dani whose blog was self- explanatory and easy to follow.</p>
-<p>Additionally...</p>
-<p>While conducting this exercise, Dani and I had a zoom meeting where he demonstrated how to conduct continuous data validation using goodtables in github using his data. I just clicked the <a href="http://goodtables.io/">http://goodtables.io/</a>  url and integrated the service with my github account. The application immediately sifted through my publicly available data and look what I found:</p>
-<p><img src="night_invalid.jpg" width=100% alt="night_invalid"></p>
-<p style="text-align: center; font-style: italic"></p>
-<img src="night_valid.jpg" width=100% alt="night_valid">
-<p style="text-align: center; font-style: italic">Amazing!</p><p>I can now rectify the errors or can even request my collaborators to do so with so much ease. If I upload more files onto my github page then goodtables will automatically validate the files for me!</p>
-<p>This exercise was refreshing, to say the least. It was really exciting getting to copy my colleague’s work and get the same results without hustling too much. Ideally this is how scientific data and code ought to be, if I could access and validate brain-imaging data so frictionlessly then I am convinced that it would be easier for researchers from the same field to reproduce each other’s work thereby fast-tracking the process of scientific discoveries and innovations.</p>
+    <h2>You created your first data package!</h2>
+<p>In the <a href="https://fellows.frictionlessdata.io/blog/katerina-datapackage-blog/">last episode</a>, I described a general problem I faced during my PhD: not being given enough information about materials, data, and data analysis processes amongst others. I struggled a lot, but the Frictionless Fellows program helped me realize that 1) this is something very common in research, 2) it doesn't mean that this problem is your fault, 3) open science tries to give solutions to these problems. So I created a subset of my PhD data and then used the  data package creator to package and validate the data.</p>
+<h2>What's next?</h2>
+<p>Being a fellow for 6 months, I feel like my programming skills have been boosted, and this is partly due to the things I'm being taught, but also due to my increased confidence in tackling coding problems. I definitely used to have a coding-phobia, thinking that every error message I got was my fault!</p>
+<p>Apart from increased confidence and better programming skills, I also have more data, so this was an opportunity to enrich my package with the latest data. What was interesting was that I have been coding in R for the past few months, so the change to Python was definitely noted! I updated my last .csv file and made sure I pushed the changes in my <a href="https://github.com/KDrakoulaki/datapackage-subset">repository</a>.</p>
+<p>Using the goodtables.io tool, I quickly validated my newly pushed data, and got the 'data-valid' sticker.</p>
+<p><a href="https://goodtables.io/github/KDrakoulaki/datapackage-subset"><img src="https://goodtables.io/badge/github/KDrakoulaki/datapackage-subset.svg" alt="goodtables.io"></a></p>
+<p><img src="goodtables-valid.png" width=100% alt="goodtables-valid.png"></p>
+<p style="text-align: center; font-style: italic"> My package is valid! .</p><p><strong>My celebrations didn't last long, however...</strong></p>
+<p><img src="disappointed.gif" width=100% alt="disappointed.gif"></p>
+<h2>Using the Frictionless Framework</h2>
+<p>Having braved myself that I was going to use Python to validate my data, I turned to the frictionless framework <a href="https://framework.frictionlessdata.io/docs/guides/introduction-guide">guide</a>. I made sure I followed the installation instructions (and since I hadn't done anything similar before, I had to make sure that Python was in my PATH directory). I used Python version 3.7.3 and frictionless version 3.48.0.</p>
+<p>Now, having installed the frictionless framework, I made sure that the working directory was the one I had my datapackage in. There are probably more efficient ways to set this, but at this point this is what works for me.</p>
+<p>I asked frictionless to describe the data (this works either on command line or a Python shell (without the "!")):</p>
+<pre><code> ! frictionless describe correlational_fordatapackage.csv
+</code></pre>
+<p>And I got this:</p>
+<pre><code>---
+metadata: 16-11-20_correlational_fordatapackage.csv
+---
+
+compression: 'no'
+compressionPath: ''
+control:
+  newline: ''
+dialect: {}
+encoding: utf-8-sig
+format: csv
+hashing: md5
+name: 16-11-20_correlational_fordatapackage
+path: 16-11-20_correlational_fordatapackage.csv
+profile: tabular-data-resource
+query: {}
+schema:
+  fields:
+    - name: participant
+      type: integer
+    - name: age(1st session)
+      type: integer
+    - name: PPVT_raw
+      type: integer
+    - name: PPVT_z
+      type: number
+    - name: RCPM_raw
+      type: integer
+    - name: RCPM_z
+      type: number
+    - name: Srep_structure_correct/32
+      type: integer
+    - name: morph_prod/24
+      type: integer
+    - name: morph_comp/31
+      type: integer
+    - name: syll_manip/12
+      type: integer
+    - name: phon_manip/8
+      type: integer
+    - name: pseudoword_rep/48
+      type: integer
+    - name: fwd_recall/54
+      type: integer
+    - name: fwd_recall_range/9
+      type: integer
+    - name: bwd_recall/45
+      type: integer
+    - name: bwd_recall_range/9
+      type: integer
+    - name: fwd_corsi/54
+      type: string
+    - name: fwd_corsi_range/9
+      type: string
+    - name: bwd_corsi/45
+      type: string
+    - name: bwd_corsi_range/9
+      type: string
+    - name: melody_score
+      type: integer
+    - name: rhythm_score
+      type: integer
+    - name: cBAT_score
+      type: integer
+    - name: complex_cBAT
+      type: integer
+    - name: simple_cBAT
+      type: integer
+    - name: chat_d'
+      type: number
+    - name: trackgridprop
+      type: number
+    - name: trackgridprop_z
+      type: number
+    - name: trackrecallprop
+      type: number
+    - name: trackrecallprop_z
+      type: number
+scheme: file
+stats:
+  bytes: 3000
+  fields: 30
+  hash: d5fca8495f9cf143ad4b75b83466f4e9
+  rows: 22
+</code></pre>
+<p>Thus, similar to what the data package creator and goodtables.io does, frictionless detects your variables and their names, and infers the type of data. However, it detected some of my variables as strings, when they are in fact integers. Of course, goodtables did not detect this, as my data were generally -in terms of formatting- valid. Not inferring the right type of data can be a problem both for future me, but also for other people looking at my data.</p>
+<p>The cause of the problem was four cells with non available data, that I had completed as "NA". Frictionless "saw" the strings, and inferred the whole variables as strings. I had to find a way to tell frictionless to ignore those "NA" cells. This line of code solved the issue:</p>
+<pre><code>resource = describe("correlational_fordatapackage.csv", infer_missing_values=["", "NA"])
+</code></pre>
+<p>It turned my "NA" cells into empty cells. Thus, when calling the "resource" variable I got the right description.</p>
+<pre><code>{'name': 'correlational_fordatapackage',
+ 'profile': 'tabular-data-resource',
+ 'path': 'correlational_fordatapackage.csv',
+ 'scheme': 'file',
+ 'format': 'csv',
+ 'hashing': 'md5',
+ 'encoding': 'utf-8-sig',
+ 'compression': 'no',
+ 'compressionPath': '',
+ 'control': {'newline': ''},
+ 'dialect': {},
+ 'query': {},
+ 'schema': {'missingValues': ['', 'NA'],
+  'fields': [{'name': 'participant', 'type': 'integer'},
+   {'name': 'age(1st session)', 'type': 'integer'},
+   {'name': 'PPVT_raw', 'type': 'integer'},
+   {'name': 'PPVT_z', 'type': 'number'},
+   {'name': 'RCPM_raw', 'type': 'integer'},
+   {'name': 'RCPM_z', 'type': 'number'},
+   {'name': 'Srep_structure_correct/32', 'type': 'integer'},
+   {'name': 'morph_prod/24', 'type': 'integer'},
+   {'name': 'morph_comp/31', 'type': 'integer'},
+   {'name': 'syll_manip/12', 'type': 'integer'},
+   {'name': 'phon_manip/8', 'type': 'integer'},
+   {'name': 'pseudoword_rep/48', 'type': 'integer'},
+   {'name': 'fwd_recall/54', 'type': 'integer'},
+   {'name': 'fwd_recall_range/9', 'type': 'integer'},
+   {'name': 'bwd_recall/45', 'type': 'integer'},
+   {'name': 'bwd_recall_range/9', 'type': 'integer'},
+   {'name': 'fwd_corsi/54', 'type': 'integer'},
+   {'name': 'fwd_corsi_range/9', 'type': 'integer'},
+   {'name': 'bwd_corsi/45', 'type': 'integer'},
+   {'name': 'bwd_corsi_range/9', 'type': 'integer'},
+   {'name': 'melody_score', 'type': 'integer'},
+   {'name': 'rhythm_score', 'type': 'integer'},
+   {'name': 'cBAT_score', 'type': 'integer'},
+   {'name': 'complex_cBAT', 'type': 'integer'},
+   {'name': 'simple_cBAT', 'type': 'integer'},
+   {'name': "chat_d'", 'type': 'number'},
+   {'name': 'trackgridprop', 'type': 'number'},
+   {'name': 'trackgridprop_z', 'type': 'number'},
+   {'name': 'trackrecallprop', 'type': 'number'},
+   {'name': 'trackrecallprop_z', 'type': 'number'}]},
+ 'stats': {'hash': 'd5fca8495f9cf143ad4b75b83466f4e9',
+  'bytes': 3000,
+  'fields': 30,
+  'rows': 22}}
+</code></pre>
+<p>Phew, that was definitely hard work! Unfortunately, my work here is not done, if we want to update everything. Data Package Creator created a very neat schema, and we can try and replicate that using Python. So we call describe_schema:</p>
+<pre><code>from frictionless import describe_schema
+
+schema = describe_schema("correlational_fordatapackage.csv")
+
+schema.get_field("participant").title = "participant code"
+schema.get_field("age(1st session)").title = "age"
+schema.get_field("age(1st session)").description = "participants' age (in months) in the first session"
+</code></pre>
+<p>So we got the specific fields and added titles and descriptions. Hopefully now the project has more information.</p>
+<h2>Conclusion</h2>
+<p>I tried to tackle a few issues with data validation using both user-friendly options, but also using the command line and Python. It's not easy, as I still have a long way to get my head around all of this, but practicing it made me think about schemas, thinking in different programming languages, and reinforced what I have been experiencing during the whole fellowship experience: that I can actually do it!</p>
 
   </div>
 
