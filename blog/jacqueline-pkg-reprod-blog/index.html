@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Reproducing a data package</title>
 
 <body>
   <header>
@@ -114,138 +114,150 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Reproducing a data package</h1>
   <div>
-    <h2>
-      Cohort 2 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-    <h2>
-      Cohort 1 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="../../monica-goodtables-blog/">Don&#39;t you wish your table was as clean as mine?</a> —
-          by Monica Granados
-          on 2020-04-03
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../ouso-goodtables-blog/">Tabular data: Before you use the data</a> —
-          by Daniel Ouso
-          on 2020-04-03
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../sele-goodtables-blog/">Validando datos un paquete a la vez</a> —
-          by Sele Yang
-          on 2020-04-03
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../monica-datapackage-blog/">Combating other people’s data</a> —
-          by Monica Granados
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../ouso-datapackage-blog/">Data package is valid!</a> —
-          by Daniel Ouso
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../lily-datapackage-blog/">Lily Datapackage Blog</a> —
-          by Lily Zhao
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../sele-datapackage-blog/">¿Cómo empaquetamos datos y por qué es importante organizar la bolsa del supermercado?</a> —
-          by Sele Yang
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../oa-week/">Open Access Week 2019</a> —
-          by Monica Granados, Lily Zhao, Daniel Ouso, and Sele Yang
-          on 2019-10-25
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-ouso/">Meet Daniel Ouso</a> —
-          by Daniel Ouso
-          on 2019-10-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-lily/">Meet Lily Zhao</a> —
-          by Lily Zhao
-          on 2019-10-17
-        </li>
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <a href="../3/">&laquo; Previous</a>
-    
-    | <strong>4</strong> |
-    
-      <a href="../5/">Next &raquo;</a>
-    
   </div>
+  <div class="blog">
+    <p>Is it easy to reproduce someone else's data package? Sometimes, but not always. Tools that automate data management can standardize the process, making reproducibility simpler to achieve. However, accurately anticipating a tool's expected behavior is essential, especially when mixing technologies.</p>
+<p>Let's try to reproduce a data package created by Kate, another fellow. We will do so by using a combination of Python and the Frictionless <a href="https://create.frictionlessdata.io">Data Package Creator</a>.  Let's see if we experience any conflicts by mixing these tools. Kate has provided three CSV files and a JSON file describing her inferred schema, which ours must match.</p>
+<h2>Getting started in Python</h2>
+<p>First, we will import the Python packages that we need: <code>datapackage</code> for data package construction, <code>frictionless</code> for data file validation, and <code>pandas</code> for light dataframe manipulation.</p>
+<p><img width="300" alt="importations" src="https://user-images.githubusercontent.com/50045763/109025513-ca82c980-768c-11eb-9c61-f859c37f46ca.png"></p>
+<h2>Read data</h2>
+<p>Next, we will import our data files and explore them. When validating our CSV files with <code>frictionless</code>, we happily observe that all three are valid.</p>
+<p><img width="350" alt="valid_623" src="valid_623.png"></p>
+<p><img width="350" alt="valid_719" src="valid_719.png"></p>
+<p><img width="350" alt="valid_719_adj" src="valid_719_adj.png"></p>
+<p>However, when exploring our dataframes with <code>pandas</code>, we note that <code>df_623</code> and <code>df_719</code> do not have the same column headers nor the same shape. This makes analyses that draw comparisons between the two datasets less convenient. Therefore, Kate has created <code>df_719_adj</code>, which has adjusted <code>df_719</code> so that it adheres to the same format as <code>df_623</code>.</p>
+<h4><code>df_623</code></h4>
+<pre><code class="lang-python"> #   Column                Non-Null Count  Dtype
+---  ------                --------------  -----
+ 0   sample_name           30 non-null     object
+ 1   golay_index_barcode   30 non-null     object
+ 2   primer_name           30 non-null     object
+ 3   full_primer_sequence  30 non-null     object
+ 4   sample_id             30 non-null     object
+ 5   DNA_conc              30 non-null     float64
+ 6   is.neg                30 non-null     bool
+ 7   sample_origin         30 non-null     object
+ 8   anti_coagulant        18 non-null     object
+ 9   subject_id            30 non-null     object
+ 10  extraction_batch      30 non-null     int64
+ 11  dna_extraction_kit    30 non-null     object
+dtypes: bool(1), float64(1), int64(1), object(9)
+</code></pre>
+<h4><code>df_719</code></h4>
+<pre><code class="lang-python"> #   Column              Non-Null Count  Dtype
+---  ------              --------------  -----
+ 0   samle_name          95 non-null     object
+ 1   sample_description  95 non-null     object
+ 2   sample_ID           95 non-null     object
+ 3   barcode             95 non-null     object
+ 4   is.neg              95 non-null     bool
+ 5   DNA_Conc            95 non-null     float64
+ 6   sample_origin       95 non-null     object
+ 7   extraction_batch    68 non-null     float64
+ 8   dna_extraction_kit  95 non-null     object
+dtypes: bool(1), float64(2), object(6)
+</code></pre>
+<h4><code>df_719_adj</code></h4>
+<pre><code class="lang-python"> #   Column                Non-Null Count  Dtype
+---  ------                --------------  -----
+ 0   sample_name           95 non-null     object
+ 1   golay_index_barcode   95 non-null     object
+ 2   primer_name           95 non-null     object
+ 3   full_primer_sequence  95 non-null     object
+ 4   sample_id             95 non-null     object
+ 5   DNA_conc              95 non-null     float64
+ 6   is.neg                95 non-null     bool
+ 7   sample_origin         95 non-null     object
+ 8   anti_coagulant        34 non-null     object
+ 9   subject_id            95 non-null     object
+ 10  extraction_batch      68 non-null     float64
+ 11  dna_extraction_kit    95 non-null     object
+dtypes: bool(1), float64(2), object(9)
+</code></pre>
+<p>We can test whether our headers are the same as well:</p>
+<p><img width="600" alt="headers" src="headers.png"></p>
+<p>We can then use <code>datapackage</code> to construct our inferred schemas and test whether they are valid.</p>
+<p><img width="600" alt="pkg_python" src="pkg_python.png"></p>
+<p>And we have run into our first problem! :) Note that the data package is deemed <strong>invalid</strong>. This is our first hint that something is off. If you look closely, several of the data types inferred by <code>datapackage</code> in Python are different from the data types in Kate's inferred schema below. For example, the <code>is.neg</code> column contains string values as inferred by Kate's data packaging process, while our process has inferred boolean values. <strong>We have failed to reproduce the package faithfully!</strong></p>
+<h4>Kate's inferred schema</h4>
+<pre><code class="lang-python">{
+        &quot;fields&quot;: [
+          {
+            &quot;name&quot;: &quot;sample_name&quot;,
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;format&quot;: &quot;default&quot;
+          },
+          {
+            &quot;name&quot;: &quot;golay_index_barcode&quot;,
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;format&quot;: &quot;default&quot;
+          },
+          {
+            &quot;name&quot;: &quot;primer_name&quot;,
+            &quot;type&quot;: &quot;integer&quot;,
+            &quot;format&quot;: &quot;default&quot;
+          },
+          {
+            &quot;name&quot;: &quot;full_primer_sequence&quot;,
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;format&quot;: &quot;default&quot;
+          },
+          {
+            &quot;name&quot;: &quot;sample_id&quot;,
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;format&quot;: &quot;default&quot;
+          },
+          {
+            &quot;name&quot;: &quot;DNA_conc&quot;,
+            &quot;type&quot;: &quot;integer&quot;,
+            &quot;format&quot;: &quot;default&quot;
+          },
+          {
+            &quot;name&quot;: &quot;is.neg&quot;,
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;format&quot;: &quot;default&quot;
+          },
+          {
+            &quot;name&quot;: &quot;sample_origin&quot;,
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;format&quot;: &quot;default&quot;
+          },
+          {
+            &quot;name&quot;: &quot;anti_coagulant&quot;,
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;format&quot;: &quot;default&quot;
+          },
+          {
+            &quot;name&quot;: &quot;subject_id&quot;,
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;format&quot;: &quot;default&quot;
+          },
+          {
+            &quot;name&quot;: &quot;extraction_batch&quot;,
+            &quot;type&quot;: &quot;integer&quot;,
+            &quot;format&quot;: &quot;default&quot;
+          },
+          {
+            &quot;name&quot;: &quot;dna_extraction_kit&quot;,
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;format&quot;: &quot;default&quot;
+          }
+        ]
+      }
+</code></pre>
+<h2>Data Package Creator</h2>
+<p>We can then turn to the Frictionless <a href="https://create.frictionlessdata.io">Data Package Creator</a> to see if our results match Kate's. We can see that the CSV file that yielded <code>df_623</code> produces the following inferred data package:</p>
+<p><img width="800" alt="pkg_ui" src="pkg_ui.png"></p>
+<p>Fortunately, it is <strong>valid</strong>! When running the CSV file for <code>df_719_adj</code>, we produce an identical data package. The question is: are the inferred schemas in these data packages identical to the schema produced by Kate?</p>
+<p>Fortunately, all three UI-inferred data packages contain the same schema that Kate created. <strong>And we have successfully reproduced a data package!</strong> :)</p>
+<h2>Lessons learned</h2>
+<p>If you are reproducing someone else's data package, or if you are creating many data packages that must conform to the same structure, be consistent with which technology you are using. Note that inferences made by the Data Package Creator UI and the Python package <code>datapackage</code> may differ (as of 24 February 2021). Both tools are useful, but stick consistently with one or the other.</p>
 
-  
-
+  </div>
 
   </article>
   <footer>

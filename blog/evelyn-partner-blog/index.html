@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Validating data from Daniel Alcalá-López</title>
 
 <body>
   <header>
@@ -114,138 +114,37 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Validating data from Daniel Alcalá-López</h1>
   <div>
-    <h2>
-      Cohort 2 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-    <h2>
-      Cohort 1 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="../../monica-goodtables-blog/">Don&#39;t you wish your table was as clean as mine?</a> —
-          by Monica Granados
-          on 2020-04-03
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../ouso-goodtables-blog/">Tabular data: Before you use the data</a> —
-          by Daniel Ouso
-          on 2020-04-03
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../sele-goodtables-blog/">Validando datos un paquete a la vez</a> —
-          by Sele Yang
-          on 2020-04-03
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../monica-datapackage-blog/">Combating other people’s data</a> —
-          by Monica Granados
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../ouso-datapackage-blog/">Data package is valid!</a> —
-          by Daniel Ouso
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../lily-datapackage-blog/">Lily Datapackage Blog</a> —
-          by Lily Zhao
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../sele-datapackage-blog/">¿Cómo empaquetamos datos y por qué es importante organizar la bolsa del supermercado?</a> —
-          by Sele Yang
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../oa-week/">Open Access Week 2019</a> —
-          by Monica Granados, Lily Zhao, Daniel Ouso, and Sele Yang
-          on 2019-10-25
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-ouso/">Meet Daniel Ouso</a> —
-          by Daniel Ouso
-          on 2019-10-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-lily/">Meet Lily Zhao</a> —
-          by Lily Zhao
-          on 2019-10-17
-        </li>
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <a href="../3/">&laquo; Previous</a>
-    
-    | <strong>4</strong> |
-    
-      <a href="../5/">Next &raquo;</a>
-    
   </div>
+  <div class="blog">
+    <p>In a fast paced research world where there’s an approximate increase of 8-9% in scientific publications every year, an <a href="https://www.nature.com/articles/nj7612-457a">overload</a>  of information is usually fed to the outside world. Unfortunately for us, most of this information is often wasted due to the reproducibility <a href="https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970">crisis</a>  marred by data or code that’s often locked away. We explored the question, ‘how reproducible is your data?’ by exchanging personal data and validating them according to the instructions that are outlined in the fellows’ recent goodtables blogs.</p>
+<p><strong>Dani’s data</strong></p>
+<p>In his <a href="https://academic.oup.com/cercor/article/28/7/2207/3831104">paper</a> , <a href="https://fellows.frictionlessdata.io/blog/hello-dani/">Daniel Alcalá-López</a>  used brain-imaging techniques to construct a comprehensive neural map of the ‘social brain’.</p>
+<p><img src="dani_paper.jpg" width=100% alt="dani_paper"></p>
+<p style="text-align: center; font-style: italic"> </p><p>He used some of the data from this paper in his previous blog and I’m going to do the same and assess how much it takes to reproduce his work and if there’s any challenge along the way.
+Dani had previously <a href="https://fellows.frictionlessdata.io/blog/dani-goodtables-blog/">validated</a>  his data package and two csv files that he made available on his github account using goodtables. He used the github commandline tool and Python library for this. I replicated his work using the commandline tool by first cloning his repository into my local computer:</p>
+<p>$ git clone <a href="https://github.com/danalclop/Alcala-Lopez18CerebCortex">https://github.com/danalclop/Alcala-Lopez18CerebCortex</a></p>
+<p>With a simplified cd into the folder, I was able to instruct goodtables to validate the datapackage by:</p>
+<p>$ goodtables datapackage.json</p>
+<p><img src="dani_validgit.jpg" width=100% alt="dani_validgit"></p>
+<p style="text-align: center; font-style: italic">The data package has been validated</p><p>Next, I validated a csv file in the same folder by:</p>
+<p>$ goodtables data/ASJ+18-Table1b.csv</p>
+<p><img src="dani_validcsv.jpg" width=100% alt="dani_validcsv"></p>
+<p style="text-align: center; font-style: italic">The csv table is also valid</p><p>From his last blog, Dani went ahead to introduce some errors to the file above and saved it in a new file for the purposes of testing how goodtables would treat such an obviously invalid file. This I also replicated as shown:</p>
+<p>$ goodtables data/ASJ+18-Table1b_invalid.csv</p>
+<p><img src="dani_invalidcsv.jpg" width=100% alt="dani_invalidcsv"></p>
+<p style="text-align: center; font-style: italic">Aha! Goodtables found the errors and outlined them, the csv file therefore is invalid!</p><p>I also validated these files using the Python library and what intrigued me most was the overall simplicity of these commands and the detailed nature of error assessment. Also, I give credit to Dani whose blog was self- explanatory and easy to follow.</p>
+<p>Additionally...</p>
+<p>While conducting this exercise, Dani and I had a zoom meeting where he demonstrated how to conduct continuous data validation using goodtables in github using his data. I just clicked the <a href="http://goodtables.io/">http://goodtables.io/</a>  url and integrated the service with my github account. The application immediately sifted through my publicly available data and look what I found:</p>
+<p><img src="night_invalid.jpg" width=100% alt="night_invalid"></p>
+<p style="text-align: center; font-style: italic"></p>
+<img src="night_valid.jpg" width=100% alt="night_valid">
+<p style="text-align: center; font-style: italic">Amazing!</p><p>I can now rectify the errors or can even request my collaborators to do so with so much ease. If I upload more files onto my github page then goodtables will automatically validate the files for me!</p>
+<p>This exercise was refreshing, to say the least. It was really exciting getting to copy my colleague’s work and get the same results without hustling too much. Ideally this is how scientific data and code ought to be, if I could access and validate brain-imaging data so frictionlessly then I am convinced that it would be easier for researchers from the same field to reproduce each other’s work thereby fast-tracking the process of scientific discoveries and innovations.</p>
 
-  
-
+  </div>
 
   </article>
   <footer>
