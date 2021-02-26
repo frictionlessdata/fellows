@@ -14,7 +14,7 @@ In the [last episode](https://fellows.frictionlessdata.io/blog/katerina-datapack
 ## What's next? 
 Being a fellow for 6 months, I feel like my programming skills have been boosted, and this is partly due to the things I'm being taught, but also due to my increased confidence in tackling coding problems. I definitely used to have a coding-phobia, thinking that every error message I got was my fault! 
 
-Apart from increased confidence and better programming skills, I also have more data, so this was an opportunity to enrich my package with the latest data. What was interesting was that I have been coding in R for the past few months, so the change to Python was definitely noted! I updated my last .csv file and made sure I pushed the changes in my [repository)[https://github.com/KDrakoulaki/datapackage-subset].
+Apart from increased confidence and better programming skills, I also have more data, so this was an opportunity to enrich my package with the latest data. What was interesting was that I have been coding in R for the past few months, so the change to Python was definitely noted! I updated my last .csv file and made sure I pushed the changes in my [repository](https://github.com/KDrakoulaki/datapackage-subset).
 
 Using the goodtables.io tool, I quickly validated my newly pushed data, and got the 'data-valid' sticker. 
 
