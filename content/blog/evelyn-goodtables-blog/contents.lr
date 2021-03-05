@@ -15,21 +15,20 @@ A basic table is made up of rows and columns with respective data filling up eac
 
 This can be executed in either of two pipelines: the web-based [tool](http://try.goodtables.io/#)  and the Command Line Interface (CLI). This blog is about how I used both pipelines to validate my data files (.json and .csv) to check for structural errors. I used [this](https://github.com/E-night/Frictionless_Data_Fellowship/blob/master/Avocado%20insects%20of%20Muranga) csv file that contains insect counts that I documented from my field visit in smallholder avocado farms of Murang’a, Kenya and a data package that I created in my [previous](https://fellows.frictionlessdata.io/blog/evelyn-datapackage-blog/) blog. Let's do this! 
 
+ **Try.goodtables.io for Validation**
 
-**Try.goodtables.io for Validation**
-
-
- <img src="gt_interface.jpg" width=100% alt="gt_interface">
-<p style="text-align: center; font-style: italic"> The hoodtables web interface </p>
+<img src="goodtables_int.jpg" width=100% alt="goodtables_int">
+<p style="text-align: center; font-style: italic"> The goodtables web interface </p>
 
 I checked out section A and it provided me with the options for uploading data and I chose to do so from my local computer. After the file was loaded I clicked the validate (B) section and this is what I got:
 
-<img src="gt_csv_invalid.jpg" width=100% alt="gt_csv_invalid">
+<img src="gt_table_invalid.jpg" width=100% alt="gt_table_invalid">
+
 <p style="text-align: center; font-style: italic"> Invalid file with multiple duplicate rows</p>
 
 The program found multiple duplicate rows in my data. This did not worry me though because that’s how I intended those particular fields to appear. To remove these errors, I just clicked the part C (Ignore blank rows) and hit validate again:
 
-<img src="gtables_valid.jpg" width=100% alt="gtables_valid">
+<img src="valid_gt.jpg" width=100% alt="valid_gt">
 <p style="text-align: center; font-style: italic"> My table is valid!</p>
 
 **Ta-da!**
@@ -38,32 +37,29 @@ While it was simple for me to ignore the duplicate rows, other [structural error
 
 Validating a data package follows the same procedures and if the program detects an error then that will be highlighted promptly and be displayed as above.
 
- **Validating using the Command Line Interface (CLI)**
+**Validating using the Command Line Interface (CLI)**
 
 For starters, you need these installed:
 
 
         Python, the programming language in which goodtables is written (latest version) and
 
-
         PIP, a package installer for python
-
-
 Basic knowledge on how to use the command line is also a necessity, to refresh on this knowledge see [here](https://tutorial.djangogirls.org/en/intro_to_command_line/) 
 
 First, I installed goodtables on the CLI using pip as the package manager:
 
-<img src="pip_install.jpg" width=100% alt="pip_install">
+<img src="install_pip.jpg" width=100% alt="install_pip">
 <p style="text-align: center; font-style: italic"></p>
 
 Next, I navigated to my working directory using the cd function and once there I invoked the goodtables validate command with the respective file path. First I validated my data package as illustrated below:
 
-<img src="cli_dp_valid.jpg" width=100% alt="cli_dp_valid">
+<img src="cli_dpackage_valid.jpg" width=100% alt="cli_dpackage_valid">
 <p style="text-align: center; font-style: italic"> Validated my data package </p>
 
 This was quite a simple process but because I wanted to see how the CLI highlights errors, I chose a csv file containing the same information as the data package and this is how it went:
  
- <img src="cli_csv_invalid.jpg" width=100% alt="cli_csv_invalid">
+<img src="cli_csv_invalid.jpg" width=100% alt="cli_csv_invalid">
 <p style="text-align: center; font-style: italic"> oops!</p>
 
 This was interesting because both file formats contained the same information, one got validated while the other did not. When using the web interface I had the option of ignoring duplicated rows while the command line did not provide that. I am sure though that there are a set of commands for fixing this. As shown above, the CLI was able to outline the structural errors that dominated my data file in a fraction of a minute. 
@@ -76,6 +72,5 @@ So, establishing your working directory is a critical step when working on the c
 
 <img src="girl_code.jpg" width=100% alt="girl_code">
 <p style="text-align: center; font-style: italic"></p>
-
 
 I loved this experience because not only was it new, but also I got my results instantly. I validated a lot of data files after this just to make the thrill last longer . I highly recommend goodtables to anyone who’s working with data, if not then get some [dummy data](https://github.com/E-night/Frictionless_Data_Fellowship/blob/master/Alleles-first%20injection.csv)  and just see for yourself!.
