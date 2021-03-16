@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Reproducing Jacqueline&#39;s Datapackage and Revalidating her Data!</title>
 
 <body>
   <header>
@@ -114,138 +114,25 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Reproducing Jacqueline&#39;s Datapackage and Revalidating her Data!</h1>
   <div>
-    <h2>
-      Cohort 2 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="../../hello-evelyn/">Meet Evelyn</a> —
-          by Evelyn Night
-          on 2020-08-28
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-katerina/">Meet Katerina</a> —
-          by Katerina Drakoulaki
-          on 2020-08-28
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-sam/">Meet Sam</a> —
-          by Sam Wilairat
-          on 2020-08-28
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-kate/">Meet Kate (she/her)</a> —
-          by Kate Bowie
-          on 2020-08-27
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-jacqueline/">Meet Jacqueline</a> —
-          by Jacqueline Maasch
-          on 2020-08-26
-        </li>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-    <h2>
-      Cohort 1 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-        <li>
-          <a href="../../sele-final-blog/">A seguir reproduciendo conocimiento!</a> —
-          by Sele Yang
-          on 2020-06-04
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../ouso-final-blog/">Better Data: One resource at a time - My fellowship experience</a> —
-          by Daniel Ouso
-          on 2020-06-04
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../monica-final-blog/">Gimme Dat Data (in a validated Data Package)</a> —
-          by Monica Granados
-          on 2020-06-04
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../lily-final-blog/">Reflecting on My Time as a Fellow</a> —
-          by Lily Zhao
-          on 2020-06-04
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../ouso-partner-blog/">Data Barter: Real-life data interactions</a> —
-          by Daniel Ouso
-          on 2020-05-17
-        </li>
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <a href="../2/">&laquo; Previous</a>
-    
-    | <strong>3</strong> |
-    
-      <a href="../4/">Next &raquo;</a>
-    
   </div>
+  <div class="blog">
+    <h2>Introduction</h2>
+<p>Our most recent fellowship task was to recreate our partner's datapackages using the <a href="https://create.frictionlessdata.io/">Frictionless Data Package Creator</a>, and then use <a href="http://try.goodtables.io/">Goodtables.io</a> to validate their data. I was paired with Jacqueline Maasch, who I encourage you to read more about via her [introductory blog] (<a href="https://fellows.frictionlessdata.io/blog/hello-jacqueline/)!">https://fellows.frictionlessdata.io/blog/hello-jacqueline/)!</a></p>
+<h2>The Data</h2>
+<p>Jacqueline shared her two blog posts with me outlining her process of creating a datapackage for her data and then validating her data. Via her blogposts, I found my way to her [GitHub repository] (<a href="https://github.com/jmaasch/reproducible-research">https://github.com/jmaasch/reproducible-research</a>) and located her dataset, "merops_peptidase_families.csv". Once I located the dataset, I took a look at it on GitHub and noticed it contained information about specific peptidase enzymes. In order to use her dataset straight from GitHub, I clicked on the button at the top of the dataset titled, "Raw" in order to generate a URL that could be used with the web version of both Datapackage Creator and Goodtables.</p>
+<h2>Data Package Reproduction</h2>
+<p>With the Raw URL for Jacqueline's data in hand, I navigated to the Frictionless Data Package Creator linked above and pasted the URL into the Path text box at the top of the screen. Once I loaded the dataset, five inferred fields were found. All of them had the appropriate data type listed, and all of them were labeled aside from field one, which did not have a header title on github. I was able to label all the data and add a description for each one, and added metadata on the left hand side of the creator screen. After filling out all fields, I clicked "validate" and had a valid data package to download. I looked at the .JSON file created and compared it to Jacqueline's datapackage published on her GitHub repository. The only difference between our two data packages was that she named the first field "Index" while I left it as "field1" since it was unlabeled.</p>
+<p><img src="Sam_Datapackage_Creator_JM.png" width=100% alt="Sam_Datapackage_Creator_JM"></p>
+<p style="text-align: center; font-style: italic">A screenshot of the data package creator after the URL for Jacqueline's data was loaded.</p><h2>Data Validation</h2>
+<p>After successfully reproducing Jacqueline's data package, I headed over to Goodtables to validate her data. I used the same URL and pasted it into the "source" text box at the top of the goodtables web interface screen. I then clicked "validate" because I did not have a schema to upload. At the bottom of the screen, one error was indicated, which you can see in the below screenshot. The Goodtables data validator recognized that there was one blank header present in the dataset which was not a surprise to me. The first field which Jacqueline labeled as "Index" in her datapackage was listed as "Blank Header" according to Goodtables. Aside from this missing header, there were no other issues with the dataset!</p>
+<p><img src="Sam_JM_DataValidation.png" width=100% alt="Sam_JM_DataValidation"></p>
+<p style="text-align: center; font-style: italic">A screenshot of the GoodTables data validation results for Jacqueline's dataset. Note the missing header in column one.</p><h2>Takeaways</h2>
+<p>Using Jacqueline's GitHub repository, Frictionless Data Package Creator, and Goodtables, I feel that I can confidently reuse her dataset for my own research purposes. While there was one piece of metadata missing from her dataset, her publicly published datapackage .JSON file on her repository helped me to quickly figure out how to interpret the unlabeled column. I also feel confident that the data is valid because after doing a visual scan of the dataset, I used the Goodtables tool to double check that the data was valid! Jacqueline's publicly available dataset is definitely findable, accessible, interoperable, and reproducible! Thanks for letting me use your data to attempt Frictionless Data best practices, Jacqueline!</p>
 
-  
-
+  </div>
 
   </article>
   <footer>
