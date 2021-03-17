@@ -1,4 +1,12 @@
-
+title: Validating someone else's data!
+---
+author: Katerina Drakoulaki 
+---
+pub_date: 2021-03-10
+---
+cohort: 2
+---
+body:
 
 ## Validating another fellow's data package
 At this point of the fellowship, we were asked to exchange data packages with another fellow and see if we can understand the data, meta-data and if we can validate it. 
@@ -41,13 +49,10 @@ However, this results in a very long list, where some files are valid, whereas o
 
 An example of an invalid file:
 <img src="validate-all-invalid.png" width=100% alt="validate-all-invalid.png">
-<p style="text-align: center; font-style: italic"> Some of the files that were valid .</p>
+<p style="text-align: center; font-style: italic"> Some of the files that were invalid .</p>
 
 
 Indeed, when going back to the file, instead of a numeric value, there is N/A. With such large files, it is a good thing that this came up using the frictionless tool, as I don't think that it would be possible to detect this with the human eye across all files. I had discussions with my partner about the invalid files, and she said that this is how the files were made available to the public, and that indeed, no information is available for the specific rows in the specific columns. This is an issue that needs to be communicated to the organization that has released the data (the UN in this case), and probably needs to be clarified in their meta-data. 
 
 ## Conclusions
 In this task, I've had to take someone else's data from their github repository, understand what the data are about, and do simple validation checks using goodtables. Understanding the material, although it needed some attention, did not prove very difficult. Validating the data (to the extent that it was possible after all) was easy using the goodtables tools. Another take-home message is the fact that I seem to understand more deeply many of the terms I've been introduced to earlier in the fellowship and that I understand in practical terms why some things are best to be done/presented in a specific way.  
-
-
-
