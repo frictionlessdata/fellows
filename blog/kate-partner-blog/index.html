@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Validating Sam&#39;s data with GoodTables</title>
 
 <body>
   <header>
@@ -114,138 +114,31 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Validating Sam&#39;s data with GoodTables</h1>
   <div>
-    <h2>
-      Cohort 2 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="katerina-partner-blog/">Validating someone else&#39;s data!</a> —
-          by Katerina Drakoulaki
-          on 2021-03-10
-        </li>
-        
-      
-        
-        <li>
-          <a href="sam-reproduce-blog/">Reproducing Jacqueline&#39;s Datapackage and Revalidating her Data!</a> —
-          by Sam Wilairat
-          on 2021-02-22
-        </li>
-        
-      
-        
-        <li>
-          <a href="jacqueline-pkg-reprod-blog/">Reproducing a data package</a> —
-          by Jacqueline Maasch
-          on 2021-02-18
-        </li>
-        
-      
-        
-        <li>
-          <a href="evelyn-partner-blog/">Validating data from Daniel Alcalá-López</a> —
-          by Evelyn Night Okello
-          on 2021-02-18
-        </li>
-        
-      
-        
-        <li>
-          <a href="katerina-goodtables-blog/">Using the frictionless framework for data validation</a> —
-          by Katerina Drakoulaki
-          on 2021-02-11
-        </li>
-        
-      
-        
-        <li>
-          <a href="kate-partner-blog/">Validating Sam&#39;s data with GoodTables</a> —
-          by Kate Bowie
-          on 2021-02-10
-        </li>
-        
-      
-        
-        <li>
-          <a href="evelyn-goodtables-blog/">Validate it the GoodTables way!</a> —
-          by Evelyn Night Okello
-          on 2021-02-02
-        </li>
-        
-      
-        
-        <li>
-          <a href="anne-goodtables-blog/">Reflecting on &#39;datafication&#39;, data prep, and UTF-8 with goodtables.io</a> —
-          by Anne Lee Steele
-          on 2021-02-01
-        </li>
-        
-      
-        
-        <li>
-          <a href="sam-goodtables-blog/">Sam Goodtables Blog</a> —
-          by Sam Wilairat
-          on 2021-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="dani-goodtables-blog/">Validating your data before sharing with the community</a> —
-          by Daniel Alcalá López
-          on 2021-01-29
-        </li>
-        
-      
-      </ul>
-    <h2>
-      Cohort 1 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <span class="disabled">&laquo; Previous</span>
-    
-    | <strong>1</strong> |
-    
-      <a href="page/2/">Next &raquo;</a>
-    
   </div>
+  <div class="blog">
+    <h2>Introduction</h2>
+<p>As a human microbiome researcher, I don't often get a chance to play with non-sequencing data. I'm excited to try my hand at handling and validating other types of data. In this post, I'll be validating data with GoodTables from fellow westcoaster, <a href="https://fellows.frictionlessdata.io/blog/hello-sam/">Sam Wilairat</a>. She's already written about her experience with GoodTables <a href="https://fellows.frictionlessdata.io/blog/sam-goodtables-blog/">here</a>, and I'll be trying to recreate what she did.</p>
+<h2>Sam's Data</h2>
+<p>Sam gave me a <a href="https://github.com/swilairat/HealthScienceOER">CSV file</a> that is a  dataset with Health Science Open Education Resources (OER). She created this dataset so that students, educators, clinicians, and the general public can more easily find and utilize free learning tools. The file data includes not only the title and author of the resource, but also the url where it's freely available.</p>
+<p>To test the capabilities of GoodTables validation, Sam has duplicated one of the rows of data <em>(LGBTQIA+ Cultural Competency for Clinicians)</em>, shown below:</p>
+<p><img src="OER_csv.png" width=100% alt="csv showing duplicated rows"></p>
+<h2>GoodTables time</h2>
+<p>Sam used both the <a href="http://try.goodtables.io">browser tool</a> and command line GoodTables interface. Starting with the browser tool, I uploaded the csv file as the source file. As expected, the GoodTables browser tool detects the duplicated rows and throws an error.</p>
+<p><img src="uploaded_file.png" width=100% alt="uploaded csv file to browser tool"></p>
+<p><img src="invalid_browsertool.png" width=100% alt="invalid due to duplicated row in browser tool"></p>
+<p>Moving on to the command line tool for GoodTables. I had yet to play around with this tool, so this was a good excuse to finally learn the command line interface. After installing the GoodTables tool using</p>
+<pre><code>pip install goodtables
+</code></pre>
+<p>I followed the instructions from Sam's blog, and tested GoodTables on the OER dataset with the duplicated row using:</p>
+<pre><code>goodtables path/to/OER_HealthSciencesMasterTitleList_SW.csv
+</code></pre>
+<p>Again, as expected and described in Sam's earlier blog, the command line GoodTables interface also threw an error:</p>
+<p><img src="commandline_error.png" width=100% alt="error thrown from duplicated row using the command line"></p>
 
-  
-
+  </div>
 
   </article>
   <footer>
