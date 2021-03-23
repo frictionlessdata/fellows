@@ -2,7 +2,7 @@ title: Using goodtables to validate metadata from multiple sequencing runs
 ---
 author: Kate Bowie
 ---
-pub_date: 2020-01-30
+pub_date: 2021-01-30
 ---
 cohort: 2
 ---
@@ -14,7 +14,7 @@ I'm lucky to be working on my PhD as part of the [Karstens' lab](https://karsten
 
 These metadata files include relevant information about the sample, such as DNA concentration, origin of the sample, and an identifier specific to that sample. They often include other pieces of data specific to the experiment, such as if we're investigating the role of certain reagents and kits used and if they impact the bacteria found in each sample. Due to each metadata file having different types of information, it can be difficult to combine the files together for later analysis in R. This is where datapackages, schemas, and GoodTables validation comes in. 
 
-[Goodtables](http://try.goodtables.io) is a data validator that checks both the structure and and the contents of tabular data, like csvs. You can even enter in a schema to tell it what type of structure and contents to look for. This can be very helpful when comparing tabular data and making sure it matches, or in my case, can be combined.
+[Goodtables](http://try.goodtables.io) is a data validator that checks both the structure and the contents of tabular data, like csvs. You can even enter in a schema to tell it what type of structure and contents to look for. This can be very helpful when comparing tabular data and making sure it matches, or in my case, can be combined.
 
 Here, I will show you how I used a schema and GoodTables to make sure my metadata files could be combined, so I can use them for downstream microbial diversity analysis. 
 
