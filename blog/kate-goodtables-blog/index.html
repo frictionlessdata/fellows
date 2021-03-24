@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Using goodtables to validate metadata from multiple sequencing runs</title>
 
 <body>
   <header>
@@ -114,138 +114,33 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Using goodtables to validate metadata from multiple sequencing runs</h1>
   <div>
-    <h2>
-      Cohort 2 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="katerina-partner-blog/">Validating someone else&#39;s data!</a> —
-          by Katerina Drakoulaki
-          on 2021-03-10
-        </li>
-        
-      
-        
-        <li>
-          <a href="sam-reproduce-blog/">Reproducing Jacqueline&#39;s Datapackage and Revalidating her Data!</a> —
-          by Sam Wilairat
-          on 2021-02-22
-        </li>
-        
-      
-        
-        <li>
-          <a href="jacqueline-pkg-reprod-blog/">Reproducing a data package</a> —
-          by Jacqueline Maasch
-          on 2021-02-18
-        </li>
-        
-      
-        
-        <li>
-          <a href="evelyn-partner-blog/">Validating data from Daniel Alcalá-López</a> —
-          by Evelyn Night Okello
-          on 2021-02-18
-        </li>
-        
-      
-        
-        <li>
-          <a href="katerina-goodtables-blog/">Using the frictionless framework for data validation</a> —
-          by Katerina Drakoulaki
-          on 2021-02-11
-        </li>
-        
-      
-        
-        <li>
-          <a href="kate-partner-blog/">Validating Sam&#39;s data with GoodTables</a> —
-          by Kate Bowie
-          on 2021-02-10
-        </li>
-        
-      
-        
-        <li>
-          <a href="evelyn-goodtables-blog/">Validate it the GoodTables way!</a> —
-          by Evelyn Night Okello
-          on 2021-02-02
-        </li>
-        
-      
-        
-        <li>
-          <a href="anne-goodtables-blog/">Reflecting on &#39;datafication&#39;, data prep, and UTF-8 with goodtables.io</a> —
-          by Anne Lee Steele
-          on 2021-02-01
-        </li>
-        
-      
-        
-        <li>
-          <a href="kate-goodtables-blog/">Using goodtables to validate metadata from multiple sequencing runs</a> —
-          by Kate Bowie
-          on 2021-01-30
-        </li>
-        
-      
-        
-        <li>
-          <a href="sam-goodtables-blog/">Sam Goodtables Blog</a> —
-          by Sam Wilairat
-          on 2021-01-29
-        </li>
-        
-      
-      </ul>
-    <h2>
-      Cohort 1 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <span class="disabled">&laquo; Previous</span>
-    
-    | <strong>1</strong> |
-    
-      <a href="page/2/">Next &raquo;</a>
-    
   </div>
+  <div class="blog">
+    <h2>Introduction</h2>
+<p>I'm lucky to be working on my PhD as part of the <a href="https://karstenslab.github.io">Karstens' lab</a> at Oregon Health and Science University. Our lab focuses on sequencing human samples that contain low amounts of bacterial DNA in an attempt to understand different types of bacterial communities and their effect on human health. We sequence hundreds of samples over many different sequencing experiments, yet we often need to combine these data and analyze them together. Depending on the experiment and questions we are asking, we collect and report different pieces of data and put them in a metadata file (csv).</p>
+<p>These metadata files include relevant information about the sample, such as DNA concentration, origin of the sample, and an identifier specific to that sample. They often include other pieces of data specific to the experiment, such as if we're investigating the role of certain reagents and kits used and if they impact the bacteria found in each sample. Due to each metadata file having different types of information, it can be difficult to combine the files together for later analysis in R. This is where datapackages, schemas, and GoodTables validation comes in.</p>
+<p><a href="http://try.goodtables.io">Goodtables</a> is a data validator that checks both the structure and the contents of tabular data, like csvs. You can even enter in a schema to tell it what type of structure and contents to look for. This can be very helpful when comparing tabular data and making sure it matches, or in my case, can be combined.</p>
+<p>Here, I will show you how I used a schema and GoodTables to make sure my metadata files could be combined, so I can use them for downstream microbial diversity analysis.</p>
+<h2>Using GoodTables for metadata</h2>
+<p>First, I created a datapackage using <a href="https://create.frictionlessdata.io">datapackagecreator</a> and shown below, for my experiment labeled "MiSeq_Run_623", which stands for the 623rd sequencing run on an Illumina MiSeq machine. Next, I took only the "Fields" sections and created a schema to be used with the GoodTables browser tool.</p>
+<p><img src="full_datapackage.png" width=100% alt="text editor page with a datapackage in json"></p>
+<p>Now, I'm interested in joining this metadata from run 623, to metada from run 719. So I'm going to end up testing the metadata from MiSeq_Run_719 against the schema created for MiSeq_Run_623. First, I want to make sure that everything is working how it should be, and that I correctly created a schema. So I will be first using Goodtables to validate the metadata from the 623 run against the schema. (This should of course work, because the schema was created off of the 623 metadata file) And woo! It works!</p>
+<p><img src="valid_test.png" width=100% alt="properly validated tables using goodtables shown with green lettering"></p>
+<p>Next, I'm ready to validate the metadata from run 719 using the schema from run 623. As mentioned before, these are two different experiments and have very different sets of metadata reported, so I do not expect this to work.</p>
+<p><img src="error_719.png" width=100% alt="failed validation of run 719 using schema from run 623"></p>
+<p>The validation had many errors. Let's expand the errors to get an idea of what we're working with:</p>
+<p><img src="missing_header.png" width=100% alt="missing header errors">
+<img src="non_matchingheader.png" width=100% alt="non-matching header errors expanded"></p>
+<p>So here we're seeing that the columns are not only in the wrong order, but that many columns are missing. Also, there are many columns that do not match the schema provided by run 623. So, now I will have to do some switching around of columns. It's helpful, because the errors tell me exactly where my columns are not matching up and how I can fix this. After spending some time re-arranging, I'm going to try and validate the metadata from run 719 once more:</p>
+<p><img src="Almost_Fixed.png" width=100% alt="validated tables almost, but still errors"></p>
+<p>Ooh close, but not quite! It looks like I actually re-named that column "subject<em><strong>id</strong>", instead of "subject</em><strong>ID</strong>". It's extremely helpful that GoodTables pointed this out, because if I tried to combine these metadatafiles in R with non-matching case as it is here, then it would create TWO separate columns for the metadata. Now, let's try to validate one more time with the fixed case of this header:</p>
+<p><img src="valid_final.png" width=100% alt="finally 719 is validated"></p>
+<p><em>Success!</em> Now I will be able to combine these metadata files together and it will make my data analysis pipeline a lot smoother. If interested in trying to validate these files yourself, please check them out on my <a href="https://github.com/katebowie/fellows/tree/master/good-tables">github</a>.</p>
 
-  
-
+  </div>
 
   </article>
   <footer>
