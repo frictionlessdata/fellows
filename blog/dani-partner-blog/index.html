@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Using Frictionless tools to help you understand open data</title>
 
 <body>
   <header>
@@ -114,138 +114,41 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Using Frictionless tools to help you understand open data</h1>
   <div>
-    <h2>
-      Cohort 2 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="../../oa-week-2020/">Open Access Week 2020</a> —
-          by Katerina, Dani, Sam, Anne, Ritwik, Evelyn, Kate, Jacqueline
-          on 2020-10-23
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-dani/">Meet Dani</a> —
-          by Daniel Alcalá López
-          on 2020-09-01
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-ritwik/">Meet Ritwik</a> —
-          by Ritwik Agarwal
-          on 2020-08-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-anne/">Bridging the (Disciplinary) Gap through Reproducible Research</a> —
-          by Anne Lee Steele
-          on 2020-08-28
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-evelyn/">Meet Evelyn</a> —
-          by Evelyn Night
-          on 2020-08-28
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-katerina/">Meet Katerina</a> —
-          by Katerina Drakoulaki
-          on 2020-08-28
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-sam/">Meet Sam</a> —
-          by Sam Wilairat
-          on 2020-08-28
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-kate/">Meet Kate (she/her)</a> —
-          by Kate Bowie
-          on 2020-08-27
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-jacqueline/">Meet Jacqueline</a> —
-          by Jacqueline Maasch
-          on 2020-08-26
-        </li>
-        
-      
-        
-      
-      </ul>
-    <h2>
-      Cohort 1 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-        <li>
-          <a href="../../sele-final-blog/">A seguir reproduciendo conocimiento!</a> —
-          by Sele Yang
-          on 2020-06-04
-        </li>
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <a href="../2/">&laquo; Previous</a>
-    
-    | <strong>3</strong> |
-    
-      <a href="../4/">Next &raquo;</a>
-    
   </div>
+  <div class="blog">
+    <p>A few weeks ago, the fellows did an interesting exercise: We would try to replicate each others DataPackages in pairs. We had spent some time before creating and validating DataPacakges with our own data. Now it was the time to see how would it be to work with someone else's. This experience was intended to be a way for us to check how it was to be at the other side. That is, once we learnt to create a DataPackage, it was a good idea to receive a DataPackage created by another person to see whether it makes it easier for us to understand the details of the data.</p>
+<p>Let's see how it went!</p>
+<h2>Validating the DataPackage</h2>
+<p>As a first step, we will take a peek at the DataPackage using the <code>goodtables</code> command-line tool. If you don't know what Goodtable is, I recommend you have a look at <a href="https://fellows.frictionlessdata.io/blog/dani-goodtables-blog/">this blog post</a> I wrote about it a few weeks ago and to the <a href="https://frictionlessdata.io/tooling/goodtables/">documention</a> for further guidance.</p>
+<p><code>goodtables Muranga_insects_dp.json</code></p>
+<p>As we can see in the image below, directly calling <code>goodtables</code> on the DataPackage throws a bit of information, including a succinct description of the data (e.g. how many tables there are) and a general validation of it.</p>
+<p><img src="snapshot1_goodtablesOutput_JSON_Muranga.png" width=100% alt="Output from the 'goodtables' command-line tool on a DataPackage JSON file"><p style="text-align: center; font-style: italic">An overview of the DataPackage tells you whether the validation has been successful and the type of data structure inside. But we need to go deeper to better understand what we are dealing with.</p></p>
+<h2>Beyond the DataPackage: exploring the data files</h2>
+<p>Once we validated the DataPackage our colleague created, we have to consider the possibility that they –as any of us– might have made a msitake when creating it. It is therefore useful to explore the data files themselves, again using <code>goodtables</code> in the command line.</p>
+<p><code>goodtables Muranga_insects.csv</code></p>
+<p><img src="snapshot2_goodtablesOutput_CSV_Muranga.png" width=100% alt="Output from the 'goodtables' command-line tool on a tabular CSV data file"><p style="text-align: center; font-style: italic">Goodtables is designed to pinpoint exactly where the errors are and what they mean, so you can fix them!</p></p>
+<p>This time we got a lot more information... including some error messages. Let's see what they mean.</p>
+<p>First of all, Goodtables tells us that it detected 50 errors in this data file - that's a lot! Maybe something else is going on. It also provides a list with the names of the columns in the dataset, as well as the number of observations (i.e. rows) we have.</p>
+<p>Now, if we look at the bottom of the error message, we find a bunch of duplicate row messages. That's very odd! It could happen, of course. But it's strange that a file with 130 rows would have 20 duplicates (that's about 15%), don't you think?</p>
+<p>In this case, we can use another Frictionless Tool to take a look at the dataset and see what is really going on with the data. We will use <code>frictionless extract</code> to visualise the data in a structured tabular format to help us inspect the information visually. This tool is part of the Frictionless framework, a new way of working with Frictionless Tools to describe, extract, validate, and transform tabular data. I encourage you to read through the documentation <a href="https://framework.frictionlessdata.io/docs/guides/introduction">here</a> to learn more. It's full of examples and tutorials!</p>
+<p><code>frictionless extract Muranga_insects.csv</code></p>
+<p><img src="snapshot3_extractOutput_CSV_Muranga.png" width=100% alt="Output from the 'goodtables' command-line tool on a tabular CSV data file"><p style="text-align: center; font-style: italic">Visualising tabular data structures can be a bit of a nightmare in Python. Fortunately, `frictionless extract` was conceived to make life easier for us humans!</p></p>
+<p>Now we can see what was going on with the data. There are a lot of missing values!</p>
+<p>There is probably a logical explanation for this, though. The first two columns (LAT and LONG) act as site identifiers for each observation. However, it appears that our colleague organised her data in such a way that these identifiers appear only once and all observations from each site are grouped together. This way of organising the data is very convenient visually when you are used to spreadsheet software such as Excel, but it can mess things up a bit if you try to automate some analyses or tasks with a programming language.</p>
+<p>Mystery solved! Although Goodtables told us that the DataPackage JSON file was valid, it found a number of issues in the CSV data file.</p>
+<h2>Room for improvement</h2>
+<p>When working with tabular data, we can adopt a number of good practices to make it easier for others to reuse our data. For this dataset, we could suggest the following modifications:</p>
+<ul>
+<li><em>Adding text descriptions to variable names</em>. It is incredibly common that, when creating a dataset, we take for granted our naming conventions and preferences, so we all tend to assume anyone will be able to understand what the name of each variable means. However, I dare saying that in most cases (and especially when using abbreviations) this is not going to be the case.</li>
+<li><em>Specifying data type for each variable</em>. By default, the online DataPackage creator sometimes can't guess the correct data type, so will add the label <em>any</em> to this field. Although this is not necessarily problematic on itself, it doesn't provide <em>any</em> (pun intended) extra information for future users.</li>
+<li><em>Providing a permanent link to the source data</em>, instead of creating the DataPackage using local data. A permanent link will ensure that everyone will be able to access the data in the future, even if you loose your own data. You can also think about this as a backup of your data. Besides, this helps us avoid some inconviniences such as dealing with weird paths, which can be an (unnecesary) extra blockage for those users less experienced with programming languages and the command line. </li>
+<li><em>Adding a license to the DataPackage</em>. Even if you take all the time and effort to go through the process of packaging your data, other people cannot know whether they can use your data unless you specify a license. Fortunately, the DataPackage Creator has you covered! You will find in the left-hand menu a field to specify a license for your data, with a drop-down menu to select from a pre-specified list of possible licenses –you can write down any other license you prefer, though.</li>
+</ul>
 
-  
-
+  </div>
 
   </article>
   <footer>
