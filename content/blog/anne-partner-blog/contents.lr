@@ -96,7 +96,7 @@ For example, I could see them being incredible helpful for data journalists, who
 
 After reflecting on the conflicts that arise when different disciplines overlap, which I [wrote about in my last blog](https://fellows.frictionlessdata.io/blog/anne-goodtables-blog/), this exercise very much felt like a continuation of this train of thought. What if researchers of all types wrote prototypical "datapackages" about their research, that gave greater context, or explained its relevance? In my fields, many researchers tend to find this in ['the art of the footnote'](https://www.jstor.org/stable/41211579?seq=1#metadata_info_tab_contents), but this type of informal knowledge or context is not operationalized in any real way.
 
-Similar to how README files and data packages help users to understand data, file topologies, and the organizational logics of a project... perhaps there are better ways of facilitating mutual understanding across academic disciplines that touch on similar topics.
+Similar to how README files and data packages help users to understand data, file topologies, and the organizational logics of a project... perhaps there are better ways of facilitating mutual understanding across academic disciplines that touch on similar topics. Case in point: it's already helped an anthropologist/sociologist to learn from a linguist.
 
 What if interdisciplinarity could be made more interoperable?
 
