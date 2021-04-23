@@ -84,17 +84,17 @@ Even though the names of the sectors were descriptive, I felt as though I needed
 
 <img src="data-package-4.png" width=100% alt="schema">
 
-I ended up taking a peak at her datapackage, to see what I was missing. The descriptions were very instructive, and helped me to understand what tools and measures she was using. Because it even included citations, I could see where I might start if I wanted to truly recreate her study, and make a datapackage that could more closely mimic her own.
+I ended up taking a peek at her datapackage, to see what I was missing. The descriptions were very instructive, and helped me to understand what tools and measures she was using. Because it even included citations, I could see where I might start if I wanted to truly recreate her study, and make a datapackage that could more closely mimic her own.
 
 <h3>Datapackaging for interdisciplinarity</h3>
 
-While my inability to recreate Katerina's datapackage might stem from the fact that I am not a scholar in linguistics, for me, attempting to recreate it also reinforced just how crucial it is for my own undestanding. It gives me a foundation to work off it, and the tools to learn more.
+While my inability to recreate Katerina's datapackage might stem from the fact that I am not a scholar in linguistics, for me, attempting to recreate it also reinforced just how crucial it was for my own learning. The data package gives me a foundation to work off of, and the tools to learn more her subject.
 
-In many ways, I realized what role datapackages could play in guiding non-experts to navigate data-driven research.
+Because of how it helped me, I've been thinking about what role data packages could play in guiding non-experts to navigate data-driven research.
 
 For example, I could see them being incredible helpful for data journalists, who need to digest, understand, and translate information for the public rapidly – and often deal with raw datasets that may or may not be intelligible from the get go. As I've learned more about the time required to simply clean and format datasets, this exercise has made me realize that the same could be said for "making heads or tails" of data, so to speak. In other words, just figuring out what the data is saying could take equally, if not more time.
 
-After reflecting on the conflicts that arise when different disciplines overlap, which I [wrote about in my last blog](https://fellows.frictionlessdata.io/blog/anne-goodtables-blog/), this exercise very much felt like a continuation of this train of thought. What if researchers of all types wrote prototypical "datapackages" about their research, that gave greater context, or explained its relevance? In my fields, many researchers tend to find this in ['the art of the footnotes'](https://www.jstor.org/stable/41211579?seq=1#metadata_info_tab_contents), but they're not operationalized in any real way.
+After reflecting on the conflicts that arise when different disciplines overlap, which I [wrote about in my last blog](https://fellows.frictionlessdata.io/blog/anne-goodtables-blog/), this exercise very much felt like a continuation of this train of thought. What if researchers of all types wrote prototypical "datapackages" about their research, that gave greater context, or explained its relevance? In my fields, many researchers tend to find this in ['the art of the footnote'](https://www.jstor.org/stable/41211579?seq=1#metadata_info_tab_contents), but this type of informal knowledge or context is not operationalized in any real way.
 
 Similar to how README files and data packages help users to understand data, file topologies, and the organizational logics of a project... perhaps there are better ways of facilitating mutual understanding across academic disciplines that touch on similar topics.
 
