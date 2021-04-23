@@ -10,13 +10,31 @@ body:
 
 One of the goals of the Frictionless Data Fellowship has been to help us make our research more interoperable, which is another way of saying: something that other researchers can use, even if they have entirely different approaches or tools to the same topic. While my colleagues and I have written about the [importance of accessibility as well as openness](https://fellows.frictionlessdata.io/blog/oa-week-2020/), and the variety of challenges they might encounter when doing so, interoperability was something I had a bit more trouble with.
 
-This required a shift in perspective on my part, because anthropology and sociology (the former in particular) tend to pride themselves on the relative singularity of their "data". While both disciplines try to understand the "human experience" by observing lived behavior, the methods that they use and the data that they produce are nearly impossible to replicate. To a large degree, this comes with the territory: to study anything "ethnographically" is simply to observe people in real time, to draw trends from what you observe, and the conversations and interviews that come with it. This might seem relatively easy, but it's actually quite difficult, because at smaller scales, it becomes easier to see how humans are complicated, messy, and deeply contradictory. Leaving room for these contradictory behaviors, yet still trying to draw overarching conclusions and trends from them is what makes ethnographic work so interesting (and important, in my view)... but also perhaps less appealing, actionable, and affordable than data science, which allows for analysis at scale.
+<h3>Thinking about interoperability</h3>
 
-It is the theories and terms that emerge from social science that are perhaps interoperable, because they evolve into the language we use to describe social phenomena. However, that's not the same thing as making raw data interoperable, because by the time they've turned into, they're no longer raw data. While translating theories across disciplines is almost like translating across languages, or further still, across ontologies (foundational approaches) of thought, "raw data" reminds highly
+This required a shift in perspective on my part, because anthropology and sociology (the former in particular) tend to pride themselves on the relative singularity of their "data". While both disciplines try to understand the "human experience" by observing lived behavior, the methods that they use and the data that they produce are nearly impossible to replicate. To a large degree, this comes with the territory: to study anything "ethnographically" is simply to observe people in real time, to draw trends from what you observe, as well as from the conversations and interviews you conduct. This might seem relatively easy, but it's actually quite difficult, because at smaller scales, it becomes easier to see how humans are incredibly complicated, messy, and deeply contradictory. Leaving room for these contradictory behaviors, yet still trying to draw overarching conclusions and trends from them is what makes ethnographic work so interesting (and important, in my view)... but also perhaps less appealing, actionable, and affordable than data science, which allows for analysis at scale.
 
-That's what made this experience using Katerina's data so interesting to me, as it required a somewhat foundational shift in how I approach research itself. She is someone that also straddles worlds – currently doing her PhD on linguistic, cognitive, and music abilities of pre-schoolers – and we've talked about how her work overlaps with ethnomusicologists.
+It is the theories and terms that emerge from social science that are perhaps interoperable, because they evolve into the language we use to describe social phenomena. However, that's not the same thing as making raw data interoperable, because by the time it has been transformed into theory, the ideas are far from "raw". While translating theories across disciplines can be likened to translating across languages, or further still, across entire ontologies (foundational approaches or 'ways of being'), their "raw data" remains highly distinctive. In fact, it is often the individual's experience – or the singular nature of their data – that becomes the core of their findings.
 
-Reading someone else's README.md file is always a good reminder that I should take care of my own. Learning about her resarch in ways that I didn'
+This is what made the experience of using Katerina's data so interesting to me, as it required a somewhat foundational shift in how I approach research itself. She is someone that also straddles worlds, both geographically and disciplinarily. Currently doing her PhD on linguistic, cognitive, and music abilities of pre-schoolers in Greece, we've talked about how her work overlaps (and doesn't) with ethnomusicologists, and how her country sits at the intersection of East and West in a lot of ways. I was keen to learn more about her work, if not a little intimidated by the computation it might require, as always!
+
+<h3>Using Katerina's data</h3>
+
+The first step of reproducing Katerina's data was to clone her repository onto my local computer, as well as explore her [Github repository](https://github.com/KDrakoulaki/datapackage-subset).
 
 <img src="github-repo.png" width=100% alt="schema">
-<p style="text-align: center; font-style: italic">Saving the files as CSV UTF-8.</p>
+<p style="text-align: center; font-style: italic">The first step is always to look at someone's README file, which will help you understand the repository's contents.</p>
+
+Reading a description of someone's work that is understandable and actionable is always a good reminder that I do the same, and make sure that my repository's logic makes sense to someone other than myself. It was great to see this in Katerina's README file.
+
+I really liked that she included a section on 'ethical considerations', as well as explained the contents of her dataset and data package.
+
+
+
+I cloned her repository onto my device, to explore her data a bit more.
+
+But first, I wanted to
+
+
+
+<h3>Frictionless tools</h3>
