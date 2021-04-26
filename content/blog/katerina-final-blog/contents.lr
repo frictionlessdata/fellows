@@ -1,0 +1,39 @@
+title: My experience in the fellows program - a reflection
+---
+author: Katerina Drakoulaki 
+---
+pub_date: 2020-08-28
+---
+cohort: 2
+---
+body:
+
+## Applying for the fellowship
+
+I remember seeing the ad for the Frictionless Data Fellowship on Twitter. I liked it and opened to read it. I remember sending it to a friend, expressing at every step how inadequate I felt applying. My friend volunteered looking at the cover letter, and helped me shape a better argument. If I feel an impostor now, I can't describe how much an impostor I felt then. I got an interesting argument for my cover letter, but kept pushing back actually finishing it. I literally finished the cover letter on the last day of the deadline, worked on it for a couple of hours and sent it! 
+
+I remember that the question: 'Why should we choose you as a fellow?' made me answer at first 'You shouldn't; I'm not worth it'. Then I saw a comment saying that the program encourages applications from individuals from diverse backgrounds. And it was one of the first times when I thought that: 'OK, I wasn't in the game from the start, I studied something else, but I want to acquire these skills! I have tried a lot on my own, but I believe that being in a structured environment will help me more!'. 
+
+I remember specifically writing in my cover letter: 
+
+'I know that I can’t compete with applicants with a solid background in programming, but I know that I would greatly benefit from being a frictionless data fellow, and that it would give me some of the background that due to systemic reasons I have been lacking. '
+
+I got an invitation to interview, and talking with Lilly went so smoothly, it felt like we were already on the fellowship. Of course, I couldn't believe I deserved the interview, but when it went so well, that's when I truly got invested! That's when I really believed I had a chance to get it (and was also afraid of the disappointment of not getting it)! 
+
+## Starting the fellowship
+
+The start of the fellowship was rather smooth, there was interesting reading to do and we were starting to get to know each other. A couple of weeks in, things got a bit more difficult. We had a session to cover basic skills in coding, covering the command line and how to use git and github. I remember that was NOT a good week! What stayed with me and took me a few weeks to digest was one of the issues Lilly had raised in that meeting was the difference a growth mindset can make. I realized that most of my studies were under a fixed mindset: I only took over things I was already good at (or showed potential), and I interpreted all rejections as failures, showing my the limit of my abilities. I realized how I was not resistant to failure at all! 
+
+It took a lot of patience, persistence, and asking for help (and being kind to myself), but I can say I managed pretty well! I think that considering where I started, 9 months after, I've taken leaps forward. 
+
+## Progressing in the fellowship
+
+I got into the fellowship just with the hope of getting the opportunity to learn things I didn't have the opportunity to learn on my own. That is, I did not have specific expectations, I was (and still am) grateful to be in. I feel that all the implicit expectations I might have had are all fulfilled. I got an amazing boost in my digital skills altogether and I know exactly why (no I did not gain a few IQ points). I was in a helpful community and I matured in a way that enabled me to have more of a growth mindset. I also saw other people 'fail', as in having their code not working and having to google the solution! I have to say all the readings, the discussions, the tutorials, the Frictionless tools have been amazing, but this shift in my mindset has been the greatest gift the fellowship has given me. 
+
+## Advocating Open Science in the future
+During the fellowship, Lilly knows very well that I have expressed my frustration over my own difficulties and background, and over systemic differences I've started observing around Open Science. The ways in which I'm planning to continue advocating around open science will remain twofold. First, I want to help (primarily) girls and women from the humanities dip their toes in programming, in order to acquire digital skills necessary both for research and other professional paths. For this reason, with the help of a few friends, we have founded a chapter of PyLadies, an international group that aims to encourage girls and women to learn Python. So, [Athens Pyladies](https://twitter.com/AthensPy) have already organized their first event, aimed at individuals studying at my alma mater, the School of Philosophy at the University of Athens, and we aim to start coding study groups. The second thing I've observed and hope to make a difference in the future is how funding and open science initiatives are different depending on each country's academic/research budget and overall economic situation. It has been very frustrating for me seeing cool groups, events, and training being organized in countries where open science is within their research goals, and thus there is funding (and time and resources) for it. It is extra frustrating when these differences are observed within the European Union as well. The difference in which countries can keep up with open science practices and which can't starts here, and the bigger the difference the larger the distance in the future. So, when we talk about open science it's useful to think about funding, country of origin, and overall opportunities for open science that may differ (even within the EU).  
+
+## Overall thoughts 
+It might sound as an exaggeration, but the Frictionless Data Fellowship has changed my life in many aspects. First, it changed how I understand data, metadata, the need for reproducibility and clear dissemination of data and research projects in general terms, but it also helped me recognize all these issues in my own research! It helped me understand how a growth mindset can change the way I engage with coding, and how I'm not the only one facing difficulties. Thus, I've seen a tremendous change in my coding abilities, both in Python and R. I've written most of my dissertation (and plan to finish writing it) in RMarkdown, which means, I'm already using reproducible tools in my research. I want to thank Lilly and the OKF for giving me the opportunity to learn so much; an opportunity that I might not have been given otherwise.
+
+I would not have expected a year ago that I would have come so far, both in terms of mentality but also in terms of actual skills. So, my message to anyone reading this thinking they're not able is: the first step towards change is a change in mentality.  
