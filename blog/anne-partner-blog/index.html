@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>On README files, sharing data and interoperability</title>
 
 <body>
   <header>
@@ -114,138 +114,55 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>On README files, sharing data and interoperability</h1>
   <div>
-    <h2>
-      Cohort 2 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="../../dani-datapackage-blog/">Sharing data from your own scientific publication</a> —
-          by Daniel Alcalá López
-          on 2020-11-20
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../jacqueline-datapackage-blog/">Constructing a basic data package in Python</a> —
-          by Jacqueline Maasch
-          on 2020-11-19
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../katerina-datapackage-blog/">So you want to get your data package validated?</a> —
-          by Katerina Drakoulaki
-          on 2020-11-16
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../oa-week-2020/">Open Access Week 2020</a> —
-          by Katerina, Dani, Sam, Anne, Ritwik, Evelyn, Kate, Jacqueline
-          on 2020-10-23
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-dani/">Meet Dani</a> —
-          by Daniel Alcalá López
-          on 2020-09-01
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-ritwik/">Meet Ritwik</a> —
-          by Ritwik Agarwal
-          on 2020-08-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-anne/">Bridging the (Disciplinary) Gap through Reproducible Research</a> —
-          by Anne Lee Steele
-          on 2020-08-28
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-evelyn/">Meet Evelyn</a> —
-          by Evelyn Night
-          on 2020-08-28
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-katerina/">Meet Katerina</a> —
-          by Katerina Drakoulaki
-          on 2020-08-28
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-sam/">Meet Sam</a> —
-          by Sam Wilairat
-          on 2020-08-28
-        </li>
-        
-      
-      </ul>
-    <h2>
-      Cohort 1 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <a href="../2/">&laquo; Previous</a>
-    
-    | <strong>3</strong> |
-    
-      <a href="../4/">Next &raquo;</a>
-    
   </div>
+  <div class="blog">
+    <p>One of the goals of the Frictionless Data Fellowship has been to help us make our research more interoperable, which is another way of saying: something that other researchers can use, even if they have entirely different systems or tools with which they approach the same topic. While my colleagues and I have written about the <a href="https://fellows.frictionlessdata.io/blog/oa-week-2020/">importance of accessibility as well as openness</a>, and the variety of challenges they might encounter when doing so, interoperability was something I had a bit more trouble with.</p>
+<h3>Thinking about interoperability</h3><p>This required a shift in perspective on my part, because anthropology and sociology (the former in particular) tend to pride themselves on the relative singularity of their "data". While both disciplines try to understand the "human experience" by observing lived behavior, the methods that they use and the data that they produce are nearly impossible to replicate. To a large degree, this comes with the territory: to study anything "ethnographically" is simply to observe people in real time, to draw trends from what you observe, as well as from the conversations and interviews you conduct. This might seem relatively easy, but it's actually quite difficult, because at smaller scales, it becomes easier to see how humans are incredibly complicated, messy, and deeply contradictory. Leaving room for these contradictory behaviors, yet still trying to draw overarching conclusions and trends from them is what makes ethnographic work so interesting (and important, in my view)... but also perhaps less appealing, actionable, and affordable than data science, which allows for analysis at scale.</p>
+<p>It is the theories and terms that emerge from social science that are perhaps interoperable, because they evolve into the language we use to describe social phenomena. However, that's not the same thing as making raw data interoperable, because by the time it has been transformed into theory, the ideas are far from "raw". While translating theories across disciplines can be likened to translating across languages, or further still, across entire ontologies (foundational approaches or 'ways of being'), their "raw data" remains highly distinctive. In fact, it is often the individual's experience – or the singular nature of their data – that becomes the core of their findings.</p>
+<p>This is what made the experience of using Katerina's data so interesting to me, as it required a somewhat foundational shift in how I approach research itself. She is someone that also straddles worlds, both geographically and disciplinarily. Currently doing her PhD in Linguistics on linguistic, cognitive, and music abilities of pre-schoolers in Greece, we've talked about how her work overlaps (and doesn't) with ethnomusicologists, and how her country sits at the intersection of "East" and "West in Greece". I was keen to learn more about her work, and see if it would help me to ground 'interoperability' in a concrete example.</p>
+<h3>Getting started</h3><p>The first step of reproducing Katerina's data was to clone her repository onto my local computer, as well as explore her <a href="https://github.com/KDrakoulaki/datapackage-subset">Github repository</a>.</p>
+<p><img src="github-repo.png" width=100% alt="schema"></p>
+<p style="text-align: center; font-style: italic">The first step is always to look at someone's README file, which is meant to guide you through a repository's contents.</p><p>Reading a description of someone's work that is understandable and actionable is always a good reminder that I should try to do the same, to make sure that my repository's logic makes sense to someone other than myself. I tried to find this in Katerina's README file, and I really liked that she included a section on 'ethical considerations', along with a description of her repository's contents. There's so much that I don't understand about her field (i.e. how do you test 'working memory' or 'visual selective attention'?). But in any case, it was interesting to try and learn!</p>
+<p>In my last blog, I wrote about <a href="https://fellows.frictionlessdata.io/blog/anne-goodtables-blog/">UTF-8 encoding</a>, and how it became a way for me to understand how technology builds upon itself (and ensuing oversights) over time. It also became a way for me to think about the "culture" of software as one that has norms, values, and particular histories just like any other. Over the past 9 months, I've noticed that README files are almost universal within open source projects, and was curious as to where they came from. While it is logical that files should have a description of some sort, especially if they are going to be shared with others, why are they all called README?</p>
+<p>It turns out, the name might have originally been a joke, perhaps inspired by the <a href="http://catb.org/~esr/jargon/html/R/README-file.html">magical 'Eat Me' and 'Drink Me' edibles that Alice injested while in Wonderland</a>, the fantastical children's story by Lewis Carroll. <a href="https://medium.com/@NSomar/readme-md-history-and-components-a365aff07f10">According to Omar Abdelhafith</a>, early versions of the README file appeared in 1974 for the PDP-10 DECUS project, <a href="https://web.archive.org/web/20120402211853/https://www.columbia.edu/cu/computinghistory/pdp10.html">an early and influential iteration of the computer</a> that eventually became the basis of ARPANET (what we now know as the internet).</p>
+<p>In a way, it seems fitting that my venture into Katerina's data began with her README file. Because humans share things between one another – organically, and perhaps inevitably – we tend to try to develop systems to facilitate the process. I guess this is why interoperability is so important, especially when it comes to research.</p>
+<p>To get started, I cloned her repository onto my own device, to explore her data a bit more.</p>
+<p><img src="raw-data.png" width=100% alt="schema"></p>
+<p style="text-align: center; font-style: italic">A screenshot of Katerina's data.</p><p>But it was when I started looking at Katerina's actual data that I realized how truly little I could understand!</p>
+<p>Firstly, her dataset used some acronyms that I didn't recognize. With a quick google search, I found out that PPVT meant <a href="https://www.pearsonassessments.com/store/usassessments/en/Store/Professional-Assessments/Academic-Learning/Brief/Peabody-Picture-Vocabulary-Test-%7C-Fourth-Edition/p/100000501.html">Peabody Picture Vocabulary Test</a> and RCPM meant <a href="https://www.pearsonassessments.com/store/usassessments/en/Store/Professional-Assessments/Cognition-%26-Neuro/Non-Verbal-Ability/Raven%27s-Coloured-Progressive-Matrices/p/100000098.html]">Raven's Colored Progressive Matrices</a>. These assessments are used to measure memory and literacy through vocabulary tests and abstract reasoning exercises.</p>
+<p>When I looked up the tests themselves, there were some things that I recognized, or found familiar. I realized that as a kid, I had probably been exposed to similar tests. At the time, I had obviously not thought about how they were used as data for researchers like Katerina.</p>
+<p>She will have to correct me on this in our next meeting, but PPVT and RCPM tests can look something like this:</p>
+<p><img src="RCPM.png" width=45% alt="RCPM test">
+<img src="PPVT.png" width=45% alt="PPVT test"></p>
+<p style="text-align: center; font-style: italic">Left: Example of RCPM test. Right: Example of PPVT test. Source: Youtube (screenshots).</p><p>While I'd read texts about <a href="https://journals.sagepub.com/doi/pdf/10.2304/pfie.2007.5.4.431">critical pedagogy and the philosophy of education</a>, I had never really thought about how and <i>why</i> young people retain information, or how to measure it at scale. While their foundations seem to be divergent, I wonder if these types of studies and philosophies are compatible. Are there any spaces where these approaches are combined? In other words – can philosophies about the <i>content</i> of educational practices be combined with the <i>memorization or analytical methods</i> that help us to maximize learning and/or understanding of a subject? Should they be combined in the first place? Some food for thought.</p>
+<p>In any case, onwards to the next step: validating Katerina's dataset.</p>
+<h3>Validating with try.goodtables</h3><p>Following the steps that I would take with my own research, the first thing I did was try to check the structure and validity of her data using Goodtables.io.</p>
+<p>I really like the online tool, <a href="https://try.goodtables.io">try.goodtables.io</a> because it allows you to do a really quick check for structural or formatting issues, before getting started on anything more complicated.</p>
+<p><img src="good-tables-1.png" width=100% alt="schema">
+<img src="good-tables-2.png" width=100% alt="schema"></p>
+<p>Everything seemed to check out, so I moved on to next steps: replicating her data package, to see how close mine might get to her own.</p>
+<h3>Replicating the datapackage</h3><p>Learning about data packages has been one of the most instructive parts of this fellowship, and I've <a href="https://fellows.frictionlessdata.io/blog/anne-datapackage-blog/">learned a lot from making one</a> for the dataset I'm working with. Having <a href="https://frictionlessdata.io/data-package/">"data about your data"</a> can be really helpful, especially when it contains terms or labels that might not make sense to anyone besides the researcher.</p>
+<p>In many ways, data packages are quite similar to README files, because they help people to navigate the information you've given them, or released into the internet ether. Now I can see why <a href="https://medium.com/capital-one-tech/art-of-open-source-documentation-5b8b3f5b0ab#:~:text=Open%20source%20isn&#39;t%20a,to%20an%20open%20source%20project.">documentation is so important</a> for any project, not just open source software.</p>
+<p>In any case, I used a url of Katerina's raw data to make a new data package, using the handy <a href="https://create.frictionlessdata.io/">create.frictionlessdata.io</a> tool.</p>
+<p><img src="data-package-1.png" width=100% alt="schema">
+<img src="data-package-2.png" width=100% alt="schema"></p>
+<p>But here's where it got confusing for me. Beyond the first few labels (which I could infer, because I know how to look up the terms online) – I really had no idea how to label Katerina's data!</p>
+<p><img src="data-package-3.png" width=100% alt="schema"></p>
+<p>Even though the names of the sectors were descriptive, I felt as though I needed more context in order to know <i>how</i> to understand her data, or even how to equip myself with the tools to learn more about it. In other words, I needed data about her data, in order to google effectively.</p>
+<p><img src="data-package-4.png" width=100% alt="schema"></p>
+<p>After awhile, I ended up taking a peek at her data package, to see what I was missing. The descriptions were very instructive, and helped me to understand what tools and measures she was using. Because it even included citations, I could see where I might start if I wanted to truly recreate her study, and make a data package that could more closely mimic her own.</p>
+<h3>Datapackaging for interdisciplinarity</h3><p>While my inability to recreate Katerina's data package might stem from the fact that I am not a scholar in linguistics, for me, attempting to recreate it also reinforced just how crucial it was for my own learning. The data package gives me a foundation to work off of, and the tools to learn more about her subject.</p>
+<p>Because of how it helped me, I've been thinking about what role data packages could play in guiding non-experts to navigate data-driven research.</p>
+<p>For example, I could see them being incredibly helpful for data journalists, who need to digest, understand, and translate information for the public rapidly – and often deal with raw datasets that may or may not be intelligible from the get go. As I've learned more about the time required to simply clean and format datasets, this exercise has made me realize that the same could be said for "making heads or tails" of data, so to speak. In other words, just figuring out what the data is saying could take equally, if not more time.</p>
+<p>After reflecting on the conflicts that arise when different disciplines intersect, which I <a href="https://fellows.frictionlessdata.io/blog/anne-goodtables-blog/">wrote about in my last blog</a>, this exercise very much felt like a continuation of this train of thought. What if researchers of all types wrote prototypical "data packages" about their research, that gave greater context to their work, or explained its wider relevance? In my fields, many researchers tend to find this in <a href="https://www.jstor.org/stable/41211579?seq=1#metadata_info_tab_contents">'the art of the footnote'</a>, but this type of informal knowledge or context is not operationalized in any real way.</p>
+<p>Similar to how README files and data packages help users to understand data, file topologies, and the organizational logics of a project... perhaps there are better ways of facilitating mutual understanding across academic disciplines that research similar topics. Case in point: it's already helped an anthropologist/sociologist to learn from a linguist.</p>
+<p>What if interdisciplinarity itself could be made more interoperable?</p>
+<p>Thanks Katerina!</p>
 
-  
-
+  </div>
 
   </article>
   <footer>
