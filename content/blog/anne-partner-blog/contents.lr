@@ -67,7 +67,7 @@ Everything seemed to check out, so I moved on to next steps: replicating her dat
 
 <h3>Replicating the datapackage</h3>
 
-Learning about data packages has been one of the most instructive parts of this fellowship, and I've [learned a lot from making one](https://fellows.frictionlessdata.io/blog/anne-datapackage-blog/) for the dataset I'm working with. Having ("data about your data")[https://frictionlessdata.io/data-package/] can be really helpful, especially when it contains terms or labels that might not make sense to anyone besides the researcher.
+Learning about data packages has been one of the most instructive parts of this fellowship, and I've [learned a lot from making one](https://fellows.frictionlessdata.io/blog/anne-datapackage-blog/) for the dataset I'm working with. Having ["data about your data"](https://frictionlessdata.io/data-package/) can be really helpful, especially when it contains terms or labels that might not make sense to anyone besides the researcher.
 
 In many ways, data packages are quite similar to README files, because they help people to navigate the information you've given them, or released into the internet ether. Now I can see why [documentation is so important](https://medium.com/capital-one-tech/art-of-open-source-documentation-5b8b3f5b0ab#:~:text=Open%20source%20isn't%20a,to%20an%20open%20source%20project.) for any project, not just open source software.
 
