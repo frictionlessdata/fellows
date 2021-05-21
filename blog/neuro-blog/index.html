@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Neuroscience Blog</title>
 
 <body>
   <header>
@@ -114,82 +114,132 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Neuroscience Blog</h1>
   <div>
-    <h2>
-      Cohort 2 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-        <li>
-          <a href="../../ritwik-datapackage-blog/"></a> —
-          by 
-          on 
-        </li>
-        
-      
-      </ul>
-    <h2>
-      Cohort 1 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="../../hello-lily/">Meet Lily Zhao</a> —
-          by Lily Zhao
-          on 2019-10-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-monica/">Meet Monica Granados</a> —
-          by Monica Granados
-          on 2019-10-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-sele/">Meet Sele Yang</a> —
-          by Sele Yang
-          on 2019-10-17
-        </li>
-        
-      
-        
-      
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <a href="../5/">&laquo; Previous</a>
-    
-    | <strong>6</strong> |
-    
-      <span class="disabled">Next &raquo;</span>
-    
   </div>
+  <div class="blog">
+    <p><em>This blog post is the first in an upcoming series of posts showing how researchers can use Frictionless Data tooling and specs in their workflows to make their own scientific data more reproducible.</em></p>
+<p>Since I am a neuroscientist, I decided to start this tutorial series by examining published neuroscience data. By the end of this tutorial, you will know how to use Frictionless Data tooling to 1) package raw, open neuroscience data and it's associated metadata into a <a href="https://frictionlessdata.io/specs/data-package/">data package</a>, and 2) validate that datapackage. These two steps are very helpful for creating data that is 1) understandable, 2) clean, 3) sharable, and 4) reproducible. Let's get started!</p>
+<h2>Getting the Data</h2>
+<p>The data I used here is published in eLife and has a <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0 license</a> (meaning we are free to reuse the data). We could have found data from open neuroscience repositories, but I thought it would be fun to look at data from a paper. I picked this paper for a few reasons. First, I was looking for a neuroscience paper, and I researched Drosophila during my PhD, so I have a fond spot for Drosophila data. Second, I chose eLife because I like how their articles have the data behind figures easily linked with the figure. Having the data so easily accessible is a big win for reproducibility! Here is the paper I am using <a href="https://elifesciences.org/articles/42690">https://elifesciences.org/articles/42690</a>: <em>Transsynaptic interactions between IgSF proteins DIP-α and Dpr10 are required for motor neuron targeting specificity. Ashley et al, 2019.</em> <a href="https://doi.org/10.7554/eLife.42690.001">https://doi.org/10.7554/eLife.42690.001</a>. For the purposes of this blog, I chose to examine the data from Figure 2: <a href="https://doi.org/10.7554/eLife.42690.006">https://doi.org/10.7554/eLife.42690.006</a>. By the way, it is super cool that eLife has DOIs for their figures! We can download the data straight from Figure 2. We should also look for a data dictionary or any other information about the data. For instance, in a manuscript, there might be important information in the methods section. When we open the data, we find (uh oh) the data is in a table in a Word doc. <em>This is pretty common! And at least the data <strong>is</strong> available!</em> We will have to do a little bit of work to use this data. We need to take the data and save it as a csv (there are several ways to do this - I copied the data into a Google Sheet and then download it as a csv file.) 
+Now that we have our data, let's take a look at it (always a good idea). We see that first column has lots of missing values. It is denoting which panel in the figure is represented, which is information we don't need for this purposes of this blog, so let's just delete that column for now. Now we're ready to start using Frictionless Data!</p>
+<h2>Create a Data Package</h2>
+<p>We'll first start by creating a Data Package, which is a container of the raw data, it's associated metadata, and optionally a schema. You can read more about the specifications of the Data Package <a href="https://frictionlessdata.io/specs/data-package/">here</a>.
+We have two ways of creating and working with Data Packages. The first is with the browser tool <a href="http://create.frictionlessdata.io/">datapackage creator</a>, and the second is programmatically with the <a href="https://github.com/frictionlessdata">datapackage libraries</a>. We'll start with the first. Here are the steps:
+<em>Note: if you get lost, check out the more in-depth tutorials on our <a href="https://frictionlessdata.io/field-guide/">Field Guide</a>.</em></p>
+<ul>
+<li>We will load our recently saved data (in the .csv format) into the <a href="http://create.frictionlessdata.io/">datapackage creator</a>. </li>
+<li>Add in as much metadata as possible, like a description of what the data is</li>
+<li>Change the pre-loaded data types to be accurate (in this case, integer to number &amp; the others should be strings)</li>
+<li>Look up the license - eLife is CC-BY by default</li>
+<li>Make sure to credit the authors &amp; link back to the article or data with its DOI</li>
+<li>Then hit the 'Validate' &amp; 'Download' buttons when you are done</li>
+</ul>
+<p>You now have the data in csv format &amp; its json-formatted schema &amp; metadata as a datapackage!
+Here is an image of what your browser should look like once you have completed these steps:
+<img src="validDP.png" alt="Datapackage"></p>
+<p><em>Advanced:</em> We can also create and use datapackages with Python (and other languages). See examples in the <a href="https://github.com/frictionlessdata/datapackage-py">readme here</a>, and the docs here <a href="http://frictionlessdata.io/docs/creating-tabular-data-packages-in-python/">http://frictionlessdata.io/docs/creating-tabular-data-packages-in-python/</a> and here <a href="http://frictionlessdata.io/docs/using-data-packages-in-python/">http://frictionlessdata.io/docs/using-data-packages-in-python/</a>. Very briefly, here is an example of using the Python datapackages library, running in the command line.</p>
+<p>Inside your terminal, navigate to the folder containing your data, and type:</p>
+<pre><code>&gt;&gt;&gt; from datapackage import Package
 
-  
+#Create an empty package
+&gt;&gt;&gt; package = Package()
 
+#infer the JSON metadata + schema from our csv data &amp; save it
+&gt;&gt;&gt; package.infer('elife.csv')
+&gt;&gt;&gt; package.save('datapackage.json')
+
+#let’s look at the information in our datapackage
+&gt;&gt;&gt; package.descriptor['resources']
+[{'name': 'resource1', 'profile': 'tabular-data-resource', 'path': 'elife.csv',
+ 'schema': {'fields': [{'name': 'Genotype', 'format': 'default', 'type': 'string'}, 
+ {'name': 'Mean', 'format': 'default', 'type': 'number'}, {'name': 'Std. Error',
+  'format': 'default', 'type': 'number'}, {'name': 'SEM', 'format': 'default',
+   'type': 'number'}, {'name': 'N (animals/hemisegment)', 'format': 'default', 
+   'type': 'string'}, {'name': 'p-value', 'format': 'default', 'type': 
+   'string'}], 'missingValues': ['']}}]
+
+#note: this is json, so we can parse it
+#we can also work with the data using this library, for instance, 
+#let’s see the genotypes of all the flies that have a mean less 
+#than 10 (hint, it’s all of them)
+&gt;&gt;&gt; print([e['Genotype'], float(e['Mean']) for e in package.resources[0].read(keyed=True) if float(e['Mean']) &lt; 0.6])
+[('DIP-α-GAL4&gt;EGFP', 0.0), ('DIP-α1-178', 0.0), ('Elav-GAL4&gt;DIP-α', 0.0),
+('Mef2-GAL4&gt;DIP-α', 0.0), ('Elav-GAL4 &gt;UAS-DIP-α RNAi', 0.567),
+('Mef2-GAL4 &gt;UAS-DIP-α-RNAi', 0.429)]
+</code></pre>
+<p>Great! Now, What can we do with our new Data Package? It is <em>almost</em> ready to be reused by someone else! First, we should validate it.</p>
+<h2>Validation</h2>
+<p>Why would we validate our data? What if we were working within a group &amp; many people were making changes to the dataset? It would be good to make sure that no errors were introduced into the data after each change. Also, validation helps us clean the data - say we want to get rid of all the rows with blank cells, this would help us identify those rows. It also lets us double-check our data types &amp; quickly find any errors. We can use the Frictionless Data browser tools <a href="http://try.goodtables.io/">http://try.goodtables.io/</a> &amp; <a href="http://goodtables.io/">http://goodtables.io/</a> and <strong>Advanced</strong> users can validate using the command line.
+First, we will use <a href="http://try.goodtables.io/">http://try.goodtables.io/</a>. <em>Again, this is brief, so if you get lost, check out the <a href="https://frictionlessdata.io/field-guide/">Field Guide</a>.</em>
+Here are the steps:</p>
+<ul>
+<li>We can validate without a schema in case we don’t have one</li>
+<li>Or we can use our schema we just made! (We can also use a predefined schema if we/our team has one.) First we need to access the schema from the datapackage.json.</li>
+<li>We want everything inside the schema brackets, and nothing else (see blue circle on the next pic). Take that &amp; save it in a separate file as schema.json &amp; then load that into goodtables in the schema area &amp; hit validate.</li>
+</ul>
+<p><em>Take the JSON in blue &amp; save it as schema.json:</em>
+<img src="JSON.png" alt="JSON"></p>
+<p><em>Validated csv:</em>
+<img src="validGT.png" alt="GoodTables"></p>
+<ul>
+<li>What does it look like when it is invalid? Let’s open up our schema.json again &amp; change the type for Genotype from “string” to “number”. Hit save &amp; reload into goodtables. Now when we validate, we see a type error for the genotype column. 
+<img src="invalidGT.png" alt="Invalid GoodTables"></li>
+</ul>
+<p>This is useful because, say we have designed a schema previously so that all genotypes will be strings, but we then get data that has genotypes typed as numbers accidentally. We would be able to catch that error here quickly with goodtables. As a real world example, Excel famously changes genes like 'SEPT7' to the date September 7th, without telling users. Genetics studies have been published where researchers didn't realize this data conversion had happened, so their results were incorrect! (<a href="http://blogs.nature.com/naturejobs/2017/02/27/escape-gene-name-mangling-with-escape-excel/">Here</a> is a short blog about this.) Validating your data can save you from this type of conversion error.</p>
+<p><strong>Advanced:</strong> Let’s validate using the command line. 
+Inside your terminal, navigate to the folder containing your data &amp; then type:</p>
+<p><code>goodtables elife.csv</code>
+(replace elife.csv with your data file name).</p>
+<p><em>Example output:</em></p>
+<p><img src="validCL.png" alt="Command Line Validation"></p>
+<p><strong>Advanced 2:</strong> Validate with Python goodtables library (<a href="https://github.com/frictionlessdata/goodtables-py">https://github.com/frictionlessdata/goodtables-py</a>; <a href="http://frictionlessdata.io/docs/validating-data/">http://frictionlessdata.io/docs/validating-data/</a>)</p>
+<pre><code>&gt;&gt;&gt; from goodtables import validate
+
+#validate without a schema
+&gt;&gt;&gt; report = validate('elife.csv')
+&gt;&gt;&gt; report['valid']
+True
+
+#validate with a schema
+&gt;&gt;&gt; report = validate('elife.csv', schema='schema.json', order_fields=True) 
+&gt;&gt;&gt; report['valid']
+True
+
+#what happens when we validate an invalid csv file?
+&gt;&gt;&gt; report = validate('elife_invalid.csv')
+&gt;&gt;&gt; report['valid']
+False
+
+#let’s look at the number of errors
+&gt;&gt;&gt; report['error-count']
+4
+
+#now let’s look at those error messages
+&gt;&gt;&gt; report['tables'][0]['errors']
+[{'code': 'missing-value', 'row-number': 2, 'message-data': {}, 
+'message': 'Row 2 has a missing value in column 6', 'column-number': 6}, 
+{'code': 'missing-value', 'row-number': 5, 'message-data': {}, 
+'message': 'Row 5 has a missing value in column 6', 'column-number': 6}, 
+{'code': 'missing-value', 'row-number': 8, 'message-data': {}, 'message': 
+'Row 8 has a missing value in column 6', 'column-number': 6}, {'code':
+ 'missing-value', 'row-number': 11, 'message-data': {}, 'message': 
+ 'Row 11 has a missing value in column 6', 'column-number': 6}]
+
+#this shows us that there are 4 missing value errors
+</code></pre>
+<p>You can also write custom validators (see this example and more from our GitHub repo <a href="https://github.com/frictionlessdata/goodtables-py">readme</a>:</p>
+<pre><code>report = validate('data.csv', checks=[
+    {'custom-constraint': {'constraint': 'salary &lt; bonus * 4'}},
+])
+</code></pre>
+<h2>Conclusions</h2>
+<p>To recap, we have created a datapackage to keep track of our raw data, our metadata, and our schema. Then, we learned how to validate that datapackage (validated our raw data using our schema). Now that we have nicely packaged, validated data, we can share it! We can share data many ways - from emailing to a colleague, to hosting on a repository, to publishing in an open access journal (like eLife where we got this data from!). Some open neuroscience repositories include <a href="https://openneuro.org/">OpenNeuro</a>, <a href="https://web.gin.g-node.org/">G-Node</a>, and <a href="https://crcns.org/">CRCNS</a>.</p>
+<h2>Going Deeper</h2>
+<p>In 2017, we did a collaboration with eLife where data from over 1000 eLife articles were validated with goodtables. Read the whole report <a href="https://frictionlessdata.io/articles/elife/">here</a>. Highlights include that many errors were found, with most being structural errors (blank rows, duplicate rows, and duplicate headers for example) and also lots of missing values. Many datasets were formatted for human readability, which often makes it really difficult to perform computation analysis of that data. This is one of the reasons why it can be hard to reproduce other people's work, so it is important to think about when sharing your own data.</p>
+
+  </div>
 
   </article>
   <footer>
