@@ -1,38 +1,58 @@
-title: D
+title: Endings, Beginnings, and Reflections
 ---
 author: Anne Lee Steele
 ---
-pub_date: 2021-05-05
+pub_date: 2021-06-20
 ---
 cohort: 2
 ---
 body:
 
-It's hard to believe that our nine months together are over. I can hardly believe it.
+It's so hard to believe that our nine months together are over. It's been a wild ride.
 
-I came into this fellowship at the Open Knowledge Foundation thinking that I would focus on my technical skills, with a bit of collaboration sprinkled in. There's so much that made me feel out of my element – my technical skills (or lack thereof), my discipline (which I thought was usually sidelined in discussions about 'open data'), and my nationality (which I think has so closely)
+I came into the Frictionless Data Research fellowship at the Open Knowledge Foundation thinking that I would focus on my technical skills, with a bit of collaboration sprinkled in. There's so much that made me feel out of my element – my technical skills (or lack thereof), my discipline (which I thought would be  sidelined in discussions about 'open data' and 'open knowledge'), and my perspective (as an Asian-American woman - what could I contribute to these debates, especially as they have taken on specific nuances outside of the northern hemisphere?)
 
-What came out of it, as my colleagues have said time and time again, is much more than that. Over the course of the past year,
+What came out of this fellowship, as my colleagues have said time and time again, is much more than I ever could have imagined. Over the course of the past year, I've had fascinating debates with my cohort, and learned about how different disciplines unpack complex debates surrounding transparency, openness, and accessibility. I've learned how to engage with the universe of open knowledge (and have even [started working on my own related projects](https://www.wikimedia.de/unlock-projects/supply-chains-us/)!). I've been able to give presentations in public, and think about data in ways I never had before.
+
+Most of all, this experience has given me the confidence to think and move through the world of open knowledge in a more deliberate, thoughtful, and well-rounded way... and with a community to boot! Without my colleagues (and Lilly as our fearless leader), this experience would have been nowhere near as rich and as informative. I'm extremely grateful for the opportunity.
 
 ## Reviewing the blogs
 
-- "Bridging the (Disciplinary) Gap through Reproducible Research"
+Writing these blogs became the means through which I could reflect and digest a lot of what we learned throughout the year. I thought that it might be a nice idea to reflect on each of them in turn:
 
-- "Open Access Week 2020"
+<center><img src="qual-quant.jpg" width=50% alt="schema"></center>
+<p style="text-align: center; font-style: italic">Source: <a href="https://twitter.com/alifQual/status/1352541989233860610">Muhamad Alif Bin Ibrahim (Twitter)</a></p>
 
-- "[Data]packaging human rights with the Universal Periodic Review"
+- ["Bridging the (Disciplinaryc) Gap through Reproducible Research"](https://fellows.frictionlessdata.io/blog/hello-anne/): This was my introductory post. In many ways, I still empathize with a lot of the things I wrote here... but there's more depth to my thoughts on these things now, and more proof to back it up (my forthcoming thesis being one of them). I'm still a firm believer in mixed-methods, but I'm more aware of how they are categorically different ways of looking at the world. I now know that achieving fluency is both (let alone doing either one remotely well) requires a lot of time and skill that I never fully appreciated before OKF.
 
-- "Reflecting on 'datafication', data prep, and UTF-8 with goodtables.io"
+<center><img src="open-access-2.jpg" width=50% alt="schema"></center>
+<p style="text-align: center; font-style: italic">Source: <a href="https://www.youtube.com/watch?v=L5rVH1KGBCY">Open Access Explained! (Youtube)</a></p>
 
-- "On README files, sharing data and interoperability"
+- ["Open Access Week 2020"](https://fellows.frictionlessdata.io/blog/oa-week-2020/): This event was my first exposure to the world of open access and the politics of publishing. While it had seemed like a realtively simple concept, my colleagues (many of which have or are working towards their PhDs) were the ones who schooled the rest of us about how contentious academic publishing actually is, and how wide-ranging its effects can be. I appreciated the honesty (and diversity!) with which we engaged in questions of interoperability, accessibility, and academic publishing during OA week. Before this week, I had never realized that there had been so much pushback behind releasing data and protocols out into the open, and I felt like I was thrown into the deep end during Open Access Week. It was also here that I was first introduced to the world of intellectual property, copyright, and licensing – which in turn introduced me to the world of Free/Open Source Software in the ensuing months, and guided my ongoing dissertation research. I found anthropologists like <a href="https://gabriellacoleman.org/">Gabriella Coleman</a> and <a href="https://kelty.org/">Chris Kelty</a>, amongst others who are helping me to understand this complex world of online social life.
 
+<center><img src="UPR_Cycle.png" width=35% alt="schema"></center>
+<p style="text-align: center; font-style: italic">Source: <a href="https://www.ohchr.org/en/hrbodies/upr/pages/uprmain.aspx">United Nation Human Rights Council (Website)</a></p>
+
+- ["[Data]packaging human rights with the Universal Periodic Review"](https://fellows.frictionlessdata.io/blog/anne-datapackage-blog/): The is the first blog where I introduced the Frictionless data principles The [UPR](https://www.youtube.com/watch?v=n4Hr1GMSjkM) is
+
+<center><img src="unicode-2.png" width=40% alt="schema"></center>
+<p style="text-align: center; font-style: italic">Source: <a href="https://www.explainxkcd.com/wiki/index.php/1726:_Unicode">XKCD (wiki)</a></p>
+
+- ["Reflecting on 'datafication', data prep, and UTF-8 with goodtables.io"](https://fellows.frictionlessdata.io/blog/anne-goodtables-blog/):  I also <a href="https://twitter.com/aleesteele/status/1362547101226446849">tweeted about these debates</a>.
+
+<center><img src="read-me-3.jpg" width=40% alt="schema"></center>
+<p style="text-align: center; font-style: italic">Source: <a href="https://twitter.com/iamdevloper/status/1060067235316809729?lang=en">Iamdevloper (Twitter)</a></p>
+
+- ["On README files, sharing data and interoperability"](https://fellows.frictionlessdata.io/blog/anne-partner-blog/)
 
 ## Other highlights
 
 - Open Data Day: speakers
 
-- Conferences: Mozilla Fest, csv,Conf, RightsCon
+- Conferences: Over the course of the fellowship, I've been able to participate in conferencesMozilla Fest, csv,Conf, RightsCon:
 
-- Open Source Tools for Social Science
+- "Transparency" reading group: Over the course of the fellowship, I've been able to participate in conferencesMozilla Fest, csv,Conf, RightsCon:
 
 ## Reflecting on 'open knowledge' in 2021
+
+In a time when the 'open ethic' seems more under threat than ever, I'm often caught betwee
