@@ -1,0 +1,96 @@
+title: Endings, Beginnings, and Reflections
+---
+author: Anne Lee Steele
+---
+pub_date: 2021-06-29
+---
+cohort: 2
+---
+body:
+
+It's so hard to believe that our nine months together are over. It's been a wild ride.
+
+I came into the Frictionless Data Research fellowship at the Open Knowledge Foundation thinking that I would focus on my technical skills, with a bit of collaboration sprinkled in. There's so much that made me feel out of my element – my technical skills (or lack thereof), my discipline (which I thought would be sidelined in discussions about 'open data' and 'open knowledge'), and my perspective (as an Asian-American woman - what could I contribute to these debates, especially as they've taken on specific nuances outside of the northern hemisphere?)
+
+What came out of this fellowship, as my colleagues have said time and time again, is much more than I ever could have imagined. Over the course of the past year, I've had fascinating debates with my cohort, and learned about how different disciplines unpack complex debates surrounding transparency, openness, and accessibility (as well as many other things). I've learned how to engage with the universe of open knowledge, and have even [started working on my own related projects](https://www.wikimedia.de/unlock-projects/supply-chains-us/)!). With the support of OKF, I've learned how to give presentations in public, and think about data in ways I never had before.
+
+Most of all, this experience has given me the confidence to think and move through the world of open knowledge in a more deliberate, thoughtful, and well-rounded way... and with a community to boot! Without my colleagues (and Lilly as our fearless leader), this experience would have been nowhere near as rich and as informative. I'm extremely grateful for the opportunity.
+
+## Reviewing the blogs
+
+Writing these blogs became the means through which I could reflect and digest a lot of what we learned throughout the year. I thought that it might be a nice idea to reflect on each of them in turn:
+
+<center><img src="qual-quant.jpg" width=100% alt="schema"></center>
+<p style="text-align: center; font-style: italic">Source: <a href="https://twitter.com/alifQual/status/1352541989233860610">Muhamad Alif Bin Ibrahim (Twitter)</a></p>
+
+- ["Bridging the (Disciplinary) Gap through Reproducible Research"](https://fellows.frictionlessdata.io/blog/hello-anne/): This was my introductory post. In many ways, I still empathize with a lot of the things I wrote here... but there's more depth to my thoughts on these things now, and more proof to back it up (my forthcoming thesis being one of them). I'm still a firm believer in mixed-methods, but I'm more aware of how they are categorically different ways of looking at the world. I now know that achieving fluency (let alone doing either one remotely well) requires a lot of time and skill that I never fully appreciated before OKF.
+
+<center><img src="open-access-2.jpg" width=100% alt="schema"></center>
+<p style="text-align: center; font-style: italic">Source: <a href="https://www.youtube.com/watch?v=L5rVH1KGBCY">Open Access Explained! (Youtube)</a></p>
+
+- ["Open Access Week 2020"](https://fellows.frictionlessdata.io/blog/oa-week-2020/): This event was my first exposure to the world of open access and the politics of publishing. While it had seemed like a realtively simple concept, my colleagues (many of which have or are working towards their PhDs) were the ones who schooled the rest of us about how contentious academic publishing actually is, and how wide-ranging its effects can be. I appreciated the honesty (and diversity!) with which we engaged in questions of interoperability, accessibility, and academic publishing during OA week. Before this week, I had never realized that there had been so much pushback behind releasing data and protocols out into the open, and I felt like I was thrown into the deep end during Open Access Week. For my own blog excerpt, I focused on the difference between openness and accessibility, in part because I wasn't sure how to approach other aspects of open access research at the time. It was also here that I was first introduced to the world of (online) intellectual property, copyright, and licensing – which in turn showed me the world of Free/Open Source Software in the ensuing months, which has since guided my ongoing dissertation research. I found anthropologists like <a href="https://gabriellacoleman.org/">Gabriella Coleman</a> and <a href="https://kelty.org/">Chris Kelty</a>, amongst others who have helped me to understand this complex world of online social life.
+
+<center><img src="UPR_Cycle.png" width=100% alt="schema"></center>
+<p style="text-align: center; font-style: italic">Source: <a href="https://www.ohchr.org/en/hrbodies/upr/pages/uprmain.aspx">United Nation Human Rights Council (Website)</a></p>
+
+- ["[Data]packaging human rights with the Universal Periodic Review"](https://fellows.frictionlessdata.io/blog/anne-datapackage-blog/): The is the first blog where I introduced the Frictionless data principles and the project I worked on throughout the nine months. Using data from the [Universal Periodic Review](https://www.youtube.com/watch?v=n4Hr1GMSjkM), which is a unique function of the UN Human Rights Council, I lay the foundation for why it's important – and what it might mean for a lay audience. I've always struggled with describing social science research in a "non-technical" way, as it usually ends up becoming too broad (i.e. "I study people and technology") or too narrow (i.e. "I study the intersection of bureaucratic processes and technological innovations and the specific types of socialities they entail"). The 'data package' helped me to find the middle ground, and made me realize just how much work goes into making sure that data can be understood across specialities, perspectives, and disciplines. Being in a multidisciplinary environment throughout this fellowship has only reinforced this fact for me.
+
+<center><img src="unicode-2.png" width=100% alt="schema"></center>
+<p style="text-align: center; font-style: italic">Source: <a href="https://www.explainxkcd.com/wiki/index.php/1726:_Unicode">xkcd comics (wiki)</a></p>
+
+- ["Reflecting on 'datafication', data prep, and UTF-8 with goodtables.io"](https://fellows.frictionlessdata.io/blog/anne-goodtables-blog/): I really felt like the disciplinary boundaries started to collide more fruitfully in this blog, though my writing clearly got a lot more existential! Learning about UTF-8 encoding felt like a breakthrough, mostly because it made me realize how much I had grown. Before this fellowship, I never would have been able to understand, let alone empathize with the kind of technical work required to solve a problem like multilingualism on the web. But now, I can... and hopefully describe it in a semi-understandable way as well! Relating digital encoding to solving problems, and solving problems to goodtables.io felt like the sort of 'translation' that I could help with as a digital anthropologist, bridging the gap in some form or another. I'm consistently amazed by the ingenuity of the people who develop these tools, and help the rest of us to navigate the web and exchange data in "frictionless" ways.
+
+<center><img src="read-me-3.jpg" width=100% alt="schema"></center>
+<p style="text-align: center; font-style: italic">Source: <a href="https://twitter.com/iamdevloper/status/1060067235316809729?lang=en">Iamdevloper (Twitter)</a></p>
+
+- ["On README files, sharing data and interoperability"](https://fellows.frictionlessdata.io/blog/anne-partner-blog/): In many ways, this blog felt like the natural extension of the previous one. I traded data with my colleague Katerina, and in doing so, immediately understood both the importance and the impossibility of understand another's work without detailed explanations. Writing about README files and other ways of translating research for difference audiences and users has made me a lot more sensitive to the requirements of writing for audiences that may or many not be familiar with my discipline or way of approaching a problem. This is a skill that I didn't expect to learn or think about throughout the fellowship, and I think it's made me a much better communicator overall. As someone who has engineers, actuaries, and taxonomists for family members, I think they would say the same thing!
+
+## Other highlights
+
+While these blogs became places of reflection, this year also had a number of exciting events, projects, and learning opportunities that were directly influenced by my time with OKF. I've reflected on some of them here, as they were key turning points for my own development!
+
+<center><img src="open-data-day-2.png" width=100% alt="schema"></center>
+
+<center><img src="open-data-day-3.png" width=100% alt="schema"></center>
+
+<center><img src="open-data-day.jpg" width=100% alt="schema"></center>
+
+<center><img src="open-data-day-4.png" width=100% alt="schema"></center>
+<p style="text-align: center; font-style: italic">Source: <a href="https://www.youtube.com/watch?v=foao4cou5JM">Open Data Day Frictionless Fellows 2021 (Youtube)</a></p>
+
+- <b>Open Data Day</b>: Evelyn, Kate and I (with Lilly's ever-present help, of course!) ended up planning a short event series for Open Data Day on March 6. What an event it was! The day began with a keynote speech by <a href="https://kipkurui.github.io/">Dr. Caleb Kibet</a>, an inspiring researcher and founder of Open Science Kenya. His talk taught me a lot about the importance of open science, and his explanations have actually become my go-to when describing why it's necessary to other researchers. Evelyn, Kate, and I followed, with a workshop on Frictionless tools. We were so lucky to be able to work together, and show some of the tools that we've worked with through Frictionless. The event ended with a panel discussion with Doug McCarthy, an Open GLAM (Gallery, Library, Archive, Museum) specialist and Collection Manager at the Europeana Foundation, Dr. Monica Granados, a member of the PRE Review team and board member of the Canada Open Data Society, and Cedric Lombion, the Data and Innovation Lead at OKF. The conversation that the three of them had was a fascinating one, as they discussed "balancing ethics and open access research" in their respective fields. As with all things during this fellowship, I learned how difficult it is to bridge disciplines in both theory and in practice. This whole experience was incredibly rewarding – and it was the first time I gave a public talk, ever! (It was the first time for all three of us, actually!)
+
+<center><img src="transparency.jpg" width=100% alt="schema"></center>
+<p style="text-align: center; font-style: italic">Source: Screenshot by author</p>
+
+- <b>"Transparency" readings</b>: I'm so grateful for the support of both my colleagues and Lilly, who humored me in reading some anthropological texts on transparency by <a href="https://andreaballestero.com/">Andrea Ballestero</a> and <a href="https://www.concordia.ca/artsci/sociology-anthropology/faculty.html?fpid=kregg-hetherington">Kregg Hetherington</a> during one of our plenary meetings. It was amazing to have my fellow scientists engage so genuinely with these texts, and to talk through the ways in which transparency can rearrange power structures instead of elucidating them, often putting the onus of ethical behavior on individuals instead of on institutions. I learned a lot about how these ideas might apply to their own experiences, and get past disciplinary jargon to have a fruitful discussion. It only reinforced my belief in interdisciplinary collaboration, and the need to read across disciplines. I like to think that we all learned a bit from this conversation, and I assure you that my inner anthropologist/sociologist was absolutely glowing that day.
+
+<center><img src="mozfest.jpg" width=100% alt="schema"></center>
+<p style="text-align: center; font-style: italic">Source: The social life of (our) supply chains (MozFest)</p>
+
+<center><img src="csv-conf.jpg" width=100% alt="schema"></center>
+<p style="text-align: center; font-style: italic">Source: <a href="https://www.youtube.com/watch?v=oJb1809EpB0&feature=youtu.be">Data visualization & crowdsourced research: experiments in collective storytelling (csvconf, Youtube)</a></p>
+
+- <b>Conferences</b>: Over the course of the fellowship, I've also been lucky enough to participate in a few conferences for a project called [supply-chains.us](https://www.supply-chains.us/). Inspired by a lot of the research and discussions we'd had about open source and open access, I started collaborating with Miriam Matthiessen on a project that combined both our skillsets (and the open ethic) with a topic we are both passionate about: global logistics and supply chains. Planning the Open Data Day event was absolutely crucial in giving me the confidence to apply to Mozilla Fest, csvconf, and RightsCon... and to be honest, it's this fellowship that even gave me the confidence to develop this project in the first place. We'll actually be continuing this work at the <a href="https://www.wikimedia.de/unlock-projects/supply-chains-us/">Wikimedia UNLOCK Accelerator</a> this summer, so stay tuned!
+
+<center><img src="open-discontents.png" width=100% alt="schema"></center>
+<p style="text-align: center; font-style: italic">Source: <a href="https://www.graduateinstitute.ch/communications/news/open-movement-and-its-discontents">"The Open Movement and its Discontents" (IHEID)</a></p>
+
+- <b>Writing</b>: Apart from the blogs, I often found myself thinking and writing about the "open" movement, just about all the time. Participating in the community calls with the wider Open Knowledge Foundation team taught me to think more critically about what "open" meant in the first place, which lead me to write and publish an article on the subject back in December. It was really validating to publish something about it, and to feel like I could contribute to these debates as a social scientist.
+
+<center><img src="osss.png" width=100% alt="schema"></center>
+<p style="text-align: center; font-style: italic">Source: Screenshot by the author</p>
+
+– <b>[Open Source Social Science](https://open-source-social-science.github.io/)</b>: Inspired by the world of open access and open source software, I ended up starting my own miniature open source project, <a href="open-source-social-science.github.io/">a list of tools and resources</a> that people across disciplines can use for online research. It's been great to see authors I've cited(!!) contribute resources, and to watch it grow bit by bit. To give back something to social science discipines that have struggled with the "digital age" in different ways has been really rewarding, and another kind of learning experience (as with everything during the past year – as you can see).
+
+## Reflecting on 'open knowledge' in 2021
+
+In a time when the 'open ethic' seems more under threat than ever, I'm often caught between what my discipline has taught me about the fallibility of transparency and openness, and my own positive experience in embracing the movement myself. We started this remote fellowship in the midst of the COVID-19 pandemic, during a time when we all have questioned [the role of (closed source) intellectual property](https://theconversation.com/intellectual-property-and-covid-19-how-can-we-accelerate-vaccination-globally-159467) has played in producing the coronavirus vaccine, all while countering a [rise in cyber attacks](https://hacked.com/largest-breaches-and-hacks-of-2020-the-year-of-the-digital-pandemic/), and amidst a forced [digital transformation](https://guardian.ng/ama-press-releases/the-pandemics-impact-in-east-africa-demands-accelerated-digital-transformation/) due to remote working conditions.
+
+This fellowship became the means through which I was able to think about the world we were (are) living in, and actively try to contribute to a better one in real time. This experience has had a ripple effect on the rest of my life, and been endlessly affirming for ideas and notions that were nothing but seeds back in September. I've loved being a part of community of people who are far more brilliant and grounded than I am, and being able to support others as they've ventured into the world of open knowledge. I can't overstate how important this experience has been for me, and I'm so grateful to have been a part of it all! Many thanks to the Open Knowledge Foundation, and especially thanks to Lilly for being the one who made it happen. I'll miss our weekly meetings!
+
+Over and out,
+Anne
+
+<center><img src="ending.jpg" width=100% alt="schema"></center>
+<p style="text-align: center; font-style: italic">Source: Screenshot by Lilly Winfree</p>
