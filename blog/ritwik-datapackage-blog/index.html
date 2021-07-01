@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Using Weather and Rainfall Data to Validate</title>
 
 <body>
   <header>
@@ -114,138 +114,37 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Using Weather and Rainfall Data to Validate</h1>
   <div>
-    <h2>
-      Cohort 2 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-    <h2>
-      Cohort 1 Blogs
-    </h2>
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="../../lily-partner-blog/">Packaging Ouso&#39;s Data</a> —
-          by Lily Zhao
-          on 2020-05-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../sele-partner-blog/">Reproduciendo un viaje a Mo&#39;rea</a> —
-          by Sele Yang
-          on 2020-05-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../lily-goodtables-blog/">Data Validation Of My Interview Dataset Using Goodtables</a> —
-          by Lily Zhao
-          on 2020-04-03
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../monica-goodtables-blog/">Don&#39;t you wish your table was as clean as mine?</a> —
-          by Monica Granados
-          on 2020-04-03
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../ouso-goodtables-blog/">Tabular data: Before you use the data</a> —
-          by Daniel Ouso
-          on 2020-04-03
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../sele-goodtables-blog/">Validando datos un paquete a la vez</a> —
-          by Sele Yang
-          on 2020-04-03
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../monica-datapackage-blog/">Combating other people’s data</a> —
-          by Monica Granados
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../ouso-datapackage-blog/">Data package is valid!</a> —
-          by Daniel Ouso
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../lily-datapackage-blog/">Lily Datapackage Blog</a> —
-          by Lily Zhao
-          on 2020-01-29
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../sele-datapackage-blog/">¿Cómo empaquetamos datos y por qué es importante organizar la bolsa del supermercado?</a> —
-          by Sele Yang
-          on 2020-01-29
-        </li>
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <a href="../4/">&laquo; Previous</a>
-    
-    | <strong>5</strong> |
-    
-      <a href="../6/">Next &raquo;</a>
-    
   </div>
+  <div class="blog">
+    <p>I am using a data resource from Telangana Open Data and hence the delay in uploading this! It is an open source data repository commissioned by the state government here in India and basically it archives and stores Weather, Topological, Agriculture and Infrastructure data which then can be used by research students and stakeholders keen to study and make reports in it. The lab where I work helps the data servers up and running and helps upload the data and also uses the uploaded data as it allows people to independently upload their data after verifying it so that researchers can use it.</p>
+<p>The data that I am using today is sourced from monthly weather data website and I am not using github in order to get the data but I will link the data repository here:</p>
+<p><a href="https://data.telangana.gov.in/search/type/dataset?query=weather&amp;sort_by=title&amp;sort_order=ASC">https://data.telangana.gov.in/search/type/dataset?query=weather&amp;sort_by=title&amp;sort_order=ASC</a></p>
+<p><img src="Screenshot 2021-01-06 at 6.23.56 PM.png" alt="">
+You can basically categorise the data and filter it based on different names and titles and after getting results you can either download the csv file or can see the preprint of the data on the website itself for you to see.CSV files are very versatile, but cannot handle the metadata with all the necessary context. We need to make sure that people can find our data <em>and</em> the information they need to understand our data. That's where the Data Package comes in!
+<img src="Screenshot%202021-01-06%20at%206.24.17%20PM.png" alt=""></p>
+<p><strong>Creating and Using a Data Package </strong></p>
+<p>To do this, we will be using the <a href="https://create.frictionlessdata.io/">Data Package Creator</a>. Although we can create a Data Package through the command-line tools, we will use the browser tool for simplicity.</p>
+<p><img src="Screenshot%202021-01-06%20at%206.28.50%20PM.png" alt=""></p>
+<ul>
+<li>We are going to give a (machine read) name and a (human read) title to our Data Package;</li>
+<li>Then we will add a description, so people know this data comes from a open source website and they can use it later on</li>
+<li>We can also add a version number to the Data Package. This is particularly interesting if you assume you will be updating the data resources in the future, for example during data collection.</li>
+<li>We will add a license. Without a license, people cannot know whether they are allowed to use your data. Here you will find a list of possible licenses that you can use, but also you can add any other license. If you want to read more about each license, selecting one will generate a link to the Creative Commons website where you can read about the details of that license. </li>
+<li>Finally, we will add as many relevant keywords as we can, as this will make out data more findable</li>
+</ul>
+<p><strong>Adding the Data links and/or uploading the files</strong></p>
+<p>At the top of the panel, we will see that we can add the name and path to a data resource. The best option for us is to use the link to the data we can get from the csv file on the website, rather than uploading the data again from our computer. This way, other people will be able to find our data through that link as long as they have access to the Data Package metadata.</p>
+<p>After we load the path to the data from <em>the resource</em>, the Data Package Creator will automatically infer some of the characteristics of our data. First, it will show us how many columns it found, so that we can choose whether we want to import them all or just a subset. Then you will notice that it also inferred the header and data type of each column. Make sure the latter is correct, since this will be important for the validation of our data.</p>
+<p>Adding more data we will let the Data Package Creator infer the metadata and we will simply check and correct any mistake:
+<img src="Screenshot%202021-01-06%20at%206.30.57%20PM.png" alt=""></p>
+<p><strong>The final Output</strong></p>
+<p>We're ready to hit the Validate button and see whether everything looks good. If the Data Package Creator finds any problem with your data or metadata, it will tell you what it is so you can easily fix it.Once we're done, we hit the Download button, which will give us a JSON file. This file has all the metadata that we introduced in a machine-readable format. This will allow anyone to read out our metadata using any tool they want. So now we have our JSON file ready for us to see :) .</p>
+<p><img src="Screenshot%202021-01-06%20at%206.34.09%20PM.png" alt=""></p>
 
-  
-
+  </div>
 
   </article>
   <footer>
