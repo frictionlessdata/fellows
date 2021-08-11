@@ -40,10 +40,10 @@ GitHub Instructions - Using GitHub to post your blog
 github:
 - GitHub instructions for the command line/terminal (Lilly can help you with this):
   - The repository is here [https://github.com/frictionlessdata/fellows](https://github.com/frictionlessdata/fellows)
-  - The blog content can be found within the following folder: fellows -> content -> blog -> oa-week -> contents.lr
-  - Step 1, Pull down the master branch so you have the most recent version of the website code on your local machine. Do this before you make your edits. Type 'git pull origin master'
+  - The blog content can be found within the following folder: fellows -> content -> blog -> [your-blog-folder-name] -> contents.lr
+  - Step 1, Pull down the main branch so you have the most recent version of the website code on your local machine. Do this before you make your edits. Type 'git pull origin main'
   - Step 2, Create a new branch: in the terminal, write 'git checkout -b your-branch-name' (replace with your branch's name, which can be anything)
-  - *make sure you don't edit the master branch* You can check with 'git status'
+  - *make sure you don't edit the main branch* You can check with 'git status'
   - Step 3, Add your blog text to the 'contents.lr' file within the correct blog folder. Each blog has it's own folder. Add your text as Markdown, and remember to keep the `title` and `body` keywords.
   - Step 4, Add and commit your changes: Once you finish editing the file, in your terminal, type: 
     - git status
@@ -91,7 +91,7 @@ Data Packages Lesson
 ---
 datapackages:
 ### Data Packages - using [Data Package Creator](http://create.frictionlessdata.io/)
-- Work through this tutorial on well-packaged datasets [https://frictionlessdata.io/field-guide/well-packaged-datasets/](https://frictionlessdata.io/field-guide/well-packaged-datasets/)
+- Work through this tutorial on well-packaged datasets [https://frictionlessdata.io/blog/2018/03/07/well-packaged-datasets/](https://frictionlessdata.io/blog/2018/03/07/well-packaged-datasets/)
 - Watch this video on packaging data [https://www.youtube.com/watch?v=VrdPj28-L9g](https://www.youtube.com/watch?v=VrdPj28-L9g)
 - ** In Slack, answer these questions:**
   1. What makes up a data package?
@@ -131,7 +131,7 @@ Audience Mapping Lesson
 audience:
 ### Knowing your audience
 - Read through this information on [audience mapping](https://docs.google.com/document/d/1_IqVXa8yy-Qg9Xk4DOQ18TtaaeNSq40aVviyeXBKsUw/)
-- Make a copy of this [template](https://docs.google.com/document/d/1laIdjjdcdav7m1CDrZJEX3sHJiKd9IVQX0kBN6HRn7I/edit#) and fill it out yourself
+- Make a copy of this [template](https://docs.google.com/document/d/142hVa1CS-JP1OpRh0tlYNEbU9VY-zCMW8xP2d3aDu70/edit) and fill it out yourself
 ***
 ---
 oaTitle:
@@ -146,9 +146,9 @@ oa:
 - GitHub instructions (Lilly will help you with this):
   - The repository is here [https://github.com/frictionlessdata/fellows](https://github.com/frictionlessdata/fellows)
   - The blog content can be found within the following folder: fellows -> content -> blog -> oa-week-2020 -> contents.lr
-  - Step 1, Pull down the master branch. Since you will all be editing the same blog file, you will need to pull any changes onto your local machine. Do this before you make your edits. Type 'git pull origin master'
+  - Step 1, Pull down the main branch. Since you will all be editing the same blog file, you will need to pull any changes onto your local machine. Do this before you make your edits. Type 'git pull origin main'
   - Step 2, Create a new branch: in the terminal, write 'git checkout -b [your-branch-name]' (replace with your name & remove the brackets)
-  - *make sure you don't edit the master branch* You can check with 'git status'
+  - *make sure you don't edit the main branch* You can check with 'git status'
   - Step 3, Add your paragraph to the blog: You will be editing the 'contents.lr' file within the oa-week-2020 folder
   - Step 4, Add and commit your changes: Once you finish editing the file, in your terminal, type: 
     - git status

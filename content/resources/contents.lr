@@ -47,11 +47,14 @@ Frictionless Data + Reproducible Research blogs and articles
 fdBlogs:
 
 - [FAIR research](https://blog.okfn.org/2018/08/14/frictionless-data-and-fair-research-principles/)
+- [Dryad validation collaboration](https://frictionlessdata.io/blog/2021/08/09/dryad-pilot/)
+- [Frictionless Data for Wheat](https://frictionlessdata.io/blog/2021/03/05/frictionless-data-for-wheat/)
+- [Schema Collaboration](https://frictionlessdata.io/blog/2021/01/18/schema-collaboration/)
+- [Data Packages for Intermine](https://frictionlessdata.io/blog/2021/04/13/data-package-for-intermine/)
 - eLife + FD [case study](https://frictionlessdata.io/articles/elife/)
 - Pacific Northwest National Laboratory [case study](https://frictionlessdata.io/blog/2017/06/26/pacific-northwest-national-laboratory-active-data-biology/)
 - Cell Migration Standardization Organization [case study](https://frictionlessdata.io/articles/cmso/)
 - University of Cambridge retinal mosaics [case study](https://frictionlessdata.io/articles/university-of-cambridge/)
-- Tesera natural resources [case study](https://frictionlessdata.io/articles/tesera/)
 - See more case studies [here](https://frictionlessdata.io/tag/case-studies/)
 - The [Open Definition](http://opendefinition.org)
 ***
@@ -107,7 +110,6 @@ Reproducibility and Replicability](https://www.nap.edu/resource/25303/Ten%20Thin
 - [Is Reproducible Research Accurate? | John Ioannidis | Talks at Google](https://www.youtube.com/watch?v=GPYzY9I78CI&t=163s&ab_channel=TalksatGoogle)
 - [Data Science - 5.1.2 - What is Reproducible Research About, BobTrenwith](https://www.youtube.com/watch?v=xgWobbmsWpg&ab_channel=BobTrenwith)
 - [What does research reproducibility mean? (Goodman et al, 2016, Science Translational Medicine)](https://stm.sciencemag.org/content/8/341/341ps12/tab-pdf)
-- Special Issue on Transparency, from the (Political and Legal Anthropology Review)[https://anthrosource.onlinelibrary.wiley.com/doi/toc/10.1002/(ISSN)1555-2934(CAT)VirtualIssues(VI)Transparency]
 ***
 ---
 codingTitle:
@@ -119,10 +121,11 @@ coding:
 - GitHub [Hello World](https://guides.github.com/activities/hello-world/) introductory tutorial
 - [Git-it](https://github.com/jlord/git-it-electron), an interactive Git & GitHub learning app by [Jessica Lord](https://twitter.com/jllord)
 - [Git tutorial](https://happygitwithr.com/index.html) by [Jenny Bryan](https://twitter.com/JennyBryan), focused on Git and R/Rstudio
-- [Command Line cheatsheet](https://github.com/aprilspeight/commandline_tutorials/blob/master/Cheatsheet.pdf) by [April Speight](https://twitter.com/vogueandcode), and some educational and entertaining [command line tutorial videos](https://github.com/aprilspeight/commandline_tutorials)
+- [Command Line cheatsheet](https://github.com/aprilspeight/commandline_tutorials/blob/master/Cheatsheet.pdf) by [April Speight](https://twitter.com/vogueandcode), and April's intro to Python books [https://www.vogueandcode.com/books](https://www.vogueandcode.com/books).
 - Common Python errors [flow chart & article](https://pythonforbiologists.com/29-common-beginner-errors-on-one-page) from Python For Biologists
 - [Vaidehi Joshi](https://twitter.com/vaidehijoshi)'s [BaseCS tutorials](https://medium.com/basecs) for beginner computer science concepts
 - Coding resources for environmental scientists from [Openscapes](https://www.openscapes.org/resources/)
 - The [A11y Project](https://www.a11yproject.com/), an open resource resource for accessible design and web development
+- The Etymology of Programming [video](https://www.youtube.com/watch?v=2KTK2qD4-gs) by Brittany Storoz at JSConf EU 2018
 ---
 subject_img: openscience.jpeg
