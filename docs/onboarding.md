@@ -2,7 +2,7 @@
 
 ## Programme Background and Goals
 
-During the [Frictionless Data Fellows Programme](https://fellows.frictionlessdata.io/), Fellows will learn about Frictionless Data (FD), how to use FD tools in their domains, will give workshops and provide guidance to others in their fields and at their institutions about using FD, and will create written content (blogs, documentation, case studies). We aim for Fellows and those they teach to be able to easily use and benefit from data packages via specific tools or libraries and by well integrated support in their existing tools and platforms, towards increased efficiency and effectiveness. Fellows will also help support and grow a user community and aid in the adoption and learning of FD by demonstrating benefits to researchers in their fields. Frictionless Data is a part of [Open Knowledge Foundation](https://okfn.org/), and is funded by the Sloan Foundation. The main members of the FD [team](https://okfn.org/team/) are: [Lilly](https://github.com/lwinfree), [Jo](https://github.com/jobarratt), [Adrià](https://github.com/amercader), & [Evgeny](https://github.com/roll).
+During the [Frictionless Data Fellows Programme](https://fellows.frictionlessdata.io/), Fellows will learn about Frictionless Data (FD), how to use FD tools in their domains, will give workshops and provide guidance to others in their fields and at their institutions about using FD, and will create written content (blogs, documentation, case studies). We aim for Fellows and those they teach to be able to easily use and benefit from data packages via specific tools or libraries and by well integrated support in their existing tools and platforms, towards increased efficiency and effectiveness. Fellows will also help support and grow a user community and aid in the adoption and learning of FD by demonstrating benefits to researchers in their fields. Frictionless Data is a part of [Open Knowledge Foundation](https://okfn.org/), and is funded by the Sloan Foundation. The main members of the Frictionless [team](https://okfn.org/team/) are: [Lilly](https://github.com/lwinfree), [Sara](https://github.com/sapetti9), & [Evgeny](https://github.com/roll).
 
 ## To Do First
 
@@ -43,7 +43,7 @@ The Fellows Programme runs for 9 months and you should work approximately 24 - 3
 
 Here is the [syllabus](http://fellows.frictionlessdata.io/syllabus/) for the main outcomes of the Programme. We will work together to make this into a roadmap for each of you. Generally, you will watch videos, do tutorials, read articles, write code, and work on writing blogs during the week on your own time. Then, we will have one-on-one meetings every other week to check in and so you can ask any questions. On the weeks we do not meet individually, we will all meet together as a group to work in unison.
 
-We work openly and collaboratively, meaning we use tools that the public can access/see, like GitHub, and also collaboratively, with products like Google docs. We’ll be using Google docs and slides, in this [folder](https://drive.google.com/drive/u/1/folders/1ADnjiBmLJYx5wcnzi8fpEXRpDuw08til). We’ll use Google hangouts or Zoom for video calls, and we will collaboratively take notes during our meetings with this [notes document](https://docs.google.com/document/d/1-pgZZEIOpJ1VshbRRnDq_s6p8vbZMmbRZicKUiFQHp0/edit). We’ll have most of our conversations on Slack (see more info on Slack below), but you can always email Lilly ([lilly.winfree@okfn.org](mailto:lilly.winfree@okfn.org)) as well. The main Frictionless Data GitHub Repositories are here [https://github.com/frictionlessdata](https://github.com/frictionlessdata) and the Fellows website is here [https://fellows.frictionlessdata.io/](https://fellows.frictionlessdata.io/). All the code and other products we produce are openly licensed, so others can use or reuse the content.
+We work openly and collaboratively, meaning we use tools that the public can access/see, like GitHub, and also collaboratively, with products like Google docs. We’ll be using Google docs and slides, in this [folder](https://drive.google.com/drive/u/2/folders/1f87IOW9d2oI-ZGn4iF4qP7cF7fDHuV1g). We’ll use Google hangouts or Zoom for video calls, and we will collaboratively take notes during our meetings with this [notes document](https://docs.google.com/document/d/1y0Ii8DVLnrM7PJE8fz4pi3qltXCojZxc8YTTKZf5k-0). We’ll have most of our conversations on Slack (see more info on Slack below), but you can always email Lilly ([lilly.winfree@okfn.org](mailto:lilly.winfree@okfn.org)) as well. The main Frictionless Data GitHub Repositories are here [https://github.com/frictionlessdata](https://github.com/frictionlessdata) and the Fellows website is here [https://fellows.frictionlessdata.io/](https://fellows.frictionlessdata.io/). All the code and other products we produce are openly licensed, so others can use or reuse the content.
 
 ## Helpful Tips
 
@@ -54,14 +54,13 @@ We work openly and collaboratively, meaning we use tools that the public can acc
 *   Random channel: for posting random thoughts
 *   Questions channel: use this channel to ask questions for each other or to get help
 *   Resources channel: post interesting, relevant resources here
-*   Best practices:
-  *   Download the app & use it instead of using the browser version of Slack
-  *   @name notifies someone that you have messaged them
-  *   @here notifies everyone that is currently logged in (it is better to use @here instead of @channel, which notifies everyone regardless of if they are logged in)
-  *   Remember that people are working in different time zones than you are, so be respectful of their time away from this channel and be patient with each other
-  *   Use emojis liberally :-)
-  *   Use threads to keep a conversation in a thread
-  *   You can set your notifications under ‘Preferences’
+*   Download the app & use it instead of using the browser version of Slack
+*   @name notifies someone that you have messaged them
+*   @here notifies everyone that is currently logged in (it is better to use @here instead of @channel, which notifies everyone regardless of if they are logged in)
+*   Remember that people are working in different time zones than you are, so be respectful of their time away from this channel and be patient with each other
+*   Use emojis liberally :-)
+*   Use threads to keep a conversation in a thread
+*   You can set your notifications under ‘Preferences’
 *   We’ll use Slack to answer fun check-in questions every Monday!
 
 ### What to do when you have a question:
