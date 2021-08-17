@@ -4,22 +4,22 @@ title: Resources
 ---
 body:
 
-## Group meeting notes are linked [here](https://docs.google.com/document/d/1-pgZZEIOpJ1VshbRRnDq_s6p8vbZMmbRZicKUiFQHp0/edit)
+## Group meeting notes are linked [here](https://docs.google.com/document/d/1y0Ii8DVLnrM7PJE8fz4pi3qltXCojZxc8YTTKZf5k-0/edit?usp=sharing)
 ***
 ---
 fdTutorialsTitle:
 Frictionless Data (FD) Tutorials and Documentation
 ---
 fdTutorials:
-- The FD [Guide](https://frictionlessdata.io/guide/) has tutorials and documentation for using FD tools and software
-- FD [forum](https://discuss.okfn.org/c/frictionless-data) for asking long questions
+- The software section on the main [Frictionless website](https://frictionlessdata.io/software/) has links to more info about all the FD tools and software
+- The Frictionless Framework [Documentation](https://framework.frictionlessdata.io/) has tutorials and documentation for using the Python code
+- FD [discussion forum](https://github.com/frictionlessdata/project/discussions) for asking long questions
 - FD [Discord chat](https://discord.com/invite/j9DNFNw) for asking short questions to the community
 - FD [Github repositories](https://github.com/frictionlessdata).
 *Note: check out the ```README``` in each individual repository for documentation on how to use that software*
     - [Fellows website repository](https://github.com/frictionlessdata/fellows)
-    - [datapackage-py repository](https://github.com/frictionlessdata/datapackage-py)
+    - [frictionless-py repository](https://github.com/frictionlessdata/frictionless-py)
     - [datapackage-r repository](https://github.com/frictionlessdata/datapackage-r)
-    - [goodtables-py repository](https://github.com/frictionlessdata/goodtables-py)
 ***
 ---
 fdWkspTitle:
