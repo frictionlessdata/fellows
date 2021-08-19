@@ -7,40 +7,40 @@ body:
 ***
 ---
 week1Title:
-August 3 - 7: Welcome and Onboarding!
+October 18 - 22: Welcome and Onboarding!
 ---
 week1:
 
 - initial group meeting + introductions
 - Go through the [onboarding document](https://github.com/frictionlessdata/fellows/blob/master/docs/onboarding.md)
-- Friday check-in on Slack
+- Read an article for journal club: follow this <a href="/lessons#journalclub">lesson</a>
 
 ***
 ---
 week2Title: 
-August 10 - 14: Roadmapping and Journal Club
+October 25 - 29: Roadmapping and Open Access Week Journal Club
 ---
 week2:
 
 - Creation of a roadmap (follow this <a href="/lessons#roadmapping">lesson</a>)
-- Journal club: follow this <a href="/lessons#journalclub">lesson</a>
-- *Check in*: One-on-one meetings
+- Discuss the journal club article during the group meeting
+- *Check in*: Group meeting
 
 ***
 ---
 week3Title: 
-August 17 - 21: First blog
+November 1 - 5: First blog
 ---
 week3:
 
 - Introductory blog about yourself and your research
 - Use this [template](https://docs.google.com/document/d/1KXTgQsGVqLMYPcGmNmG5cgvI6-TV95tpjSjmcTUbBkc/edit) to help you start your blog
-- *Check in*: Group meeting
+- *Check in*: One-on-one meetings
 
 ***
 ---
 week4and5Title: 
-August 24 - September 4: Programming catch up
+November 8 - 19: Programming catch up
 ---
 week4and5:
 
@@ -59,7 +59,7 @@ week4and5:
 ***
 ---
 week6and7Title: 
-September 7 - 18: Frictionless Data introduction
+November 22 - December 3: Frictionless Data introduction
 ---
 week6and7:
 
@@ -72,18 +72,27 @@ week6and7:
 - Go over the Schema + Specs [lesson](/lessons#specs)
 - *Check in*: Group meeting during week 1
 - *Check in*: One-on-one meetings during week 2
-- *Optional office hours sessions this week*: 15:00 UTC on 9 September & 11 September. Join these sessions for more help if you have questions!
+- *Holiday note:* This overlaps with American Thanksgiving, so Lilly will be out for the second half of week 1. You should also take a break if you want to!
 
 ***
 ---
-week8and9Title: 
-September 21 - October 2: Open science + reproducible research introductions
+week8Title: 
+December 6 - 10: Open science + reproducible research introductions
 ---
-week8and9:
+week8:
 - Go over the resources in the [Open Science Lesson](/lessons/#openSci)
 - Add a new resource via a Pull Request (PR)
-- *Check in*: Group meeting during week 1
-- *Check in*: One-on-one meetings during week 2
+- Discuss open science principles during the group call
+- *Check in*: Group meeting
+
+***
+---
+week9Title:
+December 13 - 17: Audience mapping <a href="/lessons#audience">lesson</a>
+---
+week9:
+- Go over the Audience Mapping exercise in [lessons](/lessons#audience)
+- *Check in*: One-on-one meetings
 
 ***
 ---
@@ -94,7 +103,7 @@ week10:
 
 - Go over the Data Package lesson [using Data Package Creator](/lessons#datapackages)
 - *Optional* - Go over the Python or R [lessons](/lessons#datapackages) as well
-- *Check in*: Group meeting
+- *Check in*: One-on-one meetings
 - *Optional office hours sessions this week*: 15:00 UTC on Wednesday 7 October. Join this session for more help if you have questions!
 
 ***
@@ -108,7 +117,7 @@ week11:
 - *Optional* also use the [datapackage-py library](https://github.com/frictionlessdata/datapackage-py) to create a datapackage
 - Remember to implement coding best practices and document what you do
 - Upload your datapackage to GitHub
-- *Check in*: One-on-one meetings
+- *Check in*: Group meeting
 
 ***
 ---
@@ -119,7 +128,7 @@ week12:
 
 - Collaboratively write an Open Access week blog (see [Lessons](/lessons#oa))
 - Open a Pull Request on GitHub to add your Open Access Week blog onto the [Fellows blog](/blog/)
-- *Check in*: Group meeting
+- *Check in*: One-on-one meetings
 - *Optional office hours sessions this week*: 15:00 UTC on 21 October & 23 October. Join these sessions for more help if you have questions!
 
 ***
@@ -131,7 +140,7 @@ week13:
 
 - Go over the Audience Mapping exercise in [lessons](/lessons#audience)
 - Continue working on creating your own Data Package if you are not done
-- *Check in*: One-on-one meetings
+- *Check in*: Group meeting
 
 ***
 ---
@@ -139,7 +148,7 @@ week14Title:
 November 2 - 6: Optional personal website lesson (or break)
 ---
 week14:
-- Optional group meeting/lesson
+- Optional One-on-one meetings/lesson
 - Continue working on your datapackage if you haven't finished it
 - Otherwise, take a break!
 
@@ -154,8 +163,8 @@ week15and16:
 - As an example, read the blog [here](/blog/neuro-blog/)
 - While writing your blog, keep in mind your audience from the mapping exercise
 - Add your blog to the [Fellows blog](/blog/) by opening a pull request on [GitHub](https://github.com/frictionlessdata/fellows#contribute-via-a-pull-request-pr)
-- *Check in*: One-on-one meetings during week 1
-- *Check in*: Group meeting during week 2
+- *Check in*: Group meeting during week 1
+- *Check in*: One-on-one meetings during week 2
 
 ***
 ---
@@ -174,7 +183,7 @@ November 30 - December 4: Goodtables  <a href="/lessons#goodtables">lesson</a>
 week18:
 
 - Go over the Goodtables data validation [lesson](/lessons#goodtables)
-- *Check in*: Group meeting
+- *Check in*: One-on-one meetings
 - *Optional office hours session this week*: 15:00 UTC on 2 December. Join this session for more help if you have questions!
 
 ***
@@ -184,8 +193,8 @@ December 7 - 12: Journal Club
 ---
 week19:
 
-- Read an article (TBD) and answer questions in a group meeting next week
-- *Check in*: One-on-one meetings
+- Read an article (TBD) and answer questions in a One-on-one meetings next week
+- *Check in*: Group meeting
 
 ***
 ---
@@ -216,7 +225,7 @@ January 4 - 8: New Year Check In
 week23:
 
 - Revisit your roadmap document and write up a short status report
-- *Check in*: One-on-one meetings
+- *Check in*: Group meeting
 
 ***
 ---
@@ -228,8 +237,8 @@ week24and25:
 ## 
 - Using the [goodtables browser tool](http://try.goodtables.io), validate the data package you made earlier
 - *Optional* also use the [goodtables-py library](https://github.com/frictionlessdata/goodtables-py) to validate your datapackage
-- *Check in*: Group meeting during week 1
-- *Check in*: One-on-one meetings during week 2
+- *Check in*: One-on-one meetings during week 1
+- *Check in*: Group meeting during week 2
 - *Optional office hours sessions this week*: 15:00 UTC on 13 January & 15 January. Join these sessions for more help if you have questions!
 
 ***
@@ -241,7 +250,7 @@ week26:
 
 - Blog about your validated data package (how did you do it, what did you learn)
 - Add your blog to the [Fellows blog](/blog/) by opening a pull request on GitHub
-- *Check in*: Group meeting
+- *Check in*: One-on-one meetings
 
 ***
 ---
@@ -253,8 +262,8 @@ week27and28:
 - Trade data packages with each other and see if you can reproduce your partner's work
 - Do you understand their data based soley on their metadata?
 - Can you validate their data with goodtables?
-- *Check in*: One-on-one meetings during week 1
-- *Check in*: Group meeting during week 2
+- *Check in*: Group meeting during week 1
+- *Check in*: One-on-one meetings during week 2
 
 ***
 ---
@@ -266,7 +275,7 @@ week29:
 - Blog about the experience of reproducing your partner's data package
 - What worked? What didn't work? What was difficult or easy?
 - Add your blog to the [Fellows blog](/blog/) by opening a pull request on GitHub
-- *Check in*: One-on-one meetings
+- *Check in*: Group meeting
 
 ***
 ---
@@ -277,7 +286,7 @@ week30:
 
 - Use the slides in [Resources](/resources#fdWksp) under the 'Frictionless Data Workshops' section to help you make your presentation
 - Tips on how to give a presentation/workshop: http://blogs.nature.com/naturejobs/2017/01/11/scientific-presentations-a-cheat-sheet/
-- *Check in*: Group meeting
+- *Check in*: One-on-one meetings
 
 ***
 ---
@@ -289,7 +298,7 @@ week31:
 - Give a workshop to your network on what you have learned or attend an Open Data Day event
 - Remember to post your workshop slides onto [Zenodo](https://zenodo.org/communities/fd_fellows/curate/)
 - Collect feedback - how do you think it went? What would you change for next time?
-- *Check in*: One-on-one meetings
+- *Check in*: Group meeting
 
 ***
 ---
@@ -308,7 +317,7 @@ March 15 - 19: Preprint Journal club
 ---
 week33:
 
-- Read preprint article (TBD) and answer questions in a group meeting or in Slack
+- Read preprint article (TBD) and answer questions in a One-on-one meetings or in Slack
 - Discuss how and why to post preprints
 - *Check in*: The journal club meeting will count as our group check in
 
@@ -321,8 +330,8 @@ week34and35:
 
 - Using new data (your own data, or from an open repository), create a data package and then validate it
 - Document your code & upload your datapackage to GitHub
-- *Check in*: One-on-one meetings during week 1
-- *Check in*: Group meeting during week 2
+- *Check in*: Group meeting during week 1
+- *Check in*: One-on-one meetings during week 2
 
 ***
 ---
@@ -334,8 +343,8 @@ week36and37:
 - Do another workshop or presentation at your organization
 - Take the first week to prep, then give your workshop during the second week
 - Remember to post your workshop slides onto [Zenodo](https://zenodo.org/communities/fd_fellows/curate/)
-- *Check in*: One-on-one meetings during week 1
-- *Check in*: Group meeting during week 2
+- *Check in*: Group meeting during week 1
+- *Check in*: One-on-one meetings during week 2
 
 ***
 ---
@@ -348,5 +357,5 @@ week38and39:
   - Reflect on what you have learned and accomplished
   - What are your next steps to advocate for open science + reproducible research?
 - Week 2: Present your work briefly in an Open Knowledge Foundation of Frictionless Data community call (exact date TBD)
-- *Check in*: One-on-one meetings during week 1
-- *Check in*: Group meeting during week 2
+- *Check in*: Group meeting during week 1
+- *Check in*: One-on-one meetings during week 2
