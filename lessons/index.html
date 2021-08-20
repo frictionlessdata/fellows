@@ -154,10 +154,10 @@
   <ul>
 <li>GitHub instructions for the command line/terminal (Lilly can help you with this):<ul>
 <li>The repository is here <a href="https://github.com/frictionlessdata/fellows">https://github.com/frictionlessdata/fellows</a></li>
-<li>The blog content can be found within the following folder: fellows -&gt; content -&gt; blog -&gt; oa-week -&gt; contents.lr</li>
-<li>Step 1, Pull down the master branch so you have the most recent version of the website code on your local machine. Do this before you make your edits. Type 'git pull origin master'</li>
+<li>The blog content can be found within the following folder: fellows -&gt; content -&gt; blog -&gt; [your-blog-folder-name] -&gt; contents.lr</li>
+<li>Step 1, Pull down the main branch so you have the most recent version of the website code on your local machine. Do this before you make your edits. Type 'git pull origin main'</li>
 <li>Step 2, Create a new branch: in the terminal, write 'git checkout -b your-branch-name' (replace with your branch's name, which can be anything)</li>
-<li><em>make sure you don't edit the master branch</em> You can check with 'git status'</li>
+<li><em>make sure you don't edit the main branch</em> You can check with 'git status'</li>
 <li>Step 3, Add your blog text to the 'contents.lr' file within the correct blog folder. Each blog has it's own folder. Add your text as Markdown, and remember to keep the <code>title</code> and <code>body</code> keywords.</li>
 <li>Step 4, Add and commit your changes: Once you finish editing the file, in your terminal, type: <ul>
 <li>git status<ul>
@@ -185,7 +185,7 @@
 </h2>
   <h3>Data Packages - using <a href="http://create.frictionlessdata.io/">Data Package Creator</a></h3>
 <ul>
-<li>Work through this tutorial on well-packaged datasets <a href="https://frictionlessdata.io/field-guide/well-packaged-datasets/">https://frictionlessdata.io/field-guide/well-packaged-datasets/</a></li>
+<li>Work through this tutorial on well-packaged datasets <a href="https://frictionlessdata.io/blog/2018/03/07/well-packaged-datasets/">https://frictionlessdata.io/blog/2018/03/07/well-packaged-datasets/</a></li>
 <li>Watch this video on packaging data <a href="https://www.youtube.com/watch?v=VrdPj28-L9g">https://www.youtube.com/watch?v=VrdPj28-L9g</a></li>
 <li><strong> In Slack, answer these questions:</strong><ol>
 <li>What makes up a data package?</li>
@@ -193,16 +193,12 @@
 </ol>
 </li>
 </ul>
-<h3><em>OPTIONAL</em> - Data Packages - using our Python <a href="https://github.com/frictionlessdata/datapackage-py">datapackage.py library</a></h3>
+<h3><em>OPTIONAL</em> - Data Packages - using our <a href="https://framework.frictionlessdata.io/">Python Framework</a></h3>
 <ul>
-<li>Use these instructions to import datapackage.py and create a new datapackage <a href="http://frictionlessdata.io/docs/creating-tabular-data-packages-in-python/">http://frictionlessdata.io/docs/creating-tabular-data-packages-in-python/</a></li>
-<li>Follow these instructions to work with an existing Data Package in Python - note: stop at the 'Loading into an SQL database' step. <a href="http://frictionlessdata.io/docs/using-data-packages-in-python/">http://frictionlessdata.io/docs/using-data-packages-in-python/</a></li>
-<li>Play around with this <a href="https://github.com/frictionlessdata/fellows/blob/master/docs/datapackage-py-notebook.ipynb">Jupyter notebook</a></li>
-</ul>
-<h3><em>OPTIONAL</em> - Data Packages - using our R <a href="https://github.com/frictionlessdata/datapackage-r">datapackage.r library</a></h3>
-<ul>
-<li>Use these instructions to install datapackage.r and create a new datapackage <a href="http://frictionlessdata.io/docs/creating-tabular-data-packages-in-r/">http://frictionlessdata.io/docs/creating-tabular-data-packages-in-r/</a></li>
-<li>Follow these instructions to work with an existing Data Package in R - note: stop at the 'Loading into an SQL database' step. <a href="http://frictionlessdata.io/docs/using-data-packages-in-r/">http://frictionlessdata.io/docs/using-data-packages-in-r/</a></li>
+<li>Read the <a href="https://framework.frictionlessdata.io/docs/guides/introduction">Introduction</a> to <code>Frictionless-py</code></li>
+<li>Follow the <a href="https://framework.frictionlessdata.io/docs/guides/quick-start">Quick Start</a> guide to install <code>Frictionless-py</code></li>
+<li>Follow the <a href="https://framework.frictionlessdata.io/docs/guides/basic-examples">Basic Examples</a> documentation</li>
+<li>Work through these two Jupyter notebooks: <a href="https://colab.research.google.com/drive/1MkVh5YTFgDp4cUMRYjvBRbs3hwK9rAGV?usp=sharing">Fellows Python Framework Lesson Notebook</a> and <a href="https://colab.research.google.com/drive/1iIrTed-d056VXtl9t1WLQnLMC2KeK9Ul">Frictionless Biology Notebook</a></li>
 </ul>
 <h3><em><a href="../resources#fdTutorials">Additional helpful resources here</a></em></h3>
 <hr>
@@ -247,7 +243,7 @@
 <li>Read this eLife Lab article about the <a href="https://elifesciences.org/labs/b521cf4d/reproducible-document-stack-towards-a-scalable-solution-for-reproducible-articles">Reproducible Document Stack</a></li>
 <li>Read this eLife Lab article about their <a href="https://elifesciences.org/labs/dc5acbde/welcome-to-a-new-era-of-reproducible-publishing">Execuatable Research Articles</a></li>
 <li>Watch this video about <a href="https://zenodo.org/record/3906784#.X2PMfJNKgWq">Global Inclusivity in Open Science</a> from the Organization of Human Brain Mapping (OHBM). Note: you will need to download this to watch it.</li>
-<li>By the end of Week 2, find another resource on reproducible research, open science, or data management and add it to the Fellows Resources site by opening a Pull Request on GitHub <a href="https://github.com/frictionlessdata/fellows/blob/master/content/resources/contents.lr">https://github.com/frictionlessdata/fellows/blob/master/content/resources/contents.lr</a></li>
+<li>Find another resource on reproducible research, open science, or data management and add it to the Fellows Resources site by opening a Pull Request on GitHub <a href="https://github.com/frictionlessdata/fellows/blob/master/content/resources/contents.lr">https://github.com/frictionlessdata/fellows/blob/master/content/resources/contents.lr</a></li>
 <li><em>Optional</em> Create an <a href="https://orcid.org/">ORCID</a> if you don't have one</li>
 <li><em>Optional</em> Extra resources (if you are interested in more material):<ul>
 <li><a href="../resources#dataManagement">Data Management Best Practices</a></li>
@@ -262,7 +258,7 @@
   <h3>Knowing your audience</h3>
 <ul>
 <li>Read through this information on <a href="https://docs.google.com/document/d/1_IqVXa8yy-Qg9Xk4DOQ18TtaaeNSq40aVviyeXBKsUw/">audience mapping</a></li>
-<li>Make a copy of this <a href="https://docs.google.com/document/d/1laIdjjdcdav7m1CDrZJEX3sHJiKd9IVQX0kBN6HRn7I/edit#">template</a> and fill it out yourself</li>
+<li>Make a copy of this <a href="https://docs.google.com/document/d/142hVa1CS-JP1OpRh0tlYNEbU9VY-zCMW8xP2d3aDu70/edit">template</a> and fill it out yourself</li>
 </ul>
 <hr>
 
@@ -277,9 +273,9 @@
 <li>GitHub instructions (Lilly will help you with this):<ul>
 <li>The repository is here <a href="https://github.com/frictionlessdata/fellows">https://github.com/frictionlessdata/fellows</a></li>
 <li>The blog content can be found within the following folder: fellows -&gt; content -&gt; blog -&gt; oa-week-2020 -&gt; contents.lr</li>
-<li>Step 1, Pull down the master branch. Since you will all be editing the same blog file, you will need to pull any changes onto your local machine. Do this before you make your edits. Type 'git pull origin master'</li>
+<li>Step 1, Pull down the main branch. Since you will all be editing the same blog file, you will need to pull any changes onto your local machine. Do this before you make your edits. Type 'git pull origin main'</li>
 <li>Step 2, Create a new branch: in the terminal, write 'git checkout -b [your-branch-name]' (replace with your name &amp; remove the brackets)</li>
-<li><em>make sure you don't edit the master branch</em> You can check with 'git status'</li>
+<li><em>make sure you don't edit the main branch</em> You can check with 'git status'</li>
 <li>Step 3, Add your paragraph to the blog: You will be editing the 'contents.lr' file within the oa-week-2020 folder</li>
 <li>Step 4, Add and commit your changes: Once you finish editing the file, in your terminal, type: <ul>
 <li>git status<ul>
