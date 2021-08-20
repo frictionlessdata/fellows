@@ -110,7 +110,7 @@ January 3 - 7: Data Package Intro <a href="/lessons#datapackages">lesson</a>
 week12:
 
 - Go over the Data Package lesson [using Data Package Creator](/lessons#datapackages)
-- *Optional* - Go over the Python or R [lessons](/lessons#datapackages) as well
+- *Optional* - Go over the Python [lesson](/lessons#datapackages) as well
 - *Check in*: Group meeting
 
 ***
@@ -121,7 +121,7 @@ January 10 - 14: Create your own Data Package
 week13:
 
 - Using your own data, create a data pacakge using the Data Package Creator (create.frictionlessdata.io)
-- *Optional* also use the [datapackage-py library](https://github.com/frictionlessdata/datapackage-py) to create a datapackage
+- *Optional* - also use the [Python Framework](https://framework.frictionlessdata.io/) to create a datapackage
 - Remember to implement coding best practices and document what you do
 - Upload your datapackage to GitHub
 - *Check in*: Individual meetings
@@ -131,7 +131,7 @@ week13:
 week14and15Title: 
 January 17 - 28: Data Package Blog
 ---
-week14and15:
+week14and15: 
 
 - Blog about your newly created data package with your own data (how did you do it, what did you learn)
 - As an example, read the blog [here](/blog/neuro-blog/)
@@ -158,7 +158,7 @@ February 7 - 11: Validate your own data
 week17: 
 
 - Using the [goodtables browser tool](http://try.goodtables.io), validate the data package you made earlier
-- *Optional* validate your datapackage via the Frictionless Framework (see the [Goodtables lesson](/lessons#goodtables)).
+- *Optional* - validate your datapackage via the Frictionless Framework (see the [Goodtables lesson](/lessons#goodtables)).
 - *Check in*: One-on-one meetings
 
 ***
@@ -229,13 +229,13 @@ week23:
 
 ***
 ---
-week24Tile:
+week24Title:
 March 28 - April 1: Frictionless Python lesson
 ---
 week24:
 
-- hands-on Python programming practice
-- work through the [Framework documentation and tutorials](https://framework.frictionlessdata.io/)
+- Hands-on Python programming practice
+- Work through the [Framework documentation and tutorials](https://framework.frictionlessdata.io/)
 - *Check in*: Group meeting
 
 ***
@@ -246,7 +246,7 @@ April 4 - 8: Python practice
 week25:
 
 - Continue practicing Python by going through the [Framework documentation and tutorials](https://framework.frictionlessdata.io/)
-- *Optional* Write your own Python tutorial
+- *Optional* - Write your own Python tutorial
 - *Check in*: One-on-one meetings
 
 ***
@@ -297,7 +297,7 @@ week29and30:
 ***
 ---
 week31Title: 
-May 16 - 20: Personal website lesson *topic might change*
+May 16 - 20: Personal website lesson *(topic might change)*
 ---
 week31:
 - *Check in*: Group meeting
@@ -305,7 +305,7 @@ week31:
 ***
 ---
 week32Title:
-May 23 - 27: Attend a conference *topic might change*
+May 23 - 27: Attend a conference *(topic might change)*
 ---
 week32:
 - attend a conference (we'll plan on attending csvconf, but the date is unannounced right now)
@@ -314,7 +314,7 @@ week32:
 ***
 ---
 week33Title:
-May 30 - June 3: Open Science Discussion *topic might change*
+May 30 - June 3: Open Science Discussion *(topic might change)*
 ---
 week33:
 - Invited speakers
@@ -323,7 +323,7 @@ week33:
 ***
 ---
 week34Title:
-June 6 - 10: Open Science Discussion *topic might change*
+June 6 - 10: Open Science Discussion *(topic might change)*
 ---
 week34:
 - Invited speakers
@@ -332,7 +332,7 @@ week34:
 ***
 ---
 week35Title: 
-June 13 - 17: Preprint journal club *topic might change*
+June 13 - 17: Preprint journal club *(topic might change)*
 ---
 week35:
 
@@ -345,7 +345,7 @@ week35:
 week36and37Title: 
 June 20 - July 1: Final Blog + Community Call
 ---
-week36&37:
+week36and37:
 
 - Week 1: Write your final blog
   - Reflect on what you have learned and accomplished
