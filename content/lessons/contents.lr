@@ -40,10 +40,10 @@ GitHub Instructions - Using GitHub to post your blog
 github:
 - GitHub instructions for the command line/terminal (Lilly can help you with this):
   - The repository is here [https://github.com/frictionlessdata/fellows](https://github.com/frictionlessdata/fellows)
-  - The blog content can be found within the following folder: fellows -> content -> blog -> oa-week -> contents.lr
-  - Step 1, Pull down the master branch so you have the most recent version of the website code on your local machine. Do this before you make your edits. Type 'git pull origin master'
+  - The blog content can be found within the following folder: fellows -> content -> blog -> [your-blog-folder-name] -> contents.lr
+  - Step 1, Pull down the main branch so you have the most recent version of the website code on your local machine. Do this before you make your edits. Type 'git pull origin main'
   - Step 2, Create a new branch: in the terminal, write 'git checkout -b your-branch-name' (replace with your branch's name, which can be anything)
-  - *make sure you don't edit the master branch* You can check with 'git status'
+  - *make sure you don't edit the main branch* You can check with 'git status'
   - Step 3, Add your blog text to the 'contents.lr' file within the correct blog folder. Each blog has it's own folder. Add your text as Markdown, and remember to keep the `title` and `body` keywords.
   - Step 4, Add and commit your changes: Once you finish editing the file, in your terminal, type: 
     - git status
@@ -79,7 +79,7 @@ openSci:
 - Read this eLife Lab article about the [Reproducible Document Stack](https://elifesciences.org/labs/b521cf4d/reproducible-document-stack-towards-a-scalable-solution-for-reproducible-articles)
 - Read this eLife Lab article about their [Execuatable Research Articles](https://elifesciences.org/labs/dc5acbde/welcome-to-a-new-era-of-reproducible-publishing)
 - Watch this video about [Global Inclusivity in Open Science](https://zenodo.org/record/3906784#.X2PMfJNKgWq) from the Organization of Human Brain Mapping (OHBM). Note: you will need to download this to watch it.
-- By the end of Week 2, find another resource on reproducible research, open science, or data management and add it to the Fellows Resources site by opening a Pull Request on GitHub [https://github.com/frictionlessdata/fellows/blob/master/content/resources/contents.lr](https://github.com/frictionlessdata/fellows/blob/master/content/resources/contents.lr)
+- Find another resource on reproducible research, open science, or data management and add it to the Fellows Resources site by opening a Pull Request on GitHub [https://github.com/frictionlessdata/fellows/blob/master/content/resources/contents.lr](https://github.com/frictionlessdata/fellows/blob/master/content/resources/contents.lr)
 - *Optional* Create an [ORCID](https://orcid.org/) if you don't have one
 - *Optional* Extra resources (if you are interested in more material):
   - [Data Management Best Practices](/resources#dataManagement)
@@ -91,20 +91,17 @@ Data Packages Lesson
 ---
 datapackages:
 ### Data Packages - using [Data Package Creator](http://create.frictionlessdata.io/)
-- Work through this tutorial on well-packaged datasets [https://frictionlessdata.io/field-guide/well-packaged-datasets/](https://frictionlessdata.io/field-guide/well-packaged-datasets/)
+- Work through this tutorial on well-packaged datasets [https://frictionlessdata.io/blog/2018/03/07/well-packaged-datasets/](https://frictionlessdata.io/blog/2018/03/07/well-packaged-datasets/)
 - Watch this video on packaging data [https://www.youtube.com/watch?v=VrdPj28-L9g](https://www.youtube.com/watch?v=VrdPj28-L9g)
 - ** In Slack, answer these questions:**
   1. What makes up a data package?
   2. What kind of metadata would you include for the data you work with?
 
-### *OPTIONAL* - Data Packages - using our Python [datapackage.py library](https://github.com/frictionlessdata/datapackage-py)
-- Use these instructions to import datapackage.py and create a new datapackage [http://frictionlessdata.io/docs/creating-tabular-data-packages-in-python/](http://frictionlessdata.io/docs/creating-tabular-data-packages-in-python/)
-- Follow these instructions to work with an existing Data Package in Python - note: stop at the 'Loading into an SQL database' step. [http://frictionlessdata.io/docs/using-data-packages-in-python/](http://frictionlessdata.io/docs/using-data-packages-in-python/)
-- Play around with this [Jupyter notebook](https://github.com/frictionlessdata/fellows/blob/master/docs/datapackage-py-notebook.ipynb)
-
-### *OPTIONAL* - Data Packages - using our R [datapackage.r library](https://github.com/frictionlessdata/datapackage-r)
-- Use these instructions to install datapackage.r and create a new datapackage [http://frictionlessdata.io/docs/creating-tabular-data-packages-in-r/](http://frictionlessdata.io/docs/creating-tabular-data-packages-in-r/)
-- Follow these instructions to work with an existing Data Package in R - note: stop at the 'Loading into an SQL database' step. [http://frictionlessdata.io/docs/using-data-packages-in-r/](http://frictionlessdata.io/docs/using-data-packages-in-r/)
+### *OPTIONAL* - Data Packages - using our [Python Framework](https://framework.frictionlessdata.io/)
+- Read the [Introduction](https://framework.frictionlessdata.io/docs/guides/introduction) to `Frictionless-py`
+- Follow the [Quick Start](https://framework.frictionlessdata.io/docs/guides/quick-start) guide to install `Frictionless-py`
+- Follow the [Basic Examples](https://framework.frictionlessdata.io/docs/guides/basic-examples) documentation
+- Work through these two Jupyter notebooks: [Fellows Python Framework Lesson Notebook](https://colab.research.google.com/drive/1MkVh5YTFgDp4cUMRYjvBRbs3hwK9rAGV?usp=sharing) and [Frictionless Biology Notebook](https://colab.research.google.com/drive/1iIrTed-d056VXtl9t1WLQnLMC2KeK9Ul)
 
 ### *[Additional helpful resources here](/resources#fdTutorials)*
 ***
@@ -131,7 +128,7 @@ Audience Mapping Lesson
 audience:
 ### Knowing your audience
 - Read through this information on [audience mapping](https://docs.google.com/document/d/1_IqVXa8yy-Qg9Xk4DOQ18TtaaeNSq40aVviyeXBKsUw/)
-- Make a copy of this [template](https://docs.google.com/document/d/1laIdjjdcdav7m1CDrZJEX3sHJiKd9IVQX0kBN6HRn7I/edit#) and fill it out yourself
+- Make a copy of this [template](https://docs.google.com/document/d/142hVa1CS-JP1OpRh0tlYNEbU9VY-zCMW8xP2d3aDu70/edit) and fill it out yourself
 ***
 ---
 oaTitle:
@@ -146,9 +143,9 @@ oa:
 - GitHub instructions (Lilly will help you with this):
   - The repository is here [https://github.com/frictionlessdata/fellows](https://github.com/frictionlessdata/fellows)
   - The blog content can be found within the following folder: fellows -> content -> blog -> oa-week-2020 -> contents.lr
-  - Step 1, Pull down the master branch. Since you will all be editing the same blog file, you will need to pull any changes onto your local machine. Do this before you make your edits. Type 'git pull origin master'
+  - Step 1, Pull down the main branch. Since you will all be editing the same blog file, you will need to pull any changes onto your local machine. Do this before you make your edits. Type 'git pull origin main'
   - Step 2, Create a new branch: in the terminal, write 'git checkout -b [your-branch-name]' (replace with your name & remove the brackets)
-  - *make sure you don't edit the master branch* You can check with 'git status'
+  - *make sure you don't edit the main branch* You can check with 'git status'
   - Step 3, Add your paragraph to the blog: You will be editing the 'contents.lr' file within the oa-week-2020 folder
   - Step 4, Add and commit your changes: Once you finish editing the file, in your terminal, type: 
     - git status
