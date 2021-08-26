@@ -1,6 +1,6 @@
 _model: Syllabus
 ---
-title: Syllabus (from Cohort 2 - will be updated for Cohort 3)
+title: Syllabus
 ---
 body:
 
@@ -11,7 +11,7 @@ October 18 - 22: Welcome and Onboarding!
 ---
 week1:
 
-- initial group meeting + introductions
+- Initial group meeting + introductions
 - Go through the [onboarding document](https://github.com/frictionlessdata/fellows/blob/master/docs/onboarding.md)
 - Read an article for journal club: follow this <a href="/lessons#journalclub">lesson</a>
 
@@ -110,7 +110,7 @@ January 3 - 7: Data Package Intro <a href="/lessons#datapackages">lesson</a>
 week12:
 
 - Go over the Data Package lesson [using Data Package Creator](/lessons#datapackages)
-- *Optional* - Go over the Python [lesson](/lessons#datapackages) as well
+- *Optional* - Start going through the Python [lesson](/lessons#pythonFramework) as well
 - *Check in*: Group meeting
 
 ***
@@ -158,7 +158,7 @@ February 7 - 11: Validate your own data
 week17: 
 
 - Using the [goodtables browser tool](http://try.goodtables.io), validate the data package you made earlier
-- *Optional* - validate your datapackage via the Frictionless Framework (see the [Goodtables lesson](/lessons#goodtables)).
+- *Optional* - validate your datapackage via the Frictionless Framework (see the [Python Framework lesson](/lessons#pythonFramework)).
 - *Check in*: One-on-one meetings
 
 ***
@@ -234,7 +234,7 @@ March 28 - April 1: Frictionless Python lesson
 ---
 week24:
 
-- Hands-on Python programming practice
+- Hands-on [Python programming practice](/lessons/#pythonFramework)
 - Work through the [Framework documentation and tutorials](https://framework.frictionlessdata.io/)
 - *Check in*: Group meeting
 

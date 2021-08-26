@@ -4,6 +4,7 @@
 {% block body %}
 
   <h1>{{ this.title }}</h1>
+  <h2> > Note: Please see the syllabus for more information, including when we will do each lesson.</h2>
   <h2 id="roadmapping">{{this.roadmappingTitle}}</h2>
   {{this.roadmapping}}
   <h2 id="journalclub">{{this.journalclubTitle}}</h2>
@@ -12,6 +13,8 @@
   {{this.github}}
   <h2 id="datapackages">{{this.datapackagesTitle}}</h2>
   {{this.datapackages}}
+  <h2 id="pythonFramework">{{this.pythonFrameworkTitle}}</h2>
+  {{this.pythonFramework}}
   <h2 id="goodtables">{{this.goodtablesTitle}}</h2>
   {{this.goodtables}}
   <h2 id="specs">{{this.specsTitle}}</h2>
@@ -20,6 +23,4 @@
   {{this.openSci}}
   <h2 id="audience">{{this.audienceTitle}}</h2>
   {{this.audience}}
-  <h2 id="oa">{{this.oaTitle}}</h2>
-  {{this.oa}}
 {% endblock %}

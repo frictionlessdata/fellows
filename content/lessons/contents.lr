@@ -1,7 +1,8 @@
 model: lessons
 ---
-title: Lessons (from Cohort 2 - will be update for Cohort 3)
+title: Lessons
 ---
+
 roadmappingTitle:
 Roadmapping
 ---
@@ -97,13 +98,19 @@ datapackages:
   1. What makes up a data package?
   2. What kind of metadata would you include for the data you work with?
 
-### *OPTIONAL* - Data Packages - using our [Python Framework](https://framework.frictionlessdata.io/)
+### *[Additional helpful resources here](/resources#fdTutorials)*
+***
+---
+pythonFrameworkTitle:
+Python Framework Lesson
+---
+pythonFramework:
+### *OPTIONAL* - Learn how to Describe, Extract, Validate and Transform data using the [Frictionless Python Framework](https://framework.frictionlessdata.io/)
 - Read the [Introduction](https://framework.frictionlessdata.io/docs/guides/introduction) to `Frictionless-py`
 - Follow the [Quick Start](https://framework.frictionlessdata.io/docs/guides/quick-start) guide to install `Frictionless-py`
 - Follow the [Basic Examples](https://framework.frictionlessdata.io/docs/guides/basic-examples) documentation
 - Work through these two Jupyter notebooks: [Fellows Python Framework Lesson Notebook](https://colab.research.google.com/drive/1MkVh5YTFgDp4cUMRYjvBRbs3hwK9rAGV?usp=sharing) and [Frictionless Biology Notebook](https://colab.research.google.com/drive/1iIrTed-d056VXtl9t1WLQnLMC2KeK9Ul)
 
-### *[Additional helpful resources here](/resources#fdTutorials)*
 ***
 ---
 goodtablesTitle:
@@ -111,13 +118,15 @@ Goodtables Data Validation Lesson
 ---
 goodtables:
 ### Validate your data with the Goodtables browser tool and with the command line interface
-- Next, learn about how to validate data with Goodtables by going through the following tutorial and video (I recommend starting by first reading the tutorial, then watching the video, then actually trying to do the tutorial):
+- Learn about how to validate data with Goodtables by going through the following tutorial and video (I recommend starting by first reading the tutorial, then watching the video, then actually trying to do the tutorial):
   - Follow the first half of this tutorial to learn (1) how to validate data with the goodtables browser tool, and then continue on to the second half to learn (2) how to use the goodtables command line interface [https://frictionlessdata.io/blog/2018/07/16/validated-tabular-data/](https://frictionlessdata.io/blog/2018/07/16/validated-tabular-data/)
-  - Follow along with this video on validating on the command line with goodtables: [https://www.youtube.com/watch?v=PqtM6d696eY&list=LLQe-pXn0XZzmRzvyOMZpfEg](https://www.youtube.com/watch?v=PqtM6d696eY&list=LLQe-pXn0XZzmRzvyOMZpfEg) **Note**: this video has some Python installation tips, so if you are stuck on the Python part, watch the video (and ask in Slack if you are stuck!).
+  - Read through one of the following blogs from Cohort 2 Fellows:
+    - [Kate's blog](http://127.0.0.1:5000/blog/kate-goodtables-blog/) about validating with the try.goodtables
+    - [Jacqueline's blog](/blog/jacqueline-goodtables-blog/) about validating with the Frictionless Framework
+    - [Katerina's blog](/blog/katerina-goodtables-blog/) about validating with try.goodtables and Framework
 - Once you are comfortable with the idea of validating your data with Goodtables, learn about *continuous* validation by:
   - Reading through this guide on how to *continuously* validate your data with goodtables [https://frictionlessdata.io/blog/2018/03/12/automatically-validated-tabular-data/](https://frictionlessdata.io/blog/2018/03/12/automatically-validated-tabular-data/)
   - Watching this video to see *continuous* validation in action: [https://www.youtube.com/watch?v=9YHwu34D_vM&list=LLQe-pXn0XZzmRzvyOMZpfEg](https://www.youtube.com/watch?v=9YHwu34D_vM&list=LLQe-pXn0XZzmRzvyOMZpfEg)
-- For an recap, read through this documentation about goodtables [https://github.com/frictionlessdata/frictionless-py/tree/goodtables](https://github.com/frictionlessdata/frictionless-py/tree/goodtables)
 
 ### *[Additional helpful resources here](/resources#fdTutorials)*
 ***
@@ -131,29 +140,3 @@ audience:
 - Make a copy of this [template](https://docs.google.com/document/d/142hVa1CS-JP1OpRh0tlYNEbU9VY-zCMW8xP2d3aDu70/edit) and fill it out yourself
 ***
 ---
-oaTitle:
-Open Access Week Lesson
----
-oa:
-### Blogging for Open Access Week 2020
-- [Open Access Week 2020](http://www.openaccessweek.org) has the theme of 'Open with Purpose: Taking Action to Build Structural Equity and Inclusion'
-- We will collaboratively write a blog reflecting on the theme of 'Open with Purpose: Taking Action to Build Structural Equity and Inclusion'
-- Each Fellow writes a paragraph
-- By Friday (Oct 23), add your paragraph to the Open Access Week Blog by a PR.
-- GitHub instructions (Lilly will help you with this):
-  - The repository is here [https://github.com/frictionlessdata/fellows](https://github.com/frictionlessdata/fellows)
-  - The blog content can be found within the following folder: fellows -> content -> blog -> oa-week-2020 -> contents.lr
-  - Step 1, Pull down the main branch. Since you will all be editing the same blog file, you will need to pull any changes onto your local machine. Do this before you make your edits. Type 'git pull origin main'
-  - Step 2, Create a new branch: in the terminal, write 'git checkout -b [your-branch-name]' (replace with your name & remove the brackets)
-  - *make sure you don't edit the main branch* You can check with 'git status'
-  - Step 3, Add your paragraph to the blog: You will be editing the 'contents.lr' file within the oa-week-2020 folder
-  - Step 4, Add and commit your changes: Once you finish editing the file, in your terminal, type: 
-    - git status
-      - make sure everything looks OK
-    - git add content/blog/oa-week-2020/contents.lr
-    - git commit -m "adds [your name]'s blog"
-  - Step 5, Push your changes to your branch and open a Pull Request
-    - git push origin [your-branch-name]
-    - in GitHub, open a pull request (PR) + tag @lwinfree for review
-    - Lilly will merge your PR
-  - **ask Lilly if you need help!**
