@@ -7,12 +7,16 @@
     {{ this.body }}
   </div>
   <div>
-    <h2>
-      Cohort 2 Blogs
-    </h2>
+    {% for post in this.pagination.items if post.cohort == 3 %}
+      {% if loop.first %}
+        <h2>
+          Cohort 3 Blogs
+        </h2>
+      {% endif %}
+    {% endfor %}
       <ul class="blog-index">
       {% for post in this.pagination.items %}
-        {% if post.cohort == 2 %}
+        {% if post.cohort == 3 %}
         <li>
           <a href="{{ post|url }}">{{ post.title }}</a> —
           by {{ post.author }}
@@ -21,9 +25,31 @@
         {% endif %}
       {% endfor %}
       </ul>
-    <h2>
-      Cohort 1 Blogs
-    </h2>
+    {% for post in this.pagination.items if post.cohort == 2 %}
+      {% if loop.first %}
+        <h2>
+          Cohort 2 Blogs
+        </h2>
+      {% endif %}
+    {% endfor %}
+        <ul class="blog-index">
+        {% for post in this.pagination.items %}
+          {% if post.cohort == 2 %}
+          <li>
+            <a href="{{ post|url }}">{{ post.title }}</a> —
+            by {{ post.author }}
+            on {{ post.pub_date }}
+          </li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+    {% for post in this.pagination.items if post.cohort == 1 %}
+      {% if loop.first %}
+        <h2>
+          Cohort 1 Blogs
+        </h2>
+      {% endif %}
+    {% endfor %}
       <ul class="blog-index">
       {% for post in this.pagination.items %}
         {% if post.cohort == 1 %}
