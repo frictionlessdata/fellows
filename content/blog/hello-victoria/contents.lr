@@ -1,11 +1,29 @@
-title:
+title: Hi Frictonless!
 ---
-author:
+author: Victoria Stanley
 ---
-pub_date: YYYY-MM-DD
+pub_date: 2021-11-14
 ---
 cohort: 3
 ---
 body:
 
-# add your text here
+
+*Me, Myself, and I…soprene*
+Hi all! My name is Victoria. I’m physics graduate student and recovering engineer living in Berlin. I grew up mainly in my family’s native country of Singapore, but consider myself an American, and am still workshopping a straightforward answer to “where are you from.” 
+
+In my past life I worked in materials QA testing; currently, I’m at the [German Aerospace Centre](https://www.dlr.de/EN/Home/home_node.html) designing laser systems in the THz range - a type of non-visible light that hangs out on the electromagnetic spectrum between infrared and microwave. The field is growing crazy fast, and THz has loads of application potential - from tissue imaging to security screening to [cool space stuff](https://www.dlr.de/content/en/articles/missions-projects/sofia/sofia-infrared-observatory ). 
+
+Space lasers imply some solid sci-fi villain credentials, but (unfortunately?) I use this radiation quite benignly - to study human breath. Exhaled breath contains thousands trace compounds, isoprene or acetone for example, subject to a high degree of variation based off genetics, health, exposure to pollutants, etc. and due to the complexity of these gases, we’re always looking for better ways to ([quantify](https://ieeexplore.ieee.org/abstract/document/9567606) ) and map the distribution of molecules.  Together with researches at  [Fraunhofer Institute for Toxicology and Experimental Medicine](https://www.item.fraunhofer.de/en.html), I build tools to help specialists understand human lung disorders. Like COPD… and maybe soon [even COVID-19](https://openres.ersjournals.com/content/7/3/00139-2021)! But thats another conversation.  
+
+In my civilian life, I enjoy sleeping outside, wikipedia rabbit holes, making music, talking about feelings, and squeezing unsuspecting street cats.  
+
+*Open what?* 
+My Open Science journey has just begun and I’m stoked! I started to get interested in topics around data transparency and accessibility after a series of escalating frustrations with information dynamics in medical technology, beginning in my own field of gas sensing, then discovering similar disparities in [tangential fields](https://nautil.us/issue/98/mind/the-trouble-with-brain-scans). 
+
+Questioning the institution of science, however, can be daunting, as the process doesn’t have a baked-in culture of internal scrutiny.  I’ve only recently started wondering, for example, why my group relies heavily on expensive proprietary software, why knowledge is privatised behind pay-walls, why we don’t often discuss how the replication crisis affects not only the social sciences, but in [physics](https://arxiv.org/abs/2009.06864) and chemistry too. 
+
+Through Frictionless, I’m excited to get the chance to engage with these topics - on a systemic level for sure, but also as an individual. I hope to learn to make better decisions about my research and data, as well as engage with opportunities to facilitate interdisciplinary cross-pollination and engage in open and transparent science communication. Looking forward to the next 9 months on this journey!  
+
+---
+subject_img: venicecatme.JPG
