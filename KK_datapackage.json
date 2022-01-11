@@ -1,0 +1,92 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "kevin-data",
+      "path": "kevinsandfly_data.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Sandfly No.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Slide No.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "DNA No.",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Trap NO.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Collection site",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Location",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Collection date",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Sandfly sp.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "SEX",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Feeding status",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Leishmmania ",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Latitude",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Longitude",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Altitude",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Outdoor/indoor",
+            "type": "string",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "kevin",
+  "title": "my-data-package",
+  "description": "data of sandly infection"
+}
