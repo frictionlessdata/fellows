@@ -1,0 +1,55 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "infection_prevalence",
+      "path": "Exercise.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Sampling site",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "Date",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "Season",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Host",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Prevalence of Anaplasma sp.",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      },
+      "format": "csv",
+      "title": "infection_prevalence"
+    }
+  ],
+  "keywords": [
+    "infection",
+    "camel",
+    "prevalence"
+  ],
+  "name": "infection_prevalence",
+  "title": "infection_prevalence",
+  "version": "1.0.0",
+  "contributors": [
+    {
+      "title": "melvin ochieng",
+      "role": "author"
+    }
+  ]
+}
