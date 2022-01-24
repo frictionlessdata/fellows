@@ -3,3 +3,5 @@ assets/css
 icons-demo.html
 icons.svg
 .sass-cache
+.DS_Store
+content/.DS_Store
