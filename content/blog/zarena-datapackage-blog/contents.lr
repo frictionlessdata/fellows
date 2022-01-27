@@ -9,7 +9,6 @@ cohort: 3
 body:
 
 
-
 As a social science researcher studying the research landscape in Central Asian countries, I decided to share a part of my dataset with key bibliometric information about the journal articles published by Kyrgyzstani authors between 1991-2021. The data I am going to share comes from the [Lens](https://www.lens.org) platform. To ensure the data quality, and to comply with the [FAIR](https://howtofair.dk/what-is-fair/#fair-principles) principles, before sharing my data, I created a data package that consists of the cleaned raw data, [metadata](https://specs.frictionlessdata.io/data-resource/#metadata-properties), and [schema](https://specs.frictionlessdata.io/table-schema/#language). 
  
 I tested two methods to create such a package. First, I tried to use the [data package programming libraries](https://framework.frictionlessdata.io). This method lets you do more than just to create a data package (e.g., describe, extract, transform, and validate your data). But I found the programming libraries a bit complicated. So, I ended up using the second method, that is the browser tool [Frictionless Data Package Creator](https://create.frictionlessdata.io). It lets you create a data package without ay technical knowledge. The tool is comparatively simple and easy to navigate. It allows you to clean your dataset, change datatypes, provide a short description to your data as well as to add and edit associated metadata. 
