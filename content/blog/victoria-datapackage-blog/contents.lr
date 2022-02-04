@@ -40,4 +40,3 @@ Oops! In my metadata zeal, I tried to manually change the dialect delimiter spec
 ![add alt text here](7valid.png)
 
 This exercise, however got me thinking. Lots of information is still missing to properly make conclusions about soil moisture, such as a shape file or some other geographic specifier, an indicator giving the soil type, clarity on if this is a measurement of the top soil or an estimation of the root zone layer, etc.  The data is in better shape now than when we started, but could still use additional specifiers to facilitate clear and reproducible analysis. At minimum, a data package contains a metadata file.  Even better, metadata + the data itself. Better yet, you add a README.md file! Learn more here: https://specs.frictionlessdata.io/. 
-
