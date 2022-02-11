@@ -6,7 +6,6 @@ pub_date: 2022-02-01
 ---
 cohort: 3
 ---
-body:
 
 Constantly under the impression that I’m six months behind on lab work, I am capital Q - **Queen** - of bad data practices. My computer is a graveyard of poorly labeled .csv files, featuring illustrative headers such as “redo,” “negative pressure why?” and “weird - see notes.”  I was vaguely aware of the existence of data packages, but like learning Italian or traveling more, implementing them in my workflow got slotted in the category of “would be nice if I had the time.”  That clemency, however, was not extended to my research lifeblood - molecular spectroscopy databases, you disorganised beauties you - nor to collaborators who often invoked the following feeling:  
  
@@ -27,7 +26,7 @@ Frictionless has a browser tool for creating data packages  but for a slightly c
 
 It is, in this case, admittedly a little barebones. So I opened the file and tried and flush things out, going off suggestions given via the Frictionless Standards ([Data Package | Frictionless Standards](https://specs.frictionlessdata.io//data-package/) ) for data packages. It didn’t take me long to figure out that I had no idea what the column names meant. Some measures of volumetric soil moisture, given in m^3/m^3, for sure. But the full naming convention eluded me so I went on the hunt. NASA has loose bits of documentation all over like such as: 
 ![](4sat.png)
-SM was likely soil moisture and SMAP - the name of the satellite.  One hour into the worlds driest scavenger hunt I determined L to indicate the satellite band and DESC to mean it was measured during a descending orbit. At this point I sucked up my pride and emailed the data provider who cleared up what turned out to be internal naming conventions. AVG_b20d, for example, is the soil moisture average over a window of 20 days. This is done due to the volatility of daily observation.  A meta rallying cry for metadata! I added the information into the YAML file, and made some other changes. 
+A couple things were easily inferrable; SM, for instance, was likely soil moisture, and SMAP - the name of the satellite. One hour into the worlds driest scavenger hunt, however, I had only determined L to indicate the satellite band and DESC to mean it was measured during a descending orbit. The rest was a mystery! At this point I sucked up my pride and emailed the data provider who cleared up what turned out to be internal naming conventions. AVG_b20d, for example, is the soil moisture average over a window of 20 days. This is done due to the volatility of daily observation.  A meta rallying cry for metadata! I added the information into the YAML file, and made some other changes. 
 
 ![add alt text here](5code.png)
 
