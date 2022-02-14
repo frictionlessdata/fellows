@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Packaging Soil Mositure Data</title>
 
 <body>
   <header>
@@ -114,150 +114,32 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Packaging Soil Mositure Data</h1>
   <div>
-    
-      
-        <h2>
-          Cohort 3 Blogs
-        </h2>
-      
-    
-      
-    
-      
-    
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-        <li>
-          <a href="../../guo-qiang-datapackage-blog/">Your Title</a> —
-          by Your Name
-          on 
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../kk-datapackage-blog/">Your Title</a> —
-          by Your Name
-          on 
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../melvin-datapackage-blog/">Your Title</a> —
-          by Your Name
-          on 
-        </li>
-        
-      
-      </ul>
-    
-        <ul class="blog-index">
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        </ul>
-    
-      
-        <h2>
-          Cohort 1 Blogs
-        </h2>
-      
-    
-      
-    
-      
-    
-      
-    
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="../../hello-ouso/">Meet Daniel Ouso</a> —
-          by Daniel Ouso
-          on 2019-10-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-lily/">Meet Lily Zhao</a> —
-          by Lily Zhao
-          on 2019-10-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-monica/">Meet Monica Granados</a> —
-          by Monica Granados
-          on 2019-10-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-sele/">Meet Sele Yang</a> —
-          by Sele Yang
-          on 2019-10-17
-        </li>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <a href="../6/">&laquo; Previous</a>
-    
-    | <strong>7</strong> |
-    
-      <span class="disabled">Next &raquo;</span>
-    
   </div>
+  <div class="blog">
+    <p>Constantly under the impression that I’m six months behind on lab work, I am capital Q - <strong>Queen</strong> - of bad data practices. My computer is a graveyard of poorly labeled .csv files, featuring illustrative headers such as “redo,” “negative pressure why?” and “weird - see notes.”  I was vaguely aware of the existence of data packages, but like learning Italian or traveling more, implementing them in my workflow got slotted in the category of “would be nice if I had the time.”  That clemency, however, was not extended to my research lifeblood - molecular spectroscopy databases, you disorganised beauties you - nor to collaborators who often invoked the following feeling:</p>
+<p><img src="1norm.png" width="50%" alt="xkcd comic"></p>
+<p>Particularly in fields where measurables aren’t tangible macro concepts (see: population) but abstract and insular conventions with many varied representations, clear descriptors of multivariate data are a <em>must</em> in order for that data to be easily used and reproduced.  This is where data packages come in; they bundle up your data with a human and machine readable file containing, at minimum, standardised information regarding structure and contents. In this lil’ post here, we’re going to walk through this process together by packaging data together with its metadata, and then validating the data using Frictionless tools.</p>
+<h2>Get that data!</h2>
+<p>I’ve recently gotten involved with a project monitoring agricultural regeneration through remote sensing.  One important soil health parameter is soil moisture, relevant on its own, but additionally in how it ties into drought prediction and food security monitoring. The data is measured by <a href="https://smap.jpl.nasa.gov/">SMAP</a>, a passive microwave orbiting observatory from the acronym loving institute, NASA. As a government agency, NASA doesn’t license the use of NASA materials or sign licensing agreements, but instead asks kindly not to use their data for weird merchandising stuff; the SMAP data products are therefore <a href="https://earthdata.nasa.gov/earth-observation-data/data-use-policy">openly available </a> from the <a href="https://nsidc.org/data/smap">National Snow and Ice Data Center</a>.  You can select a relevant region and time series and  bulk download the data via HTTPS.  For our team, the data then undergoes external preprocessing and a downconversion process, via external partners, before coming to us, looking like:</p>
+<p><img src="2data.png" width="100%" alt="data file"></p>
+<p>Not bad so far! At an initial glance, we can see that the date column is in a reasonable format, there is a header containing units, and it doesn’t seem like there are missing values. Let’s put it through the data packaging process and see what happens.</p>
+<h2>Pack it up!</h2>
+<p>Frictionless has a browser tool for creating data packages  but for a slightly closer look under the hood we’re going to play with the Frictionless Tools a bit. The function <em>describe</em>, for example, can be used to describe data and generate metadata, which contains information such as type (integer, string, etc), constrains (min, max etc.) relations, and so forth.  Yes - much of this can be inferred by investigating the tabular data itself, or is included in the csv header, but having properly described data saves a lot of upfront workflow effort, and potentially many grim hours of starring at unlabelled gridded numbers. In the command line  <em>describe</em>, spits out a YAML file where it infers several data parameters.</p>
+<p><img src="3yaml.png" width="100%" alt="metadata yaml"></p>
+<p>It is, in this case, admittedly a little barebones. So I opened the file and tried and flush things out, going off suggestions given via the Frictionless Standards (<a href="https://specs.frictionlessdata.io//data-package/">Data Package | Frictionless Standards</a> ) for data packages. It didn’t take me long to figure out that I had no idea what the column names meant. Some measures of volumetric soil moisture, given in m^3/m^3, for sure. But the full naming convention eluded me so I went on the hunt. NASA has loose bits of documentation all over like such as:</p>
+<p><img src="4sat.png" width="100%" alt="dataflow diagram"></p>
+<p>A couple things were easily inferrable; SM, for instance, was likely soil moisture, and SMAP - the name of the satellite. One hour into the worlds driest scavenger hunt, however, I had only determined L to indicate the satellite band and DESC to mean it was measured during a descending orbit. The rest was a mystery! At this point I sucked up my pride and emailed the data provider who cleared up what turned out to be internal naming conventions. AVG_b20d, for example, is the soil moisture average over a window of 20 days. This is done due to the volatility of daily observation.  A meta rallying cry for metadata! I added the information into the YAML file, and made some other changes.</p>
+<p><img src="5code.png" width="100%" alt="updated metadata file"></p>
+<p>Cool. I decided it was time to try and validate the data, to see if there were any apparent problems I wasn’t picking up visually.</p>
+<p><img src="6invalid.png" width="100%" alt="data validation error"></p>
+<p>Oops! In my metadata zeal, I tried to manually change the dialect delimiter specification. Fixed it and everything looked golden.</p>
+<p><img src="7valid.png" width="100%" alt="valid data"></p>
+<p>This exercise, however got me thinking. Lots of information is still missing to properly make conclusions about soil moisture, such as a shape file or some other geographic specifier, an indicator giving the soil type, clarity on if this is a measurement of the top soil or an estimation of the root zone layer, etc.  The data is in better shape now than when we started, but could still use additional specifiers to facilitate clear and reproducible analysis. At minimum, a data package contains a metadata file.  Even better, metadata + the data itself. Better yet, you add a README.md file! Learn more here: <a href="https://specs.frictionlessdata.io/">https://specs.frictionlessdata.io/</a>.</p>
 
-  
-
+  </div>
 
   </article>
   <footer>

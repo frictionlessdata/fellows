@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Data Package Creation</title>
 
 <body>
   <header>
@@ -114,150 +114,39 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Data Package Creation</h1>
   <div>
-    
-      
-        <h2>
-          Cohort 3 Blogs
-        </h2>
-      
-    
-      
-    
-      
-    
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-        <li>
-          <a href="../../guo-qiang-datapackage-blog/">Your Title</a> —
-          by Your Name
-          on 
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../kk-datapackage-blog/">Your Title</a> —
-          by Your Name
-          on 
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../melvin-datapackage-blog/">Your Title</a> —
-          by Your Name
-          on 
-        </li>
-        
-      
-      </ul>
-    
-        <ul class="blog-index">
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        </ul>
-    
-      
-        <h2>
-          Cohort 1 Blogs
-        </h2>
-      
-    
-      
-    
-      
-    
-      
-    
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="../../hello-ouso/">Meet Daniel Ouso</a> —
-          by Daniel Ouso
-          on 2019-10-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-lily/">Meet Lily Zhao</a> —
-          by Lily Zhao
-          on 2019-10-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-monica/">Meet Monica Granados</a> —
-          by Monica Granados
-          on 2019-10-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-sele/">Meet Sele Yang</a> —
-          by Sele Yang
-          on 2019-10-17
-        </li>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <a href="../6/">&laquo; Previous</a>
-    
-    | <strong>7</strong> |
-    
-      <span class="disabled">Next &raquo;</span>
-    
   </div>
+  <div class="blog">
+    <h2>Data Package is a format that makes it possible to put your data collection and relevant information that provides context about your data in one container before you share it.</h2>
+<p>In other word its a simple container format for describing a coherent collection of data in a single 'package', consisting of:</p>
+<ul>
+<li>Metadata that describes the structure and contents of the package</li>
+<li>Resources such as data files that form the contents of the package</li>
+</ul>
+<p>Find out more about the data package specifications <a href="https://specs.frictionlessdata.io//data-package/">data package</a>
+While,Data Package Creator is an online service that facilitates the creation and editing of data packages. The service automatically generates a datapackage.json file for you 
+as you add and edit data that is part of your data collection.</p>
+<h2>Getting the Data</h2>
+<p>Being a soil science student, I felt using soil data would be useful for me to better understand this process of packaging data for future use. I got data on impact of fertilizer
+recommendations on yield and felt it would be great to use it.However, this wasn’t such a good idea as I got so many error messages and clean-ups to do to suit the tabular data 
+accepted by the data packge creator(create.frictionlessdata.io).Similarly incase you want to create a data package using someone elses data it should either have a licence or 
+ask to use the data.Afterwards, I got around to working with a different data set that was more straight forward and easy to work with.The data was on the infection prevalence 
+of ‘Ca. Anaplasma camelii’ in camels and camel keds evaluated in different seasons within a year. The error I recieved is as shown below.</p>
+<p><img source="https://user-images.githubusercontent.com/88625874/152940354-27139c51-201b-4024-b871-8793073c5850.jpeg" alt="error"></p>
+<p>What I learned from the errors was the fact that the data was 1) really huge for the exercise 2) It had several headings making the data package creator difficult to pick which
+heading to use and 3) the application is case sensitive when entering the metadata. I therefore had two options either to clean the data manually or using python or use a different
+data. I decided to get an entirely different data.</p>
+<h2>Creating the Data Package</h2>
+<p>We are going to use data package creator to create our data package. So, to start with, we make sure our tabular data is in a csv format. Then load the csv file in the data package
+creator. Once loaded, we check whether all field are correctly labeled (data types as integers or/and strings). Then added the metadata for the data and then validate. 
+Alas! this one went through as shown below.</p>
+<h2><img src="https://user-images.githubusercontent.com/88625874/152934577-1aa483fb-f1b0-4db7-a22e-30f6e446ac5d.jpeg" alt="validate"></h2>
+<h2>Validation</h2>
+<p>Once the data is validated, we can download the datapackage.json file in which you can now share with your network.</p>
 
-  
-
+  </div>
 
   </article>
   <footer>

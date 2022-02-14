@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Creating Data Package</title>
 
 <body>
   <header>
@@ -114,150 +114,25 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Creating Data Package</h1>
   <div>
-    
-      
-        <h2>
-          Cohort 3 Blogs
-        </h2>
-      
-    
-      
-    
-      
-    
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-        <li>
-          <a href="../../guo-qiang-datapackage-blog/">Your Title</a> —
-          by Your Name
-          on 
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../kk-datapackage-blog/">Your Title</a> —
-          by Your Name
-          on 
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../melvin-datapackage-blog/">Your Title</a> —
-          by Your Name
-          on 
-        </li>
-        
-      
-      </ul>
-    
-        <ul class="blog-index">
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        </ul>
-    
-      
-        <h2>
-          Cohort 1 Blogs
-        </h2>
-      
-    
-      
-    
-      
-    
-      
-    
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="../../hello-ouso/">Meet Daniel Ouso</a> —
-          by Daniel Ouso
-          on 2019-10-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-lily/">Meet Lily Zhao</a> —
-          by Lily Zhao
-          on 2019-10-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-monica/">Meet Monica Granados</a> —
-          by Monica Granados
-          on 2019-10-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-sele/">Meet Sele Yang</a> —
-          by Sele Yang
-          on 2019-10-17
-        </li>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <a href="../6/">&laquo; Previous</a>
-    
-    | <strong>7</strong> |
-    
-      <span class="disabled">Next &raquo;</span>
-    
   </div>
+  <div class="blog">
+    <p>As a social science researcher studying the research landscape in Central Asian countries, I decided to share a part of my dataset with key bibliometric information about the journal articles published by Kyrgyzstani authors between 1991-2021. The data I am going to share comes from the <a href="https://www.lens.org">Lens</a> platform. To ensure the data quality, and to comply with the <a href="https://howtofair.dk/what-is-fair/#fair-principles">FAIR</a> principles, before sharing my data, I created a data package that consists of the cleaned raw data, <a href="https://specs.frictionlessdata.io/data-resource/#metadata-properties">metadata</a>, and <a href="https://specs.frictionlessdata.io/table-schema/#language">schema</a>.</p>
+<p>I tested two methods to create such a package. First, I tried to use the <a href="https://framework.frictionlessdata.io">data package programming libraries</a>. This method lets you do more than just to create a data package (e.g., describe, extract, transform, and validate your data). But I found the programming libraries a bit complicated. So, I ended up using the second method, that is the browser tool <a href="https://create.frictionlessdata.io">Frictionless Data Package Creator</a>. It lets you create a data package without ay technical knowledge. The tool is comparatively simple and easy to navigate. It allows you to clean your dataset, change datatypes, provide a short description to your data as well as to add and edit associated metadata.</p>
+<p><img src="img1.png" alt="Screenshot of datapath load" width=100%></p>
+<p>To start, I loaded my dataset path from my PC by clicking on the <em>Load</em> button. After several trials and errors with my excel file, I read the documentation and realised that the software works only with a <a href="https://www.webopedia.com/definitions/csv/">CSV</a> file. So, I converted my dataset to a CSV format and then re-uploaded it.</p>
+<p>After I successfully loaded my dataset path, the tool automatically inferred the key characteristics of my data. First, it calculated and showed how many columns it found in the dataset. After I let the software import all the columns, it also inferred the header and datatype of each column. To make the data reusable, I gave a machine-readable name to my resource, deleted unnecessary and empty columns, and checked &amp; corrected the data types of all the columns. After cleaning my data resource, I filled out the metadata for the package by providing a machine-readable name and a human-readable title, a short description of the data package, a version number, a required attribution, license information, and finally keywords.</p>
+<p><img src="img1-1.png" alt="Screenshot of data cleaning" width=100%></p>
+<p>While you clean and fill out your metadata, the software automatically creates and updates a <a href="https://json-schema.org/understanding-json-schema/about.html#about">JSON schema</a> file, which you can find by hitting the symbol {...} on the upper-right corner of the page.</p>
+<p><img src="img2.png" alt="Screenshot of JSON schema preview" width=100%></p>
+<p>After making sure that everything looks good, I clicked the <em>Validate</em> button. The Data Package Creator tool found no errors in my data and metadata, so it rendered a green-ribbon message saying the data package is valid. As a final step, I clicked the <em>Download</em> button and it gave me a single JSON file with all my data resources and associated metadata.</p>
+<p><img src="img3.png" alt="Screenshot of validation" width=100%/>
+<img src="img4.png" alt="Screenshot of Download" width=100%/></p>
+<p>To sum up, I find a data package creator tool very useful for making your dataset clean, shareable, and of high quality with all the necessary contextual information. If you want to learn more about a data package specifications and how to create one for your datasets, you can read it <a href="https://specs.frictionlessdata.io//data-package/">here</a>.</p>
 
-  
-
+  </div>
 
   </article>
   <footer>

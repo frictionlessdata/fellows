@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Lindsay Datapackage Blog</title>
 
 <body>
   <header>
@@ -114,150 +114,24 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Lindsay Datapackage Blog</h1>
   <div>
-    
-      
-        <h2>
-          Cohort 3 Blogs
-        </h2>
-      
-    
-      
-    
-      
-    
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-        <li>
-          <a href="../../guo-qiang-datapackage-blog/">Your Title</a> —
-          by Your Name
-          on 
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../kk-datapackage-blog/">Your Title</a> —
-          by Your Name
-          on 
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../melvin-datapackage-blog/">Your Title</a> —
-          by Your Name
-          on 
-        </li>
-        
-      
-      </ul>
-    
-        <ul class="blog-index">
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        </ul>
-    
-      
-        <h2>
-          Cohort 1 Blogs
-        </h2>
-      
-    
-      
-    
-      
-    
-      
-    
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="../../hello-ouso/">Meet Daniel Ouso</a> —
-          by Daniel Ouso
-          on 2019-10-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-lily/">Meet Lily Zhao</a> —
-          by Lily Zhao
-          on 2019-10-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-monica/">Meet Monica Granados</a> —
-          by Monica Granados
-          on 2019-10-17
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-sele/">Meet Sele Yang</a> —
-          by Sele Yang
-          on 2019-10-17
-        </li>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <a href="../6/">&laquo; Previous</a>
-    
-    | <strong>7</strong> |
-    
-      <span class="disabled">Next &raquo;</span>
-    
   </div>
-
-  
-
+  <div class="blog">
+    <h2>Introduction</h2>
+<p>The first tenet of the American Library Association’s Bill of Rights states: “Books and other library resources should be provided for the interest, information, and enlightenment of all people of the community the library serves” (American Library Association). Libraries are supposed to be for everyone. Unfortunately, like many other institutions, libraries were founded upon outdated and racist patriarchal heteronormative ideals that ostracise users from marginalized backgrounds. Most academic libraries in the United States use the Library of Congress Classification System to organize books, a system that inadvertently centers christian, heterosexual white males. Critical librarianship, or critical cataloging is “a movement of library workers dedicated to bringing social justice principles into our work in libraries” <a href="http://critlib.org/about/">critlib</a>. I would like to use data science principles to explore bias in library MARC (machine readable catalog) records.</p>
+<h2>The Data</h2>
+<p>First, I needed to find MARC records to use. I searched the HathiTrust Digital Library for a public dataset so that my workflow would be as reproducible as possible. Unfortunately, <a href="https://www.hathitrust.org/hathifiles_description">Hathifiles</a> do not include several of the fields I would like to explore. I know bias exists in Library of Congress Subject Headings (LCSH), which is field 650 in a MARC record.  I would also like to explore the 500 field (General note) and the 505 field (Formatted contents note - often a table of contents). I reached out to colleagues to download MARC records for me. I asked for anything in our collection that resulted from a keyword search of “basketball.” The LCSH “Basketball players” is problematic in nature. LCSH are organized hierarchically. Narrower terms (hierarchically lower) for <a href="https://id.loc.gov/authorities/subjects/sh85012123.html">"Basketball players"</a> include “Basketball players with disabilities,” “Indian basketball players,” “Jewish basketball players,” and “Women basketball players” while there are no terms for “able-bodied basketball players” or “white basketball players.” This illustrates the bias that a traditional basketball player is an able-bodied man.</p>
+<h2>Data Package Creation</h2>
+<p>I received the MARC records in a variety of formats, including. json, .txt, .mrc, and .mrk.  The data needed to be in tabular (csv) form for the <a href="https://create.frictionlessdata.io/">Frictionless Data Package Creator</a>. Unfortunately, when converted, the txt file puts all of the data into one column. After some trial and error and Internet searching, I found a helpful YouTube video, <a href="https://www.youtube.com/watch?v=IjiMMsk3S-A">Converting a MARC file to Excel with MarcEdit</a>. I downloaded MarcEdit 7.5, selected the MARC fields I wanted, and voila! I had a tabular MARC dataset.</p>
+<p>One the data were in a tabular format, using the Data Package Creator was simple. I uploaded the data, selected data types, named my fields, validated my data, and downloaded my .json data dictionary. I had some issues with null fields, and had to reopen my dataset and add “n/a” into all blank cells in order to identify the Data Type for each column in my dataset. After that, validation was a breeze. Since my dataset was machine readable prior to using the Data Package Creator, I had no red flags during validation.</p>
+<p><img src="DataPackageCreatorImage.png" width=100% alt="Image of Data Package Creator with Lindsay's Data"></p>
+<p style="text-align: center; font-style: italic">A screenshot of the data package creator.</p><h2>Conclusion</h2>
+<p>The Data Package Creator is a useful tool for creating a machine readable data dictionary for tabular data. Although my dataset was already in a machine readable format, using the Data Package Creator with MarchEdit 7.5 helped me to whittle a massive dataset of MARC records into a manageable dataset with just the bits of MARC record I need to explore systemic bias. Also, JSON is kinda pretty.</p>
+<p><img src="jsonimage.png" width=100% alt="Image of Lindsay's JSON file"></p>
+<p style="text-align: center; font-style: italic">A screenshot of the resulting JSON file.</p>
+  </div>
 
   </article>
   <footer>
