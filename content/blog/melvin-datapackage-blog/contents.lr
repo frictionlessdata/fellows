@@ -26,7 +26,7 @@ accepted by the data packge creator(create.frictionlessdata.io).Similarly incase
 ask to use the data.Afterwards, I got around to working with a different data set that was more straight forward and easy to work with.The data was on the infection prevalence 
 of ‘Ca. Anaplasma camelii’ in camels and camel keds evaluated in different seasons within a year. The error I recieved is as shown below.
 
-<img src="img/Error.jpeg" alt="screenshot of error" width=100%>
+<img src="Error.jpeg" alt="screenshot of error" width=100%>
 
 
 What I learned from the errors was the fact that the data was 1) really huge for the exercise 2) It had several headings making the data package creator difficult to pick which
@@ -38,8 +38,7 @@ We are going to use data package creator to create our data package. So, to star
 creator. Once loaded, we check whether all field are correctly labeled (data types as integers or/and strings). Then added the metadata for the data and then validate. 
 Alas! this one went through as shown below.
 
-<img scr="Validate.jpeg" width=100% alt="screenshot of validate">
-
+<img src="Validate.jpeg" alt="screenshot of validate" width=100%>
 
 ## Validation
 Once the data is validated, we can download the datapackage.json file in which you can now share with your network.
