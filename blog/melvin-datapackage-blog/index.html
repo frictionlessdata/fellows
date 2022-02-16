@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../css/style.css">
-<title>Data Package Creation</title>
+<title>Data package creation</title>
 
 <body>
   <header>
@@ -114,13 +114,14 @@
   </header>
   <article>
     
-  <h1>Data Package Creation</h1>
+  <h1>Data package creation</h1>
   <div>
   
   </div>
   <div class="blog">
-    <h2>Data Package is a format that makes it possible to put your data collection and relevant information that provides context about your data in one container before you share it.</h2>
-<p>In other word its a simple container format for describing a coherent collection of data in a single 'package', consisting of:</p>
+    <h2><strong>Data Package creation</strong></h2>
+<p>Data Package is a format that makes it possible to put your data collection and relevant information that provides context about your data in one container before you share it.
+In other word its a simple container format for describing a coherent collection of data in a single 'package', consisting of:</p>
 <ul>
 <li>Metadata that describes the structure and contents of the package</li>
 <li>Resources such as data files that form the contents of the package</li>
@@ -134,7 +135,7 @@ recommendations on yield and felt it would be great to use it.However, this wasn
 accepted by the data packge creator(create.frictionlessdata.io).Similarly incase you want to create a data package using someone elses data it should either have a licence or 
 ask to use the data.Afterwards, I got around to working with a different data set that was more straight forward and easy to work with.The data was on the infection prevalence 
 of ‘Ca. Anaplasma camelii’ in camels and camel keds evaluated in different seasons within a year. The error I recieved is as shown below.</p>
-<p><img source="https://user-images.githubusercontent.com/88625874/152940354-27139c51-201b-4024-b871-8793073c5850.jpeg" alt="error"></p>
+<p><img src="Error.jpeg" alt="screenshot of error" width=100%></p>
 <p>What I learned from the errors was the fact that the data was 1) really huge for the exercise 2) It had several headings making the data package creator difficult to pick which
 heading to use and 3) the application is case sensitive when entering the metadata. I therefore had two options either to clean the data manually or using python or use a different
 data. I decided to get an entirely different data.</p>
@@ -142,7 +143,7 @@ data. I decided to get an entirely different data.</p>
 <p>We are going to use data package creator to create our data package. So, to start with, we make sure our tabular data is in a csv format. Then load the csv file in the data package
 creator. Once loaded, we check whether all field are correctly labeled (data types as integers or/and strings). Then added the metadata for the data and then validate. 
 Alas! this one went through as shown below.</p>
-<h2><img src="https://user-images.githubusercontent.com/88625874/152934577-1aa483fb-f1b0-4db7-a22e-30f6e446ac5d.jpeg" alt="validate"></h2>
+<p><img src="Validate.jpeg" alt="screenshot of validate" width=100%></p>
 <h2>Validation</h2>
 <p>Once the data is validated, we can download the datapackage.json file in which you can now share with your network.</p>
 
