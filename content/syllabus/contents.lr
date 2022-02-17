@@ -176,10 +176,53 @@ week18:
 ***
 ---
 week19Title: 
-February 21 - 25: Workshop prep
+February 21 - 25: Goodtables Blog -Workshop prep-
 ---
 week19: 
  
+- Blog about your validated data package (how did you do it, what did you learn)
+- Add your blog to the [Fellows blog](/blog/) by opening a pull request on GitHub
+- *Check in*: Group meeting
+
+***
+---
+week20Title:
+February 28 - March 4: Frictionless Python lesson
+---
+week20:
+
+- Hands-on [Python programming practice](/lessons/#pythonFramework)
+- Work through the [Framework documentation and tutorials](https://framework.frictionlessdata.io/)
+- *Check in*: Group meeting
+
+***
+---
+week21Title:
+March 7 - 11: Python practice
+---
+week21:
+
+- Continue practicing Python by going through the [Framework documentation and tutorials](https://framework.frictionlessdata.io/)
+- *Optional* - Write your own Python tutorial
+- *Check in*: One-on-one meetings
+
+***
+---
+week22Title:
+March 14 - 18: Break!
+---
+week22:
+
+- Take a break or catch up if needed.
+
+***
+---
+
+weekXXTitle: 
+March 14 - 18: Workshop prep
+---
+weekXX:
+
 - Prepare to give a workshop during Open Data Day (next week on March 5)
 - Use the slides in [Resources](/resources#fdWksp) under the 'Frictionless Data Workshops' section to help you make your presentation
 - Tips on how to give a presentation/workshop: http://blogs.nature.com/naturejobs/2017/01/11/scientific-presentations-a-cheat-sheet/
@@ -187,10 +230,10 @@ week19:
 
 ***
 ---
-week20Title: 
-February 28 - March 4: Give a Workshop - Open Data Day Event
+weekXXTitle: 
+March 28 - April 1: Give a Workshop - Open Data Day Event
 ---
-week20:
+weekXX:
 
 - Give a workshop at an Open Data Day event
 - Remember to post your workshop slides onto [Zenodo](https://zenodo.org/communities/fd_fellows/curate/)
@@ -199,26 +242,7 @@ week20:
 
 ***
 ---
-week21Title:
-March 7 - 11: Break!
----
-week21:
 
-- Take a break or catch up if needed.
-
-***
----
-week22Title: 
-March 14 - 18: Goodtables Blog
----
-week22:
-
-- Blog about your validated data package (how did you do it, what did you learn)
-- Add your blog to the [Fellows blog](/blog/) by opening a pull request on GitHub
-- *Check in*: Group meeting
-
-***
----
 week23Title:
 March 21 - 25: Half-way point reflection
 ---
@@ -226,28 +250,6 @@ week23:
 
 - Revisit your roadmap
 - Write a brief reflection on your progress and goals
-- *Check in*: One-on-one meetings
-
-***
----
-week24Title:
-March 28 - April 1: Frictionless Python lesson
----
-week24:
-
-- Hands-on [Python programming practice](/lessons/#pythonFramework)
-- Work through the [Framework documentation and tutorials](https://framework.frictionlessdata.io/)
-- *Check in*: Group meeting
-
-***
----
-week25Title:
-April 4 - 8: Python practice
----
-week25:
-
-- Continue practicing Python by going through the [Framework documentation and tutorials](https://framework.frictionlessdata.io/)
-- *Optional* - Write your own Python tutorial
 - *Check in*: One-on-one meetings
 
 ***
