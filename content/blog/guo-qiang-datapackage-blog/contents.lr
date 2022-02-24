@@ -1,11 +1,46 @@
-title: Your Title
+title: How to share data and code in a ‘Data Package’?
 ---
-author: Your Name
+author: Guo-Qiang Zhang
 ---
-pub_date: YYYY-MM-DD
+pub_date: 2022-02-24
 ---
 cohort: 3
 ---
 body:
 
-#write your blog text here...
+# What is a Data Package?
+A [Data Package](https://specs.frictionlessdata.io/data-package/) is a simple container format used to describe and package a collection of data. It consists of a descriptor (a JSON file) that provides general [metadata](https://en.wikipedia.org/wiki/Metadata) describing the structure and contents of the package, and resources such as data files that form the contents of the package. Below presents how a Data Package may look like.
+
+<img src="Picture1.png" alt="Data Package structure" width="100%">
+
+# Data Package tool
+There are several ways to create a Data Package: [Data Package Creator](https://create.frictionlessdata.io), [R](https://github.com/frictionlessdata/datapackage-r), [Python](https://github.com/frictionlessdata/datapackage-py), etc. Data Package Creator is a free, online service that easily allows users to create a Data Package from their datasets. Because Data Package Creator is a browser tool that has an intuitive workflow, I am going to use this tool to create a Data Package.
+
+# Create a Data Package
+## Prepare dataset
+The dataset I am going to package is from a project which we have recently completed – “[Menopausal hormone therapy and women’s health: An umbrella review](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003731)” which summarizes the clinical evidence on various health effects of menopausal hormone therapy in menopausal women. The full datasets are publicly available in the [Open Science Framework](https://osf.io/dsy37/). I am going to use one of the datasets –All-Cause Mortality.xlsx, which summarizes all the clinical trials published until 2017 investigating the effect of menopausal hormone therapy on all-cause mortality in menopausal women – to illustrate the process of creating a Data Package. The dataset can be directly downloaded [here](https://osf.io/ps4ye/?show=view).
+
+As the Data Package Creator currently accepts only .csv format, first I need to convert All-Cause Mortality.xlsx to .csv format. The conversion can be easily done in Excel: File –> Save As, in the pop-up window (shown below), find and choose ‘Comma Separated Values’ in the File Format list. In the converted file, it is obvious to notice that the dataset has two extra rows in the beginning and two extra columns in the end. So, I am going to delete all the extra rows and columns. Now, I am ready to use All-Cause Mortality.csv to create a Data Package.
+
+<img src="Picture2.png" alt="Conversion to .csv format" width="100%">
+
+## Data Package Creator
+Step 1: Name the resource ‘all-cause-mortality’.
+Step 2: Import the dataset All-Cause Mortality.csv.
+Step 3: Add all the inferred fields from the imported dataset.
+
+<img src="Picture3.png" alt="Step 1–3" width="100%">
+
+Step 4: Check the inferred fields. For example, I need to check if data types for all the variables have been inferred properly. I can see that the data type for the variable “AgeOfParticipants” should be ‘number’ instead of ‘integer’. So, I need to change it to ‘number’. At this step, I can also provide additional information for each variable by adding title and description.
+
+<img src="Picture4.png" alt="Step 4" width="100%">
+
+Step 5: Fill in metadata, such as name and title of Data Package, description, author, license, etc.
+
+<img src="Picture5.png" alt="Step 5" width="100%">
+
+Step 6: Validate Data Package. If created Data Package is valid, a message “Data Package is valid” will show up.
+Step 7: Download descriptor (JSON file).
+Step 8: Package descriptor, dataset, and analysis code.
+
+<img src="Picture6.png" alt="Data Package for all-cause mortality" width="100%">
