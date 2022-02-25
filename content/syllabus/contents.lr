@@ -176,13 +176,13 @@ week18:
 ***
 ---
 week19Title: 
-February 21 - 25: Goodtables Blog -Workshop prep-
+February 21 - 25: Goodtables Blog
 ---
 week19: 
  
 - Blog about your validated data package (how did you do it, what did you learn)
 - Add your blog to the [Fellows blog](/blog/) by opening a pull request on GitHub
-- *Check in*: Group meeting
+- *Check in*: One-on-one meetings
 
 ***
 ---
@@ -198,86 +198,30 @@ week20:
 ***
 ---
 week21Title:
-March 7 - 11: Python practice
+March 7 - 11: Break!
 ---
 week21:
-
-- Continue practicing Python by going through the [Framework documentation and tutorials](https://framework.frictionlessdata.io/)
-- *Optional* - Write your own Python tutorial
-- *Check in*: One-on-one meetings
-
-***
----
-week22Title:
-March 14 - 18: Break!
----
-week22:
 
 - Take a break or catch up if needed.
 
 ***
 ---
-
-weekXXTitle: 
-March 14 - 18: Workshop prep
+week22Title:
+March 14 - 18: Half-way point reflection
 ---
-weekXX:
+week22:
 
-- Prepare to give a workshop during Open Data Day (next week on March 5)
-- Use the slides in [Resources](/resources#fdWksp) under the 'Frictionless Data Workshops' section to help you make your presentation
-- Tips on how to give a presentation/workshop: http://blogs.nature.com/naturejobs/2017/01/11/scientific-presentations-a-cheat-sheet/
-- *Check in*: One-on-one meetings
-
-***
----
-weekXXTitle: 
-March 28 - April 1: Give a Workshop - Open Data Day Event
----
-weekXX:
-
-- Give a workshop at an Open Data Day event
-- Remember to post your workshop slides onto [Zenodo](https://zenodo.org/communities/fd_fellows/curate/)
-- Collect feedback - how do you think it went? What would you change for next time?
+- Revisit your roadmap
+- Write a brief reflection on your progress and goals
 - *Check in*: Group meeting
 
 ***
 ---
 
-week23Title:
-March 21 - 25: Half-way point reflection
+week23Title: 
+March 21 - 25: Trade Data Packages
 ---
 week23:
-
-- Revisit your roadmap
-- Write a brief reflection on your progress and goals
-- *Check in*: One-on-one meetings
-
-***
----
-week26Title:
-April 11 - 15: Break!
----
-week26:
-
-- Take a break or catch up if needed.
-
-***
----
-week27Title:
-April 18 - 22: Preprint Journal Club
----
-week27:
-
-- Read preprint article (TBD) and answer questions in a group meeting
-- Discuss how and why to post preprints
-- *Check in*: The journal club meeting will count as our group check in
-
-***
----
-week28Title: 
-April 25 - 29: Trade Data Packages
----
-week28:
 
 - Trade data packages with each other and see if you can reproduce your partner's work
 - Do you understand their data based soley on their metadata?
@@ -286,10 +230,10 @@ week28:
 
 ***
 ---
-week29and30Title: 
-May 2 - 13: Blog about reproducing each other's work
+week24and25Title: 
+March 28 - April 8: Blog about reproducing each other's work
 ---
-week29and30:
+week24and25:
 
 - Blog about the experience of reproducing your partner's data package
 - What worked? What didn't work? What was difficult or easy?
@@ -299,19 +243,77 @@ week29and30:
 
 ***
 ---
-week31Title: 
-May 16 - 20: Personal website lesson *(topic might change)*
+
+week26Title:
+April 11 - 15: Personal website lesson
 ---
-week31:
+week26:
+- learn how to create your own website using GitHub pages
 - *Check in*: Group meeting
 
 ***
 ---
-week32Title:
-May 23 - 27: Attend a conference *(topic might change)*
+week27Title:
+April 18 - 22: Open Science Discussion *(topic might change)*
+---
+week27:
+- Invited speakers
+- *Check in*: One-on-one check-ins
+
+***
+---
+
+week28Title:
+April 25 - 29: Preprint Journal Club
+---
+week28:
+
+- Read preprint article (TBD) and answer questions in a group meeting
+- Discuss how and why to post preprints
+- *Check in*: The journal club meeting will count as our group check in
+
+***
+---
+week29Title:
+May 2 - 6: Python practice (continued)
+---
+week29:
+
+- Continue practicing Python by going through the [Framework documentation and tutorials](https://framework.frictionlessdata.io/)
+- *Optional* - Write your own Python tutorial
+- *Check in*: One-on-one meetings
+
+***
+---
+week30Title:
+May 9 - 13: Break!
+---
+week30:
+
+- Take a break! (OKF team is at their Summit meeting)
+
+***
+---
+week31Title: 
+May 16 - 20: Workshop prep
+---
+week31:
+
+- Prepare to give a workshop for Open Data Day
+- Use the slides in [Resources](/resources#fdWksp) under the 'Frictionless Data Workshops' section to help you make your presentation
+- Tips on how to give a presentation/workshop: http://blogs.nature.com/naturejobs/2017/01/11/scientific-presentations-a-cheat-sheet/
+- *Check in*: Group meeting
+
+***
+---
+week32Title: 
+May 23 - 27: Give a Workshop - Open Data Day Event
 ---
 week32:
-- attend a conference (we'll plan on attending csvconf, but the date is unannounced right now)
+
+- Give a workshop for an Open Data Day event
+- Remember to post your workshop slides onto [Zenodo](https://zenodo.org/communities/fd_fellows/curate/)
+- Collect feedback - how do you think it went? What would you change for next time?
 - *Check in*: One-on-one meetings
 
 ***
@@ -325,11 +327,11 @@ week33:
 
 ***
 ---
-week34Title:
-June 6 - 10: Open Science Discussion *(topic might change)*
+week34Title: 
+June 6 - 10: Attend a conference *(topic might change)*
 ---
 week34:
-- Invited speakers
+- attend a conference
 - *Check in*: One-on-one meetings
 
 ***
@@ -341,7 +343,7 @@ week35:
 
 - Read preprint article (TBD) and answer questions in a group meeting
 - Discuss how and why to post preprints
-- *Check in*: The journal club meeting will count as our group check in
+- *Check in*: Group meeting
 
 ***
 ---
