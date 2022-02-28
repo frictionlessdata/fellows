@@ -22,12 +22,12 @@ I received the MARC records in a variety of formats, including. json, .txt, .mrc
 
 One the data were in a tabular format, using the Data Package Creator was simple. I uploaded the data, selected data types, named my fields, validated my data, and downloaded my .json data dictionary. I had some issues with null fields, and had to reopen my dataset and add “n/a” into all blank cells in order to identify the Data Type for each column in my dataset. After that, validation was a breeze. Since my dataset was machine readable prior to using the Data Package Creator, I had no red flags during validation.
 
-<img src="DataPackageCreatorImage.png" width=100% alt="Image of Data Package Creator with Lindsay's Data">
+<img src="DataPackageCreatorImage.png" width=50% alt="Image of Data Package Creator with Lindsay's Data">
 <p style="text-align: center; font-style: italic">A screenshot of the data package creator.</p>
 
 ## Conclusion
 
 The Data Package Creator is a useful tool for creating a machine readable data dictionary for tabular data. Although my dataset was already in a machine readable format, using the Data Package Creator with MarchEdit 7.5 helped me to whittle a massive dataset of MARC records into a manageable dataset with just the bits of MARC record I need to explore systemic bias. Also, JSON is kinda pretty.
 
-<img src="jsonimage.png" width=100% alt="Image of Lindsay's JSON file">
+<img src="jsonimage.png" width=50% alt="Image of Lindsay's JSON file">
 <p style="text-align: center; font-style: italic">A screenshot of the resulting JSON file.</p>

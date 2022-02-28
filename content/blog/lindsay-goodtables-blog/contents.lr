@@ -1,0 +1,31 @@
+title: Lindsay Goodtables Blog
+---
+author: Lindsay Gypin
+---
+pub_date: 2022-02-28
+---
+cohort: 3
+---
+body:
+## What is Goodtables?
+
+Goodtables is an open source tool to help researchers validate their data. Users upload a metadata schema as as json file as well as their tabular datafile. Goodtables then checks the data against the metadata schema to ensure everything looks how it should. The best part is that Goodtables offers continuous data validation - for data that is hosted on Github, Goodtables validates data every time it is updated.
+
+## Using Goodtables
+
+First, I created my json schema file. I used the json file I created with the [Frictionless Datapackage Creator](https://fellows.frictionlessdata.io/blog/lindsay-datapackage-blog/). I cleaned this file up by deleting extraneous header and footer information and leaving only the metadata schema. 
+
+<img src="json2.png" width=50% alt="Image of Lindsay's Cleaned Up Metadata">
+<p style="text-align: center; font-style: italic">A screenshot of the data package creator.</p>
+
+Next, I uploaded the json file with my metadata schema as well as the csv file with my data. Initially, I had a duplicate rows error. Fortunately for me, I noticed an "Ignore blank rows" and "Ignore duplicate rows" checkboxes in the Gootables tool.  After selecting them, my data cam back as a "Valid Table." 
+
+<img src="goodtables1.png" width=50% alt="Image of Lindsay's Data Validation">
+<p style="text-align: center; font-style: italic">A screenshot of the data package creator.</p>
+
+Given that my data are based on MARC records, or "machine readable catalog" records, it's unsurprising that my data came back valid without much fine-tuning. I'm glad to have learned to use this tool, as it will be valuable to researchers. I tried to spend time learning the python version of Goodtables, but ran into issues when my work owned computer would not allow me to install pip.  
+
+
+
+
+
