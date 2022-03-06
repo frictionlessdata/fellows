@@ -32,3 +32,7 @@ Thankfully, Goodtables identifies error’s specific location in a dataset. So, 
 <img src="valid-data.png" width=100% alt="image with with valid data">
 
 In this blog, I explained my use of a Goodtables browser tool. However, I also tried to validate my data using a command line and python frameworks just to familiarise myself with the frameworks before I actually start learning and using them in the coming weeks. 
+
+![datatype-error](https://user-images.githubusercontent.com/93314224/156919543-8606a5c9-8566-43d5-9536-dbc3d7e8fbd0.png)
+
+![valid-data](https://user-images.githubusercontent.com/93314224/156919570-3ba34325-f0ea-4bcf-8c70-3bf4588cd439.png)
