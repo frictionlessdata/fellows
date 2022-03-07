@@ -16,8 +16,8 @@ During the fellowship programme, I learned that if you want to share your resear
 
 Goodtables is a free, open-source tool that helps to validate data. It automatically identifies errors in a dataset and allows you to quickly fix them. There are two ways to validate data using Goodtables: 
 
-   &nbsp; &nbsp; &nbsp; 1. the one-time data validation via a browser tool or command line;
-   &nbsp; &nbsp; &nbsp; 2. the continuous validation for data hosted on GitHub or other open repositories. 
+1. the one-time data validation via a browser tool or command line;
+2. the continuous validation for data hosted on GitHub or other open repositories. 
 
 In the following section, I will explain my use of a Goodtables browser tool. 
 
