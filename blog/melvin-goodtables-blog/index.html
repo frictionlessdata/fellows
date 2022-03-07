@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Data Validation Using Goodtables</title>
 
 <body>
   <header>
@@ -114,182 +114,28 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Data Validation Using Goodtables</h1>
   <div>
-    
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-    
-      
-        <h2>
-          Cohort 2 Blogs
-        </h2>
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-        <ul class="blog-index">
-        
-          
-          <li>
-            <a href="../../dani-partner-blog/">Using Frictionless tools to help you understand open data</a> —
-            by Daniel Alcalá López
-            on 2021-04-04
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../katerina-partner-blog/">Validating someone else&#39;s data!</a> —
-            by Katerina Drakoulaki
-            on 2021-03-10
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../sam-reproduce-blog/">Reproducing Jacqueline&#39;s Datapackage and Revalidating her Data!</a> —
-            by Sam Wilairat
-            on 2021-02-22
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../jacqueline-pkg-reprod-blog/">Reproducing a data package</a> —
-            by Jacqueline Maasch
-            on 2021-02-18
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../evelyn-partner-blog/">Validating data from Daniel Alcalá-López</a> —
-            by Evelyn Night Okello
-            on 2021-02-18
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../katerina-goodtables-blog/">Using the frictionless framework for data validation</a> —
-            by Katerina Drakoulaki
-            on 2021-02-11
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../kate-partner-blog/">Validating Sam&#39;s data with GoodTables</a> —
-            by Kate Bowie
-            on 2021-02-10
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../evelyn-goodtables-blog/">Validate it the GoodTables way!</a> —
-            by Evelyn Night Okello
-            on 2021-02-02
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../anne-goodtables-blog/">Reflecting on &#39;datafication&#39;, data prep, and UTF-8 with goodtables.io</a> —
-            by Anne Lee Steele
-            on 2021-02-01
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../kate-goodtables-blog/">Using goodtables to validate metadata from multiple sequencing runs</a> —
-            by Kate Bowie
-            on 2021-01-30
-          </li>
-          
-        
-        </ul>
-    
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <a href="../2/">&laquo; Previous</a>
-    
-    | <strong>3</strong> |
-    
-      <a href="../4/">Next &raquo;</a>
-    
   </div>
+  <div class="blog">
+    <h2>Data Validation Using Goodtables</h2>
+<p>In the last blog, we learned how to create a data package, and the last step was validation of the data package. However, that doesn't really validate our data. To validate your data, you could use <a href="https://try.goodtables.io">goodtables</a> or <a href="https://framework.frictionlessdata.io">frictionless framework</a>. Goodtable identifies structural and content errors within tabular data to help improve the data before sharing, as errors are not uncommon. It's also a good tool for automated data validation. The frictionless framework is equally good at validation of a data package as you are able to do this within your Python script by either using python or command line syntax. You could follow this tutorial to learn more about data validation using the <a href="https://fellows.frictionlessdata.io/blog/jacqueline-goodtables-blog/">frictionless framework tutorial</a>.</p>
+<h2>Using Goodtables for Data Validation</h2>
+<p>We already created a data package for our tabular data, but we need to ascertain that the data is okay before we publish it or share it with others. Therefore, the first step was to load the .csv file into my github account to get the URL that I will use to run the validation. If you don't do this and run from a local path, you will get silly errors as shown below.</p>
+<p><img src="Path_error.PNG" alt="screenshot of path error" width=100%></p>
+<p><img src="HTTP_Error.PNG" alt="screenshot of path error" width=100%></p>
+<p>Once I had the url, I was able to run the validation, although I didn't receive good results. The tabular data had some errors. The good thing about goodtables is that it will point out exactly what the error is within your data and where it is, making it easier to correct the error. See below for the error within my data.
+<img src="Error_Image.PNG" alt="screenshot of structural error" width=100%></p>
+<p>The table had some blank spaces, as shown below.
+s
+<img src="Not_So_Arranged.PNG" alt="screenshot of tabular error" width=100%></p>
+<p>Afterwards, I manually fixed the problem by rearranging the tabular data and then ran the data once again. Luckily, this solved the problem, and now our data is valid. Tadah!</p>
+<p><img src="Arranged_Table.PNG" alt="screenshot of tabular data" width=100%></p>
+<p><img src="Valid_Table.PNG" alt="screenshot of valid data" width=100%></p>
+<p>At this point, my data is good and ready for manipulation etc. In this tutorial, I've only focused on one way of carrying out data validation, and that's because goodtables is comfortable to use. Nonetheless, the months in which I've been learning frictionless tools have taught me not to fear challenges. So with that, I'm still in the process of learning Python and hopefully I will be more comfortable with it with more practice and intentionality. I hope you challenge yourself too, in areas you feel you aren't so good at.</p>
 
-  
-
+  </div>
 
   </article>
   <footer>
