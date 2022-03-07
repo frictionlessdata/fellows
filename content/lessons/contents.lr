@@ -121,7 +121,7 @@ goodtables:
 - Learn about how to validate data with Goodtables by going through the following tutorial and video (I recommend starting by first reading the tutorial, then watching the video, then actually trying to do the tutorial):
   - Follow the first half of this tutorial to learn (1) how to validate data with the goodtables browser tool, and then continue on to the second half to learn (2) how to use the goodtables command line interface [https://frictionlessdata.io/blog/2018/07/16/validated-tabular-data/](https://frictionlessdata.io/blog/2018/07/16/validated-tabular-data/)
   - Read through one of the following blogs from Cohort 2 Fellows:
-    - [Kate's blog](http://127.0.0.1:5000/blog/kate-goodtables-blog/) about validating with the try.goodtables
+    - [Kate's blog](/blog/kate-goodtables-blog/) about validating with the try.goodtables
     - [Jacqueline's blog](/blog/jacqueline-goodtables-blog/) about validating with the Frictionless Framework
     - [Katerina's blog](/blog/katerina-goodtables-blog/) about validating with try.goodtables and Framework
 - Once you are comfortable with the idea of validating your data with Goodtables, learn about *continuous* validation by:

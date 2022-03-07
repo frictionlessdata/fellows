@@ -1,0 +1,33 @@
+title: Data Validation Using Goodtables
+---
+author: Melvin Occhieng
+---
+pub_date: 2022-03-01
+---
+cohort: 3
+---
+body:
+
+## Data Validation Using Goodtables
+In the last blog, we learned how to create a data package, and the last step was validation of the data package. However, that doesn't really validate our data. To validate your data, you could use [goodtables](https://try.goodtables.io) or [frictionless framework](https://framework.frictionlessdata.io). Goodtable identifies structural and content errors within tabular data to help improve the data before sharing, as errors are not uncommon. It's also a good tool for automated data validation. The frictionless framework is equally good at validation of a data package as you are able to do this within your Python script by either using python or command line syntax. You could follow this tutorial to learn more about data validation using the [frictionless framework tutorial](https://fellows.frictionlessdata.io/blog/jacqueline-goodtables-blog/).
+## Using Goodtables for Data Validation
+We already created a data package for our tabular data, but we need to ascertain that the data is okay before we publish it or share it with others. Therefore, the first step was to load the .csv file into my github account to get the URL that I will use to run the validation. If you don't do this and run from a local path, you will get silly errors as shown below.
+
+<img src="Path_error.PNG" alt="screenshot of path error" width=100%>
+
+<img src="HTTP_Error.PNG" alt="screenshot of path error" width=100%>
+
+Once I had the url, I was able to run the validation, although I didn't receive good results. The tabular data had some errors. The good thing about goodtables is that it will point out exactly what the error is within your data and where it is, making it easier to correct the error. See below for the error within my data.
+<img src="Error_Image.PNG" alt="screenshot of structural error" width=100%>
+
+The table had some blank spaces, as shown below.
+s
+<img src="Not_So_Arranged.PNG" alt="screenshot of tabular error" width=100%>
+
+Afterwards, I manually fixed the problem by rearranging the tabular data and then ran the data once again. Luckily, this solved the problem, and now our data is valid. Tadah!
+
+<img src="Arranged_Table.PNG" alt="screenshot of tabular data" width=100%>
+
+<img src="Valid_Table.PNG" alt="screenshot of valid data" width=100%>
+
+At this point, my data is good and ready for manipulation etc. In this tutorial, I've only focused on one way of carrying out data validation, and that's because goodtables is comfortable to use. Nonetheless, the months in which I've been learning frictionless tools have taught me not to fear challenges. So with that, I'm still in the process of learning Python and hopefully I will be more comfortable with it with more practice and intentionality. I hope you challenge yourself too, in areas you feel you aren't so good at.
