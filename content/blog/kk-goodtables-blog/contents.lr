@@ -1,0 +1,30 @@
+title: Validation of tabular data using Goodtables
+---
+author: Kevin Kidambasi
+---
+pub_date: 2022-03-15
+---
+cohort: 3
+---
+body:
+
+## Validation of tabular data using Goodtables
+### Introduction
+When compiling tabular data for analysis, it may contain structural errors such as blank header, duplicate header, blank-row, duplicate-row, extra value, missing value, etc as well as content errors for example schema error, non-matching-header, type-or-format-error, extra-header, which may hinder the data analyses processes. Goodtables is a tool that can be used to validate data by identifying such errors quickly and allowing them to be fixed. There are two ways to validate data:
+A) Using a free web tool called try.goodtables.io
+B) Using the goodtables command line tool in a user local machine
+Data validation using try.goodtables.io
+### Uploading the dataset
+First, I clicked on the ‘Upload’ file prompt in the {Source} section to upload my tabular dataset saved in a csv file from my local machine (alternatively one can copy paste the link in {Source} section if the data is publicly available online). There are two validation checks (1) Ignore blank rows (The checkbox is used to indicate whether blank rows should be considered as errors), and (2) Ignore duplicate rows (The checkbox is used to indicate whether duplicate rows should be considered as errors, or simply ignored). For my data, both blank rows and duplicate rows are considered as errors, therefore, I left all the boxes unchecked. 
+Identifying structural errors
+I began by validating my tabular data without a schema to identify any structural errors. I found my tabular data valid (Figure 1).
+
+<img src="Figure_1_Data_validation_without_a_schema.png" alt="" width=100%>Figure 1: Data validation without a schema</img>
+### Identifying content errors
+To check for any content errors, I included the schema for my data. Including a data schema as part of the validation process on try.goodtables.io allows checking of the dataset for content errors. For example, whether the information on fields matches with the assigned data types, thus making it possible to identify misplaced data and be able to correct it. 
+<img src="Figure_2_Data_validation_with_a_schema_identified_Type_or_format_error.png" alt="" width=100%>Figure 2: Data validation with a schema identified type or format error</img>
+
+As displayed in figure 2 above, at first my dataset had format errors in some fields that needed to be corrected for my tabular data to be valid. I traced all the errors, and corrected them by changing the data type of the date, altitude and latitude fields from integer to string. I then ran the validation test again, which came out valid as shown in figure 3 below.
+<img src="Figure_3_Validated_tabular_data.png" alt="" width=100%>Figure 3: Validated tabular data</img>
+### Conclusion
+In conclusion, I find the goodtables as an important tool to quickly identify errors in a given dataset and correct them, thus improving the quality of the data making it sharable and easily analyzed to draw meaningful insights from it.
