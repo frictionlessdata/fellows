@@ -1,3 +1,12 @@
+title: 
+---
+author: 
+---
+pub_date: 
+---
+cohort: 
+---
+body:
 
 In our last [blog post](https://fellows.frictionlessdata.io/blog/victoria-datapackage-blog/), we learned how - and more importantly - *why* - to create data packages for your research data. But even properly packaged data can be in need of some ole’ fashioned wrangling before its ready to be shared.  Well written metadata won’t save you from the perils of duplicate rows or missing headers, for example.  
 
