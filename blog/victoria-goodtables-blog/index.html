@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../css/style.css">
-<title>Lindsay Goodtables Blog</title>
+<title>Digital Doctor Data Diagnosis</title>
 
 <body>
   <header>
@@ -114,19 +114,144 @@
   </header>
   <article>
     
-  <h1>Lindsay Goodtables Blog</h1>
+  <h1>Digital Doctor Data Diagnosis</h1>
   <div>
   
   </div>
   <div class="blog">
-    <h2>What is Goodtables?</h2>
-<p>Goodtables is an open source tool to help researchers validate their data. Users upload a metadata schema as as json file as well as their tabular datafile. Goodtables then checks the data against the metadata schema to ensure everything looks how it should. The best part is that Goodtables offers continuous data validation - for data that is hosted on Github, Goodtables validates data every time it is updated.</p>
-<h2>Using Goodtables</h2>
-<p>First, I created my json schema file. I used the json file I created with the <a href="https://fellows.frictionlessdata.io/blog/lindsay-datapackage-blog/">Frictionless Datapackage Creator</a>. I cleaned this file up by deleting extraneous header and footer information and leaving only the metadata schema.</p>
-<p><img src="image2.png" width=100% alt="Image of Lindsay's Cleaned Up Metadata"></p>
-<p style="text-align: center; font-style: italic">A screenshot of the data package creator.</p><p>Next, I uploaded the json file with my metadata schema as well as the csv file with my data. Initially, I had a duplicate rows error. Fortunately for me, I noticed an "Ignore blank rows" and "Ignore duplicate rows" checkboxes in the Gootables tool.  After selecting them, my data cam back as a "Valid Table."</p>
-<p><img src="image1.png" width=100% alt="Image of Lindsay's Data Validation"></p>
-<p style="text-align: center; font-style: italic">A screenshot of the data package creator.</p><p>Given that my data are based on MARC records, or "machine readable catalog" records, it's unsurprising that my data came back valid without much fine-tuning. I'm glad to have learned to use this tool, as it will be valuable to researchers. I tried to spend time learning the python version of Goodtables, but ran into issues when my work owned computer would not allow me to install pip.</p>
+    <p>In our last <a href="https://fellows.frictionlessdata.io/blog/victoria-datapackage-blog/">blog post</a>, we learned how - and more importantly - <em>why</em> - to create data packages for your research data. But even properly packaged data can be in need of some ole’ fashioned wrangling before its ready to be shared.  Well written metadata won’t save you from the perils of duplicate rows or missing headers, for example.</p>
+<p>Personally I can think of few worse ways to spend time than manually combing data tables for formatting inconsistencies. It’s the digital equivalent of being given a pile of old books and being asked to hunt for missing pages.</p>
+<p><img src="books.jpg" alt=""></p>
+<p>(Cue cold sweat)</p>
+<p>Frictionless has a GUI-based <a href="http://try.goodtables.io/">web application</a> created for this express purpose.  It takes in tabular data, optionally with metadata attached, and scans for these sneaky little errors. If all looks good - it validates your data! Else, you get a message describing the error and location. However, to understand what goes on under the hood a little better, we’re going to play with the <a href="https://github.com/frictionlessdata/frictionless-py">Frictionless Python library </a> directly, which you can learn more about <a href="https://framework.frictionlessdata.io/">here</a> .</p>
+<p>For this exercise, I used csv containing input parameters for calculating
+enteric fermentation, pulled from the <a href="https://www.ipcc.ch/report/2019-refinement-to-the-2006-ipcc-guidelines-for-national-greenhouse-gas-inventories/">IPPC 2019 Refinement to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories </a>, which gives crop specific values necessary for calculating emissions. This csv was manually created by a collaborator and looks pretty clean upon initial visual inspection. Lets check it out below:</p>
+<pre><code>&gt;&gt;&gt; with open('crop_factors2.csv') as file: print(file.read())
+... 
+"""crop""""n_ag""""n_bg""""r_ag_t""""rs_t""""dry""""cf"""
+Other,0.008,0.009,1,0.22,0.85,1
+Generic Grains,0.006,0.009,1.3,0.22,0.88,1
+Winter Wheat,0.006,0.009,1.3,0.23,0.89,0.9
+Spring Wheat,0.006,0.009,1.3,0.28,0.89,0.9
+Barley,0.007,0.014,1.2,0.22,0.89,1
+Oats,0.007,0.008,1.3,0.25,0.89,1
+Maize,0.006,0.0017,1,0.22,0.87,0.8
+Rye,0.005,0.011,1.6,,0.88,1
+Rice,0.007,,1.4,0.16,0.89,0.8
+Millet,0.007,,1.4,,0.9,1
+Sorghum,0.007,0.006,1.4,,0.89,1
+Beans and Pulses,0.008,0.008,2.1,0.19,0.91,1
+Soybeans,0.008,0.008,2.1,0.19,0.91,1
+Potatoes and Tubers,0.019,0.014,0.4,0.2,0.22,1
+Peanuts,0.027,,1,,0.94,1
+Alfalfa,0.027,0.019,0,0.4,0.9,1
+Non-legume hay,0.015,0.012,0,0.54,0.9,1
+N-fixing forages,0.027,0.022,0.3,0.4,0.9,1
+Non-N-fixing forages,0.015,0.012,0.3,0.54,0.9,1
+Perennial Grasses,0.015,0.012,0.3,0.8,0.9,1
+Grass-Clover Mixtures,0.025,0.016,0.3,0.8,0.9,1
+</code></pre>
+<p>No screaming red flags so lets generate a schema to describe the data! This can be done with the function /describe/.</p>
+<pre><code>&gt;&gt;&gt; from pprint import pprint
+&gt;&gt;&gt; from frictionless import describe
+&gt;&gt;&gt; resource = describe('crop_factors2.csv')
+&gt;&gt;&gt; pprint(resource)
+{'encoding': 'utf-8',
+ 'format': 'csv',
+ 'hashing': 'md5',
+ 'layout': {'headerRows': [2]},
+ 'name': 'crop_factors2',
+ 'path': 'crop_factors2.csv',
+ 'profile': 'tabular-data-resource',
+ 'schema': {'fields': [{'name': 'Other', 'type': 'string'},
+                       {'name': '0.008', 'type': 'number'},
+                       {'name': '0.009', 'type': 'number'},
+                       {'name': '1', 'type': 'number'},
+                       {'name': '0.22', 'type': 'number'},
+                       {'name': '0.85', 'type': 'number'},
+                       {'name': '12', 'type': 'number'}]},
+ 'scheme': 'file'}
+</code></pre>
+<p>Hmm…  the memory isn’t great these days, but I just looked at the csv and don’t remember any column named ‘0.008’, so lets use the function /validate/  to target pain points in the data.</p>
+<pre><code>&gt;&gt;&gt; report = validate('crop_factors2.csv')
+&gt;&gt;&gt; pprint(report.flatten(["rowPosition", "fieldPosition", "code"]))
+[[None, 7, 'duplicate-label']]
+</code></pre>
+<p>And, error! Frictionless generates a tailored error message you can parse out in the <a href="https://framework.frictionlessdata.io/docs/references/errors-reference/">documentation.</a>  I searched for “duplicate-label” and got this information back:</p>
+<pre><code>Code: duplicate-label 
+Description: Two columns in the header row have the same value. Column names should be unique.
+</code></pre>
+<p>A quick peek at the format of my header - the column names revealed themselves to be separated by quotation marks (“) instead of commas (,) (wow obvious now that I look at it).  Gave the data a quick manual renovation and then hit it with validate a second time.</p>
+<pre><code>&gt;&gt;&gt; from frictionless import validate
+&gt;&gt;&gt; report = validate('crop_factors2.csv') 
+&gt;&gt;&gt; pprint(report.flatten(["rowPosition", "fieldPosition", "code"]))
+[]
+</code></pre>
+<p>Look at that empty error bracket!! Beautiful. Now that we’re ready to describe the data again, so we can validate the data against it’s schema.</p>
+<pre><code>&gt;&gt;&gt; resource2 = describe('crop_factors2.csv')
+&gt;&gt;&gt; pprint(resource2)
+{'encoding': 'utf-8',
+ 'format': 'csv',
+ 'hashing': 'md5',
+ 'name': 'crop_factors2',
+ 'path': 'crop_factors2.csv',
+ 'profile': 'tabular-data-resource',
+ 'schema': {'fields': [{'name': 'crop', 'type': 'string'},
+                       {'name': 'n_ag', 'type': 'number'},
+                       {'name': 'n_bg', 'type': 'number'},
+                       {'name': 'r_ag_t', 'type': 'number'},
+                       {'name': 'rs_t', 'type': 'number'},
+                       {'name': 'dry', 'type': 'number'},
+                       {'name': 'cf', 'type': 'number'}]},
+ 'scheme': 'file'}
+</code></pre>
+<p>With the header discrepancy fixed, the schema seems to be in acceptable shape now, but could use a little bit more detail. This can be done in a text editor, or directly with <a href="https://framework.frictionlessdata.io/docs/guides/describing-data">frictionless</a>.</p>
+<pre><code>&gt;&gt;&gt; package = describe("crop_factors2.csv")
+&gt;&gt;&gt; package.title = "Life Cycle Analysis Crop Factors"
+&gt;&gt;&gt; package.description = "crop factors for entric fermentation calculations for life cycle analysis" 
+&gt;&gt;&gt; package.get_resource("crop_factors2").name = "crop factors"
+</code></pre>
+<p>These commands allow me to update the package description and title, for example. Inside the metadata file that looks like:</p>
+<pre><code>description: crop factors for entric fermentation calculations for life cycle analysis
+encoding: utf-8
+format: csv
+hashing: md5
+name: crop factors
+path: crop_factors2.csv
+profile: tabular-data-resource
+schema:
+  fields:
+    - name: crop
+      title: Crop or forage type (T)
+      type: string
+    - name: n_ag
+      title: Nitrogen content of above ground residues for crop T (kg N) 
+      type: number
+    - name: n_bg
+      title: Nitrogen content of below ground residues for crop T (kg N)
+      type: number
+    - name: r_ag_t
+      title: Ratio of above-ground residue dry mattere to harvested yild for crop T (kg d.m. ha)
+      type: number
+    - name: rs_t
+      title: ratio of below-ground root biomass to above-ground shooot biomass for crop T, (kg d.m.ha)
+      type: number
+    - name: dry
+      title: Dry matter fraction of harvestedd product
+      type: number
+    - name: cf
+      title: Combustion factor (dimensionless)
+      type: number
+scheme: file
+title: Life Cycle Analysis Crop Factors
+</code></pre>
+<p>Finally happy with the outcome, we can now validate the data once more, together with its metadata file.</p>
+<pre><code>&gt;&gt;&gt; from frictionless import Resource
+&gt;&gt;&gt; resource = Resource("crop.yaml")
+&gt;&gt;&gt; print(resource.metadata_valid)
+True
+</code></pre>
+<p>True! Sweet sweet boolean music to my ears.  I can now confidently put this data into our model, publish it in a public repository, or pass it on to collaborators without feeling like a jerk.  While packaging and validation can feel like the data equivalent of doing taxes, they’re incredibly important steps in the data lifecycle.  They allow data to be useable and reproducible,  and really, what is research if you can’t reproduce it!</p>
 
   </div>
 

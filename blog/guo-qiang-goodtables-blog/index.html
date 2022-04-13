@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../css/style.css">
-<title>How to share data and code in a ‘Data Package’?</title>
+<title>Validate tabular data using Goodtables tool</title>
 
 <body>
   <header>
@@ -114,33 +114,27 @@
   </header>
   <article>
     
-  <h1>How to share data and code in a ‘Data Package’?</h1>
+  <h1>Validate tabular data using Goodtables tool</h1>
   <div>
   
   </div>
   <div class="blog">
-    <h2>What is a Data Package?</h2>
-<p>A <a href="https://specs.frictionlessdata.io/data-package/">Data Package</a> is a simple container format used to describe and package a collection of data. It consists of a descriptor (a JSON file) that provides general <a href="https://en.wikipedia.org/wiki/Metadata">metadata</a> describing the structure and contents of the package, and resources such as data files that form the contents of the package. Below presents how a Data Package may look like.</p>
-<p><img src="Picture1.png" alt="Data Package structure" width="100%"></p>
-<h2>Data Package tool</h2>
-<p>There are several ways to create a Data Package: <a href="https://create.frictionlessdata.io">Data Package Creator</a>, <a href="https://github.com/frictionlessdata/datapackage-r">R</a>, <a href="https://github.com/frictionlessdata/datapackage-py">Python</a>, etc. Data Package Creator is a free, online service that easily allows users to create a Data Package from their datasets. Because Data Package Creator is a browser tool that has an intuitive workflow, I am going to use this tool to create a Data Package.</p>
-<h2>Create a Data Package</h2>
-<h3>Prepare dataset</h3>
-<p>The dataset I am going to package is from a project which we have recently completed – “<a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003731">Menopausal hormone therapy and women’s health: An umbrella review</a>” which summarizes the clinical evidence on various health effects of menopausal hormone therapy in menopausal women. The full datasets are publicly available in the <a href="https://osf.io/dsy37/">Open Science Framework</a>. I am going to use one of the datasets –All-Cause Mortality.xlsx, which summarizes all the clinical trials published until 2017 investigating the effect of menopausal hormone therapy on all-cause mortality in menopausal women – to illustrate the process of creating a Data Package. The dataset can be directly downloaded <a href="https://osf.io/ps4ye/?show=view">here</a>.</p>
-<p>As the Data Package Creator currently accepts only .csv format, first I need to convert All-Cause Mortality.xlsx to .csv format. The conversion can be easily done in Excel: File –&gt; Save As, in the pop-up window, find and choose ‘Comma Separated Values’ in the File Format list. In the converted file, it is obvious to notice that the dataset has two extra rows in the beginning and two extra columns in the end. So, I am going to delete all the extra rows and columns. Now, I am ready to use All-Cause Mortality.csv to create a Data Package.</p>
-<h3>Data Package Creator</h3>
-<p>Step 1: Name the resource ‘all-cause-mortality’.\
-Step 2: Import the dataset All-Cause Mortality.csv.\
-Step 3: Add all the inferred fields from the imported dataset.</p>
+    <p><a href="https://try.goodtables.io">Goodtables</a> is a free web tool that can help identify structural and content errors in tabular data (e.g., an Excel table). It can identify a wide variety of errors that can exist in a real dataset, including blank header name, duplicate rows, missing value, etc. A more exhaustive list of different types of errors is available <a href="https://frictionlessdata.io/blog/2018/07/16/validated-tabular-data/#one-time-data-validation-with-try-goodtables-io">here</a>. In this blog, I am going to illustrate using Goodtables to validate tabular data (one-time data validation). For continuous data validation, please check out this <a href="https://frictionlessdata.io/blog/2018/03/12/automatically-validated-tabular-data/">blog</a>.</p>
+<h2>Prepare dataset</h2>
+<p>The dataset ‘All-Cause Mortality.csv’ I am going to use is from a Data Package that I created in my last <a href="https://fellows.frictionlessdata.io/blog/guo-qiang-datapackage-blog/">blog</a>. In order to illustrate how Goodtables can identify different types of errors, I am going to manually introduce three common types of errors into the dataset: missing value, duplicate rows, and format error (e.g., the type of data does not match the type of variable). The modified dataset can be downloaded <a href="https://github.com/zhangguoqianggu/Goodtables-blog">here</a>.</p>
+<h2>Validate data without a schema</h2>
+<h3>Step 1</h3>
+<p>Import dataset into Goodtables tool. As the dataset is on GitHub, I can directly copy and paste the <a href="https://raw.githubusercontent.com/zhangguoqianggu/Goodtables-blog/main/All-Cause%20Mortality.csv">raw code</a> into the Source input.</p>
+<h3>Step 2</h3>
+<p>Validate the data. Goodtables will upload and validate the dataset automatically.</p>
+<p><img src="Picture1.png" alt="Step 1–3" width="100%"></p>
+<h3>Step 3</h3>
+<p>Check the validation report. As illustrated below, in the dataset, Goodtables finds out that there are two headers that are blank and one duplicate row. This report can be then used as a guide to manually fix these errors.</p>
 <p><img src="Picture2.png" alt="Step 1–3" width="100%"></p>
-<p>Step 4: Check the inferred fields. For example, I need to check if data types for all the variables have been inferred properly. I can see that the data type for the variable “AgeOfParticipants” should be ‘number’ instead of ‘integer’. So, I need to change it to ‘number’. At this step, I can also provide additional information for each variable by adding title and description.</p>
-<p><img src="Picture3.png" alt="Step 4" width="100%"></p>
-<p>Step 5: Fill in metadata, such as name and title of Data Package, description, author, license, etc.</p>
-<p><img src="Picture4.png" alt="Step 5" width="100%"></p>
-<p>Step 6: Validate Data Package. If the created Data Package is valid, a message “Data Package is valid” will show up.\
-Step 7: Download descriptor (JSON file).\
-Step 8: Package descriptor, dataset, and analysis code. Below shows the completed Data Package.</p>
-<p><img src="Picture5.png" alt="Data Package for all-cause mortality" width="100%"></p>
+<h2>Validate data with a schema</h2>
+<p>A <a href="https://specs.frictionlessdata.io/table-schema/#language">data schema</a> provides information about the structure of tabular data. If a data schema is supplied, Goodtables can also check for content errors (e.g., mismatch between data and type of variable). The data schema for ‘All-Cause Mortality.csv’ can be downloaded <a href="https://github.com/zhangguoqianggu/Goodtables-blog">here</a>. Following the steps illustrated below, Goodtables finds out that, in addition to the errors identified above, there are format errors in three variables: in the data schema, ‘AgeOfParticipants’ is number, and ‘TrialDuration’ and ‘NumberOfEvents_Intervention’ are integer, while in the dataset character exists in the three variables; therefore, the data are inconsistent with the types of variables specified in the data schema.</p>
+<p><img src="Picture3.png" alt="Step 1–3" width="100%"></p>
+<p><img src="Picture4.png" alt="Step 1–3" width="100%"></p>
 
   </div>
 
