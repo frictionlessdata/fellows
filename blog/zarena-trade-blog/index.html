@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Data Trading Practice</title>
 
 <body>
   <header>
@@ -114,186 +114,125 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Data Trading Practice</h1>
   <div>
-    
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-    
-      
-        <h2>
-          Cohort 2 Blogs
-        </h2>
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-        <ul class="blog-index">
-        
-          
-          <li>
-            <a href="../../hello-evelyn/">Meet Evelyn</a> —
-            by Evelyn Night
-            on 2020-08-28
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../hello-katerina/">Meet Katerina</a> —
-            by Katerina Drakoulaki
-            on 2020-08-28
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../hello-sam/">Meet Sam</a> —
-            by Sam Wilairat
-            on 2020-08-28
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../hello-kate/">Meet Kate (she/her)</a> —
-            by Kate Bowie
-            on 2020-08-27
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../hello-jacqueline/">Meet Jacqueline</a> —
-            by Jacqueline Maasch
-            on 2020-08-26
-          </li>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        </ul>
-    
-      
-        <h2>
-          Cohort 1 Blogs
-        </h2>
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-        <li>
-          <a href="../../sele-final-blog/">A seguir reproduciendo conocimiento!</a> —
-          by Sele Yang
-          on 2020-06-04
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../ouso-final-blog/">Better Data: One resource at a time - My fellowship experience</a> —
-          by Daniel Ouso
-          on 2020-06-04
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../monica-final-blog/">Gimme Dat Data (in a validated Data Package)</a> —
-          by Monica Granados
-          on 2020-06-04
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../lily-final-blog/">Reflecting on My Time as a Fellow</a> —
-          by Lily Zhao
-          on 2020-06-04
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../ouso-partner-blog/">Data Barter: Real-life data interactions</a> —
-          by Daniel Ouso
-          on 2020-05-17
-        </li>
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <a href="../5/">&laquo; Previous</a>
-    
-    | <strong>6</strong> |
-    
-      <a href="../7/">Next &raquo;</a>
-    
   </div>
+  <div class="blog">
+    <h2>Introduction</h2>
+<p>Before joining the Frictionless Data Fellowship Programme, I did not realise the importance of research reproducibility. To tell the truth, I really did not have such a concept in my professional vocabulary despite having an MSc degree in Social Science Research Methods and working in different social research projects. But, maybe, that was the reason why I did not know this concept and never practised it in my research projects. Like many of my social science colleagues, especially the ones working with qualitative - and often sensitive -  data, for me it was important to ensure that data I collect are safely stored in a password-protected platform and then - upon completion of a project - are deleted. But now working for the <em>Frictionless Data Fellowship Programme</em> and managing different sorts of data, including bibliometric metadata, I see that if we want social sciences and humanities to progress, it is vital to integrate such practices as reproducing, replicating, and reusing data into our research.</p>
+<p>So, in this blog, I will try to explain my first attempt to reproduce my Frictionless fellow’s dataset, which is openly shared in <a href="https://github.com/vyelnats/frictionless-v">the GitHub repository</a>.</p>
+<h2>Reproducing Openly Shared Data using Frictionless browser tools</h2>
+<p>First, I contacted Victoria - my partner in data trading - to learn about her dataset and datapackage location. After a while, she sent me the link to her GitHub with the names of the files that she wanted me to reproduce. Feeling equipped with all the information that I needed, I opened Victoria’s Frictionless Fellow repository in GitHub. There were so many interesting things that caught my attention. By clicking and exploring some files, I finally could locate the dataset that I needed. It was a <a href="https://github.com/vyelnats/frictionless-v/blob/main/weather.csv">weather.csv</a> file. Already reading the name of the dataset, I knew that I would deal with all sorts of information about weather and felt so excited. So, I copied the raw data path and loaded it into the Frictionless <a href="https://create.frictionlessdata.io">Data Package Creator</a> tool.</p>
+<p>The Data Package tool inferred 22 fields with metadata about minimum and maximum temperatures, rainfall, wind direction and speed, humidity, and other weather related information. I looked through the fields, checked the schema, and corrected the inconsistencies in data types. Then, I quickly filled in the metadata part and pushed the <em>Validate</em> button. After I received the <em>Data package is valid</em> message, I was good to go to validate the dataset itself. For that purpose, I used the Frictionless <a href="http://goodtables.io">Goodbtables</a> tool.</p>
+<p>In Goodtables, I first validated the data table without a schema. Not surprisingly, the data table came out to be valid. Then, I decided to validate the data against the table schema, which I copied from the datapackage.json file downloaded from the Data Package creator tool a few steps earlier. I uploaded the path to the schema json file, and pushed the validate button. This time I received a red-line message indicating 12 <a href="https://framework.frictionlessdata.io/docs/references/errors-reference/#type-error">type errors</a> in the data. I wanted to fix them using a frictionless-py framework but was unsuccessful. However, there were not so many errors, so I manually fixed them, and revalidated the dataset. Finally, I received a long-awaited green-colour message, saying “Valid Table”.</p>
+<h2>Reproducing Openly Shared Data using frictionless-py tools</h2>
+<p>Although Goodtables is a quick and easy way to validate a dataset, it still did not make me give up my eagerness to learn about cleaning data using python. So, I asked Lilly to go through this process together during our call.</p>
+<p>We looked through the dataset by using describe, extract, and validate frictionless-py functions. Unsurprisingly, we got the same 12 type errors. I thought I could fix them by just changing the wrong data type to the correct one by using the following code:</p>
+<p><code>resource.schema.get_field('WindSpeed9am').type = 'any'</code></p>
+<p><code>resource.schema.get_field('WindGustSpeed').type = 'any'</code></p>
+<p><code>resource.schema.get_field('Sunshine').type = 'any'</code></p>
+<p><code>pprint(resource)</code></p>
+<p><code>resource.to_yaml("weather.yaml")</code></p>
+<p>Running this code, I wanted the frictionless-py to get the fields where errors were located and to change their type to <em>any</em>. In the last code, I also asked it to save the changed dataset as a yaml file for later use.</p>
+<p>But reading the message line in the code, Lilly noticed that the true cause of the errors were <em>missing values</em> in the cells. That was an <em>aha</em> moment for us. So, Lilly opened the <a href="https://framework.frictionlessdata.io">frictionless-py documentation</a> and found a new (at least for me) function called <code>Detector</code>, which, as its name says, detects missing values and asks the frictionless-py to consider them as ‘null’.</p>
+<p>We used the following code for that:</p>
+<p>from pprint import pprint
+from frictionless import Detector, describe</p>
+<p><code>detector = Detector(field_missing_values=["", "NA"])</code></p>
+<p><code>resource = describe("https://raw.githubusercontent.com/vyelnats/frictionless-v/main/weather.csv", detector=detector)</code></p>
+<p><code>pprint(resource.schema.missing_values)</code></p>
+<p><code>pprint(resource.read_rows())</code></p>
+<p>We ran the code and then re-validated the dataset. 
+And as the stats below show, this time frictionless-py detected no error and the dataset was clean, valid, and ready to be uploaded into an open data repository.</p>
+<p><code>{'errors': [],
+ 'stats': {'errors': 0, 'tasks': 1},
+ 'tasks': [{'errors': [],
+            'partial': False,
+            'resource': {'encoding': 'utf-8',
+                         'format': 'csv',
+                         'hashing': 'md5',
+                         'name': 'weather',
+                         'path': 'https://raw.githubusercontent.com/vyelnats/frictionless-v/main/weather.csv',
+                         'profile': 'tabular-data-resource',
+                         'schema': {'fields': [{'name': 'MinTemp',
+                                                'type': 'number'},
+                                               {'name': 'MaxTemp',
+                                                'type': 'number'},
+                                               {'name': 'Rainfall',
+                                                'type': 'number'},
+                                               {'name': 'Evaporation',
+                                                'type': 'number'},
+                                               {'name': 'Sunshine',
+                                                'type': 'number'},
+                                               {'name': 'WindGustDir',
+                                                'type': 'string'},
+                                               {'name': 'WindGustSpeed',
+                                                'type': 'integer'},
+                                               {'name': 'WindDir9am',
+                                                'type': 'string'},
+                                               {'name': 'WindDir3pm',
+                                                'type': 'string'},
+                                               {'name': 'WindSpeed9am',
+                                                'type': 'integer'},
+                                               {'name': 'WindSpeed3pm',
+                                                'type': 'integer'},
+                                               {'name': 'Humidity9am',
+                                                'type': 'integer'},
+                                               {'name': 'Humidity3pm',
+                                                'type': 'integer'},
+                                               {'name': 'Pressure9am',
+                                                'type': 'number'},
+                                               {'name': 'Pressure3pm',
+                                                'type': 'number'},
+                                               {'name': 'Cloud9am',
+                                                'type': 'integer'},
+                                               {'name': 'Cloud3pm',
+                                                'type': 'integer'},
+                                               {'name': 'Temp9am',
+                                                'type': 'number'},
+                                               {'name': 'Temp3pm',
+                                                'type': 'number'},
+                                               {'name': 'RainToday',
+                                                'type': 'string'},
+                                               {'name': 'RISK_MM',
+                                                'type': 'number'},
+                                               {'name': 'RainTomorrow',
+                                                'type': 'string'}],
+                                    'missingValues': ['', 'NA']},
+                         'scheme': 'https',
+                         'stats': {'bytes': 29462,
+                                   'fields': 22,
+                                   'hash': 'e9f5a995fe15cf248a228ad6313793de',
+                                   'rows': 366}},
+            'scope': ['hash-count-error',
+                      'byte-count-error',
+                      'field-count-error',
+                      'row-count-error',
+                      'blank-header',
+                      'extra-label',
+                      'missing-label',
+                      'blank-label',
+                      'duplicate-label',
+                      'incorrect-label',
+                      'blank-row',
+                      'primary-key-error',
+                      'foreign-key-error',
+                      'extra-cell',
+                      'missing-cell',
+                      'type-error',
+                      'constraint-error',
+                      'unique-error'],
+            'stats': {'errors': 0},
+            'time': 0.806,
+            'valid': True}],
+ 'time': 0.806,
+ 'valid': True,
+ 'version': '4.22.3'}</code></p>
+<h2>Conclusion</h2>
+<p>This data trading practice was very useful for me. It taught me how by using openly shared data we can locate errors, fix them, and reuse other people’s data to progress science and research in multiple different contexts.</p>
 
-  
-
+  </div>
 
   </article>
   <footer>
