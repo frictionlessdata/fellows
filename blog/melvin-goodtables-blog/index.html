@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="css/style.css">
-<title>Welcome to the Frictionless Data for Reproducible Research Fellows Programme!</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Data Validation Using Goodtables</title>
 
 <body>
   <header>
@@ -114,22 +114,26 @@
   </header>
   <article>
     
-  <h1>Welcome to the Frictionless Data for Reproducible Research Fellows Programme!</h1>
+  <h1>Data Validation Using Goodtables</h1>
   <div>
   
   </div>
-  <div>
-    <h2>Frictionless Fellows Workshop 25 May</h2>
-<p><strong>Join the Frictionless Fellows for a free virtual workshop on Open Science best practices on May 25 at 2pm UTC! Fellows will demonstrate how to use the Frictionless tools to make research data more understandable, usable, and open.</strong></p>
-<p><strong>Who is this for?</strong> This workshop will be designed for researchers wanting to learn more about open science, and everyone is welcome to join. You do not need to know how to code to join as we will be using non-coding Frictionless tools. This is a beginner-friendly workshop.</p>
-<p><strong>What will happen during this workshop?</strong> Over 1.5 hours, the Fellows will present on open science best practices, such as FAIR principles and data management, and then you will be introduced to two Frictionless tools, DataPackage Creator and Goodtables. You will learn how to manipulate metadata and schemas (and why that is important!) and how to validate data in a hands-on format.</p>
-<p><strong>How do I sign up?</strong> Please register using this Zoom link: <a href="https://us02web.zoom.us/meeting/register/tZAucOuqrjkiHd20t8Tvy68Dp0J5hsaIW3vv">https://us02web.zoom.us/meeting/register/tZAucOuqrjkiHd20t8Tvy68Dp0J5hsaIW3vv</a></p>
-<p><strong>Questions?</strong> Reach out to Lilly at lilly.winfree@okfn.org with any questions :-)</p>
-<hr>
-<h2>What is the Reproducible Research Fellows Programme?</h2>
-<p>With the Frictionless Data Reproducible Research Fellows Programme, supported by the Sloan Foundation and Open Knowledge Foundation, we are recruiting and training early career researchers to become champions of the Frictionless Data tools and approaches in their field. Fellows will learn about Frictionless Data, including how to use Frictionless tools in their domains to improve reproducible research workflows, and how to advocate for open science. Working closely with the Frictionless Data team, Fellows will lead training workshops at conferences, host events at universities and in labs, and write blogs and other communications content. In addition to mentorship, we are providing successful applicants with stipends of $5,000 to support their work and time during the nine-month long Fellows Programme. The Third Cohort of Fellows will start in October 2021 and end in June 2022.</p>
-<h2>Background</h2>
-<p>The Fellows Programme is part of the <a href="https://frictionlessdata.io/adoption/#frictionless-data-for-reproducible-research" target="_blank">Frictionless Data for Reproducible Research project</a> at <a href="http://okfn.org/" target="_blank">Open Knowledge Foundation</a>. The first Fellows Cohort took place from Fall 2019 til Spring 2020, and the Second Cohort ran from August 2020 until May 2021. This project, funded by the Sloan Foundation, applies our work in Frictionless Data to data-driven research disciplines, in order to facilitate data workflows in research contexts. At its core, Frictionless Data is a set of <a href="https://specs.frictionlessdata.io/" target="_blank">specifications</a> for data and metadata interoperability, accompanied by a collection of <a href="https://github.com/frictionlessdata" target="_blank">software libraries</a> that implement these specifications, and a range of best practices for data management. The core specification, the Data Package, is a simple and practical “container” for data and metadata.</p>
+  <div class="blog">
+    <h2>Data Validation Using Goodtables</h2>
+<p>In the last blog, we learned how to create a data package, and the last step was validation of the data package. However, that doesn't really validate our data. To validate your data, you could use <a href="https://try.goodtables.io">goodtables</a> or <a href="https://framework.frictionlessdata.io">frictionless framework</a>. Goodtable identifies structural and content errors within tabular data to help improve the data before sharing, as errors are not uncommon. It's also a good tool for automated data validation. The frictionless framework is equally good at validation of a data package as you are able to do this within your Python script by either using python or command line syntax. You could follow this tutorial to learn more about data validation using the <a href="https://fellows.frictionlessdata.io/blog/jacqueline-goodtables-blog/">frictionless framework tutorial</a>.</p>
+<h2>Using Goodtables for Data Validation</h2>
+<p>We already created a data package for our tabular data, but we need to ascertain that the data is okay before we publish it or share it with others. Therefore, the first step was to load the .csv file into my github account to get the URL that I will use to run the validation. If you don't do this and run from a local path, you will get silly errors as shown below.</p>
+<p><img src="Path_error.PNG" alt="screenshot of path error" width=100%></p>
+<p><img src="HTTP_Error.PNG" alt="screenshot of path error" width=100%></p>
+<p>Once I had the url, I was able to run the validation, although I didn't receive good results. The tabular data had some errors. The good thing about goodtables is that it will point out exactly what the error is within your data and where it is, making it easier to correct the error. See below for the error within my data.
+<img src="Error_Image.PNG" alt="screenshot of structural error" width=100%></p>
+<p>The table had some blank spaces, as shown below.
+s
+<img src="Not_So_Arranged.PNG" alt="screenshot of tabular error" width=100%></p>
+<p>Afterwards, I manually fixed the problem by rearranging the tabular data and then ran the data once again. Luckily, this solved the problem, and now our data is valid. Tadah!</p>
+<p><img src="Arranged_Table.PNG" alt="screenshot of tabular data" width=100%></p>
+<p><img src="Valid_Table.PNG" alt="screenshot of valid data" width=100%></p>
+<p>At this point, my data is good and ready for manipulation etc. In this tutorial, I've only focused on one way of carrying out data validation, and that's because goodtables is comfortable to use. Nonetheless, the months in which I've been learning frictionless tools have taught me not to fear challenges. So with that, I'm still in the process of learning Python and hopefully I will be more comfortable with it with more practice and intentionality. I hope you challenge yourself too, in areas you feel you aren't so good at.</p>
 
   </div>
 

@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="css/style.css">
-<title>Welcome to the Frictionless Data for Reproducible Research Fellows Programme!</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Lindsay Goodtables Blog</title>
 
 <body>
   <header>
@@ -114,22 +114,19 @@
   </header>
   <article>
     
-  <h1>Welcome to the Frictionless Data for Reproducible Research Fellows Programme!</h1>
+  <h1>Lindsay Goodtables Blog</h1>
   <div>
   
   </div>
-  <div>
-    <h2>Frictionless Fellows Workshop 25 May</h2>
-<p><strong>Join the Frictionless Fellows for a free virtual workshop on Open Science best practices on May 25 at 2pm UTC! Fellows will demonstrate how to use the Frictionless tools to make research data more understandable, usable, and open.</strong></p>
-<p><strong>Who is this for?</strong> This workshop will be designed for researchers wanting to learn more about open science, and everyone is welcome to join. You do not need to know how to code to join as we will be using non-coding Frictionless tools. This is a beginner-friendly workshop.</p>
-<p><strong>What will happen during this workshop?</strong> Over 1.5 hours, the Fellows will present on open science best practices, such as FAIR principles and data management, and then you will be introduced to two Frictionless tools, DataPackage Creator and Goodtables. You will learn how to manipulate metadata and schemas (and why that is important!) and how to validate data in a hands-on format.</p>
-<p><strong>How do I sign up?</strong> Please register using this Zoom link: <a href="https://us02web.zoom.us/meeting/register/tZAucOuqrjkiHd20t8Tvy68Dp0J5hsaIW3vv">https://us02web.zoom.us/meeting/register/tZAucOuqrjkiHd20t8Tvy68Dp0J5hsaIW3vv</a></p>
-<p><strong>Questions?</strong> Reach out to Lilly at lilly.winfree@okfn.org with any questions :-)</p>
-<hr>
-<h2>What is the Reproducible Research Fellows Programme?</h2>
-<p>With the Frictionless Data Reproducible Research Fellows Programme, supported by the Sloan Foundation and Open Knowledge Foundation, we are recruiting and training early career researchers to become champions of the Frictionless Data tools and approaches in their field. Fellows will learn about Frictionless Data, including how to use Frictionless tools in their domains to improve reproducible research workflows, and how to advocate for open science. Working closely with the Frictionless Data team, Fellows will lead training workshops at conferences, host events at universities and in labs, and write blogs and other communications content. In addition to mentorship, we are providing successful applicants with stipends of $5,000 to support their work and time during the nine-month long Fellows Programme. The Third Cohort of Fellows will start in October 2021 and end in June 2022.</p>
-<h2>Background</h2>
-<p>The Fellows Programme is part of the <a href="https://frictionlessdata.io/adoption/#frictionless-data-for-reproducible-research" target="_blank">Frictionless Data for Reproducible Research project</a> at <a href="http://okfn.org/" target="_blank">Open Knowledge Foundation</a>. The first Fellows Cohort took place from Fall 2019 til Spring 2020, and the Second Cohort ran from August 2020 until May 2021. This project, funded by the Sloan Foundation, applies our work in Frictionless Data to data-driven research disciplines, in order to facilitate data workflows in research contexts. At its core, Frictionless Data is a set of <a href="https://specs.frictionlessdata.io/" target="_blank">specifications</a> for data and metadata interoperability, accompanied by a collection of <a href="https://github.com/frictionlessdata" target="_blank">software libraries</a> that implement these specifications, and a range of best practices for data management. The core specification, the Data Package, is a simple and practical “container” for data and metadata.</p>
+  <div class="blog">
+    <h2>What is Goodtables?</h2>
+<p>Goodtables is an open source tool to help researchers validate their data. Users upload a metadata schema as as json file as well as their tabular datafile. Goodtables then checks the data against the metadata schema to ensure everything looks how it should. The best part is that Goodtables offers continuous data validation - for data that is hosted on Github, Goodtables validates data every time it is updated.</p>
+<h2>Using Goodtables</h2>
+<p>First, I created my json schema file. I used the json file I created with the <a href="https://fellows.frictionlessdata.io/blog/lindsay-datapackage-blog/">Frictionless Datapackage Creator</a>. I cleaned this file up by deleting extraneous header and footer information and leaving only the metadata schema.</p>
+<p><img src="image2.png" width=100% alt="Image of Lindsay's Cleaned Up Metadata"></p>
+<p style="text-align: center; font-style: italic">A screenshot of the data package creator.</p><p>Next, I uploaded the json file with my metadata schema as well as the csv file with my data. Initially, I had a duplicate rows error. Fortunately for me, I noticed an "Ignore blank rows" and "Ignore duplicate rows" checkboxes in the Gootables tool.  After selecting them, my data cam back as a "Valid Table."</p>
+<p><img src="image1.png" width=100% alt="Image of Lindsay's Data Validation"></p>
+<p style="text-align: center; font-style: italic">A screenshot of the data package creator.</p><p>Given that my data are based on MARC records, or "machine readable catalog" records, it's unsurprising that my data came back valid without much fine-tuning. I'm glad to have learned to use this tool, as it will be valuable to researchers. I tried to spend time learning the python version of Goodtables, but ran into issues when my work owned computer would not allow me to install pip.</p>
 
   </div>
 
