@@ -1,0 +1,35 @@
+title: Validate tabular data using Goodtables tool 
+---
+author: Guo-Qiang Zhang 
+---
+pub_date: 2022-03-25
+---
+cohort: 3
+---
+body:
+
+[Goodtables](https://try.goodtables.io) is a free web tool that can help identify structural and content errors in tabular data (e.g., an Excel table). It can identify a wide variety of errors that can exist in a real dataset, including blank header name, duplicate rows, missing value, etc. A more exhaustive list of different types of errors is available [here](https://frictionlessdata.io/blog/2018/07/16/validated-tabular-data/#one-time-data-validation-with-try-goodtables-io). In this blog, I am going to illustrate using Goodtables to validate tabular data (one-time data validation). For continuous data validation, please check out this [blog](https://frictionlessdata.io/blog/2018/03/12/automatically-validated-tabular-data/).
+
+## Prepare dataset
+The dataset ‘All-Cause Mortality.csv’ I am going to use is from a Data Package that I created in my last [blog](https://fellows.frictionlessdata.io/blog/guo-qiang-datapackage-blog/). In order to illustrate how Goodtables can identify different types of errors, I am going to manually introduce three common types of errors into the dataset: missing value, duplicate rows, and format error (e.g., the type of data does not match the type of variable). The modified dataset can be downloaded [here](https://github.com/zhangguoqianggu/Goodtables-blog).
+
+## Validate data without a schema
+### Step 1
+Import dataset into Goodtables tool. As the dataset is on GitHub, I can directly copy and paste the [raw code](https://raw.githubusercontent.com/zhangguoqianggu/Goodtables-blog/main/All-Cause%20Mortality.csv) into the Source input.
+
+### Step 2
+Validate the data. Goodtables will upload and validate the dataset automatically.
+
+<img src="Picture1.png" alt="Step 1–3" width="100%">
+
+### Step 3
+Check the validation report. As illustrated below, in the dataset, Goodtables finds out that there are two headers that are blank and one duplicate row. This report can be then used as a guide to manually fix these errors.
+
+<img src="Picture2.png" alt="Step 1–3" width="100%">
+
+## Validate data with a schema
+A [data schema](https://specs.frictionlessdata.io/table-schema/#language) provides information about the structure of tabular data. If a data schema is supplied, Goodtables can also check for content errors (e.g., mismatch between data and type of variable). The data schema for ‘All-Cause Mortality.csv’ can be downloaded [here](https://github.com/zhangguoqianggu/Goodtables-blog). Following the steps illustrated below, Goodtables finds out that, in addition to the errors identified above, there are format errors in three variables: in the data schema, ‘AgeOfParticipants’ is number, and ‘TrialDuration’ and ‘NumberOfEvents_Intervention’ are integer, while in the dataset character exists in the three variables; therefore, the data are inconsistent with the types of variables specified in the data schema.
+
+<img src="Picture3.png" alt="Step 1–3" width="100%">
+
+<img src="Picture4.png" alt="Step 1–3" width="100%">
