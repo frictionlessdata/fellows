@@ -16,7 +16,7 @@ B) Using the goodtables command line tool in a user local machine
 Data validation using try.goodtables.io
 ### Uploading the dataset
 First, I clicked on the ‘Upload’ file prompt in the {Source} section to upload my tabular dataset saved in a csv file from my local machine (alternatively one can copy paste the link in {Source} section if the data is publicly available online). There are two validation checks (1) Ignore blank rows (The checkbox is used to indicate whether blank rows should be considered as errors), and (2) Ignore duplicate rows (The checkbox is used to indicate whether duplicate rows should be considered as errors, or simply ignored). For my data, both blank rows and duplicate rows are considered as errors, therefore, I left all the boxes unchecked. 
-Identifying structural errors
+### Identifying structural errors
 I began by validating my tabular data without a schema to identify any structural errors. I found my tabular data valid (Figure 1).
 
 <img src="Figure_1_Data_validation_without_a_schema.png" alt="" width=100%>Figure 1: Data validation without a schema</img>
