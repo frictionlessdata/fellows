@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Trading Data Packages for Reproducibility</title>
 
 <body>
   <header>
@@ -114,186 +114,24 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Trading Data Packages for Reproducibility</h1>
   <div>
-    
-      
-        <h2>
-          Cohort 3 Blogs
-        </h2>
-      
-    
-      
-    
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="../../hello-kevin/">Meet Kevin Kidambasi</a> —
-          by Kevin Kidambasi
-          on 2021-11-08
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-lindsay/">Lindsay Biography</a> —
-          by Lindsay Gypin
-          on 2021-11-05
-        </li>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-    
-      
-        <h2>
-          Cohort 2 Blogs
-        </h2>
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-        <ul class="blog-index">
-        
-          
-        
-          
-        
-          
-          <li>
-            <a href="../../anne-final-blog/">Endings, Beginnings, and Reflections</a> —
-            by Anne Lee Steele
-            on 2021-06-29
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../evelyn-final-blog/">A done deal</a> —
-            by Evelyn Night Okello
-            on 2021-05-12
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../jacqueline-final-blog/">A fellowship concludes</a> —
-            by Jacqueline Maasch
-            on 2021-05-04
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../katerina-final-blog/">My experience in the fellows program - a reflection</a> —
-            by Katerina Drakoulaki
-            on 2021-04-28
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../anne-partner-blog/">On README files, sharing data and interoperability</a> —
-            by Anne Lee Steele
-            on 2021-04-20
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../dani-partner-blog/">Using Frictionless tools to help you understand open data</a> —
-            by Daniel Alcalá López
-            on 2021-04-04
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../katerina-partner-blog/">Validating someone else&#39;s data!</a> —
-            by Katerina Drakoulaki
-            on 2021-03-10
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../sam-reproduce-blog/">Reproducing Jacqueline&#39;s Datapackage and Revalidating her Data!</a> —
-            by Sam Wilairat
-            on 2021-02-22
-          </li>
-          
-        
-        </ul>
-    
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <a href="../2/">&laquo; Previous</a>
-    
-    | <strong>3</strong> |
-    
-      <a href="../4/">Next &raquo;</a>
-    
   </div>
+  <div class="blog">
+    <h2>Introduction</h2>
+<p>We had an interesting task for our frictionless fellow activity that involved exchanging our data sets with our fellow colleagues (pairwise) and trying to reproduce their work. My partner for this assignment was Lindsay, who is a librarian. More information about Lindsay can be found <a href="https://fellows.frictionlessdata.io/blog/hello-lindsay/">here</a>.</p>
+<p>In data science, replicability and reproducibility are some of the keys to data integrity.It creates more opportunities for new insights and reduces errors. In order to ensure reproducibility of data, one must first make sure that the raw data is available. In this regard, my partner Lindsay shared with me her data that was on her Github account to facilitate the process.</p>
+<p>This process and activity were really useful and humbling. As we got to discuss our data sets with Lindsay, I realized key things such as <a href="https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html">Tidy data principles</a>, which was the highlight for me in this whole process, besides the point that it's not easy to understand someone else's data without further metadata to accompany the data set. Imagine the frustration researchers go through trying to understand and reproduce other people's data without more information on the data. Follow through to see how I managed to reproduce my fellows' data package.</p>
+<h2>Getting the data</h2>
+<p>Once I received the github link to the data, I was able to locate the data. However, the data was really huge, and for the sake of making the process not so cumbersome, Lindsay shared a subset of the data with me. Lindsay and I are in different fields, so this whole process was interesting to get to learn and understand what we do through our data. She is passionate about bringing social justice principles to libraries. The data was to be used to explore bias in library MARC (machine readable catalog) records. The metadata contained the author name, title of the book, sub-title, book description, table of content, etc.</p>
+<p>Once I had the sub-set <a href="https://raw.githubusercontent.com/IamMelvin5/Cube/main/BasketballMarcRecordsSubset.csv">data</a>, the rest of the process was pretty simple. I used browser tools to create the data package and run the validation process. I keyed the link and loaded it into the <a href="https://create.frictionlessdata.io/">data package creator</a>, entered the metadata, and pushed the validate button. The data package came out valid as shown below.</p>
+<p><img src="BasketballMarcR.PNG" alt="screenshot of data apackage" width=100%></p>
+<p>Once that was done, I then ran the data using <a href="http://goodtables.io/">Goodtables</a> to validate the data and the data came out valid as shown below.</p>
+<p><img src="BasketballMarcR_Valid.PNG" alt="screenshot of validation with good tables" width=100%></p>
+<p>With these steps, I was able to reproduce Lindsay's data.</p>
 
-  
-
+  </div>
 
   </article>
   <footer>

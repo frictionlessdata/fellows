@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../../css/style.css">
-<title>Fellows Programme Blog Homepage</title>
+<link rel="stylesheet" href="../../css/style.css">
+<title>Data trading for reproducibility</title>
 
 <body>
   <header>
@@ -114,186 +114,25 @@
   </header>
   <article>
     
-  <h1>Fellows Programme Blog Homepage</h1>
-  <div class="blog">
-    
-  </div>
+  <h1>Data trading for reproducibility</h1>
   <div>
-    
-      
-        <h2>
-          Cohort 3 Blogs
-        </h2>
-      
-    
-      
-    
-      <ul class="blog-index">
-      
-        
-        <li>
-          <a href="../../hello-kevin/">Meet Kevin Kidambasi</a> —
-          by Kevin Kidambasi
-          on 2021-11-08
-        </li>
-        
-      
-        
-        <li>
-          <a href="../../hello-lindsay/">Lindsay Biography</a> —
-          by Lindsay Gypin
-          on 2021-11-05
-        </li>
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-    
-      
-        <h2>
-          Cohort 2 Blogs
-        </h2>
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-        <ul class="blog-index">
-        
-          
-        
-          
-        
-          
-          <li>
-            <a href="../../anne-final-blog/">Endings, Beginnings, and Reflections</a> —
-            by Anne Lee Steele
-            on 2021-06-29
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../evelyn-final-blog/">A done deal</a> —
-            by Evelyn Night Okello
-            on 2021-05-12
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../jacqueline-final-blog/">A fellowship concludes</a> —
-            by Jacqueline Maasch
-            on 2021-05-04
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../katerina-final-blog/">My experience in the fellows program - a reflection</a> —
-            by Katerina Drakoulaki
-            on 2021-04-28
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../anne-partner-blog/">On README files, sharing data and interoperability</a> —
-            by Anne Lee Steele
-            on 2021-04-20
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../dani-partner-blog/">Using Frictionless tools to help you understand open data</a> —
-            by Daniel Alcalá López
-            on 2021-04-04
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../katerina-partner-blog/">Validating someone else&#39;s data!</a> —
-            by Katerina Drakoulaki
-            on 2021-03-10
-          </li>
-          
-        
-          
-          <li>
-            <a href="../../sam-reproduce-blog/">Reproducing Jacqueline&#39;s Datapackage and Revalidating her Data!</a> —
-            by Sam Wilairat
-            on 2021-02-22
-          </li>
-          
-        
-        </ul>
-    
-      <ul class="blog-index">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      </ul>
-  </div>
   
-    
-  <div class="pagination">
-    
-      <a href="../2/">&laquo; Previous</a>
-    
-    | <strong>3</strong> |
-    
-      <a href="../4/">Next &raquo;</a>
-    
   </div>
+  <div class="blog">
+    <h2>Data reproducibility</h2>
+<h3>Introduction</h3>
+<p>Data reproducibility is where other researcher uses same data to attain the same results by using same methods. Research reproducibility allows other scientist to gain new insights from your data as well as improve quality of research by checking the correctness of your findings. The aim of this assignment was to try and reproduce my colleague’s data package and validate the tabular data using frictionless browser tools, that is, data package creator and good tables, respectively.</p>
+<h3>Reproducing Guo-Qiang data package</h3>
+<p>First, Guo-Qiang shared the links to his datasets and the data package to me which I freely accessed from his GitHub repository. His data was a summary of clinical evidence of various health effects of menopausal hormone therapy in menopausal women. I had a chance to meet Guo-Qiang where he took me through his datasets to understand the metadata. I downloaded the datasets and saved it in csv format. I then followed each step as outlined in his data package blog (<a href="https://fellows.frictionlessdata.io/blog/guo-qiang-datapackage-blog/">https://fellows.frictionlessdata.io/blog/guo-qiang-datapackage-blog/</a>) to validate his tabular data. I found the data to be valid (Figure 1) and downloaded the JSON schema that I used to validate his tabular data with Goodtables.io browser tool (<a href="https://goodtables.io/">https://goodtables.io/</a>)</p>
+<p><img src="./Figure1.PNG" alt="" width=100%>Figure 1: Data validation using datapackage creator</img></p>
+<h3>Validating Guo-Qiang tabular dataset using Goodtables.io tool</h3>
+<p>I began by validating the tabular datasets without the schema and noted a few errors as shown in Figure 2 below. There was blank header, duplicate header and blank row that I needed to fix before I could validate the data. This is the essence of this tool – it allows you to quickly identify and fix such errors in your data thereby making it sharable and reusable by others.</p>
+<p><img src="Figure2.png" alt="" width=100%>Figure 2: Data validation identified type or format errors</img></p>
+<p>After fixing the errors, I then validated the tabular data together with the schema and finally the table turned out to be valid (Figure 3)</p>
+<p><img src="Figure3.png" alt="" width=100%>Figure 3: Validated tabular data</img></p>
+<p>In conclusion, this exercise enabled me to appreciate the use of frictionless tools to improve the quality of my data as well as reproduce the findings of other research groups with a lot of ease.</p>
 
-  
-
+  </div>
 
   </article>
   <footer>
