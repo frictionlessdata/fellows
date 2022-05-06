@@ -17,7 +17,7 @@ _— Hadley Wickham, Chief Scientist at RStudio_
 _Preach, Hadley!_ Within the scope of the Frictionless Fellowship, we’ve been learning about how to adopt good data practices to facilitate reproducible research. Speaking from personal experience, however, being in the weeds of data often makes it hard to objectively asses its interoperability. Sometimes this manifests as structural problems within the data, sometimes its more of human-readable speed-bump, like unexplained naming conventions, or obscure units. 
 
 <img src="image0.png" width=100% alt="schema">
-<p style="text-align: center; font-style: italic">Sure</p>
+<p style="text-align: center; font-style: italic">Sure</p>  
 
 Having prepped our own data using [Frictionless tools](https://frictionlessdata.io/software/), the idea was that we would trade data packages with a researcher from a different field, and navigate the experience of reproducing research, field agnostically. 
 
