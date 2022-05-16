@@ -10,6 +10,7 @@ body:
 
 ## Data reproducibility
 ### Introduction
+
 Data reproducibility is where other researchers use same data to attain the same results by using same methods. Research reproducibility allows other scientist to gain new insights from your data as well as improve quality of research by checking the correctness of your findings. The aim of this assignment was to try and reproduce my colleague’s data package and validate the tabular data using frictionless browser tools, that is, data package creator and good tables, respectively. 
 
 ### Reproducing Guo-Qiang data package
