@@ -10,7 +10,8 @@ body:
 
 ## Data reproducibility
 ### Introduction
-Data reproducibility is where other researcher uses same data to attain the same results by using same methods. Research reproducibility allows other scientist to gain new insights from your data as well as improve quality of research by checking the correctness of your findings. The aim of this assignment was to try and reproduce my colleague’s data package and validate the tabular data using frictionless browser tools, that is, data package creator and good tables, respectively. 
+
+Data reproducibility is where other researchers use same data to attain the same results by using same methods. Research reproducibility allows other scientist to gain new insights from your data as well as improve quality of research by checking the correctness of your findings. The aim of this assignment was to try and reproduce my colleague’s data package and validate the tabular data using frictionless browser tools, that is, data package creator and good tables, respectively. 
 
 ### Reproducing Guo-Qiang data package
  First, Guo-Qiang shared the links to his datasets and the data package to me which I freely accessed from his GitHub repository. His data was a summary of clinical evidence of various health effects of menopausal hormone therapy in menopausal women. I had a chance to meet Guo-Qiang where he took me through his datasets to understand the metadata. I downloaded the datasets and saved it in csv format. I then followed each step as outlined in his data package blog (https://fellows.frictionlessdata.io/blog/guo-qiang-datapackage-blog/) to validate his tabular data. I found the data to be valid (Figure 1) and downloaded the JSON schema that I used to validate his tabular data with Goodtables.io browser tool (https://goodtables.io/)
@@ -21,10 +22,10 @@ Data reproducibility is where other researcher uses same data to attain the same
 ### Validating Guo-Qiang tabular dataset using Goodtables.io tool
 I began by validating the tabular datasets without the schema and noted a few errors as shown in Figure 2 below. There was blank header, duplicate header and blank row that I needed to fix before I could validate the data. This is the essence of this tool – it allows you to quickly identify and fix such errors in your data thereby making it sharable and reusable by others.
 
-<img src="Figure2.png" alt="" width=100%>Figure 2: Data validation identified type or format errors</img>
+<img src="Figure2.PNG" alt="" width=100%>Figure 2: Data validation identified type or format errors</img>
 
 After fixing the errors, I then validated the tabular data together with the schema and finally the table turned out to be valid (Figure 3)
 
-<img src="Figure3.png" alt="" width=100%>Figure 3: Validated tabular data</img>
+<img src="Figure3.PNG" alt="" width=100%>Figure 3: Validated tabular data</img>
 
 In conclusion, this exercise enabled me to appreciate the use of frictionless tools to improve the quality of my data as well as reproduce the findings of other research groups with a lot of ease.
