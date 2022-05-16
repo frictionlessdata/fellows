@@ -37,27 +37,26 @@ Zarena’s fellows repository README looked (unfortunately) much like my own - w
 
 A cursory inspection of the data revealed it to be a massive literature review aggregate. First thought upon opening was - damn…. girl reads a lot. The csv also appeared structurally sound - clear headers, no obvious formatting fauxpas. 
 
-<img src="image3.png" width=100% alt="schema">
+<img src="image3.jpeg" width=100% alt="schema">
 <p style="text-align: center; font-style: italic"> CSV for human eyes</p>
 
 However, though the fields were descriptive, ([LensID](https://support.lens.org/knowledge-base/the-lens-id/) might be the only column in need of some explaining), I still felt unable to understand and contextualise her data, and a more detailed investigation turned out more questions than answers. For example the title field contained a selection of top hits ranging from: “Thermal interaction between limestone and silica” to “Information dynamics in judo” to “Bride kidnapping in post-Soviet Eurasia: a roundtable discussion” to my personal favourite “Home-use cancer detecting band-aid” (yes I did look [this](https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9694/1/Home-use-cancer-detecting-band-aid/10.1117/12.2210808.short?SSO=1) up later and it is fascinating). 
 
 Similarly perplexing, the categories field touched upon every subject under the sun… horticulture, sleep apnea, corporate social responsibility, acne. It was as if I had entered the associative mind olympics, desperately searching for commonalities between “asymptotic expansion” and “hay.” 
 
-<img src="image4.png" width=100% alt="schema">
+<img src="image4.jpg" width=100% alt="schema">
 <p style="text-align: center; font-style: italic">my own personal enigma code </p>  
 
 At this point I thought - I should have really read more about what Zarena does.  In her datapackage creation [blog post](https://fellows.frictionlessdata.io/blog/zarena-datapackage-blog/) she describes herself as a social science researcher studying the research landscape in Central Asian countries, and clearly states that her dataset is a bibliometric representation of publications from Kyrgyzstani authors between 1991-2021, coming from the LENS platform. Super clearly written and descriptive, this would make a great background section for a README file! 
 
 Finally understanding the nature of the dataset, I moved on to validation, using the frictionless command line tools. The datapackage - in this case composed of the csv and its schema - passed the test - valid! It’s always worth taking a slightly closer look however, as its easy to make mistakes at some point in the data cleaning and packaging processes. Trying to validate the csv alone produced the following error:
 
-<img src="image5.png" width=100% alt="schema">
-<p style="text-align: center; font-style: italic" </p>  
+<img src="image5.jpeg" width=100% alt="schema"> 
   
 The error code clearly indicated the location of the error, which revealed itself to be a lingering letter trying to pass itself off as an integer. Not on my watch! 
 
-<img src="image5.png" width=100% alt="schema">
-<p style="text-align: center; font-style: italic" now I wonder if Zarena planted this here for me on purpose… </p> 
+<img src="imagee6.jpeg" width=50% alt="schema">
+<p style="text-align: center; font-style: italic"> now I wonder if Zarena planted this here for me on purpose… </p> 
 
 Did a quick little manual fix and we were on our way. As I got to the end of this exercise, I wondered: how interoperable was my own dataset? :O 
 
