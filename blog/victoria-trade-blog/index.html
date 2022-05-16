@@ -1,7 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="../../css/style.css">
-<title>Data trading for reproducibility</title>
+<title>Trading data!</title>
 
 <body>
   <header>
@@ -114,23 +114,42 @@
   </header>
   <article>
     
-  <h1>Data trading for reproducibility</h1>
+  <h1>Trading data!</h1>
   <div>
   
   </div>
   <div class="blog">
-    <h2>Data reproducibility</h2>
-<h3>Introduction</h3>
-<p>Data reproducibility is where other researchers use same data to attain the same results by using same methods. Research reproducibility allows other scientist to gain new insights from your data as well as improve quality of research by checking the correctness of your findings. The aim of this assignment was to try and reproduce my colleague’s data package and validate the tabular data using frictionless browser tools, that is, data package creator and good tables, respectively.</p>
-<h3>Reproducing Guo-Qiang data package</h3>
-<p>First, Guo-Qiang shared the links to his datasets and the data package to me which I freely accessed from his GitHub repository. His data was a summary of clinical evidence of various health effects of menopausal hormone therapy in menopausal women. I had a chance to meet Guo-Qiang where he took me through his datasets to understand the metadata. I downloaded the datasets and saved it in csv format. I then followed each step as outlined in his data package blog (<a href="https://fellows.frictionlessdata.io/blog/guo-qiang-datapackage-blog/">https://fellows.frictionlessdata.io/blog/guo-qiang-datapackage-blog/</a>) to validate his tabular data. I found the data to be valid (Figure 1) and downloaded the JSON schema that I used to validate his tabular data with Goodtables.io browser tool (<a href="https://goodtables.io/">https://goodtables.io/</a>)</p>
-<p><img src="./Figure1.PNG" alt="" width=100%>Figure 1: Data validation using datapackage creator</img></p>
-<h3>Validating Guo-Qiang tabular dataset using Goodtables.io tool</h3>
-<p>I began by validating the tabular datasets without the schema and noted a few errors as shown in Figure 2 below. There was blank header, duplicate header and blank row that I needed to fix before I could validate the data. This is the essence of this tool – it allows you to quickly identify and fix such errors in your data thereby making it sharable and reusable by others.</p>
-<p><img src="Figure2.PNG" alt="" width=100%>Figure 2: Data validation identified type or format errors</img></p>
-<p>After fixing the errors, I then validated the tabular data together with the schema and finally the table turned out to be valid (Figure 3)</p>
-<p><img src="Figure3.PNG" alt="" width=100%>Figure 3: Validated tabular data</img></p>
-<p>In conclusion, this exercise enabled me to appreciate the use of frictionless tools to improve the quality of my data as well as reproduce the findings of other research groups with a lot of ease.</p>
+    <p><em>Happy families are all alike; every unhappy family is unhappy in its own way</em> 
+<em>— Leo Tolstoy</em></p>
+<p><em>Like families, tidy datasets are all alike but every messy dataset is messy in its own <a href="https://vita.had.co.nz/papers/tidy-data.pdf">way</a>.</em>
+<em>— Hadley Wickham, Chief Scientist at RStudio</em></p>
+<p><em>Preach, Hadley!</em> Within the scope of the Frictionless Fellowship, we’ve been learning about how to adopt good data practices to facilitate reproducible research. Speaking from personal experience, however, being in the weeds of data often makes it hard to objectively asses its interoperability. Sometimes this manifests as structural problems within the data, sometimes its more of human-readable speed-bump, like unexplained naming conventions, or obscure units.</p>
+<p><img src="image0.png" width=100% alt="schema"></p>
+<p style="text-align: center; font-style: italic">Sure</p><p>Having prepped our own data using <a href="https://frictionlessdata.io/software/">Frictionless tools</a>, the idea was that we would trade data packages with a researcher from a different field, and navigate the experience of reproducing research, field agnostically.</p>
+<p>My data package partner, Zarena is an awesome social scientist in the human rights sphere. She has a background in mental health research and interests ranging from epistemic injustice to intersectionality - two terms I had to double check my understanding of.  In poking around Zarena’s profile, particularly interesting was her focus on <a href="https://www.universityaffairs.ca/features/feature-article/mad-studies/">mad studies</a>, a young interdisciplinary field dealing with identity and the marginalisation of individuals with alternative mental states. This idea - broadly accepting a spectrum of human states instead of subjecting them to a black/white absolute interpretation - was completely new to me and fascinating! But being a social theory noob, I suspected to encounter a barrier to understanding her data.</p>
+<p>Zarena’s data was publicly available in her GitHub fellows repository.  I clocked a couple of things off the bat: the repo contained a csv called “data-dp.csv”,  as well as a README.md and several schema files. When in doubt of where to start, a good place to look is the README.</p>
+<p><img src="image1.png" width=100% alt="schema"></p>
+<p style="text-align: center; font-style: italic">Zarena's fellows repo</p><p><a href="https://www.makeareadme.com/">README.md</a> files are meant to serve as repo guides - containing information such as sources, usage instructions, necessary libraries etc. They’re there to preemptively answer questions users could have when happing across your repository for the first time.</p>
+<p>Zarena’s fellows repository README looked (unfortunately) much like my own - welcoming, but admittedly completely uninformative. I had written mine without taking into account that someone might actually check it out and use the data, and my assumption was that Zarena had done the same. So I forged ahead and put on my data detective hat.</p>
+<p><img src="image2.png" width=100% alt="schema"></p>
+<p style="text-align: center; font-style: italic">Raw data Rorschach test - what do you see? My eyes are drawn to “Cows have significantly higher heart girths</p><p>A cursory inspection of the data revealed it to be a massive literature review aggregate. First thought upon opening was - damn…. girl reads a lot. The csv also appeared structurally sound - clear headers, no obvious formatting fauxpas.</p>
+<p><img src="image3.jpeg" width=100% alt="schema"></p>
+<p style="text-align: center; font-style: italic"> CSV for human eyes</p><p>However, though the fields were descriptive, (<a href="https://support.lens.org/knowledge-base/the-lens-id/">LensID</a> might be the only column in need of some explaining), I still felt unable to understand and contextualise her data, and a more detailed investigation turned out more questions than answers. For example the title field contained a selection of top hits ranging from: “Thermal interaction between limestone and silica” to “Information dynamics in judo” to “Bride kidnapping in post-Soviet Eurasia: a roundtable discussion” to my personal favourite “Home-use cancer detecting band-aid” (yes I did look <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/9694/1/Home-use-cancer-detecting-band-aid/10.1117/12.2210808.short?SSO=1">this</a> up later and it is fascinating).</p>
+<p>Similarly perplexing, the categories field touched upon every subject under the sun… horticulture, sleep apnea, corporate social responsibility, acne. It was as if I had entered the associative mind olympics, desperately searching for commonalities between “asymptotic expansion” and “hay.”</p>
+<p><img src="image4.jpg" width=100% alt="schema"></p>
+<p style="text-align: center; font-style: italic">my own personal enigma code </p><p>At this point I thought - I should have really read more about what Zarena does.  In her datapackage creation <a href="https://fellows.frictionlessdata.io/blog/zarena-datapackage-blog/">blog post</a> she describes herself as a social science researcher studying the research landscape in Central Asian countries, and clearly states that her dataset is a bibliometric representation of publications from Kyrgyzstani authors between 1991-2021, coming from the LENS platform. Super clearly written and descriptive, this would make a great background section for a README file!</p>
+<p>Finally understanding the nature of the dataset, I moved on to validation, using the frictionless command line tools. The datapackage - in this case composed of the csv and its schema - passed the test - valid! It’s always worth taking a slightly closer look however, as its easy to make mistakes at some point in the data cleaning and packaging processes. Trying to validate the csv alone produced the following error:</p>
+<p><img src="image5.jpeg" width=100% alt="schema"></p>
+<p>The error code clearly indicated the location of the error, which revealed itself to be a lingering letter trying to pass itself off as an integer. Not on my watch!</p>
+<p><img src="imagee6.jpeg" width=50% alt="schema"></p>
+<p style="text-align: center; font-style: italic"> now I wonder if Zarena planted this here for me on purpose… </p><p>Did a quick little manual fix and we were on our way. As I got to the end of this exercise, I wondered: how interoperable was my own dataset? :O</p>
+<p><em>A couple of good practices I hope to implement next time:</em></p>
+<ol>
+<li>Writing an instructive REAME</li>
+<li>Including a (permanent) link to the source data </li>
+<li>Instructive metadata, giving clear descriptions to variable names for example </li>
+<li>Cleaning your data according to <a href="https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html#:~:text=Tidy%20data%20is%20a%20standard,Every%20column%20is%20a%20variable.">Tidy data</a> </li>
+</ol>
 
   </div>
 
