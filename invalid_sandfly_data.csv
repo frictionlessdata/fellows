@@ -1,0 +1,49 @@
+Sandfly No.,Slide No.,DNA No.,Trap NO.,Collection site,Location,Location date,Sandfly sp.,SEX,Feeding status,Leishmmania ,Latitude,Longitude,Altitude,Outdoor/indoor
+S#20,SL#2,1,ST24,Marlini,Koya,26-02-21,S. clydei,Female,Not fed,Negative,01.3938746 ''N,037.4852810''E,535m,Outdoor
+S#26,SL#1,2,ST20,Marlini,Koya,26-02-21,S. squamipleuris,Female,Not fed,01.3941667''N,037.4900396''E,530m,Outdoor
+S#11,SL#2,3,ST07,Marlini,Koya,26-02-21,S. clydei,Female,Gravid,Negative,01.3936094 ''N,037.4858649''E,530m,Outdoor
+S#23,SL#1,4,ST05,Marlini,Koya,26-02-21,S. clydei,Female,Bloodfed,Positive,01.3940679''N,037.4901070''E,531m,Outdoor
+S#12,SL#3,5,ST07,Marlini,Koya,26-02-21,S. clydei,Female,Not fed,Negative,01.3936094 ''N,037.4858649''E,530m,Outdoor
+S#24,SL#2,6,ST05,Marlini,Koya,S. schwetzi,Female,Bloodfed,Negative,01.3940679''N,037.4901070''E,531m,Outdoor
+S#13,SL#5,7,ST07,Marlini,Koya,26-02-21,S. bedfordi,Female,Not fed,Negative,01.3936094 ''N,037.4858649''E,530m,Outdoor
+S#19,SL#1,8,ST24,Marlini,Koya,26-02-21,S. squamipleuris,Female,Not fed,Negative,01.3938746 ''N,037.4852810''E,535m,Outdoor
+S#28,SL#1,9,ST21,Marlini,Koya,26-02-21,S. squamipleuris,Female,Not fed,Negative,01.3942919''N,037.4859462''E,528m,Outdoor
+S#61,SL#3,10,T16,Orbuka,Koya,27-02-21,S. clydei,Male,Not fed,Positive,01.3759602''N,037.4824093''E,540m,Outdoor
+S#65,SL#3,11,T09,Orbuka,Koya,27-02-21,S. clydei,Female,Not fed,Negative,01.3758176''N,037.4821866''E,549m,Outdoor
+S#73,SL#1,12,T01,Orbuka,Koya,27-02-21,S. clydei,Female,Not fed,Negative,01.3757975''N,037.4823305''E,542m,Outdoor
+S#32,SL#4,13,T41,Orbuka,Koya,27-02-21,S. clydei,Female,Gravid,Positive,01.3758156''N,037.4822666''E,548m,Outdoor
+S#76,SL#1,14,T03,Orbuka,Koya,27-02-21,S. squamipleuris,Female,Not fed,Negative,01.382530''N,037.4825886''E,540m,Outdoor
+S#80,SL#2,15,T15,Orbuka,Koya,27-02-21,S. clydei,Female,Gravid,Negative,01.381141''N,037.4827359''E,540m,Indoor
+S#68,SL#1,16,T07,Orbuka,Koya,27-02-21,S. schwetzi,Female,Gravid,Negative,01.3757524''N,037.4826176''E,541m,Indoor
+S#58,SL#1,17,T11,Orbuka,Koya,27-02-21,S. squamipleuris,Female,Not fed,Negative,01.3759432''N,037.4822370''E,549m,Outdoor
+S#67,SL#5,18,T09,Orbuka,Koya,27-02-21,S. schwetzi,Female,Gravid,Negative,01.3758176''N,037.4821866''E,549m,Outdoor
+S#79,SL#1,19,T15,Orbuka,Koya,27-02-21,S. schwetzi,Female,Gravid,Negative,01.381141''N,037.4827359''E,540m,Indoor
+S#60,SL#2,20,T16,Orbuka,Koya,27-02-21,S. clydei,Female,Not fed,Negative,01.3759602''N,037.4824093''E,540m,Outdoor
+S#75,SL#2,21,T02,Orbuka,Koya,27-02-21,S. clydei,Female,Not fed,Negative,01.381447''N,037.4825663''E,541m,Outdoor
+S#77,SL#2,22,T03,Orbuka,Koya,27-02-21,S. africanus,Female,Not fed,Negative,01.382530''N,037.4825886''E,540m,Outdoor
+S#53,SL#1,23,T4,Orbuka,Koya,27-02-21,S. clydei,Female,Gravid,Negative,01.380340''N,037.4827589''E,541m,Outdoor
+S#59,SL#1,24,T16,Orbuka,Koya,27-02-21,S. clydei,Female,Not fed,Negative,01.3759602''N,037.4824093''E,540m,Outdoor
+S#56,SL#3,25,T18,Orbuka,Koya,27-02-21,S. clydei,Female,Not fed,Negative,01.3758438''N,037.4824019''E,541m,Outdoor
+S#30,SL#2,26,T41,Orbuka,Koya,27-02-21,S. clydei,Female,Gravid,Negative,01.3758156''N,037.4822666''E,548m,Outdoor
+S#78,SL#3,27,T03,Orbuka,Koya,27-02-21,S. clydei,Female,Gravid,Negative,01.382530''N,037.4825886''E,540m,Outdoor
+S#36,SL#1,28,T04,Orbuka,Koya,27-02-21,S. squamipleuris,Female,Not fed,Negative,01.380340''N,037.4827589''E,541m,Outdoor
+S#66,SL#4,29,T09,Orbuka,Koya,27-02-21,P. orientalis,Female,Not fed,Negative,01.3758176''N,037.4821866''E,549m,Outdoor
+S#46,SL#3,30,T05,Orbuka,Koya,27-02-21,S. schwetzi,Female,Not fed,Negative,01.381584''N,037.4827264''E,540m,Outdoor
+S#33,SL#5,31,T41,Orbuka,Koya,27-02-21,S. clydei,Female,Not fed,Negative,01.3758156''N,037.4822666''E,548m,Outdoor
+S#38,SL#3,32,T04,Orbuka,Koya,27-02-21,S. squamipleuris,Female,Gravid,Positive,01.380340''N,037.4827589''E,541m,Outdoor
+S#106,SL#4,33,T13,Esimatacho,Koya,28-02-21,S. clydei,Female,Not fed,Negative,01.64108''N,037.81606''E,536m,Outdoor
+S#111,SL#1,34,T01,Esimatacho,Koya,28-02-21,S. clydei,Female,Not fed,Positive,01.64084''N,037.81581''E,536m,Outdoor
+S#85,SL#4,35,T11,Esimatacho,Koya,28-02-21,S. squamipleuris,Female,Not fed,Negative,01.64004''N,037.81613''E,537m,Outdoor
+S#89,SL#4,36,T09,Esimatacho,Koya,28-02-21,S. squamipleuris,Female,Not fed,Positive,01.64093''N,037.81638''E,540m,Outdoor
+S#104,SL#2,37,T13,Esimatacho,Koya,28-02-21,S. clydei,Female,Gravid,Negative,01.64108''N,037.81606''E,536m,Outdoor
+S#93,SL#8,38,T09,Esimatacho,Koya,28-02-21,S. clydei,Female,Not fed,Negative,01.64093''N,037.81638''E,540m,Outdoor
+S#82,SL#1,39,T11,Esimatacho,Koya,28-02-21,S. squamipleuris,Female,Not fed,Negative,01.64004''N,037.81613''E,537m,Outdoor
+S#124,SL#2,40,T19,Esimatacho,Koya,28-02-21,S. bedfordi,Female,Gravid,Negative,01.64106''N,037.81649''E,540m,Indoor
+S#109,SL#7,41,T13,Esimatacho,Koya,28-02-21,S. squamipleuris,Female,Not fed,Negative,01.64108''N,037.81606''E,536m,Outdoor
+S#99,SL#2,42,T03,Esimatacho,Koya,28-02-21,S. clydei,Female,Gravid,Negative,01.63994''N,037.81696''E,540m,Outdoor
+S#125,SL#1,43,T07,Esimatacho,Koya,28-02-21,S. squamipleuris,Female,Not fed,Negative,01.63957''N,037.81615''E,543m,Outdoor
+S#91,SL#6,44,T09,Esimatacho,Koya,28-02-21,S. clydei,Female,Not fed,Negative,01.64093''N,037.81638''E,540m,Outdoor
+S#115,SL#5,45,T01,Esimatacho,Koya,28-02-21,S. clydei,Female,Not fed,Negative,01.64084''N,037.81581''E,536m,Outdoor
+S#25,SL#3,46,ST05,Marlini,Koya,26-02-21,S. squamipleuris,Female,Not fed,Negative,01.3940679''N,037.4901070''E,531m,Outdoor
+S#110,SL#8,47,T13,Esimatacho,Koya,28-02-21,S. clydei,Female,Not fed,Negative,01.64108''N,037.81606''E,536m,Outdoor
+S#123,SL#2,48,T41,Esimatacho,Koya,28-02-21,S. squamipleuris,Female,Not fed,Negative,01.64052''N,037.81559''E,537m,Outdoor
