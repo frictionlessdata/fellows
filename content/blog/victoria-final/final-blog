@@ -1,0 +1,24 @@
+title: Is this really goodbye? 
+---
+author: Victoria Stanley
+---
+pub_date: 2022-07-06
+---
+cohort: 3
+---
+body:
+
+*The ABCs of Open Knowledge* 
+Has it really been nine months? I really still can’t believe it. The Frictionless Reproducible Research Fellowship has been a mega trip, and one I’m grateful to have embarked on. 
+
+Generally a hesitant writer, with a style I can best describe as “heavily procrastinated,” I found it extra difficult to sit down to write this final blog.  Our journey in this fellowship has felt sooo Frictionless (sorry), that I struggled to itemise the learned content. There is - of course - a syllabus, but one of the greatest aspects of this program is how it fostered the organic acquisition of information. As a product of a “will-it-be-on-the-test”/“imbibe and regurgitate” education, this fellowship has been a refreshing contrast. I have enjoyed the way we oscillated between theoretical and technical, slowly building up our Open Science vocabulary and letting ideas and skills stew before revisiting them again. 
+
+This kind of growth is often hard to notice and appreciate, however; try asking yourself, who was I nine months ago, and how have I changed? But some notable tangible skills include: version control and working with GitHub, data handling with python, bash/zsh, and metadata creation. And while all of these are works in progress (juggling python versions, I see you), each instance of exposure reduced the amount of frustration and time needed on Stack Overflow to solve the issue at hand. Reading the posts from last years fellows, I noticed a common theme of programming insecurity and imposter syndrome. This struck a chord with me - though I have extensive programming experience, it’s been relegated to the world of (mainly proprietary) academic programming in clunky development environments with no clear system of version control. Initially, I was embarrassed at how long it took me to resolve my first git conflict, but as I connected with the other fellows over technical struggles, it felt empowering to lay the the groundwork for open source programming skills.  
+
+A large component of the program centred around the development of our own Open Science ideology. This began with an internal journal club, progressed to both guided and spontaneous discussions, contact with data experts and role-play, and cumulated in independent conference presentations. Many of these topics seeped out of the syllabus and into my own personal content intake, ruminating on, for example, the power dynamics of academic publishing, the [importance of data sharing and preprints](https://www.nature.com/articles/s41591-021-01654-6), and why open access matters for scientific progress, especially for [research conducted outside the economically privileged west](https://qz.com/2116375/covid-has-deepened-the-wests-monopoly-of-science-publishing/). This is an especially [big conversation in Germany, where I live](https://www.cesifo.org/en/publikationen/2021/working-paper/impact-german-deal-competition-academic-publishing-market). 
+
+For me, by far the most important takeaway of the Frictionless Fellows program has been the hilarious yet sage mentorship of the wonderful Lilly Winfree and the camaraderie of my fellow fellows (lol). In the last nine months, I’ve gotten much better at expressing my thoughts, speaking infant of groups, and asking for help when I need it. I throughly enjoyed the interdisciplinary cross-pollination and exchange of ideas, and was surprised to learn that though we all came from different backgrounds and disciplines, we faced similar structural and institutional roadblocks. It gave me a feeling of community, and allowed me to express personally held beliefs about academia I was preciously reticent to share.  Occasionally calls felt like academic group therapy! Necessary, in my opinion. 
+
+Going forward, I hope to apply what I’ve learned in the program to my academic life and career, as well as getting more involved in “Open” movements. I recently [published a paper open access](https://iopscience.iop.org/article/10.1088/1752-7163/ac77aa), and though my advisor wasn’t keen on a preprint, I think I at least planted the idea in his head. And thats how movements like Open Science spread, through organic exposure and honest conversations. I hope to keep having them in the future, and become more “Open” myself. Thanks Frictionless, its been rad! 
+
+---
